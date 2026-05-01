@@ -435,6 +435,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto teórico</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1">Ejemplo 1</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-2">Ejemplo 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-3">Ejemplo 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-4">Ejemplo 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-de-practica-del-bucle-textit-for">Ejercicios de práctica del bucle \textit{for}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-propuestos">Ejercicios propuestos</a></li>
 </ul>
             </nav>
         </div>
@@ -488,37 +492,20 @@ document.write(`
     <span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Ejemplo 3</span>
-<span class="n">Imprimir</span> <span class="n">los</span> <span class="n">cuadrados</span> <span class="n">y</span> <span class="n">los</span> <span class="n">cubos</span> <span class="n">de</span> <span class="n">los</span> <span class="n">números</span> <span class="n">naturales</span> <span class="n">en</span> <span class="n">el</span> <span class="n">intervalo</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
-
-<span class="o">~~~</span><span class="n">python</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
+</section>
+<section id="ejemplo-3">
+<h2>Ejemplo 3<a class="headerlink" href="#ejemplo-3" title="Link to this heading">#</a></h2>
+<p>Imprimir los cuadrados y los cubos de los números naturales en el intervalo [1,10]</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x =&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s2">&quot;x^2 =&quot;</span><span class="p">,</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;x^3 =&quot;</span><span class="p">,</span> <span class="n">i</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
-<span class="o">~~~</span>
-
-<span class="o">**</span><span class="n">Nota</span><span class="p">:</span><span class="o">**</span> <span class="n">Observe</span> <span class="n">que</span> <span class="n">los</span> <span class="n">elementos</span> <span class="n">escritos</span> <span class="n">entre</span> <span class="n">comillas</span> <span class="n">se</span> <span class="n">muestran</span> <span class="n">literalmente</span> <span class="n">en</span> <span class="n">la</span> <span class="n">salida</span> <span class="k">del</span> <span class="n">programa</span><span class="p">,</span> <span class="n">es</span> <span class="n">decir</span><span class="p">,</span> <span class="n">aparecen</span> <span class="n">exactamente</span> <span class="n">como</span> <span class="n">fueron</span> <span class="n">escritos</span><span class="o">.</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
-    <span class="n">Imprimir</span> <span class="n">los</span> <span class="n">cuadrados</span> <span class="n">y</span> <span class="n">los</span> <span class="n">cubos</span> <span class="n">de</span> <span class="n">los</span> <span class="n">números</span> <span class="n">naturales</span> <span class="n">en</span> <span class="n">el</span> <span class="n">intervalo</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
-             <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Ejemplo 4</span>
-
-<span class="n">Imprimir</span> <span class="n">la</span> <span class="n">suma</span> <span class="n">de</span> <span class="n">los</span> <span class="n">números</span> <span class="n">naturales</span> <span class="k">del</span> <span class="mi">1</span> <span class="n">al</span> <span class="mi">20</span><span class="p">,</span> <span class="n">incluyendo</span> <span class="n">su</span> <span class="n">suma</span> <span class="n">parcial</span><span class="o">.</span>
-
-<span class="o">~~~</span><span class="n">python</span>
-<span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
+<p><strong>Nota:</strong> Observe que los elementos escritos entre comillas se muestran literalmente en la salida del programa, es decir, aparecen exactamente como fueron escritos.</p>
+</section>
+<section id="ejemplo-4">
+<h2>Ejemplo 4<a class="headerlink" href="#ejemplo-4" title="Link to this heading">#</a></h2>
+<p>Imprimir la suma de los números naturales del 1 al 20, incluyendo su suma parcial.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Sumando los numeros naturales del 1 al 20&quot;</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">21</span><span class="p">):</span>
@@ -527,42 +514,30 @@ document.write(`
 
 <span class="c1"># note como el cambio en la indentacion da fin al bucle</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La suma total es:&quot;</span><span class="p">,</span> <span class="n">suma</span><span class="p">)</span>  <span class="c1"># Esta accion solo se ejecuta una vez, no es parte del bucle</span>
-<span class="o">~~~</span>
-
-<span class="o">**</span><span class="n">Nota</span><span class="p">:</span><span class="o">**</span> <span class="n">La</span> <span class="n">variable</span> <span class="err">`</span><span class="n">suma</span><span class="err">`</span> <span class="n">se</span> <span class="n">inicializa</span> <span class="n">en</span> <span class="mi">0</span> <span class="n">antes</span> <span class="n">de</span> <span class="n">comenzar</span> <span class="n">el</span> <span class="n">bucle</span><span class="o">.</span> <span class="n">Esta</span> <span class="n">inicialización</span> <span class="n">es</span> <span class="n">necesaria</span> <span class="n">para</span> <span class="n">poder</span> <span class="n">acumular</span> <span class="n">correctamente</span> <span class="n">los</span> <span class="n">valores</span> <span class="n">en</span> <span class="n">cada</span> <span class="n">iteración</span><span class="o">.</span>
-
-<span class="o">**</span><span class="n">Nota</span><span class="p">:</span><span class="o">**</span> <span class="n">Observe</span> <span class="n">que</span> <span class="n">al</span> <span class="n">terminar</span> <span class="n">la</span> <span class="n">indentación</span> <span class="k">del</span> <span class="n">bloque</span> <span class="err">`</span><span class="k">for</span><span class="err">`</span><span class="p">,</span> <span class="n">el</span> <span class="n">programa</span> <span class="n">sale</span> <span class="k">del</span> <span class="n">bucle</span><span class="o">.</span> <span class="n">Por</span> <span class="n">ello</span><span class="p">,</span> <span class="n">la</span> <span class="n">última</span> <span class="n">instrucción</span> <span class="err">`</span><span class="nb">print</span><span class="err">`</span> <span class="n">se</span> <span class="n">ejecuta</span> <span class="n">una</span> <span class="n">sola</span> <span class="n">vez</span><span class="o">.</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Ejercicios de práctica del bucle \textit{for}</span>
-
-\<span class="n">label</span><span class="p">{</span><span class="n">sec</span><span class="p">:</span><span class="n">practica_bucle_for</span><span class="p">}</span>
-
-<span class="o">-</span> <span class="n">Imprimir</span> <span class="n">los</span> <span class="n">números</span> <span class="n">enteros</span> <span class="k">del</span> <span class="o">-</span><span class="mi">10</span> <span class="n">al</span> <span class="mf">10.</span>
-<span class="o">-</span> <span class="n">Imprimir</span> <span class="n">los</span> <span class="n">números</span> <span class="n">pares</span> <span class="n">entre</span> <span class="mi">1</span> <span class="n">y</span> <span class="mf">20.</span>
-<span class="o">-</span> <span class="n">Imprimir</span> <span class="n">los</span> <span class="n">cuadrados</span> <span class="n">de</span> <span class="n">los</span> <span class="n">números</span> <span class="k">del</span> <span class="mi">1</span> <span class="n">al</span> <span class="mf">10.</span>
-<span class="o">-</span> <span class="n">Imprimir</span> <span class="n">los</span> <span class="n">cubos</span> <span class="n">de</span> <span class="n">los</span> <span class="n">números</span> <span class="k">del</span> <span class="mi">1</span> <span class="n">al</span> <span class="mf">10.</span>
-<span class="o">-</span> <span class="n">Implemente</span> <span class="n">un</span> <span class="n">código</span> <span class="n">que</span> <span class="n">imprima</span> <span class="n">los</span> <span class="n">números</span> <span class="n">enteros</span> <span class="k">del</span> <span class="mi">20</span> <span class="n">al</span> <span class="mi">1</span> <span class="n">en</span> <span class="n">orden</span> <span class="n">decreciente</span><span class="o">.</span>
-<span class="o">-</span> <span class="n">Implemente</span> <span class="n">un</span> <span class="n">código</span> <span class="n">que</span> <span class="n">modifique</span> <span class="n">el</span> <span class="n">valor</span> <span class="n">de</span> <span class="n">una</span> <span class="n">variable</span> <span class="err">$</span><span class="n">x</span><span class="err">$</span> <span class="n">en</span> <span class="n">pasos</span> <span class="n">de</span> <span class="err">$</span>\<span class="n">Delta</span> <span class="n">x</span><span class="err">$</span><span class="p">,</span> <span class="n">con</span> <span class="err">$</span><span class="n">x_0</span> <span class="o">=</span> <span class="mf">1.0</span><span class="err">$</span><span class="p">,</span> <span class="err">$</span><span class="n">x_f</span> <span class="o">=</span> <span class="mf">2.0</span><span class="err">$</span> <span class="n">y</span> <span class="err">$</span>\<span class="n">Delta</span> <span class="n">x</span> <span class="o">=</span> <span class="mf">0.005</span><span class="err">$</span><span class="o">.</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Ejercicios propuestos</span>
-
-<span class="o">-</span> <span class="n">Imprimir</span> <span class="n">los</span> <span class="n">números</span> <span class="k">del</span> <span class="mi">20</span> <span class="n">al</span> <span class="mi">1</span> <span class="n">en</span> <span class="n">orden</span> <span class="n">inverso</span><span class="o">.</span>
-<span class="o">-</span> <span class="n">Incrementar</span> <span class="n">una</span> <span class="n">variable</span> <span class="err">$</span><span class="n">x</span><span class="err">$</span> <span class="n">desde</span> <span class="mf">1.0</span> <span class="n">hasta</span> <span class="mf">2.0</span> <span class="n">con</span> <span class="n">paso</span> <span class="err">$</span>\<span class="n">Delta</span> <span class="n">x</span> <span class="o">=</span> <span class="mf">0.005</span><span class="err">$</span><span class="o">.</span>
-<span class="o">-</span> <span class="n">Imprimir</span> <span class="n">las</span> <span class="n">tablas</span> <span class="n">de</span> <span class="n">multiplicar</span> <span class="k">del</span> <span class="mi">1</span> <span class="n">al</span> <span class="mf">10.</span>
-</pre></div>
-</div>
-</div>
-</div>
+<p><strong>Nota:</strong> La variable <code class="docutils literal notranslate"><span class="pre">suma</span></code> se inicializa en 0 antes de comenzar el bucle. Esta inicialización es necesaria para poder acumular correctamente los valores en cada iteración.</p>
+<p><strong>Nota:</strong> Observe que al terminar la indentación del bloque <code class="docutils literal notranslate"><span class="pre">for</span></code>, el programa sale del bucle. Por ello, la última instrucción <code class="docutils literal notranslate"><span class="pre">print</span></code> se ejecuta una sola vez.</p>
+</section>
+<section id="ejercicios-de-practica-del-bucle-textit-for">
+<h2>Ejercicios de práctica del bucle \textit{for}<a class="headerlink" href="#ejercicios-de-practica-del-bucle-textit-for" title="Link to this heading">#</a></h2>
+<p>\label{sec:practica_bucle_for}</p>
+<ul class="simple">
+<li><p>Imprimir los números enteros del -10 al 10.</p></li>
+<li><p>Imprimir los números pares entre 1 y 20.</p></li>
+<li><p>Imprimir los cuadrados de los números del 1 al 10.</p></li>
+<li><p>Imprimir los cubos de los números del 1 al 10.</p></li>
+<li><p>Implemente un código que imprima los números enteros del 20 al 1 en orden decreciente.</p></li>
+<li><p>Implemente un código que modifique el valor de una variable <span class="math notranslate nohighlight">\(x\)</span> en pasos de <span class="math notranslate nohighlight">\(\Delta x\)</span>, con <span class="math notranslate nohighlight">\(x_0 = 1.0\)</span>, <span class="math notranslate nohighlight">\(x_f = 2.0\)</span> y <span class="math notranslate nohighlight">\(\Delta x = 0.005\)</span>.</p></li>
+</ul>
+</section>
+<section id="ejercicios-propuestos">
+<h2>Ejercicios propuestos<a class="headerlink" href="#ejercicios-propuestos" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Imprimir los números del 20 al 1 en orden inverso.</p></li>
+<li><p>Incrementar una variable <span class="math notranslate nohighlight">\(x\)</span> desde 1.0 hasta 2.0 con paso <span class="math notranslate nohighlight">\(\Delta x = 0.005\)</span>.</p></li>
+<li><p>Imprimir las tablas de multiplicar del 1 al 10.</p></li>
+</ul>
 </section>
 </section>
 
@@ -634,6 +609,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto teórico</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1">Ejemplo 1</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-2">Ejemplo 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-3">Ejemplo 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-4">Ejemplo 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-de-practica-del-bucle-textit-for">Ejercicios de práctica del bucle \textit{for}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-propuestos">Ejercicios propuestos</a></li>
 </ul>
   </nav></div>
 
