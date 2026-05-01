@@ -198,8 +198,6 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectores en ℝ² y ℝ³</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u2p1.html">Práctica 1: Representación de vectores</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="u2p2.html">Práctica 2: Suma de vectores</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p3.html">Práctica 3: Combinaciones lineales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p4.html">Práctica 4: Norma de un vector</a></li>
@@ -211,8 +209,6 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Conjuntos</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u3p1.html">Práctica 1: Definición de conjuntos en Python</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="u3p2.html">Práctica 2: Operaciones con conjuntos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p3.html">Práctica 3: Conjunto universal y complemento</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p4.html">Práctica 4: Generación de conjuntos</a></li>
@@ -452,31 +448,33 @@ document.write(`
 <h1>Práctica 8: Aplicaciones<a class="headerlink" href="#practica-8-aplicaciones" title="Link to this heading">#</a></h1>
 <section id="ejercicios-propuestos">
 <h2>Ejercicios propuestos<a class="headerlink" href="#ejercicios-propuestos" title="Link to this heading">#</a></h2>
-<p>\begin{enumerate}[label=\alph*)]
-\item Calcular la fuerza resultante de tres vectores fuerza.
-\item Calcular el trabajo <span class="math notranslate nohighlight">\(W = F \cdot d\)</span>.
-\item Calcular el área de un triángulo usando producto cruz.
-\item Calcular el volumen de un paralelepípedo:
-[
-|u \cdot (v \times w)|
-]
-\item Calcular los ángulos interiores de un triángulo en <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>.
-\end{enumerate}</p>
+<ul class="simple">
+<li><p>Calcular la fuerza resultante de tres vectores fuerza.</p></li>
+<li><p>Calcular el trabajo <span class="math notranslate nohighlight">\(W = F \cdot d\)</span>.</p></li>
+<li><p>Calcular el área de un triángulo usando producto cruz.</p></li>
+<li><p>Calcular el volumen de un paralelepípedo:</p></li>
+<li><p><span class="math notranslate nohighlight">\(|u \cdot (v \times w)|\)</span></p></li>
+<li><p>Calcular los ángulos interiores de un triángulo en <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>.</p></li>
+</ul>
 </section>
 <section id="visualizacion-opcional">
 <h2>Visualización (opcional)<a class="headerlink" href="#visualizacion-opcional" title="Link to this heading">#</a></h2>
-<p>\begin{lstlisting}
-import matplotlib.pyplot as plt
-import numpy as np</p>
-<p>fig = plt.figure()
-ax = fig.add_subplot(111, projection=‘3d’)</p>
-<p>a = np.array([2,3,1])
-b = np.array([-1,2,4])
-origin = np.array([0,0,0])</p>
-<p>ax.quiver(*origin, *a)
-ax.quiver(*origin, *b)</p>
-<p>plt.show()
-\end{lstlisting}</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
+<span class="n">origin</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">quiver</span><span class="p">(</span><span class="o">*</span><span class="n">origin</span><span class="p">,</span> <span class="o">*</span><span class="n">a</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">quiver</span><span class="p">(</span><span class="o">*</span><span class="n">origin</span><span class="p">,</span> <span class="o">*</span><span class="n">b</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
 </section>
 </section>
 

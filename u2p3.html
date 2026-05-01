@@ -198,8 +198,6 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectores en ℝ² y ℝ³</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u2p1.html">Práctica 1: Representación de vectores</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="u2p2.html">Práctica 2: Suma de vectores</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Práctica 3: Combinaciones lineales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p4.html">Práctica 4: Norma de un vector</a></li>
@@ -211,8 +209,6 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Conjuntos</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u3p1.html">Práctica 1: Definición de conjuntos en Python</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="u3p2.html">Práctica 2: Operaciones con conjuntos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p3.html">Práctica 3: Conjunto universal y complemento</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p4.html">Práctica 4: Generación de conjuntos</a></li>
@@ -460,21 +456,22 @@ document.write(`
 </section>
 <section id="ejemplo">
 <h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Link to this heading">#</a></h2>
-<p>\begin{lstlisting}
-u = [1, -2, 3]
-v = [4, 0, -1]</p>
-<p>comb = [2<em>u[i] - 3</em>v[i] for i in range(3)]
-print(comb)
-\end{lstlisting}</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">u</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">v</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">comb</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">u</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="mi">3</span><span class="o">*</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">comb</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 <section id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
 <p>Sean <span class="math notranslate nohighlight">\(u=(1,3,4)\)</span>, <span class="math notranslate nohighlight">\(v=(0,1,-1)\)</span>, <span class="math notranslate nohighlight">\(w=(0,1,-0.5)\)</span>:</p>
-<p>\begin{enumerate}[label=\alph*)]
-\item <span class="math notranslate nohighlight">\(5u + 3v + 2w\)</span>
-\item <span class="math notranslate nohighlight">\(u + 3v - 4w\)</span>
-\item <span class="math notranslate nohighlight">\(-2u - v + 7w\)</span>
-\end{enumerate}</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(5u + 3v + 2w\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(u + 3v - 4w\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(-2u - v + 7w\)</span></p></li>
+</ul>
 </section>
 </section>
 

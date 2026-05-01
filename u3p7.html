@@ -196,8 +196,6 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectores en ℝ² y ℝ³</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u2p1.html">Práctica 1: Representación de vectores</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="u2p2.html">Práctica 2: Suma de vectores</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p3.html">Práctica 3: Combinaciones lineales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p4.html">Práctica 4: Norma de un vector</a></li>
@@ -209,8 +207,6 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Conjuntos</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u3p1.html">Práctica 1: Definición de conjuntos en Python</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="u3p2.html">Práctica 2: Operaciones con conjuntos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p3.html">Práctica 3: Conjunto universal y complemento</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p4.html">Práctica 4: Generación de conjuntos</a></li>
@@ -456,19 +452,21 @@ document.write(`
 </section>
 <section id="ejemplo">
 <h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Link to this heading">#</a></h2>
-<p>\begin{lstlisting}
-relacion = {(1,2),(2,4),(3,6)}</p>
-<p>dominio = {x for (x,y) in relacion}</p>
-<p>es_funcion = len(relacion) == len(dominio)
-print(es_funcion)
-\end{lstlisting}</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">relacion</span> <span class="o">=</span> <span class="p">{(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">)}</span>
+
+<span class="n">dominio</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span> <span class="k">for</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="ow">in</span> <span class="n">relacion</span><span class="p">}</span>
+
+<span class="n">es_funcion</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">relacion</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">dominio</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">es_funcion</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 <section id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
-<p>\begin{enumerate}[label=\alph*)]
-\item Verificar si una relación es función.
-\item Analizar si es biyectiva.
-\end{enumerate}</p>
+<ul class="simple">
+<li><p>Verificar si una relación es función.</p></li>
+<li><p>Analizar si es biyectiva.</p></li>
+</ul>
 </section>
 </section>
 

@@ -198,8 +198,6 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectores en ℝ² y ℝ³</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u2p1.html">Práctica 1: Representación de vectores</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="u2p2.html">Práctica 2: Suma de vectores</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p3.html">Práctica 3: Combinaciones lineales</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Práctica 4: Norma de un vector</a></li>
@@ -211,8 +209,6 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Conjuntos</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u3p1.html">Práctica 1: Definición de conjuntos en Python</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="u3p2.html">Práctica 2: Operaciones con conjuntos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p3.html">Práctica 3: Conjunto universal y complemento</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p4.html">Práctica 4: Generación de conjuntos</a></li>
@@ -454,28 +450,29 @@ document.write(`
 <section id="concepto-teorico">
 <h2>Concepto Teórico<a class="headerlink" href="#concepto-teorico" title="Link to this heading">#</a></h2>
 <p>La norma se define como:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9a19acbd-033c-433a-b747-abd077e03a59">
-<span class="eqno">(4)<a class="headerlink" href="#equation-9a19acbd-033c-433a-b747-abd077e03a59" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-5e11cccd-d4fd-4030-9cb8-5f406a10a864">
+<span class="eqno">(4)<a class="headerlink" href="#equation-5e11cccd-d4fd-4030-9cb8-5f406a10a864" title="Permalink to this equation">#</a></span>\[\begin{equation}
 ||v|| = \sqrt{v_x^2 + v_y^2 + v_z^2}
 \end{equation}\]</div>
 </section>
 <section id="ejemplo">
 <h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Link to this heading">#</a></h2>
-<p>\begin{lstlisting}
-import math as mt</p>
-<p>v = [2, 3, 4]
-norma = mt.sqrt(v[0]**2 + v[1]**2 + v[2]**2)
-print(norma)
-\end{lstlisting}</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mt</span>
+
+<span class="n">v</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="n">norma</span> <span class="o">=</span> <span class="n">mt</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">v</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">norma</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 <section id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
 <p>Calcular las normas de:</p>
-<p>\begin{enumerate}[label=\alph*)]
-\item <span class="math notranslate nohighlight">\(a = (1,2)\)</span>
-\item <span class="math notranslate nohighlight">\(b = (1,3,4,2)\)</span>
-\item <span class="math notranslate nohighlight">\(c = (2.5,3.2,-1,-4,-5)\)</span>
-\end{enumerate}</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(a = (1,2)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(b = (1,3,4,2)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(c = (2.5,3.2,-1,-4,-5)\)</span></p></li>
+</ul>
 </section>
 </section>
 

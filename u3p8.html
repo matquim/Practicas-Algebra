@@ -197,8 +197,6 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectores en ℝ² y ℝ³</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u2p1.html">Práctica 1: Representación de vectores</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="u2p2.html">Práctica 2: Suma de vectores</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p3.html">Práctica 3: Combinaciones lineales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p4.html">Práctica 4: Norma de un vector</a></li>
@@ -210,8 +208,6 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Conjuntos</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u3p1.html">Práctica 1: Definición de conjuntos en Python</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="u3p2.html">Práctica 2: Operaciones con conjuntos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p3.html">Práctica 3: Conjunto universal y complemento</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p4.html">Práctica 4: Generación de conjuntos</a></li>
@@ -451,34 +447,37 @@ document.write(`
 <h1>Práctica 8: Aplicaciones<a class="headerlink" href="#practica-8-aplicaciones" title="Link to this heading">#</a></h1>
 <section id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
-<p>\begin{enumerate}[label=\alph*)]
-\item Construir:
+<ul class="simple">
+<li><p>Construir:
 [
 X = {x \in \mathbb{N} \mid 1 \le x \le 10}
-]
-\item Definir:
+]</p></li>
+<li><p>Definir:
 [
 Y = {x^2 \mid x \in X}
-]
-\item Definir el conjunto de números primos en <span class="math notranslate nohighlight">\(X\)</span>.
-\item Calcular:
-\begin{itemize}
-\item <span class="math notranslate nohighlight">\(X \cap Y\)</span>
-\item <span class="math notranslate nohighlight">\(Y - Z\)</span>
-\item <span class="math notranslate nohighlight">\((X \cup Y) \cap Z\)</span>
-\end{itemize}
-\end{enumerate}</p>
+]</p></li>
+<li><p>Definir el conjunto de números primos en <span class="math notranslate nohighlight">\(X\)</span>.</p></li>
+<li><p>Calcular:</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(X \cap Y\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(Y - Z\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\((X \cup Y) \cap Z\)</span></p></li>
+</ul>
+</li>
+</ul>
 </section>
 <section id="visualizacion-opcional">
 <h2>Visualización (opcional)<a class="headerlink" href="#visualizacion-opcional" title="Link to this heading">#</a></h2>
-<p>\begin{lstlisting}
-from matplotlib_venn import venn2
-import matplotlib.pyplot as plt</p>
-<p>A = {1,2,3}
-B = {3,4,5}</p>
-<p>venn2([A,B])
-plt.show()
-\end{lstlisting}</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib_venn</span><span class="w"> </span><span class="kn">import</span> <span class="n">venn2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
+<span class="n">B</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span>
+
+<span class="n">venn2</span><span class="p">([</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
 </section>
 </section>
 

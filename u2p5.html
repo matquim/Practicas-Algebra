@@ -198,8 +198,6 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectores en ℝ² y ℝ³</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u2p1.html">Práctica 1: Representación de vectores</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="u2p2.html">Práctica 2: Suma de vectores</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p3.html">Práctica 3: Combinaciones lineales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p4.html">Práctica 4: Norma de un vector</a></li>
@@ -211,8 +209,6 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Conjuntos</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u3p1.html">Práctica 1: Definición de conjuntos en Python</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="u3p2.html">Práctica 2: Operaciones con conjuntos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p3.html">Práctica 3: Conjunto universal y complemento</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p4.html">Práctica 4: Generación de conjuntos</a></li>
@@ -453,28 +449,29 @@ document.write(`
 <h1>Práctica 5: Producto punto<a class="headerlink" href="#practica-5-producto-punto" title="Link to this heading">#</a></h1>
 <section id="concepto-teorico">
 <h2>Concepto Teórico<a class="headerlink" href="#concepto-teorico" title="Link to this heading">#</a></h2>
-<div class="amsmath math notranslate nohighlight" id="equation-6cbf1a9b-ff98-455f-bb50-07e175cf9049">
-<span class="eqno">(5)<a class="headerlink" href="#equation-6cbf1a9b-ff98-455f-bb50-07e175cf9049" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-d4cc254f-952e-4dbe-939f-61d1c04667da">
+<span class="eqno">(5)<a class="headerlink" href="#equation-d4cc254f-952e-4dbe-939f-61d1c04667da" title="Permalink to this equation">#</a></span>\[\begin{equation}
 a \cdot b = \sum_i a_i b_i
 \end{equation}\]</div>
 </section>
 <section id="ejemplo">
 <h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Link to this heading">#</a></h2>
-<p>\begin{lstlisting}
-a = [2, -1, 5]
-b = [3, 2, -4]</p>
-<p>dot = sum(a[i] * b[i] for i in range(3))
-print(dot)
-\end{lstlisting}</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">]</span>
+
+<span class="n">dot</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dot</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 <section id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
 <p>Sean <span class="math notranslate nohighlight">\(u=(1,2,3)\)</span>, <span class="math notranslate nohighlight">\(v=(2,4,6)\)</span>, <span class="math notranslate nohighlight">\(w=(-1,0,1)\)</span>:</p>
-<p>\begin{enumerate}[label=\alph*)]
-\item <span class="math notranslate nohighlight">\(u \cdot v\)</span>
-\item <span class="math notranslate nohighlight">\(v \cdot w\)</span>
-\item <span class="math notranslate nohighlight">\(w \cdot (u+v)\)</span>
-\end{enumerate}</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(u \cdot v\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(v \cdot w\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(w \cdot (u+v)\)</span></p></li>
+</ul>
 </section>
 </section>
 

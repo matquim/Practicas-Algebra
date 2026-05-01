@@ -198,8 +198,6 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectores en ℝ² y ℝ³</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u2p1.html">Práctica 1: Representación de vectores</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="u2p2.html">Práctica 2: Suma de vectores</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p3.html">Práctica 3: Combinaciones lineales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p4.html">Práctica 4: Norma de un vector</a></li>
@@ -211,8 +209,6 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Conjuntos</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u3p1.html">Práctica 1: Definición de conjuntos en Python</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="u3p2.html">Práctica 2: Operaciones con conjuntos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p3.html">Práctica 3: Conjunto universal y complemento</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p4.html">Práctica 4: Generación de conjuntos</a></li>
@@ -454,36 +450,38 @@ document.write(`
 <section id="concepto-teorico">
 <h2>Concepto Teórico<a class="headerlink" href="#concepto-teorico" title="Link to this heading">#</a></h2>
 <p>El producto cruz en <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> es:</p>
-<p>[
-p \times q =</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7dfce3af-3813-4b91-b6bc-895c1df1bcf9">
-<span class="eqno">(6)<a class="headerlink" href="#equation-7dfce3af-3813-4b91-b6bc-895c1df1bcf9" title="Permalink to this equation">#</a></span>\[\begin{pmatrix}
+<div class="amsmath math notranslate nohighlight" id="equation-9cce5090-8783-48f5-9aa6-f363ce92fb91">
+<span class="eqno">(6)<a class="headerlink" href="#equation-9cce5090-8783-48f5-9aa6-f363ce92fb91" title="Permalink to this equation">#</a></span>\[\begin{equation}
+p \times q =
+\begin{pmatrix}
 p_y q_z - p_z q_y \\
 p_z q_x - p_x q_z \\
 p_x q_y - p_y q_x
-\end{pmatrix}\]</div>
-<p>]</p>
+\end{pmatrix}
+\end{equation}\]</div>
 </section>
 <section id="ejemplo">
 <h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Link to this heading">#</a></h2>
-<p>\begin{lstlisting}
-p = [1, 0, -2]
-q = [3, -1, 1]</p>
-<p>cross = [
-p[1]*q[2] - p[2]*q[1],
-p[2]*q[0] - p[0]*q[2],
-p[0]*q[1] - p[1]*q[0]
-]</p>
-<p>print(cross)
-\end{lstlisting}</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">q</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+
+<span class="n">cross</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">q</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">p</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="n">q</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+    <span class="n">p</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="n">q</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">q</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+    <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">q</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">q</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">cross</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 <section id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
-<p>\begin{enumerate}[label=\alph*)]
-\item <span class="math notranslate nohighlight">\(u \times v\)</span>
-\item <span class="math notranslate nohighlight">\(v \times w\)</span>
-\item <span class="math notranslate nohighlight">\(w \times (u+v)\)</span>
-\end{enumerate}</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(u \times v\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(v \times w\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(w \times (u+v)\)</span></p></li>
+</ul>
 </section>
 </section>
 

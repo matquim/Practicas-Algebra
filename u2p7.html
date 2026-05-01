@@ -198,8 +198,6 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectores en ℝ² y ℝ³</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u2p1.html">Práctica 1: Representación de vectores</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="u2p2.html">Práctica 2: Suma de vectores</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p3.html">Práctica 3: Combinaciones lineales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p4.html">Práctica 4: Norma de un vector</a></li>
@@ -211,8 +209,6 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Conjuntos</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u3p1.html">Práctica 1: Definición de conjuntos en Python</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="u3p2.html">Práctica 2: Operaciones con conjuntos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p3.html">Práctica 3: Conjunto universal y complemento</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p4.html">Práctica 4: Generación de conjuntos</a></li>
@@ -435,7 +431,6 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
@@ -452,37 +447,37 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="practica-7-angulo-entre-vectores">
 <h1>Práctica 7: Ángulo entre vectores<a class="headerlink" href="#practica-7-angulo-entre-vectores" title="Link to this heading">#</a></h1>
-<section id="objetivo">
-<h2>Objetivo<a class="headerlink" href="#objetivo" title="Link to this heading">#</a></h2>
-<div class="amsmath math notranslate nohighlight" id="equation-1bfd246d-c14b-4697-b766-2e42b9ae5d12">
-<span class="eqno">(7)<a class="headerlink" href="#equation-1bfd246d-c14b-4697-b766-2e42b9ae5d12" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<section id="concepto-teorico">
+<h2>Concepto Teórico<a class="headerlink" href="#concepto-teorico" title="Link to this heading">#</a></h2>
+<div class="amsmath math notranslate nohighlight" id="equation-3e64a8e9-91b3-43f9-8c5f-75f9d0a03e88">
+<span class="eqno">(7)<a class="headerlink" href="#equation-3e64a8e9-91b3-43f9-8c5f-75f9d0a03e88" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \cos \theta = \frac{p \cdot q}{||p||\,||q||}
 \end{equation}\]</div>
 </section>
-<section id="concepto-teorico">
-<h2>Concepto Teórico<a class="headerlink" href="#concepto-teorico" title="Link to this heading">#</a></h2>
-</section>
 <section id="ejemplo">
 <h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Link to this heading">#</a></h2>
-<p>\begin{lstlisting}
-import math as mt</p>
-<p>p = [1, 2, 2]
-q = [-1, 0, 2]</p>
-<p>dot = sum(p[i]*q[i] for i in range(3))
-norm_p = (sum(p[i]**2 for i in range(3)))**0.5
-norm_q = (sum(q[i]**2 for i in range(3)))**0.5</p>
-<p>theta = mt.acos(dot / (norm_p * norm_q))
-print(mt.degrees(theta))
-\end{lstlisting}</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mt</span>
+
+<span class="n">p</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="n">q</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+
+<span class="n">dot</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">q</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+<span class="n">norm_p</span> <span class="o">=</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)))</span><span class="o">**</span><span class="mf">0.5</span>
+<span class="n">norm_q</span> <span class="o">=</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">q</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)))</span><span class="o">**</span><span class="mf">0.5</span>
+
+<span class="n">theta</span> <span class="o">=</span> <span class="n">mt</span><span class="o">.</span><span class="n">acos</span><span class="p">(</span><span class="n">dot</span> <span class="o">/</span> <span class="p">(</span><span class="n">norm_p</span> <span class="o">*</span> <span class="n">norm_q</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mt</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">theta</span><span class="p">))</span>
+</pre></div>
+</div>
 </section>
 <section id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
 <p>Calcular los ángulos entre:</p>
-<p>\begin{enumerate}[label=\alph*)]
-\item <span class="math notranslate nohighlight">\(u\)</span> y <span class="math notranslate nohighlight">\(v\)</span>
-\item <span class="math notranslate nohighlight">\(v\)</span> y <span class="math notranslate nohighlight">\(w\)</span>
-\item <span class="math notranslate nohighlight">\(w\)</span> y <span class="math notranslate nohighlight">\((u+v)\)</span>
-\end{enumerate}</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(u\)</span> y <span class="math notranslate nohighlight">\(v\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(v\)</span> y <span class="math notranslate nohighlight">\(w\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(w\)</span> y <span class="math notranslate nohighlight">\((u+v)\)</span></p></li>
+</ul>
 </section>
 </section>
 
@@ -550,7 +545,6 @@ print(mt.degrees(theta))
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
