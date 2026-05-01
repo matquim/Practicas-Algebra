@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'u1p3';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -186,9 +188,16 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Sistemas Numéricos</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="u1p1-for.html">U1P1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u1p1.html">El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico</a></li>
+
+
 <li class="toctree-l1"><a class="reference internal" href="u1p2.html">U1P1</a></li>
+
+
+
+
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">U1P1</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="u1p4.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u1p5.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u1p6.html">U1P1</a></li>
@@ -206,6 +215,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Conjuntos</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="u3p1.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p2.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p3.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p4.html">U1P1</a></li>
@@ -428,10 +438,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">U1P1</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#calculo-del-factorial-de-4">Calculo del factorial de 4</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -449,10 +463,33 @@ document.write(`
 </section>
 <section id="concepto-teorico">
 <h2>Concepto Teórico<a class="headerlink" href="#concepto-teorico" title="Link to this heading">#</a></h2>
+<p>\subsection{Práctica 3: Factorial}</p>
+<p>\subsubsection{Objetivo}
+Implementar el cálculo del factorial sin usar funciones predefinidas.</p>
+<p>\subsubsection{Concepto teórico}</p>
+<p>El factorial de un número <span class="math notranslate nohighlight">\(n\)</span> se define como:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-b6b0e64d-cefa-49e7-a4ce-e89112b0f216">
+<span class="eqno">(2)<a class="headerlink" href="#equation-b6b0e64d-cefa-49e7-a4ce-e89112b0f216" title="Permalink to this equation">#</a></span>\[\begin{equation}
+n! = 1 \cdot 2 \cdot 3 \cdots n
+\end{equation}\]</div>
+<p>\subsubsection{Ejemplo}</p>
+<p>\begin{lstlisting}</p>
 </section>
-<section id="ejercicio-1">
-<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Link to this heading">#</a></h2>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="calculo-del-factorial-de-4">
+<h1>Calculo del factorial de 4<a class="headerlink" href="#calculo-del-factorial-de-4" title="Link to this heading">#</a></h1>
+<p>n = 4
+factorial = 1</p>
+<p>for i in range(1, n+1):
+factorial *= i</p>
+<p>print(“Factorial:”, factorial)
+\end{lstlisting}</p>
+<p>\subsubsection{Ejercicios propuestos}</p>
+<p>\begin{enumerate}[label=\alph*)]
+\item Calcular el factorial de diferentes valores de <span class="math notranslate nohighlight">\(n\)</span>.
+\item Comparar con la función \texttt{math.factorial()}.
+\item Desarrolle un código que imprima las tablas de multiplicar del 1 al 10.
+\end{enumerate}</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -519,10 +556,14 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">U1P1</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#calculo-del-factorial-de-4">Calculo del factorial de 4</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>

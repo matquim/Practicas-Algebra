@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>U1P1 &#8212; Practicas Álgebra Superior</title>
+    <title>El bucle \(\texttt{for}\), lo básico &#8212; Practicas Álgebra Superior</title>
   
   
   
@@ -57,7 +57,9 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'u1p1-for';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'u1p1';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="U1P1" href="u1p2.html" />
@@ -186,9 +188,16 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Sistemas Numéricos</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">U1P1</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico</a></li>
+
+
 <li class="toctree-l1"><a class="reference internal" href="u1p2.html">U1P1</a></li>
+
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="u1p3.html">U1P1</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="u1p4.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u1p5.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u1p6.html">U1P1</a></li>
@@ -206,6 +215,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Conjuntos</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="u3p1.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p2.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p3.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p4.html">U1P1</a></li>
@@ -267,7 +277,7 @@
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/matquim/Practicas-Algebra/master?urlpath=tree/u1p1-for.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/matquim/Practicas-Algebra/master?urlpath=tree/u1p1.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -285,7 +295,7 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/matquim/Practicas-Algebra/blob/master/u1p1-for.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/matquim/Practicas-Algebra/blob/master/u1p1.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -334,7 +344,7 @@
       
       
       
-      <li><a href="_sources/u1p1-for.ipynb" target="_blank"
+      <li><a href="_sources/u1p1.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -418,7 +428,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>U1P1</h1>
+    <h1>El bucle \texttt{for}, lo básico</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -428,10 +438,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#imprimir-los-numeros-del-1-al-10-con-un-bucle-for">Imprimir los numeros del 1 al 10 con un bucle for</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#note-como-el-cambio-en-la-indentacion-da-fin-al-bucle">note como el cambio en la indentacion da fin al bucle</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -442,17 +456,83 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="u1p1">
-<h1>U1P1<a class="headerlink" href="#u1p1" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="el-bucle-texttt-for-lo-basico">
+<h1>El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico<a class="headerlink" href="#el-bucle-texttt-for-lo-basico" title="Link to this heading">#</a></h1>
 <section id="objetivo">
 <h2>Objetivo<a class="headerlink" href="#objetivo" title="Link to this heading">#</a></h2>
+<p>Aprender a utilizar el bucle \texttt{for} para repetir instrucciones y generar secuencias numéricas.</p>
+<p>\subsubsection{Concepto teórico}</p>
+<p>El bucle \texttt{for} permite ejecutar un bloque de código varias veces. Su estructura general es:</p>
+<p>\begin{lstlisting}
+for i in range(inicio, fin, paso):
+instrucciones
+\end{lstlisting}</p>
+<p>\begin{itemize}
+\item \texttt{inicio}: valor inicial
+\item \texttt{fin}: valor final (no incluido)
+\item \texttt{paso}: incremento (opcional)
+\end{itemize}
+\textcolor{red}{\textbf{Nota:} Observe que las instrucciones que se deben ejecutar dentro del bucle están indentadas (desplazadas hacia la derecha). Esta indentación es obligatoria en Python y define el bloque de código del \texttt{for}.}</p>
+<p>\subsubsection{Ejemplo 1}
+Contaremos del 1 al 10 usando el bucle \textit{for}
+\begin{lstlisting}</p>
 </section>
-<section id="concepto-teorico">
-<h2>Concepto Teórico<a class="headerlink" href="#concepto-teorico" title="Link to this heading">#</a></h2>
 </section>
-<section id="ejercicio-1">
-<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Link to this heading">#</a></h2>
+<section class="tex2jax_ignore mathjax_ignore" id="imprimir-los-numeros-del-1-al-10-con-un-bucle-for">
+<h1>Imprimir los numeros del 1 al 10 con un bucle for<a class="headerlink" href="#imprimir-los-numeros-del-1-al-10-con-un-bucle-for" title="Link to this heading">#</a></h1>
+<p>print(“Contando del 1 al 10”)
+for i in range(1,11):
+print(i)
+\end{lstlisting}</p>
+<p>\subsubsection{ejemplo 2}</p>
+<p>Imprimir los números pares en el intervalo <span class="math notranslate nohighlight">\((1,20)\)</span>:
+\begin{lstlisting}
+for i in range(2,21,2):
+print(i)
+\end{lstlisting}</p>
+<p>Se podría realizar también de la siguiente manera, aprovechando la definición de paridad (todo número par es de la forma <span class="math notranslate nohighlight">\(2k\)</span> con <span class="math notranslate nohighlight">\(k\in\mathbb{Z}\)</span>):</p>
+<p>\begin{lstlisting}
+for i in range(1,11):
+print(2*i)
+\end{lstlisting}</p>
+<p>\subsubsection{Ejemplo 3}
+Imprimir los cuadrados y los cubos de los números naturales en el intervalo [1,10]</p>
+<p>\begin{lstlisting}
+for i in range(1,11):
+print(“x =”, i, “x^2 =”, i<strong>2, “x^3 =”, i</strong>3)
+\end{lstlisting}
+\textcolor{red}{\textbf{Nota:} Observe que los elementos escritos entre comillas se muestran literalmente en la salida del programa, es decir, aparecen exactamente como fueron escritos.}</p>
+<p>\subsubsection{Ejemplo 4}</p>
+<p>Imprimir la suma de los números naturales del 1 al 20, incluyendo su suma parcial.</p>
+<p>\begin{lstlisting}
+suma = 0
+print(“\nSumando los numeros naturales del 1 al 20”)</p>
+<p>for i in range(1,21):
+suma += i
+print(“Suma parcial:”, suma)</p>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="note-como-el-cambio-en-la-indentacion-da-fin-al-bucle">
+<h1>note como el cambio en la indentacion da fin al bucle<a class="headerlink" href="#note-como-el-cambio-en-la-indentacion-da-fin-al-bucle" title="Link to this heading">#</a></h1>
+<p>print(“La suma total es:”, suma)  # Esta accion solo se ejecuta una vez, no es parte del bucle
+\end{lstlisting}</p>
+<p>\textcolor{red}{\textbf{Nota:} La variable \texttt{suma} se inicializa en 0 antes de comenzar el bucle. Esta inicialización es necesaria para poder acumular correctamente los valores en cada iteración.}</p>
+<p>\textcolor{red}{\textbf{Nota:} Observe que al terminar la indentación del bloque \texttt{for}, el programa sale del bucle. Por ello, la última instrucción \texttt{print} se ejecuta una sola vez.}</p>
+<p>\subsubsection{Ejercicios de práctica del bucle \textit{for}}
+\label{sec:practica_bucle_for}</p>
+<p>\begin{enumerate}[label=\alph*)]
+\item Imprimir los números enteros del -10 al 10.
+\item Imprimir los números pares entre 1 y 20.
+\item Imprimir los cuadrados de los números del 1 al 10.
+\item Imprimir los cubos de los números del 1 al 10.
+\item Implemente un código que imprima los números enteros del 20 al 1 en orden decreciente.
+\item Implemente un código que modifique el valor de una variable <span class="math notranslate nohighlight">\(x\)</span> en pasos de <span class="math notranslate nohighlight">\(\Delta x\)</span>, con <span class="math notranslate nohighlight">\(x_0 = 1.0\)</span>, <span class="math notranslate nohighlight">\(x_f = 2.0\)</span> y <span class="math notranslate nohighlight">\(\Delta x = 0.005\)</span>.
+\end{enumerate}</p>
+<p>\subsubsection{Ejercicios propuestos}</p>
+<p>\begin{enumerate}[label=\alph*)]
+\item Imprimir los números del 20 al 1 en orden inverso.
+\item Incrementar una variable <span class="math notranslate nohighlight">\(x\)</span> desde 1.0 hasta 2.0 con paso <span class="math notranslate nohighlight">\(\Delta x = 0.005\)</span>.
+\item Imprimir las tablas de multiplicar del 1 al 10.
+\end{enumerate}</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -519,10 +599,14 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#imprimir-los-numeros-del-1-al-10-con-un-bucle-for">Imprimir los numeros del 1 al 10 con un bucle for</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#note-como-el-cambio-en-la-indentacion-da-fin-al-bucle">note como el cambio en la indentacion da fin al bucle</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>

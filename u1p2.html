@@ -57,11 +57,13 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'u1p2';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="U1P1" href="u1p3.html" />
-    <link rel="prev" title="U1P1" href="u1p1-for.html" />
+    <link rel="prev" title="El bucle \(\texttt{for}\), lo básico" href="u1p1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -186,9 +188,16 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Sistemas Numéricos</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="u1p1-for.html">U1P1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u1p1.html">El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico</a></li>
+
+
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">U1P1</a></li>
+
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="u1p3.html">U1P1</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="u1p4.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u1p5.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u1p6.html">U1P1</a></li>
@@ -206,6 +215,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Conjuntos</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="u3p1.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p2.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p3.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p4.html">U1P1</a></li>
@@ -428,10 +438,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">U1P1</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#comparacion-sin-usar-funciones">Comparacion sin usar funciones</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funcion-para-la-suma-numerica">Funcion para la suma numerica</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funcion-para-la-solucion-analitica">Funcion para la solucion analitica</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#comparacion">Comparacion</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -449,10 +466,68 @@ document.write(`
 </section>
 <section id="concepto-teorico">
 <h2>Concepto Teórico<a class="headerlink" href="#concepto-teorico" title="Link to this heading">#</a></h2>
+<p>\subsection{Práctica 2: Aplicaciòn al càlculo de sumas y series}</p>
+<p>\subsubsection{Objetivo}
+Calcular sumas utilizando programación y compararlas con fórmulas analíticas.</p>
+<p>\subsubsection{Concepto teórico}</p>
+<p>Se sabe que el resultado de la suma de los primeros n números naturales es:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-3a4d2a46-9e48-480d-a400-594ef73a7aa2">
+<span class="eqno">(1)<a class="headerlink" href="#equation-3a4d2a46-9e48-480d-a400-594ef73a7aa2" title="Permalink to this equation">#</a></span>\[\begin{equation}
+\sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+\end{equation}\]</div>
+<p>\subsubsection{Ejemplo 1}</p>
+<p>Implemente un código que calcule esta suma y utilícelo para calcular los valores de la suma cuando <span class="math notranslate nohighlight">\(n=20,100,10000\)</span>. Compare con el resultado analítico de la ecuación anterior.</p>
+<p>\begin{lstlisting}</p>
 </section>
-<section id="ejercicio-1">
-<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Link to this heading">#</a></h2>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="comparacion-sin-usar-funciones">
+<h1>Comparacion sin usar funciones<a class="headerlink" href="#comparacion-sin-usar-funciones" title="Link to this heading">#</a></h1>
+<p>for n in [20, 100, 10000]:
+suma = 0
+for i in range(1,n+1):
+suma += i</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>suma_analitica = n*(n+1)//2
+
+print(&quot;n =&quot;, n)
+print(&quot;Suma numerica:&quot;, suma)
+print(&quot;Suma analitica:&quot;, suma_analitica)
+print(&quot;Diferencia:&quot;, suma - suma_analitica)
+print()
+</pre></div>
+</div>
+<p>\end{lstlisting}</p>
+<p>\textcolor{red}{\textbf{Nota:} La expresión analítica de la suma de los primeros <span class="math notranslate nohighlight">\(n\)</span> números naturales es <span class="math notranslate nohighlight">\(S = \frac{n(n+1)}{2}\)</span>.}</p>
+<p>\subsubsection{Ejemplo 1 más complejo: usando funciones}</p>
+<p>\begin{lstlisting}</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="funcion-para-la-suma-numerica">
+<h1>Funcion para la suma numerica<a class="headerlink" href="#funcion-para-la-suma-numerica" title="Link to this heading">#</a></h1>
+<p>def suma_numerica(n):
+suma = 0
+for i in range(1,n+1):
+suma += i
+return suma</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="funcion-para-la-solucion-analitica">
+<h1>Funcion para la solucion analitica<a class="headerlink" href="#funcion-para-la-solucion-analitica" title="Link to this heading">#</a></h1>
+<p>def suma_analitica(n):
+return n*(n+1)//2</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="comparacion">
+<h1>Comparacion<a class="headerlink" href="#comparacion" title="Link to this heading">#</a></h1>
+<p>for n in [20, 100, 10000]:
+print(“n =”, n)
+print(“Suma numerica:”, suma_numerica(n))
+print(“Suma analitica:”, suma_analitica(n))
+print(“Diferencia:”, suma_numerica(n) - suma_analitica(n))
+print()
+\end{lstlisting}</p>
+<p>\textcolor{red}{\textbf{Nota:} El uso de funciones permite reutilizar código y hacer el programa más claro y modular.}</p>
+<p>\subsubsection{Ejercicios propuestos}</p>
+<p>\begin{enumerate}[label=\alph*)]
+\item Calcular la suma para <span class="math notranslate nohighlight">\(n = 20, 100, 10000\)</span>.
+\item Comparar el resultado numérico con la fórmula analítica.
+\end{enumerate}</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -486,12 +561,12 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="u1p1-for.html"
+       href="u1p1.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">U1P1</p>
+        <p class="prev-next-title">El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico</p>
       </div>
     </a>
     <a class="right-next"
@@ -519,10 +594,17 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">U1P1</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#comparacion-sin-usar-funciones">Comparacion sin usar funciones</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funcion-para-la-suma-numerica">Funcion para la suma numerica</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funcion-para-la-solucion-analitica">Funcion para la solucion analitica</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#comparacion">Comparacion</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>
