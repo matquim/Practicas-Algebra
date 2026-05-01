@@ -483,29 +483,85 @@ document.write(`
 <section id="ejemplo-2">
 <h2>Ejemplo 2<a class="headerlink" href="#ejemplo-2" title="Link to this heading">#</a></h2>
 <p>Imprimir los números pares en el intervalo <span class="math notranslate nohighlight">\((1,20)\)</span>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+</pre></div>
+</div>
+</div>
+</div>
 <p>Se podría realizar también de la siguiente manera, aprovechando la definición de paridad (todo número par es de la forma <span class="math notranslate nohighlight">\(2k\)</span> con <span class="math notranslate nohighlight">\(k\in\mathbb{Z}\)</span>):</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="ejemplo-3">
 <h2>Ejemplo 3<a class="headerlink" href="#ejemplo-3" title="Link to this heading">#</a></h2>
 <p>Imprimir los cuadrados y los cubos de los números naturales en el intervalo [1,10]</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x =&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s2">&quot;x^2 =&quot;</span><span class="p">,</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;x^3 =&quot;</span><span class="p">,</span> <span class="n">i</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>x = 1 x^2 = 1 x^3 = 1
+x = 2 x^2 = 4 x^3 = 8
+x = 3 x^2 = 9 x^3 = 27
+x = 4 x^2 = 16 x^3 = 64
+x = 5 x^2 = 25 x^3 = 125
+x = 6 x^2 = 36 x^3 = 216
+x = 7 x^2 = 49 x^3 = 343
+x = 8 x^2 = 64 x^3 = 512
+x = 9 x^2 = 81 x^3 = 729
+x = 10 x^2 = 100 x^3 = 1000
+</pre></div>
+</div>
+</div>
 </div>
 <p><strong>Nota:</strong> Observe que los elementos escritos entre comillas se muestran literalmente en la salida del programa, es decir, aparecen exactamente como fueron escritos.</p>
 </section>
 <section id="ejemplo-4">
 <h2>Ejemplo 4<a class="headerlink" href="#ejemplo-4" title="Link to this heading">#</a></h2>
 <p>Imprimir la suma de los números naturales del 1 al 20, incluyendo su suma parcial.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Sumando los numeros naturales del 1 al 20&quot;</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">21</span><span class="p">):</span>
@@ -516,12 +572,39 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La suma total es:&quot;</span><span class="p">,</span> <span class="n">suma</span><span class="p">)</span>  <span class="c1"># Esta accion solo se ejecuta una vez, no es parte del bucle</span>
 </pre></div>
 </div>
-<p><strong>Nota:</strong> La variable <code class="docutils literal notranslate"><span class="pre">suma</span></code> se inicializa en 0 antes de comenzar el bucle. Esta inicialización es necesaria para poder acumular correctamente los valores en cada iteración.</p>
-<p><strong>Nota:</strong> Observe que al terminar la indentación del bloque <code class="docutils literal notranslate"><span class="pre">for</span></code>, el programa sale del bucle. Por ello, la última instrucción <code class="docutils literal notranslate"><span class="pre">print</span></code> se ejecuta una sola vez.</p>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Sumando los numeros naturales del 1 al 20
+Suma parcial: 1
+Suma parcial: 3
+Suma parcial: 6
+Suma parcial: 10
+Suma parcial: 15
+Suma parcial: 21
+Suma parcial: 28
+Suma parcial: 36
+Suma parcial: 45
+Suma parcial: 55
+Suma parcial: 66
+Suma parcial: 78
+Suma parcial: 91
+Suma parcial: 105
+Suma parcial: 120
+Suma parcial: 136
+Suma parcial: 153
+Suma parcial: 171
+Suma parcial: 190
+Suma parcial: 210
+La suma total es: 210
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Nota:</strong> La variable <code class="docutils literal notranslate"><span class="pre">suma</span></code> se inicializa en 0 antes de comenzar el bucle. Esta inicialización es necesaria para poder acumular correctamente los valores en cada iteración.
+<strong>Nota:</strong> Observe que al terminar la indentación del bloque <code class="docutils literal notranslate"><span class="pre">for</span></code>, el programa sale del bucle. Por ello, la última instrucción <code class="docutils literal notranslate"><span class="pre">print</span></code> se ejecuta una sola vez.</p>
 </section>
 <section id="ejercicios-de-practica-del-bucle-textit-for">
 <h2>Ejercicios de práctica del bucle \textit{for}<a class="headerlink" href="#ejercicios-de-practica-del-bucle-textit-for" title="Link to this heading">#</a></h2>
-<p>\label{sec:practica_bucle_for}</p>
 <ul class="simple">
 <li><p>Imprimir los números enteros del -10 al 10.</p></li>
 <li><p>Imprimir los números pares entre 1 y 20.</p></li>
