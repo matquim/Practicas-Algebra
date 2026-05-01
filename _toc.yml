@@ -7,7 +7,7 @@ parts:
       - file: Tutorial-Basico
       - file: Tutorial-Avanzado
 
-  - caption: Unidad 1
+  - caption: Unidad 1: Sistemas Numéricos
     chapters:
     - file: u1p1-for
     - file: u1p2
@@ -16,7 +16,7 @@ parts:
     - file: u1p5
     - file: u1p6
 
-  - caption: Unidad 2
+  - caption: Unidad 2: Vectores en $\mathbb{R}^2$ y $\mathbb{R}^3$
     chapters:
     - file: u2p1
     - file: u2p2
@@ -27,7 +27,7 @@ parts:
     - file: u2p7
     - file: u2p8
 
-  - caption: Unidad 3
+  - caption: Unidad 3: Conjuntos
     chapters:
     - file: u3p1-for
     - file: u3p2
