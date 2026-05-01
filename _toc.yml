@@ -7,11 +7,33 @@ parts:
       - file: Tutorial-Basico
       - file: Tutorial-Avanzado
 
-  - caption: Prácticas
+  - caption: Unidad 1
     chapters:
-    - file: practica2a
-    - file: practica2b
-    - file: practica2c
-    - file: Calculo_1_Practica_3_Corregida
-    - file: practica3
+    - file: u1p1-for
+    - file: u1p2
+    - file: u1p3
+    - file: u1p4
+    - file: u1p5
+    - file: u1p6
 
+  - caption: Unidad 2
+    chapters:
+    - file: u2p1
+    - file: u2p2
+    - file: u2p3
+    - file: u2p4
+    - file: u2p5
+    - file: u2p6
+    - file: u2p7
+    - file: u2p8
+
+  - caption: Unidad 3
+    chapters:
+    - file: u3p1-for
+    - file: u3p2
+    - file: u3p3
+    - file: u3p4
+    - file: u3p5
+    - file: u3p6
+    - file: u3p7
+    - file: u3p8
