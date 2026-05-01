@@ -9,7 +9,7 @@ parts:
 
   - caption: Sistemas Numéricos
     chapters:
-    - file: u1p1-for
+    - file: u1p1
     - file: u1p2
     - file: u1p3
     - file: u1p4
@@ -29,7 +29,7 @@ parts:
 
   - caption: Conjuntos
     chapters:
-    - file: u3p1-for
+    - file: u3p1
     - file: u3p2
     - file: u3p3
     - file: u3p4
