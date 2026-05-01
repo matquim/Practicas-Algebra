@@ -190,11 +190,7 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u1p1.html">Práctica 1: El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Práctica 2: Aplicaciòn al càlculo de sumas y series</a></li>
-
-
-
 <li class="toctree-l1"><a class="reference internal" href="u1p3.html">Práctica 3: Factorial</a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="u1p4.html">Práctica 4: Combinaciones</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u1p5.html">Práctica 5: Números primos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u1p6.html">Práctica 6: Sucesiones recursivas</a></li>
@@ -439,21 +435,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Práctica 2: Aplicaciòn al càlculo de sumas y series</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1">Ejemplo 1</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1-mas-complejo-usando-funciones">Ejemplo 1 más complejo: usando funciones</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funcion-para-la-suma-numerica">Funcion para la suma numerica</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funcion-para-la-solucion-analitica">Funcion para la solucion analitica</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#comparacion">Comparacion</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-propuestos">Ejercicios propuestos</a></li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -473,8 +460,8 @@ document.write(`
 <section id="concepto-teorico">
 <h2>Concepto Teórico<a class="headerlink" href="#concepto-teorico" title="Link to this heading">#</a></h2>
 <p>Se sabe que el resultado de la suma de los primeros n números naturales es:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1e7cb9c2-d83e-476b-bbf4-a2a99f164641">
-<span class="eqno">(1)<a class="headerlink" href="#equation-1e7cb9c2-d83e-476b-bbf4-a2a99f164641" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-b9e1f879-ca3c-4d14-874b-ceb591b622c8">
+<span class="eqno">(1)<a class="headerlink" href="#equation-b9e1f879-ca3c-4d14-874b-ceb591b622c8" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
 \end{equation}\]</div>
 </section>
@@ -496,42 +483,38 @@ document.write(`
     <span class="nb">print</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>\textcolor{red}{\textbf{Nota:} La expresión analítica de la suma de los primeros <span class="math notranslate nohighlight">\(n\)</span> números naturales es <span class="math notranslate nohighlight">\(S = \frac{n(n+1)}{2}\)</span>.}</p>
+<p><strong>Nota:</strong> La expresión analítica de la suma de los primeros <span class="math notranslate nohighlight">\(n\)</span> números naturales es <span class="math notranslate nohighlight">\(S = \frac{n(n+1)}{2}\)</span>.}</p>
 </section>
 <section id="ejemplo-1-mas-complejo-usando-funciones">
 <h2>Ejemplo 1 más complejo: usando funciones<a class="headerlink" href="#ejemplo-1-mas-complejo-usando-funciones" title="Link to this heading">#</a></h2>
-<p>\begin{lstlisting}</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Funcion para la suma numerica</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">suma_numerica</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">suma</span> <span class="o">+=</span> <span class="n">i</span>
+    <span class="k">return</span> <span class="n">suma</span>
+
+<span class="c1"># Funcion para la solucion analitica</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">suma_analitica</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">n</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span>
+
+<span class="c1"># Comparacion</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">10000</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;n =&quot;</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Suma numerica:&quot;</span><span class="p">,</span> <span class="n">suma_numerica</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Suma analitica:&quot;</span><span class="p">,</span> <span class="n">suma_analitica</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Diferencia:&quot;</span><span class="p">,</span> <span class="n">suma_numerica</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">-</span> <span class="n">suma_analitica</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Nota:</strong> El uso de funciones permite reutilizar código y hacer el programa más claro y modular.</p>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="funcion-para-la-suma-numerica">
-<h1>Funcion para la suma numerica<a class="headerlink" href="#funcion-para-la-suma-numerica" title="Link to this heading">#</a></h1>
-<p>def suma_numerica(n):
-suma = 0
-for i in range(1,n+1):
-suma += i
-return suma</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="funcion-para-la-solucion-analitica">
-<h1>Funcion para la solucion analitica<a class="headerlink" href="#funcion-para-la-solucion-analitica" title="Link to this heading">#</a></h1>
-<p>def suma_analitica(n):
-return n*(n+1)//2</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="comparacion">
-<h1>Comparacion<a class="headerlink" href="#comparacion" title="Link to this heading">#</a></h1>
-<p>for n in [20, 100, 10000]:
-print(“n =”, n)
-print(“Suma numerica:”, suma_numerica(n))
-print(“Suma analitica:”, suma_analitica(n))
-print(“Diferencia:”, suma_numerica(n) - suma_analitica(n))
-print()
-\end{lstlisting}</p>
-<p>\textcolor{red}{\textbf{Nota:} El uso de funciones permite reutilizar código y hacer el programa más claro y modular.}</p>
 <section id="ejercicios-propuestos">
 <h2>Ejercicios propuestos<a class="headerlink" href="#ejercicios-propuestos" title="Link to this heading">#</a></h2>
-<p>\begin{enumerate}[label=\alph*)]
-\item Calcular la suma para <span class="math notranslate nohighlight">\(n = 20, 100, 10000\)</span>.
-\item Comparar el resultado numérico con la fórmula analítica.
-\end{enumerate}</p>
+<ul class="simple">
+<li><p>Calcular la suma para <span class="math notranslate nohighlight">\(n = 20, 100, 10000\)</span>.</p></li>
+<li><p>Comparar el resultado numérico con la fórmula analítica.</p></li>
+</ul>
 </section>
 </section>
 
@@ -599,21 +582,12 @@ print()
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Práctica 2: Aplicaciòn al càlculo de sumas y series</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1">Ejemplo 1</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1-mas-complejo-usando-funciones">Ejemplo 1 más complejo: usando funciones</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funcion-para-la-suma-numerica">Funcion para la suma numerica</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funcion-para-la-solucion-analitica">Funcion para la solucion analitica</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#comparacion">Comparacion</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-propuestos">Ejercicios propuestos</a></li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>

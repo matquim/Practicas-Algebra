@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'u1p6';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -188,11 +190,7 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u1p1.html">Práctica 1: El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u1p2.html">Práctica 2: Aplicaciòn al càlculo de sumas y series</a></li>
-
-
-
 <li class="toctree-l1"><a class="reference internal" href="u1p3.html">Práctica 3: Factorial</a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="u1p4.html">Práctica 4: Combinaciones</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u1p5.html">Práctica 5: Números primos</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Práctica 6: Sucesiones recursivas</a></li>
@@ -454,62 +452,59 @@ document.write(`
 <h1>Práctica 6: Sucesiones recursivas<a class="headerlink" href="#practica-6-sucesiones-recursivas" title="Link to this heading">#</a></h1>
 <section id="ejemplo">
 <h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Link to this heading">#</a></h2>
-<p>\begin{lstlisting}
-a = 1
-N = 10</p>
-<p>for n in range(1, N + 1):
-print(f”a_{n} = {a}”)
-a = (2 * a) + 3
-\end{lstlisting}</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;a_</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="mi">3</span>
+</pre></div>
+</div>
 </section>
 <section id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
-<p>\begin{enumerate}[label=\alph*)]</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>\item Considere una población bacteriana en la que cada generación cumple la siguiente regla: por cada 2 individuos, se generan 4 nuevos individuos.
-
-Suponga que la población inicial es de $a_0 = 2$ bacterias.
-
-\begin{itemize}
-    \item Escriba la relación de recurrencia que describe la evolución de la población.
-    \item Implemente un código que calcule el número de bacterias en las primeras $N = 10$ generaciones.
-    \item Imprima los valores de la población en cada generación.
-\end{itemize}
-
-\item Modifique el modelo anterior considerando que cada individuo sobrevive únicamente durante dos generaciones y posteriormente muere.
-
-\begin{itemize}
-    \item Proponga una relación de recurrencia que tenga en cuenta tanto la reproducción como la muerte de los individuos.
-    \item \textbf{Indicación:} La población en la generación $n+1$ depende de las generaciones anteriores.
-    \item Implemente un código que modele esta nueva dinámica poblacional.
-    \item Imprima la población en cada generación para $N = 10$.
-    \item Compare el comportamiento de este modelo con el modelo del inciso anterior.
-\end{itemize}
+<ul class="simple">
+<li><p>Considere una población bacteriana en la que cada generación cumple la siguiente regla: por cada 2 individuos, se generan 4 nuevos individuos.</p></li>
+<li><p>Suponga que la población inicial es de <span class="math notranslate nohighlight">\(a_0 = 2\)</span> bacterias.</p>
+<ul>
+<li><p>Escriba la relación de recurrencia que describe la evolución de la población.</p></li>
+<li><p>Implemente un código que calcule el número de bacterias en las primeras <span class="math notranslate nohighlight">\(N = 10\)</span> generaciones.</p></li>
+<li><p>Imprima los valores de la población en cada generación.</p></li>
+</ul>
+</li>
+<li><p>Modifique el modelo anterior considerando que cada individuo sobrevive únicamente durante dos generaciones y posteriormente muere.</p>
+<ul>
+<li><p>Proponga una relación de recurrencia que tenga en cuenta tanto la reproducción como la muerte de los individuos.</p></li>
+<li><p><strong>Indicación:</strong> La población en la generación <span class="math notranslate nohighlight">\(n+1\)</span> depende de las generaciones anteriores.</p></li>
+<li><p>Implemente un código que modele esta nueva dinámica poblacional.</p></li>
+<li><p>Imprima la población en cada generación para <span class="math notranslate nohighlight">\(N = 10\)</span>.</p></li>
+<li><p>Compare el comportamiento de este modelo con el modelo del inciso anterior.</p></li>
+</ul>
+</li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="c1"># Modelo 1: crecimiento sin muerte</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>   <span class="c1"># población inicial</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Modelo sin muerte:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Generación </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">a</span>
 </pre></div>
 </div>
-<p>\begin{lstlisting}
-# Modelo 1: crecimiento sin muerte
-a = 2   # población inicial
-N = 10
-print(“Modelo sin muerte:”)
-for n in range(N):
-print(f”Generación {n}: {a}”)
-a = 3 * a
-\end{lstlisting}</p>
-<p>\begin{lstlisting}
-# Modelo 2: cada individuo vive 2 generaciones
-a_prev = 2   # a_0
-a = 6        # a_1 = 3 * a_0
-N = 10
-print(“\nModelo con vida de 2 generaciones:”)
-print(f”Generación 0: {a_prev}“)
-print(f”Generación 1: {a}”)
-for n in range(1, N):
-a_next = 3 * a - a_prev
-print(f”Generación {n+1}: {a_next}”)
-a_prev = a
-a = a_next
-\end{lstlisting}</p>
-<p>\end{enumerate}</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="c1"># Modelo 2: cada individuo vive 2 generaciones</span>
+<span class="n">a_prev</span> <span class="o">=</span> <span class="mi">2</span>   <span class="c1"># a_0</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">6</span>        <span class="c1"># a_1 = 3 * a_0</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Modelo con vida de 2 generaciones:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Generación 0: </span><span class="si">{</span><span class="n">a_prev</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Generación 1: </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="p">):</span>
+    <span class="n">a_next</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">a</span> <span class="o">-</span> <span class="n">a_prev</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Generación </span><span class="si">{</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">a_next</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">a_prev</span> <span class="o">=</span> <span class="n">a</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">a_next</span>
+</pre></div>
+</div>
 </section>
 </section>
 

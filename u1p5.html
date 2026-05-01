@@ -188,11 +188,7 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u1p1.html">Práctica 1: El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u1p2.html">Práctica 2: Aplicaciòn al càlculo de sumas y series</a></li>
-
-
-
 <li class="toctree-l1"><a class="reference internal" href="u1p3.html">Práctica 3: Factorial</a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="u1p4.html">Práctica 4: Combinaciones</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Práctica 5: Números primos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u1p6.html">Práctica 6: Sucesiones recursivas</a></li>
@@ -453,17 +449,17 @@ document.write(`
 <h1>Práctica 5: Números primos<a class="headerlink" href="#practica-5-numeros-primos" title="Link to this heading">#</a></h1>
 <section id="ejemplo">
 <h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Link to this heading">#</a></h2>
-<p>\begin{lstlisting}
-N = 30
-for num in range(2, N + 1):
-es_primo = True
-for divisor in range(2, num):
-if num % divisor == 0:
-es_primo = False
-break
-if es_primo:
-print(num)
-\end{lstlisting}</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">N</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">N</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">es_primo</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">for</span> <span class="n">divisor</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">num</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="n">divisor</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">es_primo</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="k">break</span>
+    <span class="k">if</span> <span class="n">es_primo</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 </section>
 

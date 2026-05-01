@@ -190,11 +190,7 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u1p1.html">Práctica 1: El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u1p2.html">Práctica 2: Aplicaciòn al càlculo de sumas y series</a></li>
-
-
-
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Práctica 3: Factorial</a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="u1p4.html">Práctica 4: Combinaciones</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u1p5.html">Práctica 5: Números primos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u1p6.html">Práctica 6: Sucesiones recursivas</a></li>
@@ -439,18 +435,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Práctica 3: Factorial</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#calculo-del-factorial-de-4">Calculo del factorial de 4</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-propuestos">Ejercicios propuestos</a></li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -470,31 +459,31 @@ document.write(`
 <section id="concepto-teorico">
 <h2>Concepto Teórico<a class="headerlink" href="#concepto-teorico" title="Link to this heading">#</a></h2>
 <p>El factorial de un número <span class="math notranslate nohighlight">\(n\)</span> se define como:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-72d799d6-6e75-4d11-bbbc-0950581e22c3">
-<span class="eqno">(2)<a class="headerlink" href="#equation-72d799d6-6e75-4d11-bbbc-0950581e22c3" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-db00f1d5-f522-4463-8b28-b816c8c279d4">
+<span class="eqno">(2)<a class="headerlink" href="#equation-db00f1d5-f522-4463-8b28-b816c8c279d4" title="Permalink to this equation">#</a></span>\[\begin{equation}
 n! = 1 \cdot 2 \cdot 3 \cdots n
 \end{equation}\]</div>
 </section>
 <section id="ejemplo">
 <h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Link to this heading">#</a></h2>
-<p>\begin{lstlisting}</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculo del factorial de 4</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">factorial</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">factorial</span> <span class="o">*=</span> <span class="n">i</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Factorial:&quot;</span><span class="p">,</span> <span class="n">factorial</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="calculo-del-factorial-de-4">
-<h1>Calculo del factorial de 4<a class="headerlink" href="#calculo-del-factorial-de-4" title="Link to this heading">#</a></h1>
-<p>n = 4
-factorial = 1</p>
-<p>for i in range(1, n+1):
-factorial *= i</p>
-<p>print(“Factorial:”, factorial)
-\end{lstlisting}</p>
 <section id="ejercicios-propuestos">
 <h2>Ejercicios propuestos<a class="headerlink" href="#ejercicios-propuestos" title="Link to this heading">#</a></h2>
-<p>\begin{enumerate}[label=\alph*)]
-\item Calcular el factorial de diferentes valores de <span class="math notranslate nohighlight">\(n\)</span>.
-\item Comparar con la función \texttt{math.factorial()}.
-\item Desarrolle un código que imprima las tablas de multiplicar del 1 al 10.
-\end{enumerate}</p>
+<ul class="simple">
+<li><p>Calcular el factorial de diferentes valores de <span class="math notranslate nohighlight">\(n\)</span>.</p></li>
+<li><p>Comparar con la función \texttt{math.factorial()}.</p></li>
+<li><p>Desarrolle un código que imprima las tablas de multiplicar del 1 al 10.</p></li>
+</ul>
 </section>
 </section>
 
@@ -562,18 +551,11 @@ factorial *= i</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Práctica 3: Factorial</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#calculo-del-factorial-de-4">Calculo del factorial de 4</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-propuestos">Ejercicios propuestos</a></li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
