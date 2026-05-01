@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'u3p2';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -216,6 +218,8 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Conjuntos</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u3p1.html">U1P1</a></li>
+
+
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p3.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p4.html">U1P1</a></li>
@@ -440,7 +444,6 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
 </ul>
             </nav>
         </div>
@@ -459,9 +462,29 @@ document.write(`
 </section>
 <section id="concepto-teorico">
 <h2>Concepto Teórico<a class="headerlink" href="#concepto-teorico" title="Link to this heading">#</a></h2>
-</section>
-<section id="ejercicio-1">
-<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Link to this heading">#</a></h2>
+<p>\subsection{Práctica 2: Operaciones con conjuntos}</p>
+<p>\subsubsection{Concepto teórico}</p>
+<p>\begin{itemize}
+\item Unión: <span class="math notranslate nohighlight">\(A \cup B\)</span>
+\item Intersección: <span class="math notranslate nohighlight">\(A \cap B\)</span>
+\item Diferencia: <span class="math notranslate nohighlight">\(A - B\)</span>
+\end{itemize}</p>
+<p>\subsubsection{Ejemplo}</p>
+<p>\begin{lstlisting}
+A = {1, 2, 3}
+B = {3, 4, 5}</p>
+<p>print(A | B)   # union
+print(A &amp; B)   # interseccion
+print(A - B)   # diferencia
+\end{lstlisting}</p>
+<p>\subsubsection{Ejercicios}</p>
+<p>Sean <span class="math notranslate nohighlight">\(A = \{1,2,3,4,5\}\)</span> y <span class="math notranslate nohighlight">\(B = \{4,5,6,7,8\}\)</span>:</p>
+<p>\begin{enumerate}[label=\alph*)]
+\item <span class="math notranslate nohighlight">\(A \cup B\)</span>
+\item <span class="math notranslate nohighlight">\(A \cap B\)</span>
+\item <span class="math notranslate nohighlight">\(A - B\)</span>
+\item <span class="math notranslate nohighlight">\(B - A\)</span>
+\end{enumerate}</p>
 </section>
 </section>
 
@@ -531,7 +554,6 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
 </ul>
   </nav></div>
 

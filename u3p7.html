@@ -216,6 +216,8 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Conjuntos</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u3p1.html">U1P1</a></li>
+
+
 <li class="toctree-l1"><a class="reference internal" href="u3p2.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p3.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p4.html">U1P1</a></li>
@@ -440,7 +442,6 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
 </ul>
             </nav>
         </div>
@@ -459,9 +460,22 @@ document.write(`
 </section>
 <section id="concepto-teorico">
 <h2>Concepto Teórico<a class="headerlink" href="#concepto-teorico" title="Link to this heading">#</a></h2>
-</section>
-<section id="ejercicio-1">
-<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Link to this heading">#</a></h2>
+<p>\subsection{Práctica 7: Relaciones y funciones}</p>
+<p>\subsubsection{Concepto teórico}</p>
+<p>Una relación es un conjunto de pares ordenados.</p>
+<p>Es función si cada elemento del dominio tiene una única imagen.</p>
+<p>\subsubsection{Ejemplo}</p>
+<p>\begin{lstlisting}
+relacion = {(1,2),(2,4),(3,6)}</p>
+<p>dominio = {x for (x,y) in relacion}</p>
+<p>es_funcion = len(relacion) == len(dominio)
+print(es_funcion)
+\end{lstlisting}</p>
+<p>\subsubsection{Ejercicios}</p>
+<p>\begin{enumerate}[label=\alph*)]
+\item Verificar si una relación es función.
+\item Analizar si es biyectiva.
+\end{enumerate}</p>
 </section>
 </section>
 
@@ -531,7 +545,6 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
 </ul>
   </nav></div>
 
