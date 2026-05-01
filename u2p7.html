@@ -193,7 +193,6 @@
 
 
 
-
 <li class="toctree-l1"><a class="reference internal" href="u1p3.html">Práctica 3: Factorial</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="u1p4.html">Práctica 4: Combinaciones</a></li>
@@ -442,6 +441,8 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
 </ul>
             </nav>
         </div>
@@ -457,15 +458,16 @@ document.write(`
 <h1>Práctica 7: Ángulo entre vectores<a class="headerlink" href="#practica-7-angulo-entre-vectores" title="Link to this heading">#</a></h1>
 <section id="objetivo">
 <h2>Objetivo<a class="headerlink" href="#objetivo" title="Link to this heading">#</a></h2>
+<div class="amsmath math notranslate nohighlight" id="equation-240155b2-3338-43a3-b7cd-5a180a51d610">
+<span class="eqno">(7)<a class="headerlink" href="#equation-240155b2-3338-43a3-b7cd-5a180a51d610" title="Permalink to this equation">#</a></span>\[\begin{equation}
+\cos \theta = \frac{p \cdot q}{||p||\,||q||}
+\end{equation}\]</div>
 </section>
 <section id="concepto-teorico">
 <h2>Concepto Teórico<a class="headerlink" href="#concepto-teorico" title="Link to this heading">#</a></h2>
-<p>\subsubsection{Concepto teórico}</p>
-<div class="amsmath math notranslate nohighlight" id="equation-da390506-d27c-48ca-a3a1-371649acd8d6">
-<span class="eqno">(7)<a class="headerlink" href="#equation-da390506-d27c-48ca-a3a1-371649acd8d6" title="Permalink to this equation">#</a></span>\[\begin{equation}
-\cos \theta = \frac{p \cdot q}{||p||\,||q||}
-\end{equation}\]</div>
-<p>\subsubsection{Ejemplo}</p>
+</section>
+<section id="ejemplo">
+<h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Link to this heading">#</a></h2>
 <p>\begin{lstlisting}
 import math as mt</p>
 <p>p = [1, 2, 2]
@@ -476,7 +478,9 @@ norm_q = (sum(q[i]**2 for i in range(3)))**0.5</p>
 <p>theta = mt.acos(dot / (norm_p * norm_q))
 print(mt.degrees(theta))
 \end{lstlisting}</p>
-<p>\subsubsection{Ejercicios}</p>
+</section>
+<section id="ejercicios">
+<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
 <p>Calcular los ángulos entre:</p>
 <p>\begin{enumerate}[label=\alph*)]
 \item <span class="math notranslate nohighlight">\(u\)</span> y <span class="math notranslate nohighlight">\(v\)</span>
@@ -552,6 +556,8 @@ print(mt.degrees(theta))
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
 </ul>
   </nav></div>
 
