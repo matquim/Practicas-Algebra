@@ -16,7 +16,7 @@ parts:
     - file: u1p5
     - file: u1p6
 
-  - caption: Vectores en $R^2$ y $R^3$
+  - caption: Vectores en ℝ² y ℝ³
     chapters:
     - file: u2p1
     - file: u2p2
