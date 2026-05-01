@@ -1,0 +1,767 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Funciones en Python. &#8212; Practicas Álgebra Superior</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'practica2b';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Sucesiones" href="practica2c.html" />
+    <link rel="prev" title="Representación de Números Reales en Python" href="practica2a.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Practicas Álgebra Superior - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Practicas Álgebra Superior - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Prácticas Cálculo I
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">TEMPORAL (Quitar)</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Tutorial-Basico.html">Tutorial Básico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tutorial-Avanzado.html">Tutorial Avanzado</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Prácticas</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="practica2a.html">Representación de Números Reales en Python</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Funciones en Python.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practica2c.html">Sucesiones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Calculo_1_Practica_3_Corregida.html">Operaciones simbólicas</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="practica3.html">Gráficas de funciones usando <strong>Matplotlib</strong></a></li>
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/matquim/Practicas-Algebra/master?urlpath=tree/practica2b.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/matquim/Practicas-Algebra/blob/master/practica2b.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Colab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Colab logo" src="_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/practica2b.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Funciones en Python.</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterar-sobre-una-lista-de-numeros">2. Iterar sobre una lista de números.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejecutar-codigo-repetidamente">3. Ejecutar código repetidamente.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterar-sobre-una-cadena-de-texto">4. Iterar sobre una cadena de texto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sumar-numeros-de-una-lista">5. Sumar números de una lista</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="funciones-en-python">
+<h1>Funciones en Python.<a class="headerlink" href="#funciones-en-python" title="Link to this heading">#</a></h1>
+<p>Una función de variable real es una relación entre dos conjuntos, en la cual a cada número real (del dominio de la función) se le asigna exactamente un número real (del codominio). Formalmente, una función de variable real se puede expresar como:</p>
+<p><span class="math notranslate nohighlight">\(f: \mathbb D \subset \mathbb R \longmapsto \mathbb  R\)</span></p>
+<p>Donde <span class="math notranslate nohighlight">\(\mathbb D\)</span> es un subconjunto de los números reales y la función f asigna a cada número real <span class="math notranslate nohighlight">\(x\)</span> del conjunto <span class="math notranslate nohighlight">\(\mathbb D\)</span> a un solo valor real, denominado <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
+<p>Es muy importante recorda que las funciones de variale real se expresan algebraicamente por medio una fórmula, la cual expresa la regla de correspondencia.</p>
+<p>La representación gráfica de funiciones es muy importante y en Python esto se realiza</p>
+<p>#El uso del ciclo <code class="docutils literal notranslate"><span class="pre">for</span></code>.</p>
+<p>El ciclo <code class="docutils literal notranslate"><span class="pre">for</span></code> en python se utiliza para hacer una iteración sobre una secuencia de elementos, los cuales pueden ser una lista, una tupla, un diccionario, un conjunto o una cadena de texto. Se utiliza en programación para ejecutar líneas de código de forma repetida, una por nada elemento de la lista.</p>
+<p>La sintáxis es la siguiente:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">variable</span> <span class="ow">in</span> <span class="n">secuencia</span><span class="p">:</span>
+  <span class="c1">#Lineas de código a ejecutar</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>La palabra <code class="docutils literal notranslate"><span class="pre">for</span></code> es la palabra que indica el inicio del ciclio de iteración.</p></li>
+<li><p>La palabra <code class="docutils literal notranslate"><span class="pre">variable</span></code> es el nombre de la variable que tomará el valor de cada uno de los elementos de la secuencia en cada iteración. Puede ser nombrada de cualquier forma pero lo recomendable es que se le asigne un nombre que denote el tipo de datos sobre los que se está iterando.</p></li>
+<li><p>La palabra <code class="docutils literal notranslate"><span class="pre">in</span></code> indica que la variable tomará el valor de cada elemento en la secuencia.</p></li>
+<li><p>La palabra <code class="docutils literal notranslate"><span class="pre">secuencia</span></code> es la estructura de datos sobre la que se va a iterar. Puede ser uan lista, una tupla, etc.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:</span></code> (dos puntos) indican el final de la declaración del ciclo y el inicio de las líneas que se ejecutarán.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Líneas</span> <span class="pre">de</span> <span class="pre">código</span> <span class="pre">a</span> <span class="pre">ejecutar</span></code> es el conjunto de líneas de código que se ejecutarán de forma repetida, una vez por cada elemento de la secuencia.  Es importante notar que estas líneas de código deben estar escritas de forma identada, con un número fijo de espacio o un tabulador.</p></li>
+</ul>
+<p>Veamos algunos ejemplos.</p>
+<p>##Ejemplos de uso:</p>
+<p>###1. Iterar sobre una lista.</p>
+<p>En el siguiente código se ha declado la lista</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">colores</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;azul&#39;</span><span class="p">,</span> <span class="s1">&#39;amarillo&#39;</span><span class="p">,</span> <span class="s1">&#39;rojo&#39;</span><span class="p">,</span> <span class="s1">&#39;verde&#39;</span><span class="p">,</span> <span class="s1">&#39;anaranjado&#39;</span><span class="p">,</span> <span class="s1">&#39;rosa&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Ejecuta la celda de código y observa qué ocurre.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">colores</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;azul&#39;</span><span class="p">,</span> <span class="s1">&#39;amarillo&#39;</span><span class="p">,</span> <span class="s1">&#39;rojo&#39;</span><span class="p">,</span> <span class="s1">&#39;verde&#39;</span><span class="p">,</span> <span class="s1">&#39;anaranjado&#39;</span><span class="p">,</span> <span class="s1">&#39;rosa&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="n">colores</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>azul
+amarillo
+rojo
+verde
+anaranjado
+rosa
+</pre></div>
+</div>
+</div>
+</div>
+<section id="iterar-sobre-una-lista-de-numeros">
+<h2>2. Iterar sobre una lista de números.<a class="headerlink" href="#iterar-sobre-una-lista-de-numeros" title="Link to this heading">#</a></h2>
+<p>En el siguiente código se ha declarado la lista</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">numeros</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Ejecuta la celda de código y observa qué ocurre.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">numeros</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="n">numeros</span><span class="p">:</span>
+  <span class="n">numero_par</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">numero</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">numero_par</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
+6
+8
+10
+12
+16
+20
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ejecutar-codigo-repetidamente">
+<h2>3. Ejecutar código repetidamente.<a class="headerlink" href="#ejecutar-codigo-repetidamente" title="Link to this heading">#</a></h2>
+<p>Si sólo se desea ejecutar líneas de código de forma repetida, podemos usar</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">paso</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">n</span></code> es el número donde comienza la secuencia. Si no se especifica, comienza en <span class="math notranslate nohighlight">\(0\)</span>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">m</span></code> es el número que indica que termina la secuencia y no se incluye, es decir, la secuancia termina en <span class="math notranslate nohighlight">\(n-1\)</span>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">paso</span></code> es el incremento entre cada número de la secuencia.</p></li>
+</ul>
+<p>Ejecuta las siguientes celdas de código y observa qué ocurre.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;5 x&quot;</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="s2">&quot;=&quot;</span><span class="p">,</span><span class="mi">5</span><span class="o">*</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hola&quot;</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hola 1
+Hola 4
+Hola 7
+Hola 10
+Hola 13
+Hola 16
+Hola 19
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="iterar-sobre-una-cadena-de-texto">
+<h2>4. Iterar sobre una cadena de texto<a class="headerlink" href="#iterar-sobre-una-cadena-de-texto" title="Link to this heading">#</a></h2>
+<p>En el siguiente código se ha declarado una cadena de caracteres:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cadena</span><span class="o">=</span><span class="s2">&quot;HolaMundo&quot;</span>
+</pre></div>
+</div>
+<p>Ejecuta la celda de código y observa qué ocurre.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cadena</span><span class="o">=</span><span class="s2">&quot;HolaMundo&quot;</span>
+<span class="k">for</span> <span class="n">letra</span> <span class="ow">in</span> <span class="n">cadena</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">letra</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>H
+o
+l
+a
+M
+u
+n
+d
+o
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="sumar-numeros-de-una-lista">
+<h2>5. Sumar números de una lista<a class="headerlink" href="#sumar-numeros-de-una-lista" title="Link to this heading">#</a></h2>
+<p>En el siguiente código se ha declarado la lista de números:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lista_numeros</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">15</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>se ha declarado la variable suma, con valor 0</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">suma</span><span class="o">=</span><span class="mi">0</span>
+</pre></div>
+</div>
+<p>Ejecuta el siguiente código y observa cómo con el ciclo <code class="docutils literal notranslate"><span class="pre">for</span></code> podemos sumar los números en la lista.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lista_numeros</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">15</span><span class="p">]</span>
+<span class="n">suma</span><span class="o">=</span><span class="mi">0</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">lista_numeros</span><span class="p">:</span>
+  <span class="n">suma</span> <span class="o">=</span> <span class="n">suma</span><span class="o">+</span><span class="n">n</span> <span class="c1">#se puede abreviar suma=+n</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">suma</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>63
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "matquim/Practicas-Algebra",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="practica2a.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Representación de Números Reales en Python</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="practica2c.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Sucesiones</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterar-sobre-una-lista-de-numeros">2. Iterar sobre una lista de números.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejecutar-codigo-repetidamente">3. Ejecutar código repetidamente.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterar-sobre-una-cadena-de-texto">4. Iterar sobre una cadena de texto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sumar-numeros-de-una-lista">5. Sumar números de una lista</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Oscar Enrique Pérez González, Juan Felipe Huan Lew Yee, Laura Michelle Jiménez Díaz, Departamento de Matemáticas, Facultad de Química, Universidad Nacional Autónoma de México
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <div>
+<img src="https://raw.githubusercontent.com/matquim/Practicas-Algebra/refs/heads/main/logo_unam.png" alt="logo_UNAM", style="width: 5%">
+<img src="https://raw.githubusercontent.com/matquim/Practicas-Algebra/refs/heads/main/logoFacultadQuimica.jpg" alt="logo_FQ", style="width: 5%">
+    <br>© D.R. UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO 2026<br>Universidad Nacional Autónoma de México<br>Facultad de Química<br>Prohibida la reproducción total o parcial por cualquier medio, sin la autorización escrita del titular de los derechos patrimoniales.<br>Hecho en México<br>
+</div>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
