@@ -16,7 +16,7 @@ parts:
     - file: u1p5
     - file: u1p6
 
-  - caption: Unidad 2: Vectores en $\mathbb{R}^2$ y $\mathbb{R}^3$
+  - caption: Unidad 2: Vectores en R2  y R3
     chapters:
     - file: u2p1
     - file: u2p2
