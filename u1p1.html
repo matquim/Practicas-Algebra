@@ -443,10 +443,8 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Práctica 1: El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto teórico</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imprimir-los-numeros-del-1-al-10-con-un-bucle-for">Imprimir los numeros del 1 al 10 con un bucle for</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto teórico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1">Ejemplo 1</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#note-como-el-cambio-en-la-indentacion-da-fin-al-bucle">note como el cambio en la indentacion da fin al bucle</a></li>
@@ -466,30 +464,31 @@ document.write(`
 <h1>Práctica 1: El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico<a class="headerlink" href="#practica-1-el-bucle-texttt-for-lo-basico" title="Link to this heading">#</a></h1>
 <section id="objetivo">
 <h2>Objetivo<a class="headerlink" href="#objetivo" title="Link to this heading">#</a></h2>
-<p>Aprender a utilizar el bucle \texttt{for} para repetir instrucciones y generar secuencias numéricas.</p>
+<p>Aprender a utilizar el bucle <code class="docutils literal notranslate"><span class="pre">for</span></code> para repetir instrucciones y generar secuencias numéricas.</p>
 </section>
 <section id="concepto-teorico">
 <h2>Concepto teórico<a class="headerlink" href="#concepto-teorico" title="Link to this heading">#</a></h2>
-<p>El bucle \texttt{for} permite ejecutar un bloque de código varias veces. Su estructura general es:</p>
-<p>\begin{lstlisting}
-for i in range(inicio, fin, paso):
-instrucciones
-\end{lstlisting}</p>
-<p>\begin{itemize}
-\item \texttt{inicio}: valor inicial
-\item \texttt{fin}: valor final (no incluido)
-\item \texttt{paso}: incremento (opcional)
-\end{itemize}
-\textcolor{red}{\textbf{Nota:} Observe que las instrucciones que se deben ejecutar dentro del bucle están indentadas (desplazadas hacia la derecha). Esta indentación es obligatoria en Python y define el bloque de código del \texttt{for}.}</p>
-<p>\subsubsection{Ejemplo 1}
-Contaremos del 1 al 10 usando el bucle \textit{for}
-\begin{lstlisting}</p>
-<section id="imprimir-los-numeros-del-1-al-10-con-un-bucle-for">
-<h3>Imprimir los numeros del 1 al 10 con un bucle for<a class="headerlink" href="#imprimir-los-numeros-del-1-al-10-con-un-bucle-for" title="Link to this heading">#</a></h3>
-<p>print(“Contando del 1 al 10”)
-for i in range(1,11):
-print(i)
-\end{lstlisting}</p>
+<p>El bucle <code class="docutils literal notranslate"><span class="pre">for</span></code> permite ejecutar un bloque de código varias veces. Su estructura general es:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">inicio</span><span class="p">,</span> <span class="n">fin</span><span class="p">,</span> <span class="n">paso</span><span class="p">):</span>
+    <span class="n">instrucciones</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>\texttt{inicio}: valor inicial</p></li>
+<li><p>\texttt{fin}: valor final (no incluido)</p></li>
+<li><p>\texttt{paso}: incremento (opcional)</p></li>
+</ul>
+<p>\textcolor{red}{\textbf{Nota:} Observe que las instrucciones que se deben ejecutar dentro del bucle están indentadas (desplazadas hacia la derecha). Esta indentación es obligatoria en Python y define el bloque de código del <code class="docutils literal notranslate"><span class="pre">for</span></code>.}</p>
+</section>
+<section id="ejemplo-1">
+<h2>Ejemplo 1<a class="headerlink" href="#ejemplo-1" title="Link to this heading">#</a></h2>
+<p>Contaremos del 1 al 10 usando el bucle \textit{for}</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">### Imprimir los numeros del 1 al 10 con un bucle for</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Contando del 1 al 10&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
 <p>\subsubsection{ejemplo 2}</p>
 <p>Imprimir los números pares en el intervalo <span class="math notranslate nohighlight">\((1,20)\)</span>:
 \begin{lstlisting}
@@ -516,7 +515,6 @@ print(“\nSumando los numeros naturales del 1 al 20”)</p>
 <p>for i in range(1,21):
 suma += i
 print(“Suma parcial:”, suma)</p>
-</section>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="note-como-el-cambio-en-la-indentacion-da-fin-al-bucle">
@@ -609,10 +607,8 @@ print(“Suma parcial:”, suma)</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Práctica 1: El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto teórico</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imprimir-los-numeros-del-1-al-10-con-un-bucle-for">Imprimir los numeros del 1 al 10 con un bucle for</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto teórico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1">Ejemplo 1</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#note-como-el-cambio-en-la-indentacion-da-fin-al-bucle">note como el cambio en la indentacion da fin al bucle</a></li>
