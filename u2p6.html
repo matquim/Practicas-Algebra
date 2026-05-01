@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'u2p6';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -203,6 +205,8 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectores en ℝ² y ℝ³</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u2p1.html">U1P1</a></li>
+
+
 <li class="toctree-l1"><a class="reference internal" href="u2p2.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p3.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p4.html">U1P1</a></li>
@@ -438,7 +442,6 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
 </ul>
             </nav>
         </div>
@@ -457,9 +460,35 @@ document.write(`
 </section>
 <section id="concepto-teorico">
 <h2>Concepto Teórico<a class="headerlink" href="#concepto-teorico" title="Link to this heading">#</a></h2>
-</section>
-<section id="ejercicio-1">
-<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Link to this heading">#</a></h2>
+<p>\subsection{Práctica 6: Producto cruz}</p>
+<p>\subsubsection{Concepto teórico}</p>
+<p>El producto cruz en <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> es:</p>
+<p>[
+p \times q =</p>
+<div class="amsmath math notranslate nohighlight" id="equation-84cbb150-c03a-4d9d-9368-809ed52c0c23">
+<span class="eqno">(6)<a class="headerlink" href="#equation-84cbb150-c03a-4d9d-9368-809ed52c0c23" title="Permalink to this equation">#</a></span>\[\begin{pmatrix}
+p_y q_z - p_z q_y \\
+p_z q_x - p_x q_z \\
+p_x q_y - p_y q_x
+\end{pmatrix}\]</div>
+<p>]</p>
+<p>\subsubsection{Ejemplo}</p>
+<p>\begin{lstlisting}
+p = [1, 0, -2]
+q = [3, -1, 1]</p>
+<p>cross = [
+p[1]*q[2] - p[2]*q[1],
+p[2]*q[0] - p[0]*q[2],
+p[0]*q[1] - p[1]*q[0]
+]</p>
+<p>print(cross)
+\end{lstlisting}</p>
+<p>\subsubsection{Ejercicios}</p>
+<p>\begin{enumerate}[label=\alph*)]
+\item <span class="math notranslate nohighlight">\(u \times v\)</span>
+\item <span class="math notranslate nohighlight">\(v \times w\)</span>
+\item <span class="math notranslate nohighlight">\(w \times (u+v)\)</span>
+\end{enumerate}</p>
 </section>
 </section>
 
@@ -529,7 +558,6 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
 </ul>
   </nav></div>
 

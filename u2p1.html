@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'u2p1';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -203,6 +205,8 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectores en ℝ² y ℝ³</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">U1P1</a></li>
+
+
 <li class="toctree-l1"><a class="reference internal" href="u2p2.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p3.html">U1P1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p4.html">U1P1</a></li>
@@ -436,10 +440,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">U1P1</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-en-r2">Vector en R2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-en-r3">Vector en R3</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -457,10 +466,37 @@ document.write(`
 </section>
 <section id="concepto-teorico">
 <h2>Concepto Teórico<a class="headerlink" href="#concepto-teorico" title="Link to this heading">#</a></h2>
+<p>\subsection{Práctica 1: Representación de vectores}</p>
+<p>\subsubsection{Objetivo}
+Aprender a representar vectores en Python y acceder a sus componentes.</p>
+<p>\subsubsection{Concepto teórico}</p>
+<p>Un vector en <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> se representa como una lista de <span class="math notranslate nohighlight">\(n\)</span> componentes.</p>
+<p>\subsubsection{Ejemplo}</p>
+<p>\begin{lstlisting}</p>
 </section>
-<section id="ejercicio-1">
-<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Link to this heading">#</a></h2>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="vector-en-r2">
+<h1>Vector en R2<a class="headerlink" href="#vector-en-r2" title="Link to this heading">#</a></h1>
+<p>vec1 = [1, 2]
+print(vec1)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="vector-en-r3">
+<h1>Vector en R3<a class="headerlink" href="#vector-en-r3" title="Link to this heading">#</a></h1>
+<p>vec2 = [1.0, -2, 3]
+print(vec2)
+\end{lstlisting}</p>
+<p>\subsubsection{Acceso a componentes}</p>
+<p>\begin{lstlisting}
+vec = [1, -2, 3]</p>
+<p>print(vec[0])  # x
+print(vec[1])  # y
+print(vec[2])  # z
+\end{lstlisting}</p>
+<p>\subsubsection{Ejercicios}</p>
+<p>\begin{enumerate}[label=\alph*)]
+\item Declare los vectores <span class="math notranslate nohighlight">\(u = (1,3,4)\)</span>, <span class="math notranslate nohighlight">\(v = (0,1,-1)\)</span> y <span class="math notranslate nohighlight">\(w = (0,1,-0.5)\)</span>.
+\item Imprima cada una de sus componentes.
+\end{enumerate}</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -527,10 +563,15 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">U1P1</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-en-r2">Vector en R2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-en-r3">Vector en R3</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>
