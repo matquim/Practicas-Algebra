@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Práctica 1: Representación de vectores &#8212; Practicas Álgebra Superior</title>
+    <title>Práctica 1: Definición de conjuntos en Python &#8212; Practicas Álgebra Superior</title>
   
   
   
@@ -57,13 +57,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'u2p1';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'u6p1';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Práctica 2: Suma de vectores" href="u2p2.html" />
-    <link rel="prev" title="Práctica 6: Sucesiones recursivas" href="u1p6.html" />
+    <link rel="next" title="Práctica 1: Definición de conjuntos en Python" href="u7p1.html" />
+    <link rel="prev" title="Práctica 1: Definición de conjuntos en Python" href="u5p1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -196,8 +194,8 @@
 <li class="toctree-l1"><a class="reference internal" href="u1p6.html">Práctica 6: Sucesiones recursivas</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectores en ℝ² y ℝ³</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Práctica 1: Representación de vectores</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="u2p1.html">Práctica 1: Representación de vectores</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p2.html">Práctica 2: Suma de vectores</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p3.html">Práctica 3: Combinaciones lineales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p4.html">Práctica 4: Norma de un vector</a></li>
@@ -226,8 +224,8 @@
 <li class="toctree-l1"><a class="reference internal" href="u5p1.html">Práctica 1: Definición de conjuntos en Python</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Números Complejos</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="u6p1.html">Práctica 1: Definición de conjuntos en Python</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Práctica 1: Definición de conjuntos en Python</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Polinomios</span></p>
 <ul class="nav bd-sidenav">
@@ -286,7 +284,7 @@
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/matquim/Practicas-Algebra/master?urlpath=tree/u2p1.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/matquim/Practicas-Algebra/master?urlpath=tree/u6p1.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -304,7 +302,7 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/matquim/Practicas-Algebra/blob/master/u2p1.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/matquim/Practicas-Algebra/blob/master/u6p1.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -353,7 +351,7 @@
       
       
       
-      <li><a href="_sources/u2p1.ipynb" target="_blank"
+      <li><a href="_sources/u6p1.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -437,7 +435,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Práctica 1: Representación de vectores</h1>
+    <h1>Práctica 1: Definición de conjuntos en Python</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -449,8 +447,8 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acceso-a-componentes">Acceso a componentes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
 </ul>
             </nav>
@@ -463,43 +461,34 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="practica-1-representacion-de-vectores">
-<h1>Práctica 1: Representación de vectores<a class="headerlink" href="#practica-1-representacion-de-vectores" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="practica-1-definicion-de-conjuntos-en-python">
+<h1>Práctica 1: Definición de conjuntos en Python<a class="headerlink" href="#practica-1-definicion-de-conjuntos-en-python" title="Link to this heading">#</a></h1>
 <section id="objetivo">
 <h2>Objetivo<a class="headerlink" href="#objetivo" title="Link to this heading">#</a></h2>
-<p>Aprender a representar vectores en Python y acceder a sus componentes.</p>
+<p>Aprender a definir conjuntos y manipular sus elementos en Python.</p>
 </section>
 <section id="concepto-teorico">
 <h2>Concepto Teórico<a class="headerlink" href="#concepto-teorico" title="Link to this heading">#</a></h2>
-<p>Un vector en <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> se representa como una lista de <span class="math notranslate nohighlight">\(n\)</span> componentes.</p>
+<p>Un conjunto es una colección de elementos sin orden y sin repetición.</p>
+</section>
+<section id="ejercicio-1">
+<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Link to this heading">#</a></h2>
 </section>
 <section id="ejemplo">
 <h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Link to this heading">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Vector en R2</span>
-<span class="n">vec1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">vec1</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Conjunto de letras</span>
+<span class="n">A</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">}</span>
 
-<span class="c1"># Vector en R3</span>
-<span class="n">vec2</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">vec2</span><span class="p">)</span>
-</pre></div>
-</div>
-</section>
-<section id="acceso-a-componentes">
-<h2>Acceso a componentes<a class="headerlink" href="#acceso-a-componentes" title="Link to this heading">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">vec</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">vec</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># x</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">vec</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># y</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">vec</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>  <span class="c1"># z</span>
+<span class="c1"># Conjunto de numeros</span>
+<span class="n">B</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">}</span>
 </pre></div>
 </div>
 </section>
 <section id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Declare los vectores <span class="math notranslate nohighlight">\(u = (1,3,4)\)</span>, <span class="math notranslate nohighlight">\(v = (0,1,-1)\)</span> y <span class="math notranslate nohighlight">\(w = (0,1,-0.5)\)</span>.</p></li>
-<li><p>Imprima cada una de sus componentes.</p></li>
+<li><p>Definir dos conjuntos numéricos.</p></li>
+<li><p>Verificar que no se repitan elementos.</p></li>
 </ul>
 </section>
 </section>
@@ -535,20 +524,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="u1p6.html"
+       href="u5p1.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Práctica 6: Sucesiones recursivas</p>
+        <p class="prev-next-title">Práctica 1: Definición de conjuntos en Python</p>
       </div>
     </a>
     <a class="right-next"
-       href="u2p2.html"
+       href="u7p1.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Práctica 2: Suma de vectores</p>
+        <p class="prev-next-title">Práctica 1: Definición de conjuntos en Python</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -570,8 +559,8 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acceso-a-componentes">Acceso a componentes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
 </ul>
   </nav></div>
