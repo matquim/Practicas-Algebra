@@ -445,12 +445,12 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto teórico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1">Ejemplo 1</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-2">Ejemplo 2</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-3">Ejemplo 3</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-4">Ejemplo 4</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-de-practica-del-bucle-for">Ejercicios de práctica del bucle <code class="docutils literal notranslate"><span class="pre">for</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-propuestos">Ejercicios propuestos</a></li>
 </ul>
             </nav>
         </div>
@@ -470,7 +470,7 @@ document.write(`
 </section>
 <section id="concepto-teorico">
 <h2>Concepto teórico<a class="headerlink" href="#concepto-teorico" title="Link to this heading">#</a></h2>
-<p>El bucle <code class="docutils literal notranslate"><span class="pre">for</span></code> permite ejecutar un bloque de código varias veces. Su estructura general es:</p>
+<p>Además de variables, Python contiene varias estructuras especiales. Una de ellas es el bucle <code class="docutils literal notranslate"><span class="pre">for</span></code> permite ejecutar un bloque de código varias veces. Su estructura general es:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">inicio</span><span class="p">,</span> <span class="n">fin</span><span class="p">,</span> <span class="n">paso</span><span class="p">):</span>
     <span class="n">instrucciones</span>
 </pre></div>
@@ -480,11 +480,19 @@ document.write(`
 <li><p><code class="docutils literal notranslate"><span class="pre">fin</span></code>: valor final (no incluido)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">paso</span></code>: incremento (opcional)</p></li>
 </ul>
-<p><strong>Nota</strong> Observe que las instrucciones que se deben ejecutar dentro del bucle están indentadas (desplazadas hacia la derecha). Esta indentación es obligatoria en Python y define el bloque de código del <code class="docutils literal notranslate"><span class="pre">for</span></code>.</p>
+<p><strong>Nota</strong> Observe que las instrucciones que se deben ejecutar dentro del bucle están indentadas (desplazadas hacia la derecha). Esta indentación de cuatro espacios es obligatoria en Python y define las instrucciones que son controladas por el <code class="docutils literal notranslate"><span class="pre">for</span></code>.</p>
+</section>
+<section id="ejercicios">
+<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
+<p>Usaremos el ciclo for para imprimir 4 veces la frase: ``La química es la ciencia central’’.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La química es la ciencia central&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 <section id="ejemplo-1">
 <h2>Ejemplo 1<a class="headerlink" href="#ejemplo-1" title="Link to this heading">#</a></h2>
-<p>Contaremos del 1 al 10 usando el bucle <code class="docutils literal notranslate"><span class="pre">for</span></code></p>
+<p>Cuente del 1 al 10 usando el bucle <code class="docutils literal notranslate"><span class="pre">for</span></code></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">### Imprimir los numeros del 1 al 10 con un bucle for</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Contando del 1 al 10&quot;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
@@ -494,8 +502,13 @@ document.write(`
 </section>
 <section id="ejemplo-2">
 <h2>Ejemplo 2<a class="headerlink" href="#ejemplo-2" title="Link to this heading">#</a></h2>
-<p>Imprimir los números pares en el intervalo <span class="math notranslate nohighlight">\((1,20)\)</span>:</p>
-<div class="cell docutils container">
+<p>Imprima los números pares en el intervalo <span class="math notranslate nohighlight">\((1,20)\)</span>:</p>
+<div class="cell tag_hide-cell docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell content</p>
+<p class="expanded admonition-title">Hide code cell content</p>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
@@ -516,9 +529,15 @@ document.write(`
 </pre></div>
 </div>
 </div>
+</details>
 </div>
 <p>Se podría realizar también de la siguiente manera, aprovechando la definición de paridad (todo número par es de la forma <span class="math notranslate nohighlight">\(2k\)</span> con <span class="math notranslate nohighlight">\(k\in\mathbb{Z}\)</span>):</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-cell docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell content</p>
+<p class="expanded admonition-title">Hide code cell content</p>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
@@ -539,12 +558,18 @@ document.write(`
 </pre></div>
 </div>
 </div>
+</details>
 </div>
 </section>
 <section id="ejemplo-3">
 <h2>Ejemplo 3<a class="headerlink" href="#ejemplo-3" title="Link to this heading">#</a></h2>
 <p>Imprimir los cuadrados y los cubos de los números naturales en el intervalo [1,10]</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-cell docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell content</p>
+<p class="expanded admonition-title">Hide code cell content</p>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x =&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s2">&quot;x^2 =&quot;</span><span class="p">,</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;x^3 =&quot;</span><span class="p">,</span> <span class="n">i</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
@@ -565,13 +590,19 @@ x = 10 x^2 = 100 x^3 = 1000
 </pre></div>
 </div>
 </div>
+</details>
 </div>
 <p><strong>Nota:</strong> Observe que los elementos escritos entre comillas se muestran literalmente en la salida del programa, es decir, aparecen exactamente como fueron escritos.</p>
 </section>
 <section id="ejemplo-4">
 <h2>Ejemplo 4<a class="headerlink" href="#ejemplo-4" title="Link to this heading">#</a></h2>
 <p>Imprimir la suma de los números naturales del 1 al 20, incluyendo su suma parcial.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-cell docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell content</p>
+<p class="expanded admonition-title">Hide code cell content</p>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Sumando los numeros naturales del 1 al 20&quot;</span><span class="p">)</span>
@@ -611,6 +642,7 @@ La suma total es: 210
 </pre></div>
 </div>
 </div>
+</details>
 </div>
 <p><strong>Nota:</strong> La variable <code class="docutils literal notranslate"><span class="pre">suma</span></code> se inicializa en 0 antes de comenzar el bucle. Esta inicialización es necesaria para poder acumular correctamente los valores en cada iteración.
 <strong>Nota:</strong> Observe que al terminar la indentación del bloque <code class="docutils literal notranslate"><span class="pre">for</span></code>, el programa sale del bucle. Por ello, la última instrucción <code class="docutils literal notranslate"><span class="pre">print</span></code> se ejecuta una sola vez.</p>
@@ -619,18 +651,26 @@ La suma total es: 210
 <h2>Ejercicios de práctica del bucle <code class="docutils literal notranslate"><span class="pre">for</span></code><a class="headerlink" href="#ejercicios-de-practica-del-bucle-for" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Imprimir los números enteros del -10 al 10.</p></li>
+</ul>
+<ul class="simple">
 <li><p>Imprimir los números pares entre 1 y 20.</p></li>
+</ul>
+<ul class="simple">
 <li><p>Imprimir los cuadrados de los números del 1 al 10.</p></li>
-<li><p>Imprimir los cubos de los números del 1 al 10.</p></li>
+</ul>
+<ul class="simple">
 <li><p>Implemente un código que imprima los números enteros del 20 al 1 en orden decreciente.</p></li>
+</ul>
+<ul class="simple">
 <li><p>Implemente un código que modifique el valor de una variable <span class="math notranslate nohighlight">\(x\)</span> en pasos de <span class="math notranslate nohighlight">\(\Delta x\)</span>, con <span class="math notranslate nohighlight">\(x_0 = 1.0\)</span>, <span class="math notranslate nohighlight">\(x_f = 2.0\)</span> y <span class="math notranslate nohighlight">\(\Delta x = 0.005\)</span>.</p></li>
 </ul>
-</section>
-<section id="ejercicios-propuestos">
-<h2>Ejercicios propuestos<a class="headerlink" href="#ejercicios-propuestos" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Imprimir los números del 20 al 1 en orden inverso.</p></li>
+</ul>
+<ul class="simple">
 <li><p>Incrementar una variable <span class="math notranslate nohighlight">\(x\)</span> desde 1.0 hasta 2.0 con paso <span class="math notranslate nohighlight">\(\Delta x = 0.005\)</span>.</p></li>
+</ul>
+<ul class="simple">
 <li><p>Imprimir las tablas de multiplicar del 1 al 10.</p></li>
 </ul>
 </section>
@@ -702,12 +742,12 @@ La suma total es: 210
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto teórico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1">Ejemplo 1</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-2">Ejemplo 2</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-3">Ejemplo 3</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-4">Ejemplo 4</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-de-practica-del-bucle-for">Ejercicios de práctica del bucle <code class="docutils literal notranslate"><span class="pre">for</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-propuestos">Ejercicios propuestos</a></li>
 </ul>
   </nav></div>
 
