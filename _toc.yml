@@ -2,11 +2,6 @@ format: jb-book
 root: intro
 
 parts:
-  - caption: TEMPORAL (Quitar)
-    chapters:
-      - file: Tutorial-Basico
-      - file: Tutorial-Avanzado
-
   - caption: Sistemas Numéricos
     chapters:
     - file: u1p1
