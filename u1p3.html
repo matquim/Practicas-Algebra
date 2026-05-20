@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Práctica 3: Factorial &#8212; Practicas Álgebra Superior</title>
+    <title>Práctica 2: Aplicaciòn al càlculo de sumas y series &#8212; Practicas Álgebra Superior</title>
   
   
   
@@ -62,8 +62,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'u1p3';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Práctica 4: Combinaciones" href="u1p4.html" />
-    <link rel="prev" title="Práctica 2: Aplicaciòn al càlculo de sumas y series" href="u1p2.html" />
+    <link rel="next" title="Práctica 3: Factorial" href="u1p4.html" />
+    <link rel="prev" title="Práctica 1: El bucle \(\texttt{for}\), lo básico" href="u1p2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -183,12 +183,13 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Sistemas Numéricos</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="u1p1.html">Práctica 1: El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico</a></li>
-<li class="toctree-l1"><a class="reference internal" href="u1p2.html">Práctica 2: Aplicaciòn al càlculo de sumas y series</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Práctica 3: Factorial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="u1p4.html">Práctica 4: Combinaciones</a></li>
-<li class="toctree-l1"><a class="reference internal" href="u1p5.html">Práctica 5: Números primos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="u1p6.html">Práctica 6: Sucesiones recursivas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u1p1.html">Práctica 1: Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u1p2.html">Práctica 1: El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Práctica 2: Aplicaciòn al càlculo de sumas y series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u1p4.html">Práctica 3: Factorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u1p5.html">Práctica 4: Combinaciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u1p6.html">Práctica 5: Números primos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u1p7.html">Práctica 6: Sucesiones recursivas</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectores en ℝ² y ℝ³</span></p>
 <ul class="nav bd-sidenav">
@@ -432,7 +433,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Práctica 3: Factorial</h1>
+    <h1>Práctica 2: Aplicaciòn al càlculo de sumas y series</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -444,7 +445,8 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1">Ejemplo 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1-mas-complejo-usando-funciones">Ejemplo 1 más complejo: usando funciones</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-propuestos">Ejercicios propuestos</a></li>
 </ul>
             </nav>
@@ -457,39 +459,69 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="practica-3-factorial">
-<h1>Práctica 3: Factorial<a class="headerlink" href="#practica-3-factorial" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="practica-2-aplicacion-al-calculo-de-sumas-y-series">
+<h1>Práctica 2: Aplicaciòn al càlculo de sumas y series<a class="headerlink" href="#practica-2-aplicacion-al-calculo-de-sumas-y-series" title="Link to this heading">#</a></h1>
 <section id="objetivo">
 <h2>Objetivo<a class="headerlink" href="#objetivo" title="Link to this heading">#</a></h2>
-<p>Implementar el cálculo del factorial sin usar funciones predefinidas.</p>
+<p>Calcular sumas utilizando programación y compararlas con fórmulas analíticas.</p>
 </section>
 <section id="concepto-teorico">
 <h2>Concepto Teórico<a class="headerlink" href="#concepto-teorico" title="Link to this heading">#</a></h2>
-<p>El factorial de un número <span class="math notranslate nohighlight">\(n\)</span> se define como:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a44df135-9a0d-4870-b0ab-5fd84079da82">
-<span class="eqno">(2)<a class="headerlink" href="#equation-a44df135-9a0d-4870-b0ab-5fd84079da82" title="Permalink to this equation">#</a></span>\[\begin{equation}
-n! = 1 \cdot 2 \cdot 3 \cdots n
+<p>Se sabe que el resultado de la suma de los primeros n números naturales es:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-645dc0a6-8593-488c-9f0e-a0c6ba3abad6">
+<span class="eqno">(1)<a class="headerlink" href="#equation-645dc0a6-8593-488c-9f0e-a0c6ba3abad6" title="Permalink to this equation">#</a></span>\[\begin{equation}
+\sum_{i=1}^{n} i = \frac{n(n+1)}{2}
 \end{equation}\]</div>
 </section>
-<section id="ejemplo">
-<h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Link to this heading">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculo del factorial de 4</span>
-<span class="n">n</span> <span class="o">=</span> <span class="mi">4</span>
-<span class="n">factorial</span> <span class="o">=</span> <span class="mi">1</span>
+<section id="ejemplo-1">
+<h2>Ejemplo 1<a class="headerlink" href="#ejemplo-1" title="Link to this heading">#</a></h2>
+<p>Implemente un código que calcule esta suma y utilícelo para calcular los valores de la suma cuando <span class="math notranslate nohighlight">\(n=20,100,10000\)</span>. Compare con el resultado analítico de la ecuación anterior.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Comparacion sin usar funciones</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">10000</span><span class="p">]:</span>
+    <span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">suma</span> <span class="o">+=</span> <span class="n">i</span>
 
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-    <span class="n">factorial</span> <span class="o">*=</span> <span class="n">i</span>
+    <span class="n">suma_analitica</span> <span class="o">=</span> <span class="n">n</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Factorial:&quot;</span><span class="p">,</span> <span class="n">factorial</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;n =&quot;</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Suma numerica:&quot;</span><span class="p">,</span> <span class="n">suma</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Suma analitica:&quot;</span><span class="p">,</span> <span class="n">suma_analitica</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Diferencia:&quot;</span><span class="p">,</span> <span class="n">suma</span> <span class="o">-</span> <span class="n">suma_analitica</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Nota:</strong> La expresión analítica de la suma de los primeros <span class="math notranslate nohighlight">\(n\)</span> números naturales es <span class="math notranslate nohighlight">\(S = \frac{n(n+1)}{2}\)</span>.</p>
+</section>
+<section id="ejemplo-1-mas-complejo-usando-funciones">
+<h2>Ejemplo 1 más complejo: usando funciones<a class="headerlink" href="#ejemplo-1-mas-complejo-usando-funciones" title="Link to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Funcion para la suma numerica</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">suma_numerica</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">suma</span> <span class="o">+=</span> <span class="n">i</span>
+    <span class="k">return</span> <span class="n">suma</span>
+
+<span class="c1"># Funcion para la solucion analitica</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">suma_analitica</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">n</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span>
+
+<span class="c1"># Comparacion</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">10000</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;n =&quot;</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Suma numerica:&quot;</span><span class="p">,</span> <span class="n">suma_numerica</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Suma analitica:&quot;</span><span class="p">,</span> <span class="n">suma_analitica</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Diferencia:&quot;</span><span class="p">,</span> <span class="n">suma_numerica</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">-</span> <span class="n">suma_analitica</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Nota:</strong> El uso de funciones permite reutilizar código y hacer el programa más claro y modular.</p>
 </section>
 <section id="ejercicios-propuestos">
 <h2>Ejercicios propuestos<a class="headerlink" href="#ejercicios-propuestos" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Calcular el factorial de diferentes valores de <span class="math notranslate nohighlight">\(n\)</span>.</p></li>
-<li><p>Comparar con la función <code class="docutils literal notranslate"><span class="pre">math.factorial()</span></code>.</p></li>
-<li><p>Desarrolle un código que imprima las tablas de multiplicar del 1 al 10.</p></li>
+<li><p>Calcular la suma para <span class="math notranslate nohighlight">\(n = 20, 100, 10000\)</span>.</p></li>
+<li><p>Comparar el resultado numérico con la fórmula analítica.</p></li>
 </ul>
 </section>
 </section>
@@ -530,7 +562,7 @@ n! = 1 \cdot 2 \cdot 3 \cdots n
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Práctica 2: Aplicaciòn al càlculo de sumas y series</p>
+        <p class="prev-next-title">Práctica 1: El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico</p>
       </div>
     </a>
     <a class="right-next"
@@ -538,7 +570,7 @@ n! = 1 \cdot 2 \cdot 3 \cdots n
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Práctica 4: Combinaciones</p>
+        <p class="prev-next-title">Práctica 3: Factorial</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -560,7 +592,8 @@ n! = 1 \cdot 2 \cdot 3 \cdots n
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1">Ejemplo 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1-mas-complejo-usando-funciones">Ejemplo 1 más complejo: usando funciones</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-propuestos">Ejercicios propuestos</a></li>
 </ul>
   </nav></div>

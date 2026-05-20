@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Práctica 1: El bucle \(\texttt{for}\), lo básico &#8212; Practicas Álgebra Superior</title>
+    <title>Práctica 1: Variables &#8212; Practicas Álgebra Superior</title>
   
   
   
@@ -62,7 +62,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'u1p1';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Práctica 2: Aplicaciòn al càlculo de sumas y series" href="u1p2.html" />
+    <link rel="next" title="Práctica 1: El bucle \(\texttt{for}\), lo básico" href="u1p2.html" />
     <link rel="prev" title="Prácticas Álgebra Superior" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -183,12 +183,13 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Sistemas Numéricos</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Práctica 1: El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico</a></li>
-<li class="toctree-l1"><a class="reference internal" href="u1p2.html">Práctica 2: Aplicaciòn al càlculo de sumas y series</a></li>
-<li class="toctree-l1"><a class="reference internal" href="u1p3.html">Práctica 3: Factorial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="u1p4.html">Práctica 4: Combinaciones</a></li>
-<li class="toctree-l1"><a class="reference internal" href="u1p5.html">Práctica 5: Números primos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="u1p6.html">Práctica 6: Sucesiones recursivas</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Práctica 1: Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u1p2.html">Práctica 1: El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u1p3.html">Práctica 2: Aplicaciòn al càlculo de sumas y series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u1p4.html">Práctica 3: Factorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u1p5.html">Práctica 4: Combinaciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u1p6.html">Práctica 5: Números primos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u1p7.html">Práctica 6: Sucesiones recursivas</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectores en ℝ² y ℝ³</span></p>
 <ul class="nav bd-sidenav">
@@ -432,7 +433,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Práctica 1: El bucle \texttt{for}, lo básico</h1>
+    <h1>Práctica 1: Variables</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -442,14 +443,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivos">Objetivos</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto teórico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1">Ejemplo 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-2">Ejemplo 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-3">Ejemplo 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-4">Ejemplo 4</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-de-practica-del-bucle-for">Ejercicios de práctica del bucle <code class="docutils literal notranslate"><span class="pre">for</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-propuestos">Ejercicios propuestos</a></li>
 </ul>
             </nav>
         </div>
@@ -461,177 +456,150 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="practica-1-el-bucle-texttt-for-lo-basico">
-<h1>Práctica 1: El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico<a class="headerlink" href="#practica-1-el-bucle-texttt-for-lo-basico" title="Link to this heading">#</a></h1>
-<section id="objetivo">
-<h2>Objetivo<a class="headerlink" href="#objetivo" title="Link to this heading">#</a></h2>
-<p>Aprender a utilizar el bucle <code class="docutils literal notranslate"><span class="pre">for</span></code> para repetir instrucciones y generar secuencias numéricas.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="practica-1-variables">
+<h1>Práctica 1: Variables<a class="headerlink" href="#practica-1-variables" title="Link to this heading">#</a></h1>
+<section id="objetivos">
+<h2>Objetivos<a class="headerlink" href="#objetivos" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Aprender a declarar variables, relacionando el tipo de dato con los sistemas numéricos.</p></li>
+<li><p>Contrastar las sutiles diferencias de las variables algebráicas con las variables de programación.</p></li>
+</ul>
 </section>
 <section id="concepto-teorico">
 <h2>Concepto teórico<a class="headerlink" href="#concepto-teorico" title="Link to this heading">#</a></h2>
-<p>El bucle <code class="docutils literal notranslate"><span class="pre">for</span></code> permite ejecutar un bloque de código varias veces. Su estructura general es:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">inicio</span><span class="p">,</span> <span class="n">fin</span><span class="p">,</span> <span class="n">paso</span><span class="p">):</span>
-    <span class="n">instrucciones</span>
-</pre></div>
-</div>
+<p>Una variable almacena información. Nos interesa la información cuantitativa, la cuál en álgebra puede clasificarse como</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">inicio</span></code>: valor inicial</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">fin</span></code>: valor final (no incluido)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">paso</span></code>: incremento (opcional)</p></li>
+<li><p>Naturales</p></li>
+<li><p>Enteros</p></li>
+<li><p>Racionales</p></li>
+<li><p>Irracionales</p></li>
+<li><p>Reales</p></li>
+<li><p>Complejos</p></li>
 </ul>
-<p><strong>Nota</strong> Observe que las instrucciones que se deben ejecutar dentro del bucle están indentadas (desplazadas hacia la derecha). Esta indentación es obligatoria en Python y define el bloque de código del <code class="docutils literal notranslate"><span class="pre">for</span></code>.</p>
-</section>
-<section id="ejemplo-1">
-<h2>Ejemplo 1<a class="headerlink" href="#ejemplo-1" title="Link to this heading">#</a></h2>
-<p>Contaremos del 1 al 10 usando el bucle <code class="docutils literal notranslate"><span class="pre">for</span></code></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">### Imprimir los numeros del 1 al 10 con un bucle for</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Contando del 1 al 10&quot;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<p>Una variable se declara como:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
 </pre></div>
 </div>
-</section>
-<section id="ejemplo-2">
-<h2>Ejemplo 2<a class="headerlink" href="#ejemplo-2" title="Link to this heading">#</a></h2>
-<p>Imprimir los números pares en el intervalo <span class="math notranslate nohighlight">\((1,20)\)</span>:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
-4
-6
-8
-10
-12
-14
-16
-18
-20
-</pre></div>
-</div>
-</div>
-</div>
-<p>Se podría realizar también de la siguiente manera, aprovechando la definición de paridad (todo número par es de la forma <span class="math notranslate nohighlight">\(2k\)</span> con <span class="math notranslate nohighlight">\(k\in\mathbb{Z}\)</span>):</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
-4
-6
-8
-10
-12
-14
-16
-18
-20
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="ejemplo-3">
-<h2>Ejemplo 3<a class="headerlink" href="#ejemplo-3" title="Link to this heading">#</a></h2>
-<p>Imprimir los cuadrados y los cubos de los números naturales en el intervalo [1,10]</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x =&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s2">&quot;x^2 =&quot;</span><span class="p">,</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;x^3 =&quot;</span><span class="p">,</span> <span class="n">i</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>x = 1 x^2 = 1 x^3 = 1
-x = 2 x^2 = 4 x^3 = 8
-x = 3 x^2 = 9 x^3 = 27
-x = 4 x^2 = 16 x^3 = 64
-x = 5 x^2 = 25 x^3 = 125
-x = 6 x^2 = 36 x^3 = 216
-x = 7 x^2 = 49 x^3 = 343
-x = 8 x^2 = 64 x^3 = 512
-x = 9 x^2 = 81 x^3 = 729
-x = 10 x^2 = 100 x^3 = 1000
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>Nota:</strong> Observe que los elementos escritos entre comillas se muestran literalmente en la salida del programa, es decir, aparecen exactamente como fueron escritos.</p>
-</section>
-<section id="ejemplo-4">
-<h2>Ejemplo 4<a class="headerlink" href="#ejemplo-4" title="Link to this heading">#</a></h2>
-<p>Imprimir la suma de los números naturales del 1 al 20, incluyendo su suma parcial.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Sumando los numeros naturales del 1 al 20&quot;</span><span class="p">)</span>
+<p>Python tiene su propia clasificacion de variables, por ejemplo:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Enteros (Integers)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
 
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">21</span><span class="p">):</span>
-    <span class="n">suma</span> <span class="o">+=</span> <span class="n">i</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Suma parcial:&quot;</span><span class="p">,</span> <span class="n">suma</span><span class="p">)</span>
+<span class="c1"># Punto Flotante (Float)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mf">5.0</span>
 
-<span class="c1"># note como el cambio en la indentacion da fin al bucle</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La suma total es:&quot;</span><span class="p">,</span> <span class="n">suma</span><span class="p">)</span>  <span class="c1"># Esta accion solo se ejecuta una vez, no es parte del bucle</span>
+<span class="c1"># Complejos (Complex)</span>
+<span class="n">z</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span>
+</pre></div>
+</div>
+<p><strong>En el siguiente recuadro, copie y pegue el código de arriba para declarar las variables, recuerde dar “shift”+“enter” o Run.</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Declare variables</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Como ya habrá observado, toda línea que comience con el símbolo <code class="docutils literal notranslate"><span class="pre">#</span></code>se considera un <code class="docutils literal notranslate"><span class="pre">comentario</span></code>. Python ignorará esa línea y seguirá con la siguiente. Esto es útil para hacer anotaciones en el código.</p>
+<p>Puede consultar el tipo de dato de una variable mediante <code class="docutils literal notranslate"><span class="pre">type</span></code>.</p>
+<p>Por ejemplo:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Pruebe a declarar diferentes tipos de variables y compruebe la diferencia entre 5 y 5.0.</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Sumando los numeros naturales del 1 al 20
-Suma parcial: 1
-Suma parcial: 3
-Suma parcial: 6
-Suma parcial: 10
-Suma parcial: 15
-Suma parcial: 21
-Suma parcial: 28
-Suma parcial: 36
-Suma parcial: 45
-Suma parcial: 55
-Suma parcial: 66
-Suma parcial: 78
-Suma parcial: 91
-Suma parcial: 105
-Suma parcial: 120
-Suma parcial: 136
-Suma parcial: 153
-Suma parcial: 171
-Suma parcial: 190
-Suma parcial: 210
-La suma total es: 210
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>int
 </pre></div>
 </div>
 </div>
 </div>
-<p><strong>Nota:</strong> La variable <code class="docutils literal notranslate"><span class="pre">suma</span></code> se inicializa en 0 antes de comenzar el bucle. Esta inicialización es necesaria para poder acumular correctamente los valores en cada iteración.
-<strong>Nota:</strong> Observe que al terminar la indentación del bloque <code class="docutils literal notranslate"><span class="pre">for</span></code>, el programa sale del bucle. Por ello, la última instrucción <code class="docutils literal notranslate"><span class="pre">print</span></code> se ejecuta una sola vez.</p>
-</section>
-<section id="ejercicios-de-practica-del-bucle-for">
-<h2>Ejercicios de práctica del bucle <code class="docutils literal notranslate"><span class="pre">for</span></code><a class="headerlink" href="#ejercicios-de-practica-del-bucle-for" title="Link to this heading">#</a></h2>
+<div class="note admonition">
+<p class="admonition-title">Nota</p>
+<p>Finalmente, dejamos la nota de que una variable en Python es algo mucho más general.</p>
+<p>Por ejemplo, podemos declarar la variable <code class="docutils literal notranslate"><span class="pre">carrito</span></code> y asignarle el número 7.3</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">carrito</span> <span class="o">=</span> <span class="mf">7.3</span>
+</pre></div>
+</div>
+<p>A lo largo del texto exploraremos otros tipos de variables.</p>
+</div>
+<div class="important admonition">
+<p class="admonition-title">Operaciones</p>
+<p>Puede aplicar todas las operaciones matemáticas a las variables, por ejemplo:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Operación</p></th>
+<th class="head text-center"><p>Álgebra</p></th>
+<th class="head text-center"><p>Python</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Suma</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(z=x+y\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(z=x+y\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Resta</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(z=x-y\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(z=x-y\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Multiplicación</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(z=(x)(y)\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(x=x*y\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>División</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(z=\frac{x}{y}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(z=x/y\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Potencia</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(z=x^{y}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(z=x**y\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>En nuestro ejemplo, podemos declarar una nueva variable, hacer las operaciones anteriores, guardar el resultado e imprimirlo.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#Declaramos la variable x</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mf">5.0</span>
+<span class="c1">#Declaramos la variable y</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mf">2.0</span>
+
+<span class="c1">#Hacemos algunas operaciones con nuestras variables x, y; y guardamos el resultado</span>
+<span class="n">z_suma</span>  <span class="o">=</span> <span class="n">x</span><span class="o">+</span><span class="n">y</span>
+<span class="n">z_resta</span> <span class="o">=</span> <span class="n">x</span><span class="o">-</span><span class="n">y</span>
+<span class="n">z_mult</span>  <span class="o">=</span> <span class="n">x</span><span class="o">*</span><span class="n">y</span>
+<span class="n">z_div</span>   <span class="o">=</span> <span class="n">x</span><span class="o">/</span><span class="n">y</span>
+<span class="n">z_pot</span>   <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="n">y</span>
+
+<span class="c1">#Imprimimos los resultados</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;y&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;suma&quot;</span><span class="p">,</span><span class="n">z_suma</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;resta&quot;</span><span class="p">,</span><span class="n">z_resta</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;multiplicación&quot;</span><span class="p">,</span><span class="n">z_mult</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;división&quot;</span><span class="p">,</span><span class="n">z_div</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;potencia&quot;</span><span class="p">,</span><span class="n">z_pot</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Los resultados se almacenan en las variables z_suma, z_resta, z_mult y z_div. Es importante notar que una variable puede tener un nombre más largo que una sola letra; y que también podemos imprimir texto.</p>
+</div>
+<p>A continuación:</p>
 <ul class="simple">
-<li><p>Imprimir los números enteros del -10 al 10.</p></li>
-<li><p>Imprimir los números pares entre 1 y 20.</p></li>
-<li><p>Imprimir los cuadrados de los números del 1 al 10.</p></li>
-<li><p>Imprimir los cubos de los números del 1 al 10.</p></li>
-<li><p>Implemente un código que imprima los números enteros del 20 al 1 en orden decreciente.</p></li>
-<li><p>Implemente un código que modifique el valor de una variable <span class="math notranslate nohighlight">\(x\)</span> en pasos de <span class="math notranslate nohighlight">\(\Delta x\)</span>, con <span class="math notranslate nohighlight">\(x_0 = 1.0\)</span>, <span class="math notranslate nohighlight">\(x_f = 2.0\)</span> y <span class="math notranslate nohighlight">\(\Delta x = 0.005\)</span>.</p></li>
+<li><p>Declare las variables x=4, y=3.</p></li>
+<li><p>Realice la operación x^2 + 3+y</p></li>
+<li><p>Guarde el resultado en la variable z</p></li>
+<li><p>Imprima el resultado</p></li>
 </ul>
-</section>
-<section id="ejercicios-propuestos">
-<h2>Ejercicios propuestos<a class="headerlink" href="#ejercicios-propuestos" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Imprimir los números del 20 al 1 en orden inverso.</p></li>
-<li><p>Incrementar una variable <span class="math notranslate nohighlight">\(x\)</span> desde 1.0 hasta 2.0 con paso <span class="math notranslate nohighlight">\(\Delta x = 0.005\)</span>.</p></li>
-<li><p>Imprimir las tablas de multiplicar del 1 al 10.</p></li>
-</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Inserte código para resolver el ejercicio</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 
@@ -679,7 +647,7 @@ La suma total es: 210
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Práctica 2: Aplicaciòn al càlculo de sumas y series</p>
+        <p class="prev-next-title">Práctica 1: El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -699,14 +667,8 @@ La suma total es: 210
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivos">Objetivos</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto teórico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1">Ejemplo 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-2">Ejemplo 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-3">Ejemplo 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-4">Ejemplo 4</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-de-practica-del-bucle-for">Ejercicios de práctica del bucle <code class="docutils literal notranslate"><span class="pre">for</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-propuestos">Ejercicios propuestos</a></li>
 </ul>
   </nav></div>
 
