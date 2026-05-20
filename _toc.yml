@@ -10,6 +10,7 @@ parts:
     - file: u1p4
     - file: u1p5
     - file: u1p6
+    - file: u1p7
 
   - caption: Vectores en ℝ² y ℝ³
     chapters:
