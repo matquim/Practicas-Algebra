@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'u5p1';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -442,6 +444,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
 </ul>
             </nav>
         </div>
@@ -458,6 +461,46 @@ document.write(`
 <section id="objetivo">
 <h2>Objetivo<a class="headerlink" href="#objetivo" title="Link to this heading">#</a></h2>
 <p>Aprender a manejar espacios vectoriales</p>
+<div class="tip admonition">
+<p class="admonition-title">Concepto</p>
+<p>Una combinación lineal de vectores se forma sumando vectores y multiplicandolos por escalares, es decir:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-6ced4eb5-4e95-4c37-9f18-4c192e8525c6">
+<span class="eqno">(14)<a class="headerlink" href="#equation-6ced4eb5-4e95-4c37-9f18-4c192e8525c6" title="Permalink to this equation">#</a></span>\[\begin{equation}
+    \vec{w} = c_1 \vec{v}_1 + c_2 \vec{v}_2 + \cdots + c_n \vec{v}_n
+\end{equation}\]</div>
+<p>Por ejemplo</p>
+<div class="amsmath math notranslate nohighlight" id="equation-b7d58395-98c0-4002-9ecd-fcdb91b34025">
+<span class="eqno">(15)<a class="headerlink" href="#equation-b7d58395-98c0-4002-9ecd-fcdb91b34025" title="Permalink to this equation">#</a></span>\[\begin{equation}
+    w = 2 \begin{pmatrix}5 \\ 3 \\ 2\end{pmatrix} - \begin{pmatrix}1 \\ 3 \\ -2\end{pmatrix} = \begin{pmatrix}9 \\ 3 \\ 6\end{pmatrix}
+\end{equation}\]</div>
+</div>
+</section>
+<section id="ejercicios">
+<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
+<p>Escriba el código para crear los siguientes vectores</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\vec{v}_1 = (1, 3, 5)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\vec{v}_2 = (-4, 2, 1)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\vec{v}_3 = (-3, -7, 2)\)</span></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Escriba código</span>
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>Realice la operación <span class="math notranslate nohighlight">\(2\vec{v}_1 + 4\vec{v}_2 - 6\vec{v}_3\)</span></p></li>
+<li><p>Guarde el resultado en una nueva variable, <span class="math notranslate nohighlight">\(\vec{w}\)</span>.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Escriba código</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 
@@ -526,6 +569,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
 </ul>
   </nav></div>
 
