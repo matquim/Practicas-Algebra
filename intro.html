@@ -62,7 +62,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Tutorial Básico" href="Tutorial-Basico.html" />
+    <link rel="next" title="Práctica 1: El bucle \(\texttt{for}\), lo básico" href="u1p1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -182,12 +182,7 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">TEMPORAL (Quitar)</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Tutorial-Basico.html">Tutorial Básico</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tutorial-Avanzado.html">Tutorial Avanzado</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sistemas Numéricos</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Sistemas Numéricos</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u1p1.html">Práctica 1: El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u1p2.html">Práctica 2: Aplicaciòn al càlculo de sumas y series</a></li>
@@ -462,14 +457,16 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="practicas-algebra-superior">
 <h1>Prácticas Álgebra Superior<a class="headerlink" href="#practicas-algebra-superior" title="Link to this heading">#</a></h1>
-<p>El presente libro digital tiene como objetivo ser un manual de prácticas para la asignatura de <a class="reference external" href="https://quimica.unam.mx/wp-content/uploads/2022/02/1110-Algebra-Superior-Q.pdf"><code class="docutils literal notranslate"><span class="pre">Álgebra</span> <span class="pre">Superior</span> <span class="pre">Clave</span> <span class="pre">1110)</span></code></a> de la Facultad de Química (UNAM).</p>
-<p>La primera vez que se presente una instrucción o un bloque de código se mostrará directamente para copiar y pegar en la celda, por ejemplo, el siguiente código muestra como realizar una impresión:</p>
+<p>Este libro digital busca ofrecer actividades computacionales pensadas para acompañar un curso inicial de Álgebra. En concreto, el material se alinea con el programa de la asignatura <a class="reference external" href="https://quimica.unam.mx/wp-content/uploads/2022/02/1110-Algebra-Superior-Q.pdf"><code class="docutils literal notranslate"><span class="pre">Álgebra</span> <span class="pre">Superior</span> <span class="pre">(Clave</span> <span class="pre">1110)</span></code></a> de la Facultad de Química de la UNAM.</p>
+<p>A lo largo de las unidades centrales del curso, se proponen ejercicios que, además de introducir conceptos fundamentales de programación, emplean estas herramientas para profundizar y expandir las ideas clave del álgebra.</p>
+<p>La estructura de este libro favorece la interactividad. Algunos bloques de código se presentan listos para copiar, pegar y ejecutar por ejemplo:</p>
 <div class="important admonition">
 <p class="admonition-title">Aprendizaje de código</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bienvenidos a Álgebra Superior&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+<p>Mientras que otros bloques requieren que se complete el código.</p>
 <p>A lo largo de los ejercicios encontrará celdas vacías con una nota para indicar que debe ser llenada siguiendo alguna instrucción, <strong>como la siguiente</strong>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -478,7 +475,7 @@ document.write(`
 </div>
 </div>
 </div>
-<p>La respuesta se encuentra oculta para permitir que se resuelva el ejercicio en la celda vacía por cuenta propia. Para revelar la respuesta hay que presionar botones como el siguiente:</p>
+<p>En algunos casos, hay contenido oculto para revelarse con fines didácticos, como en la siguiente celda:</p>
 <div class="cell tag_hide-cell docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -486,38 +483,23 @@ document.write(`
 <p class="expanded admonition-title">Hide code cell content</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bienvenidos a Álgebra Superior, esta es la respuesta oculta a una pregunta&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bienvenidos al curso de Álgebra, Si está leyendo esto, el contenido oculto ha sido revelado.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Bienvenidos a Álgebra Superior, esta es la respuesta oculta a una pregunta
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Bienvenidos al curso de Álgebra, Si está leyendo esto, el contenido oculto ha sido revelado.
 </pre></div>
 </div>
 </div>
 </details>
 </div>
-<div class="attention admonition">
-<p class="admonition-title">¡Creemos en tí!</p>
-<p>Realmente queremos resaltar lo importante que es intentar resolver los problemas antes de revelar la respuesta. Al inicio puede ser complicado, pero se obtiene una gran recompensa en <code class="docutils literal notranslate"><span class="pre">conocimiento</span></code> y <code class="docutils literal notranslate"><span class="pre">habilidad</span></code>, y se volverá más sencillo con cada ejercicio resuelto. Confiamos en su <code class="docutils literal notranslate"><span class="pre">creatividad</span></code>, y si fuera necesario, siempre podemos aprender de la respuesta oculta.</p>
-</div>
 <section id="ejecucion">
 <h2>Ejecución<a class="headerlink" href="#ejecucion" title="Link to this heading">#</a></h2>
-<p>Este libro permite interactuar con el contenido. Seleccione la opción que le resulte más conveniente.</p>
-<div class="dropdown admonition">
-<p class="admonition-title">En la misma página web</p>
-<p>Puede ejecutar los notebooks directamente en el libro haciendo clic sobre el botón de la nave, y luego sobre el botón de <code class="docutils literal notranslate"><span class="pre">Live</span> <span class="pre">Code</span></code>.</p>
-<p><img alt="Live Code" src="images/live_code.png" /></p>
-</div>
-<div class="dropdown admonition">
-<p class="admonition-title">Google Colab</p>
-<p>Los notebooks pueden ejecutarse en línea desde <code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Colab</span></code> al presionar el ícono de la nave y dar clic sobre Colab, este ícono aparece en la parte superior de cada notebook. Los archivos generados en Google Colab se guardan automáticamente en su Google Drive.</p>
-<p><img alt="Google Colab example button" src="images/google_colab.png" /></p>
-</div>
-<p>Los ejercicios de este libro requieren un conocimiento básico de Python, mismo que puede adquirirse en el primer capítulo del libro.</p>
+<p>El código sugerido está escrito en Python. Para los fines didácticos que se persiguen, se recomienda su ejecución en <code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Colab</span></code>. Alternativamente, puede ser ejecutado desde lac misma página de internet mediante el botón de <code class="docutils literal notranslate"><span class="pre">Live</span> <span class="pre">Code</span></code>, el cual es accesible desde el ícono con forma de <code class="docutils literal notranslate"><span class="pre">nave</span> <span class="pre">espacial</span></code> en la esquina superior derecha de las páginas.</p>
+<p>Recuerde que cada celda se ejecuta mediante las teclas <strong>Shift</strong> + <strong>Enter</strong> o mediante el botón <em>run</em> en <code class="docutils literal notranslate"><span class="pre">Live</span> <span class="pre">Code</span></code> o el tríangulo de Play en <code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Colab</span></code>.</p>
+<p>Le deseamos mucho éxito y una pizca de suerte a lo largo de esta travecía.</p>
 </section>
-<div class="toctree-wrapper compound">
-</div>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
@@ -565,11 +547,11 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="right-next"
-       href="Tutorial-Basico.html"
+       href="u1p1.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Tutorial Básico</p>
+        <p class="prev-next-title">Práctica 1: El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
