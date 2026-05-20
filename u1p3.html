@@ -444,8 +444,11 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1">Ejemplo 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1-mas-complejo-usando-funciones">Ejemplo 1 más complejo: usando funciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1">Ejemplo 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1-mas-complejo-usando-funciones">Ejemplo 1 más complejo: usando funciones</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-propuestos">Ejercicios propuestos</a></li>
 </ul>
             </nav>
@@ -466,17 +469,33 @@ document.write(`
 <div class="tip admonition">
 <p class="admonition-title">Concepto</p>
 <h2 class="rubric" id="concepto-teorico">Concepto Teórico</h2>
-<p>Se sabe que el resultado de la suma de los primeros n números naturales es:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-96ad9e31-1d54-419b-bac4-e4346a850a81">
-<span class="eqno">(1)<a class="headerlink" href="#equation-96ad9e31-1d54-419b-bac4-e4346a850a81" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<p>Se sabe que el resultado de la suma de los primeros <span class="math notranslate nohighlight">\(n\)</span> números naturales es:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-ced68e18-684b-440b-8979-727c6ef0d7e8">
+<span class="eqno">(1)<a class="headerlink" href="#equation-ced68e18-684b-440b-8979-727c6ef0d7e8" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
 \end{equation}\]</div>
 </div>
 </section>
+<section id="ejercicios">
+<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
 <section id="ejemplo-1">
-<h2>Ejemplo 1<a class="headerlink" href="#ejemplo-1" title="Link to this heading">#</a></h2>
+<h3>Ejemplo 1<a class="headerlink" href="#ejemplo-1" title="Link to this heading">#</a></h3>
 <p>Implemente un código que calcule esta suma y utilícelo para calcular los valores de la suma cuando <span class="math notranslate nohighlight">\(n=20,100,10000\)</span>. Compare con el resultado analítico de la ecuación anterior.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Comparacion sin usar funciones</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Escriba código aquí</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-cell docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell content</p>
+<p class="expanded admonition-title">Hide code cell content</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Comparacion sin usar funciones</span>
 <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">10000</span><span class="p">]:</span>
     <span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
@@ -491,11 +510,47 @@ document.write(`
     <span class="nb">print</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>n = 20
+Suma numerica: 210
+Suma analitica: 210
+Diferencia: 0
+
+n = 100
+Suma numerica: 5050
+Suma analitica: 5050
+Diferencia: 0
+
+n = 10000
+Suma numerica: 50005000
+Suma analitica: 50005000
+Diferencia: 0
+</pre></div>
+</div>
+</div>
+</details>
+</div>
 <p><strong>Nota:</strong> La expresión analítica de la suma de los primeros <span class="math notranslate nohighlight">\(n\)</span> números naturales es <span class="math notranslate nohighlight">\(S = \frac{n(n+1)}{2}\)</span>.</p>
 </section>
 <section id="ejemplo-1-mas-complejo-usando-funciones">
-<h2>Ejemplo 1 más complejo: usando funciones<a class="headerlink" href="#ejemplo-1-mas-complejo-usando-funciones" title="Link to this heading">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Funcion para la suma numerica</span>
+<h3>Ejemplo 1 más complejo: usando funciones<a class="headerlink" href="#ejemplo-1-mas-complejo-usando-funciones" title="Link to this heading">#</a></h3>
+<p>Ahora use funciones:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Escriba código aquí</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-cell docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell content</p>
+<p class="expanded admonition-title">Hide code cell content</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Funcion para la suma numerica</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">suma_numerica</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
@@ -515,7 +570,29 @@ document.write(`
     <span class="nb">print</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>n = 20
+Suma numerica: 210
+Suma analitica: 210
+Diferencia: 0
+
+n = 100
+Suma numerica: 5050
+Suma analitica: 5050
+Diferencia: 0
+
+n = 10000
+Suma numerica: 50005000
+Suma analitica: 50005000
+Diferencia: 0
+</pre></div>
+</div>
+</div>
+</details>
+</div>
 <p><strong>Nota:</strong> El uso de funciones permite reutilizar código y hacer el programa más claro y modular.</p>
+</section>
 </section>
 <section id="ejercicios-propuestos">
 <h2>Ejercicios propuestos<a class="headerlink" href="#ejercicios-propuestos" title="Link to this heading">#</a></h2>
@@ -523,6 +600,13 @@ document.write(`
 <li><p>Calcular la suma para <span class="math notranslate nohighlight">\(n = 20, 100, 10000\)</span>.</p></li>
 <li><p>Comparar el resultado numérico con la fórmula analítica.</p></li>
 </ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Agregue código aquí</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 
@@ -591,8 +675,11 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1">Ejemplo 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1-mas-complejo-usando-funciones">Ejemplo 1 más complejo: usando funciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1">Ejemplo 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1-mas-complejo-usando-funciones">Ejemplo 1 más complejo: usando funciones</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-propuestos">Ejercicios propuestos</a></li>
 </ul>
   </nav></div>
