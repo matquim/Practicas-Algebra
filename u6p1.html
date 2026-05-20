@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'u6p1';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -442,6 +444,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
 </ul>
             </nav>
         </div>
@@ -458,6 +461,70 @@ document.write(`
 <section id="objetivo">
 <h2>Objetivo<a class="headerlink" href="#objetivo" title="Link to this heading">#</a></h2>
 <p>Aprender a definir conjuntos y manipular números complejos.</p>
+<div class="tip admonition">
+<p class="admonition-title">Concepto</p>
+<p>Los números complejos son aquellos que tienen una parte real y una parte imaginaria, por ejemplo:</p>
+<p><span class="math notranslate nohighlight">\(2 + 4i\)</span></p>
+<p>Por convención, en Python, la parte imaginaria se representa con la letra <span class="math notranslate nohighlight">\(j\)</span>, tal que un número complejo en Python se representa como:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span> <span class="o">+</span> <span class="mi">4</span><span class="n">j</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="ejercicios">
+<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
+<p>Declare los siguientes dos números complejos
+<span class="math notranslate nohighlight">\(1+3i\)</span>
+<span class="math notranslate nohighlight">\(-2+4i\)</span>
+guardelos en las variables <span class="math notranslate nohighlight">\(x\)</span> y <span class="math notranslate nohighlight">\(y\)</span> respectivamente</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Escriba código aquí</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-cell docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell content</p>
+<p class="expanded admonition-title">Hide code cell content</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">3</span><span class="n">j</span>
+<span class="n">y</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">4</span><span class="n">j</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<p>Sume ambos números complejos, guárdelos en una variable e imprímala.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Escriba código aquí</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-cell docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell content</p>
+<p class="expanded admonition-title">Hide code cell content</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+<span class="n">z</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(-1+7j)
+</pre></div>
+</div>
+</div>
+</details>
+</div>
 </section>
 </section>
 
@@ -526,6 +593,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
 </ul>
   </nav></div>
 
