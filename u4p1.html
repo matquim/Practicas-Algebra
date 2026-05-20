@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'u4p1';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -214,6 +216,7 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Matrices y Sistemas de Ecuaciones</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Práctica 1: Definición de matrices</a></li>
+
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Espacios Vectoriales</span></p>
 <ul class="nav bd-sidenav">
@@ -441,8 +444,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Práctica 1: Definición de matrices</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
+</ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -458,6 +469,53 @@ document.write(`
 <section id="objetivo">
 <h2>Objetivo<a class="headerlink" href="#objetivo" title="Link to this heading">#</a></h2>
 <p>Aprender a definir y manipular una matriz.</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="concepto-teorico">
+<h1>Concepto Teórico<a class="headerlink" href="#concepto-teorico" title="Link to this heading">#</a></h1>
+<p>Una matriz es un conjunto bidimensional ordenado de números. Se denota con paréntesis, por ejemplo:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-bbb74f11-064c-4a90-8e96-30af92f7a26c">
+<span class="eqno">(12)<a class="headerlink" href="#equation-bbb74f11-064c-4a90-8e96-30af92f7a26c" title="Permalink to this equation">#</a></span>\[\begin{equation}
+M = \begin{pmatrix}
+1 &amp; 2 &amp; 3 &amp; 4\\
+5 &amp; 6 &amp; 7 &amp; 8\\
+9 &amp; 10 &amp; 11 &amp; 12
+\end{pmatrix}
+\end{equation}\]</div>
+<p>La matriz del ejemplo:</p>
+<ul class="simple">
+<li><p>Tiene 3 filas</p></li>
+<li><p>Tiene 4 columnas</p></li>
+<li><p>Es una matriz de <span class="math notranslate nohighlight">\(4 \times 3\)</span></p></li>
+</ul>
+<p>Una matriz con igual número de renglones que de columnas es una <em>matriz cuadrada</em>, de lo contrario, es una <em>matriz rectangular</em>.</p>
+<p>Es bastante útil trabajar en Python usando Numpy:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>     <span class="c1"># Fila 0</span>
+    <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span>     <span class="c1"># Fila 1</span>
+    <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">]</span>   <span class="c1"># Fila 2</span>
+<span class="p">])</span>
+</pre></div>
+</div>
+<section id="ejercicios">
+<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
+<p>Defina una matriz de <span class="math notranslate nohighlight">\(2 \times 4\)</span> utiizando su fecha de nacimiento.</p>
+<p>Por ejemplo, si nació el 04-Mayo-2010, entonces defina la matriz:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-1d0fdb54-a07d-4c43-beac-a0c47037dedf">
+<span class="eqno">(13)<a class="headerlink" href="#equation-1d0fdb54-a07d-4c43-beac-a0c47037dedf" title="Permalink to this equation">#</a></span>\[\begin{equation}
+M = \begin{pmatrix}
+0 &amp; 4 &amp; 0 &amp; 5\\
+2 &amp; 0 &amp; 1 &amp; 0
+\end{pmatrix}
+\end{equation} \]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Escriba su código aquí</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 
@@ -525,8 +583,16 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Práctica 1: Definición de matrices</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#concepto-teorico">Concepto Teórico</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
+</ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
