@@ -465,15 +465,30 @@ document.write(`
 <div class="tip admonition">
 <p class="admonition-title">Concepto</p>
 <p>El factorial de un número <span class="math notranslate nohighlight">\(n\)</span> se define como:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e08c33ad-09a2-4d02-83f6-02ecf70c3651">
-<span class="eqno">(2)<a class="headerlink" href="#equation-e08c33ad-09a2-4d02-83f6-02ecf70c3651" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-c9852990-b896-4dd2-aa1e-29231218ae53">
+<span class="eqno">(2)<a class="headerlink" href="#equation-c9852990-b896-4dd2-aa1e-29231218ae53" title="Permalink to this equation">#</a></span>\[\begin{equation}
 n! = 1 \cdot 2 \cdot 3 \cdots n
 \end{equation}\]</div>
 </div>
 </section>
 <section id="ejemplo">
 <h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Link to this heading">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculo del factorial de 4</span>
+<p>Utilice un <code class="docutils literal notranslate"><span class="pre">for</span></code> para calcular el factorial del número 4.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Escriba código aquí</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-cell docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell content</p>
+<p class="expanded admonition-title">Hide code cell content</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculo del factorial de 4</span>
 <span class="n">n</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="n">factorial</span> <span class="o">=</span> <span class="mi">1</span>
 
@@ -483,14 +498,89 @@ n! = 1 \cdot 2 \cdot 3 \cdots n
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Factorial:&quot;</span><span class="p">,</span> <span class="n">factorial</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Factorial: 24
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<p>Ahora utilice un <code class="docutils literal notranslate"><span class="pre">for</span></code> para calcular el factorial del número 100.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Escriba código aquí</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-cell docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell content</p>
+<p class="expanded admonition-title">Hide code cell content</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculo del factorial de 100</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">factorial</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">factorial</span> <span class="o">*=</span> <span class="n">i</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Factorial:&quot;</span><span class="p">,</span> <span class="n">factorial</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Factorial: 2432902008176640000
+</pre></div>
+</div>
+</div>
+</details>
+</div>
 </section>
 <section id="ejercicios-propuestos">
 <h2>Ejercicios propuestos<a class="headerlink" href="#ejercicios-propuestos" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Calcular el factorial de diferentes valores de <span class="math notranslate nohighlight">\(n\)</span>.</p></li>
-<li><p>Comparar con la función <code class="docutils literal notranslate"><span class="pre">math.factorial()</span></code>.</p></li>
+<li><p>Utilice la función <code class="docutils literal notranslate"><span class="pre">math.factorial()</span></code> para calcular el factorial de 1000.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Escriba código aquí</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-cell docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell content</p>
+<p class="expanded admonition-title">Hide code cell content</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+<span class="n">math</span><span class="o">.</span><span class="n">factorial</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2432902008176640000
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<ul class="simple">
 <li><p>Desarrolle un código que imprima las tablas de multiplicar del 1 al 10.</p></li>
 </ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Escriba código aquí</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 
