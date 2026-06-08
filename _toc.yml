@@ -23,7 +23,7 @@ parts:
     - file: u2p7
     - file: u2p8
 
-  - caption: Conjuntos
+  - caption: Lógica y Conjuntos
     chapters:
     - file: u3p1
     - file: u3p2
