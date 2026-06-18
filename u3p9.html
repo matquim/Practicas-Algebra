@@ -599,153 +599,13 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Proposiciones Lógicas</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">——————————————————————————</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones-proposicionales">2. FUNCIONES PROPOSICIONALES</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#una-funcion-proposicional-es-verdadera-o-falsa-dependiendo-del-valor-de-su-parametro">Una función proposicional es verdadera o falsa dependiendo del valor de su parámetro.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">——————————————————————————</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conectivos-logicos">3. CONECTIVOS LÓGICOS</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#para-unir-dos-proposiciones-atomicas-y-formar-una">Para unir dos proposiciones atómicas y formar una</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#proposicion-molecular-podemos-usar-conectivos-logicos">proposición molecular, podemos usar conectivos lógicos.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#en-python-disponemos-de-tres-principales">En Python disponemos de tres principales:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#not-negacion">not   →  negación</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#and-conjuncion">and   →  conjunción</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#or-disyuncion">or    →  disyunción</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#en-python-los-conectivos-logicos-tienen-un-orden-de-prioridad">En Python, los conectivos lógicos tienen un orden de prioridad:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#not-mayor-prioridad">1. not   (mayor prioridad)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#and">2. and</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#or-menor-prioridad">3. or    (menor prioridad)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#asi-la-expresion">Así, la expresión:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id8"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#not-x-3-and-x-4">not (x == 3) and (x &lt; 4)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id9"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#se-evalua-como">se evalúa como:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id10"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">(not (x == 3)) and (x &lt; 4)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id12"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#es-decir-primero-se-niega-x-3-y-luego">Es decir, primero se niega (x == 3), y luego</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#se-verifica-la-conjuncion-con-x-4">se verifica la conjunción con (x &lt; 4).</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#para-evitar-ambiguedades-siempre-es-recomendable">Para evitar ambigüedades, siempre es recomendable</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#usar-parentesis-de-forma-explicita">usar paréntesis de forma explícita.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tablas-de-verdad">4. TABLAS DE VERDAD</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#usaremos-estos-conectivos-para-construir-tablas-de-verdad">Usaremos estos conectivos para construir tablas de verdad.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cada-renglon-corresponde-a-un-juego-de-valores-de-verdad">Cada renglón corresponde a un juego de valores de verdad</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#de-las-proposiciones-atomicas">de las proposiciones atómicas.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id14"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#para-dos-proposiciones-p-y-q-hay-4-combinaciones-posibles">Para dos proposiciones P y Q, hay 4 combinaciones posibles:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id15"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-q">P      Q</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">────  ────</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#true-true">True  True</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#true-false">True  False</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#false-true">False True</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#false-false">False False</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id17"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#construyamos-la-tabla-de-verdad-de-la-conjuncion-and">Construyamos la tabla de verdad de la conjunción (and):</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#nota-en-este-ejemplo-construimos-cada-renglon-a-mano">Nota: en este ejemplo construimos cada renglón “a mano”.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#como-podemos-mejorar-ese-proceso">¿Cómo podemos mejorar ese proceso?</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#equivalencias-logicas">5. EQUIVALENCIAS LÓGICAS</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dos-proposiciones-son-equivalentes-si-tienen-el-mismo-valor-de-verdad-para-cualquier-combinacion-de-valores-de-verdad-de-las-proposiciones-que-las-componen">Dos proposiciones son equivalentes si tienen el mismo valor de verdad para cualquier combinación de valores de verdad de las proposiciones que las componen.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id20"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#verificaremos-las-siguientes-equivalencias">Verificaremos las siguientes equivalencias:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id21"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ley-de-de-morgan">1. Ley de De Morgan:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#neg-p-wedge-q-equiv-neg-p-vee-neg-q"><span class="math notranslate nohighlight">\(\neg(P \wedge Q) \equiv \neg P \vee \neg Q\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id22"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#distributividad">2. Distributividad:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-wedge-q-vee-r-equiv-p-wedge-q-vee-p-wedge-r"><span class="math notranslate nohighlight">\(P \wedge (Q \vee R) \equiv (P \wedge Q) \vee (P \wedge R)\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id23"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#negacion-de-la-implicacion">3. Negación de la implicación:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#neg-p-rightarrow-q-equiv-p-wedge-neg-q"><span class="math notranslate nohighlight">\(\neg(P \Rightarrow Q) \equiv P \wedge \neg Q\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id24"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contrapuesta">4. Contrapuesta:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-rightarrow-q-equiv-neg-q-rightarrow-neg-p"><span class="math notranslate nohighlight">\(P \Rightarrow Q \equiv \neg Q \Rightarrow \neg P\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id25"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#la-implicacion-no-es-conmutativa">5. La implicación no es conmutativa:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-rightarrow-q-not-equiv-q-rightarrow-p"><span class="math notranslate nohighlight">\(P \Rightarrow Q \not\equiv Q \Rightarrow P\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id26"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#nota-la-implicacion-rightarrow-no-existe-como-tal-en-python">Nota: la implicación (<span class="math notranslate nohighlight">\(\Rightarrow\)</span>) no existe como tal en Python.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#usaremos-la-equivalencia-que-podemos-definir-como-funcion">Usaremos la equivalencia que podemos definir como funcion:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-rightarrow-q-equiv-neg-p-vee-q"><span class="math notranslate nohighlight">\(P \Rightarrow Q \equiv \neg P \vee Q\)</span></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">———————————————————–</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio">EJERCICIO</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definir-una-funcion-que-permita-generar-la-tabla-de-verdad-de-la-equivalencia-logica-de-manera-sencilla">Definir una función que permita generar la tabla de verdad de la equivalencia lógica de manera sencilla.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#leyes-validas-de-inferencia">6. LEYES VÁLIDAS DE INFERENCIA</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#una-ley-de-inferencia-nos-permite-concluir-una-proposicion-a-partir-de-otras-proposiciones-dadas-estas-reglas-son-siempre-validas-es-decir-son-tautologias-su-valor-de-verdad-es-true-para-cualquier-combinacion-de-valores-de-verdad-de-las-proposiciones-que-las-componen">Una ley de inferencia nos permite concluir una proposición a partir de otras proposiciones dadas. Estas reglas son siempre válidas, es decir, son tautologías: su valor de verdad es True para cualquier combinación de valores de verdad de las proposiciones que las componen.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id28"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#verificaremos-las-siguientes-leyes">Verificaremos las siguientes leyes:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id29"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#modus-ponens">1. Modus ponens:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-land-p-rightarrow-q-rightarrow-q"><span class="math notranslate nohighlight">\((P \land (P \Rightarrow Q)) \Rightarrow Q\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id30"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#modus-tollendo-ponens">2. Modus tollendo ponens:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#neg-p-land-p-vee-q-rightarrow-q"><span class="math notranslate nohighlight">\(((\neg P) \land (P \vee Q)) \Rightarrow Q\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id31"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#modus-tollendo-tollens">3. Modus tollendo tollens:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#neg-q-land-p-rightarrow-q-rightarrow-neg-p"><span class="math notranslate nohighlight">\(((\neg Q) \land (P \Rightarrow Q)) \Rightarrow (\neg P)\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id32"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#silogismo">4. Silogismo:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-rightarrow-q-land-q-rightarrow-r-rightarrow-p-rightarrow-r"><span class="math notranslate nohighlight">\(((P \Rightarrow Q) \land (Q \Rightarrow R))    \Rightarrow (P \Rightarrow R)\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conjuntos">7. CONJUNTOS</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#un-conjunto-es-una-coleccion-de-elementos">Un conjunto es una colección de elementos</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sin-orden-y-sin-repeticion">sin orden y sin repetición.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conjunto-de-letras">Conjunto de letras</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#a-a-b-c"><span class="math notranslate nohighlight">\(A = \{"a", "b", "c"\}\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conjunto-de-numeros">Conjunto de números</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#b-1-2-3-4"><span class="math notranslate nohighlight">\(B = \{1, 2, 3, 4\}\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">EJERCICIO</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#define-los-siguientes-conjuntos">Define los siguientes conjuntos:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id37"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#c-los-enteros-pares-entre-4-y-10"><span class="math notranslate nohighlight">\(C\)</span> : los enteros pares entre 4 y 10</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#d-las-letras-de-tu-nombre"><span class="math notranslate nohighlight">\(D\)</span> : las letras de tu nombre</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#nota-estas-definiciones-son-dadas-por-extension">Nota: estas definiciones son dadas por extensión,</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#es-decir-indicando-explicitamente-todos-los-elementos">es decir, indicando explícitamente todos los elementos</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#que-pertenecen-al-conjunto">que pertenecen al conjunto.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id39"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#que-pasa-si-repetimos-un-elemento">¿Qué pasa si repetimos un elemento?</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#de-que-tipo-son-los-conjuntos-que-hemos-definido-hasta-ahora">¿De qué tipo son los conjuntos que hemos definido hasta ahora?</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#compruebalo-con-un-comando-de-python">Compruébalo con un comando de Python.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#para-comprobar-la-pertenencia-de-un-elemento-a-un-conjunto-podemos-usar-los-comandos-in-y-not-in">Para comprobar la pertenencia de un elemento a un conjunto, podemos usar los comandos in y not in.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id40"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dar-un-ejemplo-de-conjunto-y-comprobar-el-resultado-de-estos-comandos">Dar un ejemplo de conjunto y comprobar el resultado de estos comandos.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#de-que-tipo-es-el-resultado-de-estos-comandos">¿De qué tipo es el resultado de estos comandos?</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id41">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id42">EJERCICIO</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#que-conjunto-describe-cada-una-de-las-siguientes-comprensiones">¿Qué conjunto describe cada una de las siguientes comprensiones?</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id43">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#nota-podemos-trabajar-tambien-con-numeros-reales-pero-no">Nota: podemos trabajar también con números reales, pero no</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#podremos-definir-intervalos-como-tales-ya-que-los-reales">podremos definir intervalos como tales, ya que los reales</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#forman-un-conjunto-infinito-no-numerable-no-es-posible">forman un conjunto infinito no numerable — no es posible</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#listarlos-ni-iterarlos-uno-por-uno">listarlos ni iterarlos uno por uno.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id44"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sin-embargo-podemos-definir-conjuntos-finitos-de-reales">Sin embargo, podemos definir conjuntos finitos de reales:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conjunto-de-algunas-raices-cuadradas">Conjunto de algunas raíces cuadradas</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conjunto-de-potencias-de-0-5">Conjunto de potencias de 0.5</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conjunto-de-valores-de-seno-en-algunos-puntos">Conjunto de valores de seno en algunos puntos</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id45">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#operaciones-con-conjuntos">8. OPERACIONES CON CONJUNTOS</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id46">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definimos-4-conjuntos-de-trabajo">Definimos 4 conjuntos de trabajo:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#a-que-operaciones-de-conjuntos-corresponden">¿A qué operaciones de conjuntos corresponden</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#los-siguientes-comandos-de-python">los siguientes comandos de Python?</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id47">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id48">EJERCICIO</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-los-siguientes-conjuntos-a-x-in-mathbb-z-mid-1-leq-x-leq-10-b-x-in-mathbb-z-mid-6-leq-x-leq-15-y-el-universo">Dados los siguientes conjuntos <span class="math notranslate nohighlight">\( A = \{x \in \mathbb{Z} \mid 1 \leq x \leq 10\} \)</span>, <span class="math notranslate nohighlight">\( B = \{x \in \mathbb{Z} \mid 6 \leq x \leq 15\} \)</span> y el Universo $</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#calcular-las-siguientes-operaciones-entre-conjuntos">Calcular las siguientes operaciones entre conjuntos:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id49">———————————————————–</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones-proposicionales">FUNCIONES PROPOSICIONALES</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conectivos-logicos">CONECTIVOS LÓGICOS</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tablas-de-verdad">TABLAS DE VERDAD</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#equivalencias-logicas">EQUIVALENCIAS LÓGICAS</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#leyes-validas-de-inferencia">LEYES VÁLIDAS DE INFERENCIA</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conjuntos">CONJUNTOS</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#operaciones-con-conjuntos">OPERACIONES CON CONJUNTOS</a></li>
 </ul>
 
             </nav>
@@ -825,17 +685,9 @@ False
 </div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>——————————————————————————<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-</section>
 <section class="tex2jax_ignore mathjax_ignore" id="funciones-proposicionales">
-<h1>2. FUNCIONES PROPOSICIONALES<a class="headerlink" href="#funciones-proposicionales" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="una-funcion-proposicional-es-verdadera-o-falsa-dependiendo-del-valor-de-su-parametro">
-<h1>Una función proposicional es verdadera o falsa dependiendo del valor de su parámetro.<a class="headerlink" href="#una-funcion-proposicional-es-verdadera-o-falsa-dependiendo-del-valor-de-su-parametro" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id2">
-<h1>——————————————————————————<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
+<h1>FUNCIONES PROPOSICIONALES<a class="headerlink" href="#funciones-proposicionales" title="Link to this heading">#</a></h1>
+<p>Una función proposicional es verdadera o falsa dependiendo del valor de su parámetro.</p>
 <ul class="simple">
 <li><p>Escribe una función que indique si un número es estrictamente mayor que <span class="math notranslate nohighlight">\(\pi\)</span></p></li>
 <li><p>Escribe una función que reciba dos números <span class="math notranslate nohighlight">\(a\)</span> y <span class="math notranslate nohighlight">\(b\)</span> e indique si <span class="math notranslate nohighlight">\(a\)</span> es estrictamente mayor que <span class="math notranslate nohighlight">\(b\)</span>.</p></li>
@@ -880,7 +732,7 @@ False
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2026-06-18 20:49:18.495582
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2026-06-18 22:12:46.691106
 3
 </pre></div>
 </div>
@@ -910,7 +762,7 @@ False
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2026-06-18 14:49:18.501988-06:00
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2026-06-18 16:12:46.698027-06:00
 3
 </pre></div>
 </div>
@@ -938,35 +790,16 @@ False
 </div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id3">
-<h1>———————————————————–<a class="headerlink" href="#id3" title="Link to this heading">#</a></h1>
-</section>
 <section class="tex2jax_ignore mathjax_ignore" id="conectivos-logicos">
-<h1>3. CONECTIVOS LÓGICOS<a class="headerlink" href="#conectivos-logicos" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="para-unir-dos-proposiciones-atomicas-y-formar-una">
-<h1>Para unir dos proposiciones atómicas y formar una<a class="headerlink" href="#para-unir-dos-proposiciones-atomicas-y-formar-una" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="proposicion-molecular-podemos-usar-conectivos-logicos">
-<h1>proposición molecular, podemos usar conectivos lógicos.<a class="headerlink" href="#proposicion-molecular-podemos-usar-conectivos-logicos" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="en-python-disponemos-de-tres-principales">
-<h1>En Python disponemos de tres principales:<a class="headerlink" href="#en-python-disponemos-de-tres-principales" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id4">
-<h1><a class="headerlink" href="#id4" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="not-negacion">
-<h1>not   →  negación<a class="headerlink" href="#not-negacion" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="and-conjuncion">
-<h1>and   →  conjunción<a class="headerlink" href="#and-conjuncion" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="or-disyuncion">
-<h1>or    →  disyunción<a class="headerlink" href="#or-disyuncion" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id5">
-<h1>———————————————————–<a class="headerlink" href="#id5" title="Link to this heading">#</a></h1>
+<h1>CONECTIVOS LÓGICOS<a class="headerlink" href="#conectivos-logicos" title="Link to this heading">#</a></h1>
+<p>Para unir dos proposiciones atómicas y formar una
+proposición molecular, podemos usar conectivos lógicos.
+En Python disponemos de tres principales:</p>
+<ul class="simple">
+<li><p>not   →  negación</p></li>
+<li><p>and   →  conjunción</p></li>
+<li><p>or    →  disyunción</p></li>
+</ul>
 <p>A continuación podemos escribir algunas proposiciones moleculares utilizando estos conectivos.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1012,123 +845,46 @@ False
 </div>
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="en-python-los-conectivos-logicos-tienen-un-orden-de-prioridad">
-<h1>En Python, los conectivos lógicos tienen un orden de prioridad:<a class="headerlink" href="#en-python-los-conectivos-logicos-tienen-un-orden-de-prioridad" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id6">
-<h1><a class="headerlink" href="#id6" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="not-mayor-prioridad">
-<h1>1. not   (mayor prioridad)<a class="headerlink" href="#not-mayor-prioridad" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="and">
-<h1>2. and<a class="headerlink" href="#and" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="or-menor-prioridad">
-<h1>3. or    (menor prioridad)<a class="headerlink" href="#or-menor-prioridad" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id7">
-<h1><a class="headerlink" href="#id7" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="asi-la-expresion">
-<h1>Así, la expresión:<a class="headerlink" href="#asi-la-expresion" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id8">
-<h1><a class="headerlink" href="#id8" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="not-x-3-and-x-4">
-<h1>not (x == 3) and (x &lt; 4)<a class="headerlink" href="#not-x-3-and-x-4" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id9">
-<h1><a class="headerlink" href="#id9" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="se-evalua-como">
-<h1>se evalúa como:<a class="headerlink" href="#se-evalua-como" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id10">
-<h1><a class="headerlink" href="#id10" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id11">
-<h1>(not (x == 3)) and (x &lt; 4)<a class="headerlink" href="#id11" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id12">
-<h1><a class="headerlink" href="#id12" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="es-decir-primero-se-niega-x-3-y-luego">
-<h1>Es decir, primero se niega (x == 3), y luego<a class="headerlink" href="#es-decir-primero-se-niega-x-3-y-luego" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="se-verifica-la-conjuncion-con-x-4">
-<h1>se verifica la conjunción con (x &lt; 4).<a class="headerlink" href="#se-verifica-la-conjuncion-con-x-4" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="para-evitar-ambiguedades-siempre-es-recomendable">
-<h1>Para evitar ambigüedades, siempre es recomendable<a class="headerlink" href="#para-evitar-ambiguedades-siempre-es-recomendable" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="usar-parentesis-de-forma-explicita">
-<h1>usar paréntesis de forma explícita.<a class="headerlink" href="#usar-parentesis-de-forma-explicita" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id13">
-<h1>———————————————————–<a class="headerlink" href="#id13" title="Link to this heading">#</a></h1>
+<p>En Python, los conectivos lógicos tienen un orden de prioridad:</p>
+<ol class="arabic simple">
+<li><p>not   (mayor prioridad)</p></li>
+<li><p>and</p></li>
+<li><p>or    (menor prioridad)</p></li>
+</ol>
+<p>Así, la expresión:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ow">not</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>se evalúa como:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="ow">not</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="mi">3</span><span class="p">))</span> <span class="ow">and</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Es decir, primero se niega (x == 3), y luego
+se verifica la conjunción con (x &lt; 4).
+Para evitar ambigüedades, siempre es recomendable
+usar paréntesis de forma explícita.</p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="tablas-de-verdad">
-<h1>4. TABLAS DE VERDAD<a class="headerlink" href="#tablas-de-verdad" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="usaremos-estos-conectivos-para-construir-tablas-de-verdad">
-<h1>Usaremos estos conectivos para construir tablas de verdad.<a class="headerlink" href="#usaremos-estos-conectivos-para-construir-tablas-de-verdad" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="cada-renglon-corresponde-a-un-juego-de-valores-de-verdad">
-<h1>Cada renglón corresponde a un juego de valores de verdad<a class="headerlink" href="#cada-renglon-corresponde-a-un-juego-de-valores-de-verdad" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="de-las-proposiciones-atomicas">
-<h1>de las proposiciones atómicas.<a class="headerlink" href="#de-las-proposiciones-atomicas" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id14">
-<h1><a class="headerlink" href="#id14" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="para-dos-proposiciones-p-y-q-hay-4-combinaciones-posibles">
-<h1>Para dos proposiciones P y Q, hay 4 combinaciones posibles:<a class="headerlink" href="#para-dos-proposiciones-p-y-q-hay-4-combinaciones-posibles" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id15">
-<h1><a class="headerlink" href="#id15" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="p-q">
-<h1>P      Q<a class="headerlink" href="#p-q" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id16">
-<h1>────  ────<a class="headerlink" href="#id16" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="true-true">
-<h1>True  True<a class="headerlink" href="#true-true" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="true-false">
-<h1>True  False<a class="headerlink" href="#true-false" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="false-true">
-<h1>False True<a class="headerlink" href="#false-true" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="false-false">
-<h1>False False<a class="headerlink" href="#false-false" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id17">
-<h1><a class="headerlink" href="#id17" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="construyamos-la-tabla-de-verdad-de-la-conjuncion-and">
-<h1>Construyamos la tabla de verdad de la conjunción (and):<a class="headerlink" href="#construyamos-la-tabla-de-verdad-de-la-conjuncion-and" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id18">
-<h1>———————————————————–<a class="headerlink" href="#id18" title="Link to this heading">#</a></h1>
+<h1>TABLAS DE VERDAD<a class="headerlink" href="#tablas-de-verdad" title="Link to this heading">#</a></h1>
+<p>Usaremos estos conectivos para construir tablas de verdad.
+Cada renglón corresponde a un juego de valores de verdad
+de las proposiciones atómicas.</p>
+<p>Para dos proposiciones P y Q, hay 4 combinaciones posibles:</p>
+<p>P      Q
+────  ────
+True  True
+True  False
+False True
+False False</p>
+<p>Construyamos la tabla de verdad de la conjunción (and):</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">P</span> <span class="o">=</span> <span class="kc">True</span><span class="p">;</span>  <span class="n">Q</span> <span class="o">=</span> <span class="kc">True</span><span class="p">;</span>  <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;→&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">)</span>
 <span class="n">P</span> <span class="o">=</span> <span class="kc">True</span><span class="p">;</span>  <span class="n">Q</span> <span class="o">=</span> <span class="kc">False</span><span class="p">;</span> <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;→&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">)</span>
 <span class="n">P</span> <span class="o">=</span> <span class="kc">False</span><span class="p">;</span> <span class="n">Q</span> <span class="o">=</span> <span class="kc">True</span><span class="p">;</span>  <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;→&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">)</span>
 <span class="n">P</span> <span class="o">=</span> <span class="kc">False</span><span class="p">;</span> <span class="n">Q</span> <span class="o">=</span> <span class="kc">False</span><span class="p">;</span> <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;→&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">)</span>
 </pre></div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="nota-en-este-ejemplo-construimos-cada-renglon-a-mano">
-<h1>Nota: en este ejemplo construimos cada renglón “a mano”.<a class="headerlink" href="#nota-en-este-ejemplo-construimos-cada-renglon-a-mano" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="como-podemos-mejorar-ese-proceso">
-<h1>¿Cómo podemos mejorar ese proceso?<a class="headerlink" href="#como-podemos-mejorar-ese-proceso" title="Link to this heading">#</a></h1>
+<p>Nota: en este ejemplo construimos cada renglón “a mano”.
+¿Cómo podemos mejorar ese proceso?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P</span><span class="se">\t</span><span class="s2">Q</span><span class="se">\t</span><span class="s2">P y Q</span><span class="se">\t</span><span class="s2">P o Q</span><span class="se">\t</span><span class="s2"> P =&gt; Q</span><span class="se">\t</span><span class="s2"> P &lt;=&gt; Q &quot;</span><span class="p">)</span>
@@ -1150,79 +906,25 @@ False 	 False 	 False 	 False 	 True 	 True
 </div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id19">
-<h1>———————————————————–<a class="headerlink" href="#id19" title="Link to this heading">#</a></h1>
-</section>
 <section class="tex2jax_ignore mathjax_ignore" id="equivalencias-logicas">
-<h1>5. EQUIVALENCIAS LÓGICAS<a class="headerlink" href="#equivalencias-logicas" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="dos-proposiciones-son-equivalentes-si-tienen-el-mismo-valor-de-verdad-para-cualquier-combinacion-de-valores-de-verdad-de-las-proposiciones-que-las-componen">
-<h1>Dos proposiciones son equivalentes si tienen el mismo valor de verdad para cualquier combinación de valores de verdad de las proposiciones que las componen.<a class="headerlink" href="#dos-proposiciones-son-equivalentes-si-tienen-el-mismo-valor-de-verdad-para-cualquier-combinacion-de-valores-de-verdad-de-las-proposiciones-que-las-componen" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id20">
-<h1><a class="headerlink" href="#id20" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="verificaremos-las-siguientes-equivalencias">
-<h1>Verificaremos las siguientes equivalencias:<a class="headerlink" href="#verificaremos-las-siguientes-equivalencias" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id21">
-<h1><a class="headerlink" href="#id21" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="ley-de-de-morgan">
-<h1>1. Ley de De Morgan:<a class="headerlink" href="#ley-de-de-morgan" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="neg-p-wedge-q-equiv-neg-p-vee-neg-q">
-<h1><span class="math notranslate nohighlight">\(\neg(P \wedge Q) \equiv \neg P \vee \neg Q\)</span><a class="headerlink" href="#neg-p-wedge-q-equiv-neg-p-vee-neg-q" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id22">
-<h1><a class="headerlink" href="#id22" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="distributividad">
-<h1>2. Distributividad:<a class="headerlink" href="#distributividad" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="p-wedge-q-vee-r-equiv-p-wedge-q-vee-p-wedge-r">
-<h1><span class="math notranslate nohighlight">\(P \wedge (Q \vee R) \equiv (P \wedge Q) \vee (P \wedge R)\)</span><a class="headerlink" href="#p-wedge-q-vee-r-equiv-p-wedge-q-vee-p-wedge-r" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id23">
-<h1><a class="headerlink" href="#id23" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="negacion-de-la-implicacion">
-<h1>3. Negación de la implicación:<a class="headerlink" href="#negacion-de-la-implicacion" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="neg-p-rightarrow-q-equiv-p-wedge-neg-q">
-<h1><span class="math notranslate nohighlight">\(\neg(P \Rightarrow Q) \equiv P \wedge \neg Q\)</span><a class="headerlink" href="#neg-p-rightarrow-q-equiv-p-wedge-neg-q" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id24">
-<h1><a class="headerlink" href="#id24" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="contrapuesta">
-<h1>4. Contrapuesta:<a class="headerlink" href="#contrapuesta" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="p-rightarrow-q-equiv-neg-q-rightarrow-neg-p">
-<h1><span class="math notranslate nohighlight">\(P \Rightarrow Q \equiv \neg Q \Rightarrow \neg P\)</span><a class="headerlink" href="#p-rightarrow-q-equiv-neg-q-rightarrow-neg-p" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id25">
-<h1><a class="headerlink" href="#id25" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="la-implicacion-no-es-conmutativa">
-<h1>5. La implicación no es conmutativa:<a class="headerlink" href="#la-implicacion-no-es-conmutativa" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="p-rightarrow-q-not-equiv-q-rightarrow-p">
-<h1><span class="math notranslate nohighlight">\(P \Rightarrow Q \not\equiv Q \Rightarrow P\)</span><a class="headerlink" href="#p-rightarrow-q-not-equiv-q-rightarrow-p" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id26">
-<h1><a class="headerlink" href="#id26" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="nota-la-implicacion-rightarrow-no-existe-como-tal-en-python">
-<h1>Nota: la implicación (<span class="math notranslate nohighlight">\(\Rightarrow\)</span>) no existe como tal en Python.<a class="headerlink" href="#nota-la-implicacion-rightarrow-no-existe-como-tal-en-python" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="usaremos-la-equivalencia-que-podemos-definir-como-funcion">
-<h1>Usaremos la equivalencia que podemos definir como funcion:<a class="headerlink" href="#usaremos-la-equivalencia-que-podemos-definir-como-funcion" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="p-rightarrow-q-equiv-neg-p-vee-q">
-<h1><span class="math notranslate nohighlight">\(P \Rightarrow Q \equiv \neg P \vee Q\)</span><a class="headerlink" href="#p-rightarrow-q-equiv-neg-p-vee-q" title="Link to this heading">#</a></h1>
-<section id="id27">
-<h2>———————————————————–<a class="headerlink" href="#id27" title="Link to this heading">#</a></h2>
+<h1>EQUIVALENCIAS LÓGICAS<a class="headerlink" href="#equivalencias-logicas" title="Link to this heading">#</a></h1>
+<p>Dos proposiciones son equivalentes si tienen el mismo valor de verdad para cualquier combinación de valores de verdad de las proposiciones que las componen.</p>
+<p>Verificaremos las siguientes equivalencias:</p>
+<ol class="arabic simple">
+<li><p>Ley de De Morgan:
+<span class="math notranslate nohighlight">\(\neg(P \wedge Q) \equiv \neg P \vee \neg Q\)</span></p></li>
+<li><p>Distributividad:
+<span class="math notranslate nohighlight">\(P \wedge (Q \vee R) \equiv (P \wedge Q) \vee (P \wedge R)\)</span></p></li>
+<li><p>Negación de la implicación:
+<span class="math notranslate nohighlight">\(\neg(P \Rightarrow Q) \equiv P \wedge \neg Q\)</span></p></li>
+<li><p>Contrapuesta:
+<span class="math notranslate nohighlight">\(P \Rightarrow Q \equiv \neg Q \Rightarrow \neg P\)</span></p></li>
+<li><p>La implicación no es conmutativa:
+<span class="math notranslate nohighlight">\(P \Rightarrow Q \not\equiv Q \Rightarrow P\)</span></p></li>
+</ol>
+<p>Nota: la implicación (<span class="math notranslate nohighlight">\(\Rightarrow\)</span>) no existe como tal en Python.
+Usaremos la equivalencia que podemos definir como funcion:
+<span class="math notranslate nohighlight">\(P \Rightarrow Q \equiv \neg P \vee Q\)</span></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P </span><span class="se">\t</span><span class="s2">Q </span><span class="se">\t</span><span class="s2">neg(P y Q) </span><span class="se">\t</span><span class="s2">neg P o neg Q&quot;</span><span class="p">)</span>
@@ -1268,61 +970,23 @@ False 	 False 	 False 	 False 		 False
 </div>
 </div>
 </div>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="ejercicio">
-<h1>EJERCICIO<a class="headerlink" href="#ejercicio" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="definir-una-funcion-que-permita-generar-la-tabla-de-verdad-de-la-equivalencia-logica-de-manera-sencilla">
-<h1>Definir una función que permita generar la tabla de verdad de la equivalencia lógica de manera sencilla.<a class="headerlink" href="#definir-una-funcion-que-permita-generar-la-tabla-de-verdad-de-la-equivalencia-logica-de-manera-sencilla" title="Link to this heading">#</a></h1>
+<p><strong>EJERCICIO</strong></p>
+<p>Definir una función que permita generar la tabla de verdad de la equivalencia lógica de manera sencilla.</p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="leyes-validas-de-inferencia">
-<h1>6. LEYES VÁLIDAS DE INFERENCIA<a class="headerlink" href="#leyes-validas-de-inferencia" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="una-ley-de-inferencia-nos-permite-concluir-una-proposicion-a-partir-de-otras-proposiciones-dadas-estas-reglas-son-siempre-validas-es-decir-son-tautologias-su-valor-de-verdad-es-true-para-cualquier-combinacion-de-valores-de-verdad-de-las-proposiciones-que-las-componen">
-<h1>Una ley de inferencia nos permite concluir una proposición a partir de otras proposiciones dadas. Estas reglas son siempre válidas, es decir, son tautologías: su valor de verdad es True para cualquier combinación de valores de verdad de las proposiciones que las componen.<a class="headerlink" href="#una-ley-de-inferencia-nos-permite-concluir-una-proposicion-a-partir-de-otras-proposiciones-dadas-estas-reglas-son-siempre-validas-es-decir-son-tautologias-su-valor-de-verdad-es-true-para-cualquier-combinacion-de-valores-de-verdad-de-las-proposiciones-que-las-componen" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id28">
-<h1><a class="headerlink" href="#id28" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="verificaremos-las-siguientes-leyes">
-<h1>Verificaremos las siguientes leyes:<a class="headerlink" href="#verificaremos-las-siguientes-leyes" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id29">
-<h1><a class="headerlink" href="#id29" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="modus-ponens">
-<h1>1. Modus ponens:<a class="headerlink" href="#modus-ponens" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="p-land-p-rightarrow-q-rightarrow-q">
-<h1><span class="math notranslate nohighlight">\((P \land (P \Rightarrow Q)) \Rightarrow Q\)</span><a class="headerlink" href="#p-land-p-rightarrow-q-rightarrow-q" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id30">
-<h1><a class="headerlink" href="#id30" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="modus-tollendo-ponens">
-<h1>2. Modus tollendo ponens:<a class="headerlink" href="#modus-tollendo-ponens" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="neg-p-land-p-vee-q-rightarrow-q">
-<h1><span class="math notranslate nohighlight">\(((\neg P) \land (P \vee Q)) \Rightarrow Q\)</span><a class="headerlink" href="#neg-p-land-p-vee-q-rightarrow-q" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id31">
-<h1><a class="headerlink" href="#id31" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="modus-tollendo-tollens">
-<h1>3. Modus tollendo tollens:<a class="headerlink" href="#modus-tollendo-tollens" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="neg-q-land-p-rightarrow-q-rightarrow-neg-p">
-<h1><span class="math notranslate nohighlight">\(((\neg Q) \land (P \Rightarrow Q)) \Rightarrow (\neg P)\)</span><a class="headerlink" href="#neg-q-land-p-rightarrow-q-rightarrow-neg-p" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id32">
-<h1><a class="headerlink" href="#id32" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="silogismo">
-<h1>4. Silogismo:<a class="headerlink" href="#silogismo" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="p-rightarrow-q-land-q-rightarrow-r-rightarrow-p-rightarrow-r">
-<h1><span class="math notranslate nohighlight">\(((P \Rightarrow Q) \land (Q \Rightarrow R))    \Rightarrow (P \Rightarrow R)\)</span><a class="headerlink" href="#p-rightarrow-q-land-q-rightarrow-r-rightarrow-p-rightarrow-r" title="Link to this heading">#</a></h1>
+<h1>LEYES VÁLIDAS DE INFERENCIA<a class="headerlink" href="#leyes-validas-de-inferencia" title="Link to this heading">#</a></h1>
+<p>Una ley de inferencia nos permite concluir una proposición a partir de otras proposiciones dadas. Estas reglas son siempre válidas, es decir, son tautologías: su valor de verdad es True para cualquier combinación de valores de verdad de las proposiciones que las componen.</p>
+<p>Verificaremos las siguientes leyes:</p>
+<ol class="arabic simple">
+<li><p>Modus ponens:
+<span class="math notranslate nohighlight">\((P \land (P \Rightarrow Q)) \Rightarrow Q\)</span></p></li>
+<li><p>Modus tollendo ponens:
+<span class="math notranslate nohighlight">\(((\neg P) \land (P \vee Q)) \Rightarrow Q\)</span></p></li>
+<li><p>Modus tollendo tollens:
+<span class="math notranslate nohighlight">\(((\neg Q) \land (P \Rightarrow Q)) \Rightarrow (\neg P)\)</span></p></li>
+<li><p>Silogismo:
+<span class="math notranslate nohighlight">\(((P \Rightarrow Q) \land (Q \Rightarrow R))    \Rightarrow (P \Rightarrow R)\)</span></p></li>
+</ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P</span><span class="se">\t</span><span class="s2">Q</span><span class="se">\t</span><span class="s2">R</span><span class="se">\t</span><span class="s2">Silogismo&quot;</span><span class="p">)</span>
@@ -1353,53 +1017,18 @@ False 	 False 	 False 	 True
 </div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id33">
-<h1>———————————————————–<a class="headerlink" href="#id33" title="Link to this heading">#</a></h1>
-</section>
 <section class="tex2jax_ignore mathjax_ignore" id="conjuntos">
-<h1>7. CONJUNTOS<a class="headerlink" href="#conjuntos" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="un-conjunto-es-una-coleccion-de-elementos">
-<h1>Un conjunto es una colección de elementos<a class="headerlink" href="#un-conjunto-es-una-coleccion-de-elementos" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="sin-orden-y-sin-repeticion">
-<h1>sin orden y sin repetición.<a class="headerlink" href="#sin-orden-y-sin-repeticion" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id34">
-<h1>———————————————————–<a class="headerlink" href="#id34" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="conjunto-de-letras">
-<h1>Conjunto de letras<a class="headerlink" href="#conjunto-de-letras" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="a-a-b-c">
-<h1><span class="math notranslate nohighlight">\(A = \{&quot;a&quot;, &quot;b&quot;, &quot;c&quot;\}\)</span><a class="headerlink" href="#a-a-b-c" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="conjunto-de-numeros">
-<h1>Conjunto de números<a class="headerlink" href="#conjunto-de-numeros" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="b-1-2-3-4">
-<h1><span class="math notranslate nohighlight">\(B = \{1, 2, 3, 4\}\)</span><a class="headerlink" href="#b-1-2-3-4" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id35">
-<h1>———————————————————–<a class="headerlink" href="#id35" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id36">
-<h1>EJERCICIO<a class="headerlink" href="#id36" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="define-los-siguientes-conjuntos">
-<h1>Define los siguientes conjuntos:<a class="headerlink" href="#define-los-siguientes-conjuntos" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id37">
-<h1><a class="headerlink" href="#id37" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="c-los-enteros-pares-entre-4-y-10">
-<h1><span class="math notranslate nohighlight">\(C\)</span> : los enteros pares entre 4 y 10<a class="headerlink" href="#c-los-enteros-pares-entre-4-y-10" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="d-las-letras-de-tu-nombre">
-<h1><span class="math notranslate nohighlight">\(D\)</span> : las letras de tu nombre<a class="headerlink" href="#d-las-letras-de-tu-nombre" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id38">
-<h1>———————————————————–<a class="headerlink" href="#id38" title="Link to this heading">#</a></h1>
+<h1>CONJUNTOS<a class="headerlink" href="#conjuntos" title="Link to this heading">#</a></h1>
+<p>Un conjunto es una colección de elementos
+sin orden y sin repetición.</p>
+<p>Conjunto de letras
+<span class="math notranslate nohighlight">\(A = \{&quot;a&quot;, &quot;b&quot;, &quot;c&quot;\}\)</span></p>
+<p>Conjunto de números
+<span class="math notranslate nohighlight">\(B = \{1, 2, 3, 4\}\)</span></p>
+<p><strong>EJERCICIO</strong>
+Define los siguientes conjuntos:</p>
+<p><span class="math notranslate nohighlight">\(C\)</span> : los enteros pares entre 4 y 10
+<span class="math notranslate nohighlight">\(D\)</span> : las letras de tu nombre</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="o">=</span><span class="p">{</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">}</span>
@@ -1412,27 +1041,16 @@ False 	 False 	 False 	 True
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{8, 10, 4, 6}
-{&#39;I&#39;, &#39;U&#39;, &#39;E&#39;, &#39;L&#39;, &#39;J&#39;, &#39;N&#39;}
+{&#39;U&#39;, &#39;E&#39;, &#39;L&#39;, &#39;J&#39;, &#39;I&#39;, &#39;N&#39;}
 </pre></div>
 </div>
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="nota-estas-definiciones-son-dadas-por-extension">
-<h1>Nota: estas definiciones son dadas por extensión,<a class="headerlink" href="#nota-estas-definiciones-son-dadas-por-extension" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="es-decir-indicando-explicitamente-todos-los-elementos">
-<h1>es decir, indicando explícitamente todos los elementos<a class="headerlink" href="#es-decir-indicando-explicitamente-todos-los-elementos" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="que-pertenecen-al-conjunto">
-<h1>que pertenecen al conjunto.<a class="headerlink" href="#que-pertenecen-al-conjunto" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id39">
-<h1><a class="headerlink" href="#id39" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="que-pasa-si-repetimos-un-elemento">
-<h1>¿Qué pasa si repetimos un elemento?<a class="headerlink" href="#que-pasa-si-repetimos-un-elemento" title="Link to this heading">#</a></h1>
-<p>#Por ejemplo:</p>
+<p>Nota: estas definiciones son dadas por extensión,
+es decir, indicando explícitamente todos los elementos
+que pertenecen al conjunto.</p>
+<p>¿Qué pasa si repetimos un elemento?
+Por ejemplo:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">C</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
 </pre></div>
@@ -1450,12 +1068,8 @@ False 	 False 	 False 	 True
 </div>
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="de-que-tipo-son-los-conjuntos-que-hemos-definido-hasta-ahora">
-<h1>¿De qué tipo son los conjuntos que hemos definido hasta ahora?<a class="headerlink" href="#de-que-tipo-son-los-conjuntos-que-hemos-definido-hasta-ahora" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="compruebalo-con-un-comando-de-python">
-<h1>Compruébalo con un comando de Python.<a class="headerlink" href="#compruebalo-con-un-comando-de-python" title="Link to this heading">#</a></h1>
+<p>¿De qué tipo son los conjuntos que hemos definido hasta ahora?</p>
+<p>Compruébalo con un comando de Python.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
@@ -1468,19 +1082,10 @@ False 	 False 	 False 	 True
 </div>
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="para-comprobar-la-pertenencia-de-un-elemento-a-un-conjunto-podemos-usar-los-comandos-in-y-not-in">
-<h1>Para comprobar la pertenencia de un elemento a un conjunto, podemos usar los comandos in y not in.<a class="headerlink" href="#para-comprobar-la-pertenencia-de-un-elemento-a-un-conjunto-podemos-usar-los-comandos-in-y-not-in" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id40">
-<h1><a class="headerlink" href="#id40" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="dar-un-ejemplo-de-conjunto-y-comprobar-el-resultado-de-estos-comandos">
-<h1>Dar un ejemplo de conjunto y comprobar el resultado de estos comandos.<a class="headerlink" href="#dar-un-ejemplo-de-conjunto-y-comprobar-el-resultado-de-estos-comandos" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="de-que-tipo-es-el-resultado-de-estos-comandos">
-<h1>¿De qué tipo es el resultado de estos comandos?<a class="headerlink" href="#de-que-tipo-es-el-resultado-de-estos-comandos" title="Link to this heading">#</a></h1>
-<p>#La definicion por extension no es la mas practica, en particular si</p>
+<p>Para comprobar la pertenencia de un elemento a un conjunto, podemos usar los comandos in y not in.</p>
+<p>Dar un ejemplo de conjunto y comprobar el resultado de estos comandos.
+¿De qué tipo es el resultado de estos comandos?</p>
+<p>La definicion por extension no es la mas practica, en particular si</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
@@ -1497,18 +1102,8 @@ False 	 False 	 False 	 True
 </div>
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id41">
-<h1>———————————————————–<a class="headerlink" href="#id41" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id42">
-<h1>EJERCICIO<a class="headerlink" href="#id42" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="que-conjunto-describe-cada-una-de-las-siguientes-comprensiones">
-<h1>¿Qué conjunto describe cada una de las siguientes comprensiones?<a class="headerlink" href="#que-conjunto-describe-cada-una-de-las-siguientes-comprensiones" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id43">
-<h1>———————————————————–<a class="headerlink" href="#id43" title="Link to this heading">#</a></h1>
+<p><strong>EJERCICIO</strong></p>
+<p>¿Qué conjunto describe cada una de las siguientes comprensiones?</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">{x</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">range(0,</span> <span class="pre">21)</span> <span class="pre">if</span> <span class="pre">x</span> <span class="pre">%</span> <span class="pre">2</span> <span class="pre">==</span> <span class="pre">0}</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">{x</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">range(1,</span> <span class="pre">21)</span> <span class="pre">if</span> <span class="pre">x</span> <span class="pre">%</span> <span class="pre">2</span> <span class="pre">!=</span> <span class="pre">0}</span></code></p></li>
@@ -1534,61 +1129,30 @@ False 	 False 	 False 	 True
 </div>
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="nota-podemos-trabajar-tambien-con-numeros-reales-pero-no">
-<h1>Nota: podemos trabajar también con números reales, pero no<a class="headerlink" href="#nota-podemos-trabajar-tambien-con-numeros-reales-pero-no" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="podremos-definir-intervalos-como-tales-ya-que-los-reales">
-<h1>podremos definir intervalos como tales, ya que los reales<a class="headerlink" href="#podremos-definir-intervalos-como-tales-ya-que-los-reales" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="forman-un-conjunto-infinito-no-numerable-no-es-posible">
-<h1>forman un conjunto infinito no numerable — no es posible<a class="headerlink" href="#forman-un-conjunto-infinito-no-numerable-no-es-posible" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="listarlos-ni-iterarlos-uno-por-uno">
-<h1>listarlos ni iterarlos uno por uno.<a class="headerlink" href="#listarlos-ni-iterarlos-uno-por-uno" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id44">
-<h1><a class="headerlink" href="#id44" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="sin-embargo-podemos-definir-conjuntos-finitos-de-reales">
-<h1>Sin embargo, podemos definir conjuntos finitos de reales:<a class="headerlink" href="#sin-embargo-podemos-definir-conjuntos-finitos-de-reales" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="conjunto-de-algunas-raices-cuadradas">
-<h1>Conjunto de algunas raíces cuadradas<a class="headerlink" href="#conjunto-de-algunas-raices-cuadradas" title="Link to this heading">#</a></h1>
-<p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">=</span> <span class="pre">{1.5,</span> <span class="pre">2.7,</span> <span class="pre">3.14,</span> <span class="pre">9.81}</span></code></p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="conjunto-de-potencias-de-0-5">
-<h1>Conjunto de potencias de 0.5<a class="headerlink" href="#conjunto-de-potencias-de-0-5" title="Link to this heading">#</a></h1>
-<p><code class="docutils literal notranslate"><span class="pre">B</span> <span class="pre">=</span> <span class="pre">{0.5**x</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">range(6)}</span></code></p>
+<p>Nota: podemos trabajar también con números reales, pero no
+podremos definir intervalos como tales, ya que los reales
+forman un conjunto infinito no numerable — no es posible
+listarlos ni iterarlos uno por uno.</p>
+<p>Sin embargo, podemos definir conjuntos finitos de reales:</p>
+<p>Conjunto de algunas raíces cuadradas
+<code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">=</span> <span class="pre">{1.5,</span> <span class="pre">2.7,</span> <span class="pre">3.14,</span> <span class="pre">9.81}</span></code></p>
+<p>Conjunto de potencias de 0.5
+<code class="docutils literal notranslate"><span class="pre">B</span> <span class="pre">=</span> <span class="pre">{0.5**x</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">range(6)}</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">print(B)</span></code></p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="conjunto-de-valores-de-seno-en-algunos-puntos">
-<h1>Conjunto de valores de seno en algunos puntos<a class="headerlink" href="#conjunto-de-valores-de-seno-en-algunos-puntos" title="Link to this heading">#</a></h1>
-<p><code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">math</span></code></p>
+<p>Conjunto de valores de seno en algunos puntos
+<code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">math</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">C</span> <span class="pre">=</span> <span class="pre">{round(math.sin(x),</span> <span class="pre">4)</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">range(10)}</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">print(C)</span></code></p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id45">
-<h1>———————————————————–<a class="headerlink" href="#id45" title="Link to this heading">#</a></h1>
-</section>
 <section class="tex2jax_ignore mathjax_ignore" id="operaciones-con-conjuntos">
-<h1>8. OPERACIONES CON CONJUNTOS<a class="headerlink" href="#operaciones-con-conjuntos" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id46">
-<h1>———————————————————–<a class="headerlink" href="#id46" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="definimos-4-conjuntos-de-trabajo">
-<h1>Definimos 4 conjuntos de trabajo:<a class="headerlink" href="#definimos-4-conjuntos-de-trabajo" title="Link to this heading">#</a></h1>
+<h1>OPERACIONES CON CONJUNTOS<a class="headerlink" href="#operaciones-con-conjuntos" title="Link to this heading">#</a></h1>
+<p>Definimos 4 conjuntos de trabajo:</p>
 <p>A = {1, 2, 3, 4, 5}</p>
 <p>B = {4, 5, 6, 7, 8}</p>
 <p>C = {0, 1, 2, 3, 4, 5}</p>
 <p>D = A</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="a-que-operaciones-de-conjuntos-corresponden">
-<h1>¿A qué operaciones de conjuntos corresponden<a class="headerlink" href="#a-que-operaciones-de-conjuntos-corresponden" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="los-siguientes-comandos-de-python">
-<h1>los siguientes comandos de Python?<a class="headerlink" href="#los-siguientes-comandos-de-python" title="Link to this heading">#</a></h1>
+<p>¿A qué operaciones de conjuntos corresponden
+los siguientes comandos de Python?</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">|</span> <span class="pre">B</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&amp;</span> <span class="pre">B</span></code></p></li>
@@ -1620,36 +1184,26 @@ False 	 False 	 False 	 True
 </div>
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id47">
-<h1>———————————————————–<a class="headerlink" href="#id47" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id48">
-<h1>EJERCICIO<a class="headerlink" href="#id48" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="dados-los-siguientes-conjuntos-a-x-in-mathbb-z-mid-1-leq-x-leq-10-b-x-in-mathbb-z-mid-6-leq-x-leq-15-y-el-universo">
-<h1>Dados los siguientes conjuntos <span class="math notranslate nohighlight">\( A = \{x \in \mathbb{Z} \mid 1 \leq x \leq 10\} \)</span>, <span class="math notranslate nohighlight">\( B = \{x \in \mathbb{Z} \mid 6 \leq x \leq 15\} \)</span> y el Universo $<a class="headerlink" href="#dados-los-siguientes-conjuntos-a-x-in-mathbb-z-mid-1-leq-x-leq-10-b-x-in-mathbb-z-mid-6-leq-x-leq-15-y-el-universo" title="Link to this heading">#</a></h1>
-<p>U = {x \in \mathbb{Z} \mid -10 \leq x \leq 20} $</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="calcular-las-siguientes-operaciones-entre-conjuntos">
-<h1>Calcular las siguientes operaciones entre conjuntos:<a class="headerlink" href="#calcular-las-siguientes-operaciones-entre-conjuntos" title="Link to this heading">#</a></h1>
-<p>#1. <span class="math notranslate nohighlight">\(
+<p><strong>EJERCICIO</strong></p>
+<p>Dados los siguientes conjuntos <span class="math notranslate nohighlight">\( A = \{x \in \mathbb{Z} \mid 1 \leq x \leq 10\} \)</span>, <span class="math notranslate nohighlight">\( B = \{x \in \mathbb{Z} \mid 6 \leq x \leq 15\} \)</span> y el Universo <span class="math notranslate nohighlight">\(
+U = \{x \in \mathbb{Z} \mid -10 \leq x \leq 20\} \)</span></p>
+<p>Calcular las siguientes operaciones entre conjuntos:</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(
 A \cup B
-\)</span></p>
-<p>#2. <span class="math notranslate nohighlight">\(
+\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(
 A \cap B
-\)</span></p>
-<p>#3. <span class="math notranslate nohighlight">\(
+\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(
 A \setminus B
-\)</span></p>
-<p>#4. <span class="math notranslate nohighlight">\(
+\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(
 B \setminus A
-\)</span></p>
-<p>#5. <span class="math notranslate nohighlight">\(
-A^c \)</span></p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id49">
-<h1>———————————————————–<a class="headerlink" href="#id49" title="Link to this heading">#</a></h1>
+\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(
+A^c \)</span></p></li>
+</ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="o">=</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span><span class="mi">5</span> <span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">56</span><span class="p">}</span>
@@ -1713,153 +1267,13 @@ A^c \)</span></p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Proposiciones Lógicas</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">——————————————————————————</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones-proposicionales">2. FUNCIONES PROPOSICIONALES</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#una-funcion-proposicional-es-verdadera-o-falsa-dependiendo-del-valor-de-su-parametro">Una función proposicional es verdadera o falsa dependiendo del valor de su parámetro.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">——————————————————————————</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conectivos-logicos">3. CONECTIVOS LÓGICOS</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#para-unir-dos-proposiciones-atomicas-y-formar-una">Para unir dos proposiciones atómicas y formar una</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#proposicion-molecular-podemos-usar-conectivos-logicos">proposición molecular, podemos usar conectivos lógicos.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#en-python-disponemos-de-tres-principales">En Python disponemos de tres principales:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#not-negacion">not   →  negación</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#and-conjuncion">and   →  conjunción</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#or-disyuncion">or    →  disyunción</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#en-python-los-conectivos-logicos-tienen-un-orden-de-prioridad">En Python, los conectivos lógicos tienen un orden de prioridad:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#not-mayor-prioridad">1. not   (mayor prioridad)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#and">2. and</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#or-menor-prioridad">3. or    (menor prioridad)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#asi-la-expresion">Así, la expresión:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id8"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#not-x-3-and-x-4">not (x == 3) and (x &lt; 4)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id9"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#se-evalua-como">se evalúa como:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id10"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">(not (x == 3)) and (x &lt; 4)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id12"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#es-decir-primero-se-niega-x-3-y-luego">Es decir, primero se niega (x == 3), y luego</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#se-verifica-la-conjuncion-con-x-4">se verifica la conjunción con (x &lt; 4).</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#para-evitar-ambiguedades-siempre-es-recomendable">Para evitar ambigüedades, siempre es recomendable</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#usar-parentesis-de-forma-explicita">usar paréntesis de forma explícita.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tablas-de-verdad">4. TABLAS DE VERDAD</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#usaremos-estos-conectivos-para-construir-tablas-de-verdad">Usaremos estos conectivos para construir tablas de verdad.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cada-renglon-corresponde-a-un-juego-de-valores-de-verdad">Cada renglón corresponde a un juego de valores de verdad</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#de-las-proposiciones-atomicas">de las proposiciones atómicas.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id14"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#para-dos-proposiciones-p-y-q-hay-4-combinaciones-posibles">Para dos proposiciones P y Q, hay 4 combinaciones posibles:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id15"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-q">P      Q</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">────  ────</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#true-true">True  True</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#true-false">True  False</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#false-true">False True</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#false-false">False False</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id17"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#construyamos-la-tabla-de-verdad-de-la-conjuncion-and">Construyamos la tabla de verdad de la conjunción (and):</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#nota-en-este-ejemplo-construimos-cada-renglon-a-mano">Nota: en este ejemplo construimos cada renglón “a mano”.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#como-podemos-mejorar-ese-proceso">¿Cómo podemos mejorar ese proceso?</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#equivalencias-logicas">5. EQUIVALENCIAS LÓGICAS</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dos-proposiciones-son-equivalentes-si-tienen-el-mismo-valor-de-verdad-para-cualquier-combinacion-de-valores-de-verdad-de-las-proposiciones-que-las-componen">Dos proposiciones son equivalentes si tienen el mismo valor de verdad para cualquier combinación de valores de verdad de las proposiciones que las componen.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id20"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#verificaremos-las-siguientes-equivalencias">Verificaremos las siguientes equivalencias:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id21"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ley-de-de-morgan">1. Ley de De Morgan:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#neg-p-wedge-q-equiv-neg-p-vee-neg-q"><span class="math notranslate nohighlight">\(\neg(P \wedge Q) \equiv \neg P \vee \neg Q\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id22"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#distributividad">2. Distributividad:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-wedge-q-vee-r-equiv-p-wedge-q-vee-p-wedge-r"><span class="math notranslate nohighlight">\(P \wedge (Q \vee R) \equiv (P \wedge Q) \vee (P \wedge R)\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id23"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#negacion-de-la-implicacion">3. Negación de la implicación:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#neg-p-rightarrow-q-equiv-p-wedge-neg-q"><span class="math notranslate nohighlight">\(\neg(P \Rightarrow Q) \equiv P \wedge \neg Q\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id24"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contrapuesta">4. Contrapuesta:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-rightarrow-q-equiv-neg-q-rightarrow-neg-p"><span class="math notranslate nohighlight">\(P \Rightarrow Q \equiv \neg Q \Rightarrow \neg P\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id25"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#la-implicacion-no-es-conmutativa">5. La implicación no es conmutativa:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-rightarrow-q-not-equiv-q-rightarrow-p"><span class="math notranslate nohighlight">\(P \Rightarrow Q \not\equiv Q \Rightarrow P\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id26"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#nota-la-implicacion-rightarrow-no-existe-como-tal-en-python">Nota: la implicación (<span class="math notranslate nohighlight">\(\Rightarrow\)</span>) no existe como tal en Python.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#usaremos-la-equivalencia-que-podemos-definir-como-funcion">Usaremos la equivalencia que podemos definir como funcion:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-rightarrow-q-equiv-neg-p-vee-q"><span class="math notranslate nohighlight">\(P \Rightarrow Q \equiv \neg P \vee Q\)</span></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">———————————————————–</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio">EJERCICIO</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definir-una-funcion-que-permita-generar-la-tabla-de-verdad-de-la-equivalencia-logica-de-manera-sencilla">Definir una función que permita generar la tabla de verdad de la equivalencia lógica de manera sencilla.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#leyes-validas-de-inferencia">6. LEYES VÁLIDAS DE INFERENCIA</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#una-ley-de-inferencia-nos-permite-concluir-una-proposicion-a-partir-de-otras-proposiciones-dadas-estas-reglas-son-siempre-validas-es-decir-son-tautologias-su-valor-de-verdad-es-true-para-cualquier-combinacion-de-valores-de-verdad-de-las-proposiciones-que-las-componen">Una ley de inferencia nos permite concluir una proposición a partir de otras proposiciones dadas. Estas reglas son siempre válidas, es decir, son tautologías: su valor de verdad es True para cualquier combinación de valores de verdad de las proposiciones que las componen.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id28"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#verificaremos-las-siguientes-leyes">Verificaremos las siguientes leyes:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id29"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#modus-ponens">1. Modus ponens:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-land-p-rightarrow-q-rightarrow-q"><span class="math notranslate nohighlight">\((P \land (P \Rightarrow Q)) \Rightarrow Q\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id30"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#modus-tollendo-ponens">2. Modus tollendo ponens:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#neg-p-land-p-vee-q-rightarrow-q"><span class="math notranslate nohighlight">\(((\neg P) \land (P \vee Q)) \Rightarrow Q\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id31"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#modus-tollendo-tollens">3. Modus tollendo tollens:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#neg-q-land-p-rightarrow-q-rightarrow-neg-p"><span class="math notranslate nohighlight">\(((\neg Q) \land (P \Rightarrow Q)) \Rightarrow (\neg P)\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id32"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#silogismo">4. Silogismo:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#p-rightarrow-q-land-q-rightarrow-r-rightarrow-p-rightarrow-r"><span class="math notranslate nohighlight">\(((P \Rightarrow Q) \land (Q \Rightarrow R))    \Rightarrow (P \Rightarrow R)\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conjuntos">7. CONJUNTOS</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#un-conjunto-es-una-coleccion-de-elementos">Un conjunto es una colección de elementos</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sin-orden-y-sin-repeticion">sin orden y sin repetición.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conjunto-de-letras">Conjunto de letras</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#a-a-b-c"><span class="math notranslate nohighlight">\(A = \{"a", "b", "c"\}\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conjunto-de-numeros">Conjunto de números</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#b-1-2-3-4"><span class="math notranslate nohighlight">\(B = \{1, 2, 3, 4\}\)</span></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">EJERCICIO</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#define-los-siguientes-conjuntos">Define los siguientes conjuntos:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id37"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#c-los-enteros-pares-entre-4-y-10"><span class="math notranslate nohighlight">\(C\)</span> : los enteros pares entre 4 y 10</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#d-las-letras-de-tu-nombre"><span class="math notranslate nohighlight">\(D\)</span> : las letras de tu nombre</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#nota-estas-definiciones-son-dadas-por-extension">Nota: estas definiciones son dadas por extensión,</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#es-decir-indicando-explicitamente-todos-los-elementos">es decir, indicando explícitamente todos los elementos</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#que-pertenecen-al-conjunto">que pertenecen al conjunto.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id39"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#que-pasa-si-repetimos-un-elemento">¿Qué pasa si repetimos un elemento?</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#de-que-tipo-son-los-conjuntos-que-hemos-definido-hasta-ahora">¿De qué tipo son los conjuntos que hemos definido hasta ahora?</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#compruebalo-con-un-comando-de-python">Compruébalo con un comando de Python.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#para-comprobar-la-pertenencia-de-un-elemento-a-un-conjunto-podemos-usar-los-comandos-in-y-not-in">Para comprobar la pertenencia de un elemento a un conjunto, podemos usar los comandos in y not in.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id40"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dar-un-ejemplo-de-conjunto-y-comprobar-el-resultado-de-estos-comandos">Dar un ejemplo de conjunto y comprobar el resultado de estos comandos.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#de-que-tipo-es-el-resultado-de-estos-comandos">¿De qué tipo es el resultado de estos comandos?</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id41">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id42">EJERCICIO</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#que-conjunto-describe-cada-una-de-las-siguientes-comprensiones">¿Qué conjunto describe cada una de las siguientes comprensiones?</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id43">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#nota-podemos-trabajar-tambien-con-numeros-reales-pero-no">Nota: podemos trabajar también con números reales, pero no</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#podremos-definir-intervalos-como-tales-ya-que-los-reales">podremos definir intervalos como tales, ya que los reales</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#forman-un-conjunto-infinito-no-numerable-no-es-posible">forman un conjunto infinito no numerable — no es posible</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#listarlos-ni-iterarlos-uno-por-uno">listarlos ni iterarlos uno por uno.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id44"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sin-embargo-podemos-definir-conjuntos-finitos-de-reales">Sin embargo, podemos definir conjuntos finitos de reales:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conjunto-de-algunas-raices-cuadradas">Conjunto de algunas raíces cuadradas</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conjunto-de-potencias-de-0-5">Conjunto de potencias de 0.5</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conjunto-de-valores-de-seno-en-algunos-puntos">Conjunto de valores de seno en algunos puntos</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id45">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#operaciones-con-conjuntos">8. OPERACIONES CON CONJUNTOS</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id46">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definimos-4-conjuntos-de-trabajo">Definimos 4 conjuntos de trabajo:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#a-que-operaciones-de-conjuntos-corresponden">¿A qué operaciones de conjuntos corresponden</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#los-siguientes-comandos-de-python">los siguientes comandos de Python?</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id47">———————————————————–</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id48">EJERCICIO</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-los-siguientes-conjuntos-a-x-in-mathbb-z-mid-1-leq-x-leq-10-b-x-in-mathbb-z-mid-6-leq-x-leq-15-y-el-universo">Dados los siguientes conjuntos <span class="math notranslate nohighlight">\( A = \{x \in \mathbb{Z} \mid 1 \leq x \leq 10\} \)</span>, <span class="math notranslate nohighlight">\( B = \{x \in \mathbb{Z} \mid 6 \leq x \leq 15\} \)</span> y el Universo $</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#calcular-las-siguientes-operaciones-entre-conjuntos">Calcular las siguientes operaciones entre conjuntos:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id49">———————————————————–</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones-proposicionales">FUNCIONES PROPOSICIONALES</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conectivos-logicos">CONECTIVOS LÓGICOS</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tablas-de-verdad">TABLAS DE VERDAD</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#equivalencias-logicas">EQUIVALENCIAS LÓGICAS</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#leyes-validas-de-inferencia">LEYES VÁLIDAS DE INFERENCIA</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conjuntos">CONJUNTOS</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#operaciones-con-conjuntos">OPERACIONES CON CONJUNTOS</a></li>
 </ul>
 
   </nav></div>
