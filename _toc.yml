@@ -33,15 +33,17 @@ parts:
     - file: u3p6
     - file: u3p7
     - file: u3p8
+    - file: Logica_Conjuntos_Pendiente
 
   - caption: Matrices y Sistemas de Ecuaciones
     chapters:
     - file: u4p1
+    - file: SEL_Pendiente.ipynb
 
   - caption: Espacios Vectoriales
     chapters:
     - file: u5p1
-
+    - file: Espacios_Vectoriales
   - caption: Números Complejos
     chapters:
     - file: u6p1
