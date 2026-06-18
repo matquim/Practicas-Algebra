@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Definición de conjuntos en Python &#8212; Practicas Álgebra Superior</title>
+    <title>Definición de conjuntos &#8212; Practicas Álgebra Superior</title>
   
   
   
@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'u3p1';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -202,10 +204,8 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lógica y Conjuntos</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Definición de conjuntos en Python</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Definición de conjuntos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p2.html">Operaciones con conjuntos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="u3p3.html">Conjunto universal y complemento</a></li>
-<li class="toctree-l1"><a class="reference internal" href="u3p4.html">Generación de conjuntos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p5.html">Producto cartesiano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p6.html">Subconjuntos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p7.html">Relaciones y funciones</a></li>
@@ -594,7 +594,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Definición de conjuntos en Python</h1>
+    <h1>Definición de conjuntos</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -605,9 +605,8 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conjunto-universal-y-complemento">Conjunto universal y complemento</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generacion-de-conjuntos">Generación de conjuntos</a></li>
 </ul>
             </nav>
         </div>
@@ -619,8 +618,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="definicion-de-conjuntos-en-python">
-<h1>Definición de conjuntos en Python<a class="headerlink" href="#definicion-de-conjuntos-en-python" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="definicion-de-conjuntos">
+<h1>Definición de conjuntos<a class="headerlink" href="#definicion-de-conjuntos" title="Link to this heading">#</a></h1>
 <section id="objetivo">
 <h2>Objetivo<a class="headerlink" href="#objetivo" title="Link to this heading">#</a></h2>
 <p>Aprender a definir conjuntos y manipular sus elementos en Python.</p>
@@ -628,12 +627,7 @@ document.write(`
 <p class="admonition-title">Concepto</p>
 <p>Un conjunto es una colección de elementos sin orden y sin repetición.</p>
 </div>
-</section>
-<section id="ejercicio-1">
-<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Link to this heading">#</a></h2>
-</section>
-<section id="ejemplo">
-<h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Link to this heading">#</a></h2>
+<p>Ejemplo</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Conjunto de letras</span>
 <span class="n">A</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">}</span>
 
@@ -641,12 +635,63 @@ document.write(`
 <span class="n">B</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">}</span>
 </pre></div>
 </div>
-</section>
-<section id="ejercicios">
-<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
+<p>Ejercicios</p>
 <ul class="simple">
 <li><p>Definir dos conjuntos numéricos.</p></li>
 <li><p>Verificar que no se repitan elementos.</p></li>
+</ul>
+</section>
+<section id="conjunto-universal-y-complemento">
+<h2>Conjunto universal y complemento<a class="headerlink" href="#conjunto-universal-y-complemento" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Concepto</p>
+<p>El conjunto universal <span class="math notranslate nohighlight">\(U\)</span> contiene todos los elementos considerados.</p>
+<p>El complemento se define como:
+[
+A^c = U - A
+]</p>
+</div>
+<p>Ejemplo</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;a&quot;</span><span class="p">,</span><span class="s2">&quot;b&quot;</span><span class="p">,</span><span class="s2">&quot;c&quot;</span><span class="p">}</span>
+<span class="n">B</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;+&quot;</span><span class="p">,</span><span class="s2">&quot;x&quot;</span><span class="p">,</span><span class="s2">&quot;=&quot;</span><span class="p">}</span>
+<span class="n">C</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
+
+<span class="n">U</span> <span class="o">=</span> <span class="n">A</span> <span class="o">|</span> <span class="n">B</span> <span class="o">|</span> <span class="n">C</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Complemento de A:&quot;</span><span class="p">,</span> <span class="n">U</span> <span class="o">-</span> <span class="n">A</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Ejercicios</p>
+<ul class="simple">
+<li><p>Definir <span class="math notranslate nohighlight">\(A\)</span> y <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
+<li><p>Construir <span class="math notranslate nohighlight">\(U\)</span>.</p></li>
+<li><p>Calcular <span class="math notranslate nohighlight">\(A^c\)</span> y <span class="math notranslate nohighlight">\(B^c\)</span>.</p></li>
+</ul>
+</section>
+<section id="generacion-de-conjuntos">
+<h2>Generación de conjuntos<a class="headerlink" href="#generacion-de-conjuntos" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Concepto</p>
+<p>Se pueden generar conjuntos mediante comprensión de conjuntos.</p>
+</div>
+<p>Ejemplo</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">pares</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">{</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">pares</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Ejemplo adicional</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">impares</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">{</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">impares</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Ejercicios</p>
+<ul class="simple">
+<li><p>Generar los primeros 20 números pares.</p></li>
+<li><p>Generar los primeros 20 números impares.</p></li>
 </ul>
 </section>
 </section>
@@ -716,9 +761,8 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conjunto-universal-y-complemento">Conjunto universal y complemento</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generacion-de-conjuntos">Generación de conjuntos</a></li>
 </ul>
   </nav></div>
 
