@@ -33,6 +33,7 @@ parts:
     - file: u3p6
     - file: u3p7
     - file: u3p8
+    - file: u3p9
     - file: Logica_Conjuntos_Pendiente
 
   - caption: Matrices y Sistemas de Ecuaciones
