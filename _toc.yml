@@ -42,3 +42,5 @@ parts:
   - caption: Polinomios
     chapters:
     - file: u7p1
+    - file: u7p2
+    - file: u7p3
