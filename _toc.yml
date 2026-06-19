@@ -31,7 +31,8 @@ parts:
   - caption: Matrices y Sistemas de Ecuaciones
     chapters:
     - file: u4p1
-    - file: SEL_Pendiente.ipynb
+    - file: u4p2
+    - file: u4p3
   - caption: Espacios Vectoriales
     chapters:
     - file: u5p1
