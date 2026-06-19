@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>🧮 Taller de Python: Matrices y Sistemas de Ecuaciones Lineales &#8212; Practicas Álgebra Superior</title>
+    <title>📦 Importaciones &#8212; Practicas Álgebra Superior</title>
   
   
   
@@ -59,9 +59,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'SEL_Pendiente';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'u4p2';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Sistemas de Ecuaciones Lineales" href="u4p3.html" />
+    <link rel="prev" title="Definición de matrices" href="u4p1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -123,8 +125,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -215,9 +215,9 @@
 
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Matrices y Sistemas de Ecuaciones</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u4p1.html">Definición de matrices</a></li>
-<li class="toctree-l1"><a class="reference internal" href="u4p2.html">📦 Importaciones</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">📦 Importaciones</a></li>
 
 
 
@@ -310,7 +310,7 @@
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/matquim/Practicas-Algebra/master?urlpath=tree/SEL_Pendiente.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/matquim/Practicas-Algebra/master?urlpath=tree/u4p2.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -328,7 +328,7 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/matquim/Practicas-Algebra/blob/master/SEL_Pendiente.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/matquim/Practicas-Algebra/blob/master/u4p2.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -377,7 +377,7 @@
       
       
       
-      <li><a href="_sources/SEL_Pendiente.ipynb" target="_blank"
+      <li><a href="_sources/u4p2.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -461,7 +461,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>🧮 Taller de Python: Matrices y Sistemas de Ecuaciones Lineales</h1>
+    <h1>📦 Importaciones</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -471,24 +471,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">🧮 Taller de Python: Matrices y Sistemas de Ecuaciones Lineales</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importaciones">📦 Importaciones</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-i-matrices">Parte I — Matrices</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definir-una-matriz-de-reales">1) Definir una matriz de reales</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#manipular-un-elemento-una-columna-y-un-renglon">2) Manipular un elemento, una columna y un renglón</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suma-multiplicacion-por-escalar-y-producto-de-matrices">3) Suma, multiplicación por escalar y producto de matrices</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcular-el-determinante">4) Calcular el determinante</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcular-la-matriz-inversa">5) Calcular la matriz inversa</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-ii-sistemas-de-ecuaciones-lineales-sel">Parte II — Sistemas de Ecuaciones Lineales (SEL)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resolucion-con-sympy">Resolución con SymPy</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio">Ejercicio</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-balanceo-de-reacciones-quimicas">Ejercicio: Balanceo de reacciones químicas</a></li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">📦 Importaciones</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definir-una-matriz-de-reales">1) Definir una matriz de reales</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#manipular-un-elemento-una-columna-y-un-renglon">2) Manipular un elemento, una columna y un renglón</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#suma-multiplicacion-por-escalar-y-producto-de-matrices">3) Suma, multiplicación por escalar y producto de matrices</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#calcular-el-determinante">4) Calcular el determinante</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#calcular-la-matriz-inversa">5) Calcular la matriz inversa</a></li>
 </ul>
 
             </nav>
@@ -501,16 +489,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="taller-de-python-matrices-y-sistemas-de-ecuaciones-lineales">
-<h1>🧮 Taller de Python: Matrices y Sistemas de Ecuaciones Lineales<a class="headerlink" href="#taller-de-python-matrices-y-sistemas-de-ecuaciones-lineales" title="Link to this heading">#</a></h1>
-<p><strong>Temas:</strong></p>
-<ul class="simple">
-<li><p>Parte I: Matrices (definición, manipulación, operaciones, determinante, inversa)</p></li>
-<li><p>Parte II: SEL — Cramer, Matriz inversa y Gauss-Jordan utilizando SymPy</p></li>
-</ul>
-<p><strong>Librería principal:</strong> <code class="docutils literal notranslate"><span class="pre">numpy</span></code> · <strong>Librería simbólica:</strong> <code class="docutils literal notranslate"><span class="pre">sympy</span></code></p>
+  <p>Matrices</p>
 <section id="importaciones">
-<h2>📦 Importaciones<a class="headerlink" href="#importaciones" title="Link to this heading">#</a></h2>
+<h1>📦 Importaciones<a class="headerlink" href="#importaciones" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -520,12 +501,8 @@ document.write(`
 </div>
 </div>
 </section>
-</section>
-<hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="parte-i-matrices">
-<h1>Parte I — Matrices<a class="headerlink" href="#parte-i-matrices" title="Link to this heading">#</a></h1>
 <section id="definir-una-matriz-de-reales">
-<h2>1) Definir una matriz de reales<a class="headerlink" href="#definir-una-matriz-de-reales" title="Link to this heading">#</a></h2>
+<h1>1) Definir una matriz de reales<a class="headerlink" href="#definir-una-matriz-de-reales" title="Link to this heading">#</a></h1>
 <p>Con <code class="docutils literal notranslate"><span class="pre">numpy</span></code> usamos <code class="docutils literal notranslate"><span class="pre">np.array()</span></code> pasando una <strong>lista de listas</strong>:<br />
 cada lista interior representa un <strong>renglón</strong> (fila).</p>
 <p>Para declarar una matriz podemos usar el comando:</p>
@@ -666,7 +643,7 @@ cada lista interior representa un <strong>renglón</strong> (fila).</p>
 </div>
 </section>
 <section id="manipular-un-elemento-una-columna-y-un-renglon">
-<h2>2) Manipular un elemento, una columna y un renglón<a class="headerlink" href="#manipular-un-elemento-una-columna-y-un-renglon" title="Link to this heading">#</a></h2>
+<h1>2) Manipular un elemento, una columna y un renglón<a class="headerlink" href="#manipular-un-elemento-una-columna-y-un-renglon" title="Link to this heading">#</a></h1>
 <blockquote>
 <div><p>⚠️ Python usa <strong>índice base 0</strong>: el primer renglón es el renglón 0.</p>
 </div></blockquote>
@@ -715,7 +692,7 @@ cada lista interior representa un <strong>renglón</strong> (fila).</p>
 </div>
 </section>
 <section id="suma-multiplicacion-por-escalar-y-producto-de-matrices">
-<h2>3) Suma, multiplicación por escalar y producto de matrices<a class="headerlink" href="#suma-multiplicacion-por-escalar-y-producto-de-matrices" title="Link to this heading">#</a></h2>
+<h1>3) Suma, multiplicación por escalar y producto de matrices<a class="headerlink" href="#suma-multiplicacion-por-escalar-y-producto-de-matrices" title="Link to this heading">#</a></h1>
 <p>Vamos a definir dos matrices</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}A = \begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix} \qquad B = \begin{pmatrix} 5 &amp; 6 \\ 7 &amp; 8 \end{pmatrix}\end{split}\]</div>
@@ -864,7 +841,7 @@ cada lista interior representa un <strong>renglón</strong> (fila).</p>
 </div>
 </section>
 <section id="calcular-el-determinante">
-<h2>4) Calcular el determinante<a class="headerlink" href="#calcular-el-determinante" title="Link to this heading">#</a></h2>
+<h1>4) Calcular el determinante<a class="headerlink" href="#calcular-el-determinante" title="Link to this heading">#</a></h1>
 <p>Usamos <code class="docutils literal notranslate"><span class="pre">np.linalg.det()</span></code>.<br />
 Si <strong>det(A) ≠ 0</strong>, la matriz es invertible.</p>
 <p><strong>Aplicación</strong>: Definir una matriz cuadrada y calcular su determinante.</p>
@@ -944,7 +921,7 @@ Si <strong>det(A) ≠ 0</strong>, la matriz es invertible.</p>
 </div>
 </section>
 <section id="calcular-la-matriz-inversa">
-<h2>5) Calcular la matriz inversa<a class="headerlink" href="#calcular-la-matriz-inversa" title="Link to this heading">#</a></h2>
+<h1>5) Calcular la matriz inversa<a class="headerlink" href="#calcular-la-matriz-inversa" title="Link to this heading">#</a></h1>
 <p>Usamos <code class="docutils literal notranslate"><span class="pre">np.linalg.inv()</span></code>.<br />
 Verificamos que <strong>A · A⁻¹ = I</strong>.</p>
 <p><strong>Aplicación</strong>: Definir una matriz cuadrada y calcular su inversa. Comprobar que A · A⁻¹ = I.</p>
@@ -982,287 +959,6 @@ Solucion: [[0.4]
 </div>
 <p><strong>Ejercicio</strong>: Resolver el SEL anterior con el método de matriz inversa.</p>
 </section>
-</section>
-<hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="parte-ii-sistemas-de-ecuaciones-lineales-sel">
-<h1>Parte II — Sistemas de Ecuaciones Lineales (SEL)<a class="headerlink" href="#parte-ii-sistemas-de-ecuaciones-lineales-sel" title="Link to this heading">#</a></h1>
-<p>Un SEL se escribe en forma matricial como <strong>Ax = b</strong>:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{pmatrix} a_{11} &amp; a_{12} &amp; a_{13} \\ a_{21} &amp; a_{22} &amp; a_{23} \\ a_{31} &amp; a_{32} &amp; a_{33} \end{pmatrix}
-\begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix}
-=
-\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}
-\end{split}\]</div>
-<p>Usaremos el mismo sistema en los tres métodos para comparar:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{cases}
-2x - y + z = 8 \\
--3x - y + 2z = -11 \\
--2x + y + 2z = -3
-\end{cases}
-\end{split}\]</div>
-<section id="resolucion-con-sympy">
-<h2>Resolución con SymPy<a class="headerlink" href="#resolucion-con-sympy" title="Link to this heading">#</a></h2>
-<p>SymPy trabaja con <strong>aritmética exacta</strong> (fracciones, radicales).<br />
-Usamos <code class="docutils literal notranslate"><span class="pre">sp.Matrix</span></code> y el método <code class="docutils literal notranslate"><span class="pre">.solve()</span></code> de la matriz aumentada,
-o directamente <code class="docutils literal notranslate"><span class="pre">sp.linsolve</span></code>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definir el sistema con SymPy (valores exactos)</span>
-<span class="n">A_sp</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([[</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">1</span><span class="p">],</span>
-                  <span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span><span class="p">],</span>
-                  <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span>  <span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span><span class="p">]])</span>
-
-<span class="n">b_sp</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([</span><span class="mi">8</span><span class="p">,</span> <span class="o">-</span><span class="mi">11</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">])</span>
-
-<span class="c1"># --- Método 1: resolver con la inversa simbólica ---</span>
-<span class="n">x_sympy</span> <span class="o">=</span> <span class="n">A_sp</span><span class="o">.</span><span class="n">inv</span><span class="p">()</span> <span class="o">*</span> <span class="n">b_sp</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Solución con A⁻¹ · b (SymPy):&quot;</span><span class="p">)</span>
-<span class="n">sp</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">x_sympy</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Solución con A⁻¹ · b (SymPy):
-⎡62 ⎤
-⎢── ⎥
-⎢15 ⎥
-⎢   ⎥
-⎢29 ⎥
-⎢── ⎥
-⎢15 ⎥
-⎢   ⎥
-⎣5/3⎦
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># --- Método 2: linsolve (más general, acepta sistemas sub/sobre-determinados) ---</span>
-<span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;x1 x2 x3&#39;</span><span class="p">)</span>
-
-<span class="n">sol</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">linsolve</span><span class="p">((</span><span class="n">A_sp</span><span class="p">,</span> <span class="n">b_sp</span><span class="p">),</span> <span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Solución con sp.linsolve:&quot;</span><span class="p">)</span>
-<span class="n">sp</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">sol</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Solución con sp.linsolve:
-⎧⎛62  29     ⎞⎫
-⎨⎜──, ──, 5/3⎟⎬
-⎩⎝15  15     ⎠⎭
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># --- Método 3: forma escalonada reducida (RREF) ---</span>
-<span class="n">M_aug</span> <span class="o">=</span> <span class="n">A_sp</span><span class="o">.</span><span class="n">row_join</span><span class="p">(</span><span class="n">b_sp</span><span class="p">)</span>   <span class="c1"># matriz aumentada simbólica</span>
-<span class="n">rref</span><span class="p">,</span> <span class="n">pivots</span> <span class="o">=</span> <span class="n">M_aug</span><span class="o">.</span><span class="n">rref</span><span class="p">()</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Forma escalonada reducida (RREF) de [A|b]:&quot;</span><span class="p">)</span>
-<span class="n">sp</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">rref</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Columnas pivote:&quot;</span><span class="p">,</span> <span class="n">pivots</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Solución (última columna de la RREF):&quot;</span><span class="p">,</span> <span class="n">rref</span><span class="p">[:,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Forma escalonada reducida (RREF) de [A|b]:
-⎡         62 ⎤
-⎢1  0  0  ── ⎥
-⎢         15 ⎥
-⎢            ⎥
-⎢         29 ⎥
-⎢0  1  0  ── ⎥
-⎢         15 ⎥
-⎢            ⎥
-⎣0  0  1  5/3⎦
-
-Columnas pivote: (0, 1, 2)
-
-Solución (última columna de la RREF): Matrix([[62/15, 29/15, 5/3]])
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="ejercicio">
-<h2>Ejercicio<a class="headerlink" href="#ejercicio" title="Link to this heading">#</a></h2>
-<p>Resolver el siguiente sistema de ecuaciones lineales:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{cases} x_1 + 2x_2 + 3x_3 = 6 \\ 2x_1 + 4x_2 + 6x_3 = 12 \\ x_1 - x_2 + x_3 = 2 \end{cases}\end{split}\]</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A_sp</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span>  <span class="mi">3</span><span class="p">],</span>
-                  <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span>  <span class="mi">6</span><span class="p">],</span>
-                  <span class="p">[</span><span class="mi">1</span><span class="p">,</span>  <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">1</span><span class="p">]])</span>
-
-<span class="n">b_sp</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
-
-<span class="c1"># --- Método 1: resolver con la inversa simbólica ---</span>
-<span class="n">x_sympy</span> <span class="o">=</span> <span class="n">A_sp</span><span class="o">.</span><span class="n">inv</span><span class="p">()</span> <span class="o">*</span> <span class="n">b_sp</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Solución con A⁻¹ · b (SymPy):&quot;</span><span class="p">)</span>
-<span class="n">sp</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">x_sympy</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">DMNonInvertibleMatrixError</span><span class="g g-Whitespace">                </span>Traceback (most recent call last)
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/sympy/matrices/inverse.py:326,</span> in <span class="ni">_inv_DM</span><span class="nt">(dM, cancel)</span>
-<span class="g g-Whitespace">    </span><span class="mi">325</span> <span class="k">try</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">326</span>     <span class="n">dMi</span><span class="p">,</span> <span class="n">den</span> <span class="o">=</span> <span class="n">dM</span><span class="o">.</span><span class="n">inv_den</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">327</span> <span class="k">except</span> <span class="n">DMNonInvertibleMatrixError</span><span class="p">:</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/sympy/polys/matrices/domainmatrix.py:2743,</span> in <span class="ni">DomainMatrix.inv_den</span><span class="nt">(self, method)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2742</span> <span class="n">I</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">domain</span><span class="p">)</span>
-<span class="ne">-&gt; </span><span class="mi">2743</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">solve_den</span><span class="p">(</span><span class="n">I</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="n">method</span><span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/sympy/polys/matrices/domainmatrix.py:2883,</span> in <span class="ni">DomainMatrix.solve_den</span><span class="nt">(self, b, method)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2882</span> <span class="k">elif</span> <span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;rref&#39;</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">2883</span>     <span class="n">xnum</span><span class="p">,</span> <span class="n">xden</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">solve_den_rref</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2884</span> <span class="k">else</span><span class="p">:</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/sympy/polys/matrices/domainmatrix.py:2935,</span> in <span class="ni">DomainMatrix.solve_den_rref</span><span class="nt">(self, b)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2934</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">pivots</span><span class="p">)</span> <span class="o">!=</span> <span class="n">n</span> <span class="ow">or</span> <span class="n">pivots</span> <span class="ow">and</span> <span class="n">pivots</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">n</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">2935</span>     <span class="k">raise</span> <span class="n">DMNonInvertibleMatrixError</span><span class="p">(</span><span class="s2">&quot;Non-unique solution.&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2937</span> <span class="n">xnum</span> <span class="o">=</span> <span class="n">Aaug_rref</span><span class="p">[:</span><span class="n">n</span><span class="p">,</span> <span class="n">n</span><span class="p">:]</span>
-
-<span class="ne">DMNonInvertibleMatrixError</span>: Non-unique solution.
-
-<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
-
-<span class="ne">NonInvertibleMatrixError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">17</span><span class="p">],</span> <span class="n">line</span> <span class="mi">8</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">b_sp</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="c1"># --- Método 1: resolver con la inversa simbólica ---</span>
-<span class="ne">----&gt; </span><span class="mi">8</span> <span class="n">x_sympy</span> <span class="o">=</span> <span class="n">A_sp</span><span class="o">.</span><span class="n">inv</span><span class="p">()</span> <span class="o">*</span> <span class="n">b_sp</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Solución con A⁻¹ · b (SymPy):&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="n">sp</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">x_sympy</span><span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/sympy/matrices/matrixbase.py:5223,</span> in <span class="ni">MatrixBase.inv</span><span class="nt">(self, method, iszerofunc, try_block_diag)</span>
-<span class="g g-Whitespace">   </span><span class="mi">5222</span> <span class="k">def</span><span class="w"> </span><span class="nf">inv</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">iszerofunc</span><span class="o">=</span><span class="n">_iszero</span><span class="p">,</span> <span class="n">try_block_diag</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-<span class="ne">-&gt; </span><span class="mi">5223</span>     <span class="k">return</span> <span class="n">_inv</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="n">method</span><span class="p">,</span> <span class="n">iszerofunc</span><span class="o">=</span><span class="n">iszerofunc</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">5224</span>             <span class="n">try_block_diag</span><span class="o">=</span><span class="n">try_block_diag</span><span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/sympy/matrices/inverse.py:504,</span> in <span class="ni">_inv</span><span class="nt">(M, method, iszerofunc, try_block_diag)</span>
-<span class="g g-Whitespace">    </span><span class="mi">501</span>         <span class="n">method</span> <span class="o">=</span> <span class="s1">&#39;GE&#39;</span>
-<span class="g g-Whitespace">    </span><span class="mi">503</span> <span class="k">if</span> <span class="n">method</span> <span class="o">==</span> <span class="s2">&quot;DM&quot;</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">504</span>     <span class="n">rv</span> <span class="o">=</span> <span class="n">_inv_DM</span><span class="p">(</span><span class="n">dM</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">505</span> <span class="k">elif</span> <span class="n">method</span> <span class="o">==</span> <span class="s2">&quot;DMNC&quot;</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">506</span>     <span class="n">rv</span> <span class="o">=</span> <span class="n">_inv_DM</span><span class="p">(</span><span class="n">dM</span><span class="p">,</span> <span class="n">cancel</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/sympy/matrices/inverse.py:328,</span> in <span class="ni">_inv_DM</span><span class="nt">(dM, cancel)</span>
-<span class="g g-Whitespace">    </span><span class="mi">326</span>     <span class="n">dMi</span><span class="p">,</span> <span class="n">den</span> <span class="o">=</span> <span class="n">dM</span><span class="o">.</span><span class="n">inv_den</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">327</span> <span class="k">except</span> <span class="n">DMNonInvertibleMatrixError</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">328</span>     <span class="k">raise</span> <span class="n">NonInvertibleMatrixError</span><span class="p">(</span><span class="s2">&quot;Matrix det == 0; not invertible.&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">330</span> <span class="k">if</span> <span class="n">use_exact</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">331</span>     <span class="n">dMi</span> <span class="o">=</span> <span class="n">dMi</span><span class="o">.</span><span class="n">convert_to</span><span class="p">(</span><span class="n">dom</span><span class="p">)</span>
-
-<span class="ne">NonInvertibleMatrixError</span>: Matrix det == 0; not invertible.
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;x1 x2 x3&#39;</span><span class="p">)</span>
-
-<span class="n">sol</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">linsolve</span><span class="p">((</span><span class="n">A_sp</span><span class="p">,</span> <span class="n">b_sp</span><span class="p">),</span> <span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Solución con sp.linsolve:&quot;</span><span class="p">)</span>
-<span class="n">sp</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">sol</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Solución con sp.linsolve:
-⎧⎛10   5⋅x₃  4   2⋅x₃    ⎞⎫
-⎨⎜── - ────, ─ - ────, x₃⎟⎬
-⎩⎝3     3    3    3      ⎠⎭
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">M_aug</span> <span class="o">=</span> <span class="n">A_sp</span><span class="o">.</span><span class="n">row_join</span><span class="p">(</span><span class="n">b_sp</span><span class="p">)</span>   <span class="c1"># matriz aumentada simbólica</span>
-<span class="n">rref</span><span class="p">,</span> <span class="n">pivots</span> <span class="o">=</span> <span class="n">M_aug</span><span class="o">.</span><span class="n">rref</span><span class="p">()</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Forma escalonada reducida (RREF) de [A|b]:&quot;</span><span class="p">)</span>
-<span class="n">sp</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">rref</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Columnas pivote:&quot;</span><span class="p">,</span> <span class="n">pivots</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Forma escalonada reducida (RREF) de [A|b]:
-⎡1  0  5/3  10/3⎤
-⎢               ⎥
-⎢0  1  2/3  4/3 ⎥
-⎢               ⎥
-⎣0  0   0    0  ⎦
-
-Columnas pivote: (0, 1)
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="ejercicio-balanceo-de-reacciones-quimicas">
-<h2>Ejercicio: Balanceo de reacciones químicas<a class="headerlink" href="#ejercicio-balanceo-de-reacciones-quimicas" title="Link to this heading">#</a></h2>
-<p>El balanceo de una reacción química puede formularse como un sistema de ecuaciones lineales, donde cada elemento impone una ecuación de conservación.</p>
-<p>Para cada una de las siguientes reacciones, encontrar los coeficientes estequiométricos:</p>
-<p>a) Reacción entre las especies <span class="math notranslate nohighlight">\(Fe^{3+}\)</span>, <span class="math notranslate nohighlight">\(Sn^{2+}\)</span>, <span class="math notranslate nohighlight">\(Fe^{2+}\)</span> y <span class="math notranslate nohighlight">\(Sn^{4+}\)</span></p>
-<p>b) Reacción entre las especies <span class="math notranslate nohighlight">\(MnO_4^-\)</span>, <span class="math notranslate nohighlight">\(H^+\)</span>, <span class="math notranslate nohighlight">\(Fe^{2+}\)</span>, <span class="math notranslate nohighlight">\(Mn^{2+}\)</span>, <span class="math notranslate nohighlight">\(Fe^{3+}\)</span> y <span class="math notranslate nohighlight">\(H_2O\)</span></p>
-<ul class="simple">
-<li><p>x1 -&gt; Fe3+</p></li>
-<li><p>x2 -&gt; Sn2+</p></li>
-<li><p>x3 -&gt; Fe2+</p></li>
-<li><p>x4 -&gt; Sn4+</p></li>
-<li><p>x1+x3=0</p></li>
-<li><p>x2 + x4=0</p></li>
-<li><p>3x1 + 2x2 + 2x3 + 4x4 =0</p></li>
-</ul>
-<p>Fijamos x4=1
-Nos da x1=-2 ; x2=-1 ; x3=2</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A_sp</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
-                  <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
-                  <span class="p">[</span><span class="mi">3</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
-
-<span class="n">b_sp</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
-
-<span class="n">M_aug</span> <span class="o">=</span> <span class="n">A_sp</span><span class="o">.</span><span class="n">row_join</span><span class="p">(</span><span class="n">b_sp</span><span class="p">)</span>   <span class="c1"># matriz aumentada simbólica</span>
-<span class="n">rref</span><span class="p">,</span> <span class="n">pivots</span> <span class="o">=</span> <span class="n">M_aug</span><span class="o">.</span><span class="n">rref</span><span class="p">()</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Forma escalonada reducida (RREF) de [A|b]:&quot;</span><span class="p">)</span>
-<span class="n">sp</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">rref</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Columnas pivote:&quot;</span><span class="p">,</span> <span class="n">pivots</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Forma escalonada reducida (RREF) de [A|b]:
-⎡1  0  0  2   0⎤
-⎢              ⎥
-⎢0  1  0  1   0⎥
-⎢              ⎥
-⎣0  0  1  -2  0⎦
-
-Columnas pivote: (0, 1, 2)
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1294,6 +990,24 @@ Columnas pivote: (0, 1, 2)
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="u4p1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Definición de matrices</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="u4p3.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Sistemas de Ecuaciones Lineales</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -1310,24 +1024,12 @@ Columnas pivote: (0, 1, 2)
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">🧮 Taller de Python: Matrices y Sistemas de Ecuaciones Lineales</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importaciones">📦 Importaciones</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-i-matrices">Parte I — Matrices</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definir-una-matriz-de-reales">1) Definir una matriz de reales</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#manipular-un-elemento-una-columna-y-un-renglon">2) Manipular un elemento, una columna y un renglón</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suma-multiplicacion-por-escalar-y-producto-de-matrices">3) Suma, multiplicación por escalar y producto de matrices</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcular-el-determinante">4) Calcular el determinante</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcular-la-matriz-inversa">5) Calcular la matriz inversa</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-ii-sistemas-de-ecuaciones-lineales-sel">Parte II — Sistemas de Ecuaciones Lineales (SEL)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resolucion-con-sympy">Resolución con SymPy</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio">Ejercicio</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-balanceo-de-reacciones-quimicas">Ejercicio: Balanceo de reacciones químicas</a></li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">📦 Importaciones</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definir-una-matriz-de-reales">1) Definir una matriz de reales</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#manipular-un-elemento-una-columna-y-un-renglon">2) Manipular un elemento, una columna y un renglón</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#suma-multiplicacion-por-escalar-y-producto-de-matrices">3) Suma, multiplicación por escalar y producto de matrices</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#calcular-el-determinante">4) Calcular el determinante</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#calcular-la-matriz-inversa">5) Calcular la matriz inversa</a></li>
 </ul>
 
   </nav></div>

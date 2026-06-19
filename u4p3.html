@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>🧮 Taller de Python: Matrices y Sistemas de Ecuaciones Lineales &#8212; Practicas Álgebra Superior</title>
+    <title>Sistemas de Ecuaciones Lineales &#8212; Practicas Álgebra Superior</title>
   
   
   
@@ -59,9 +59,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'SEL_Pendiente';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'u4p3';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Definición de Espacios Vectoriales" href="u5p1.html" />
+    <link rel="prev" title="📦 Importaciones" href="u4p2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -123,8 +125,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -215,7 +215,7 @@
 
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Matrices y Sistemas de Ecuaciones</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u4p1.html">Definición de matrices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u4p2.html">📦 Importaciones</a></li>
 
@@ -223,7 +223,7 @@
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="u4p3.html">Sistemas de Ecuaciones Lineales</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Sistemas de Ecuaciones Lineales</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Espacios Vectoriales</span></p>
 <ul class="nav bd-sidenav">
@@ -310,7 +310,7 @@
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/matquim/Practicas-Algebra/master?urlpath=tree/SEL_Pendiente.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/matquim/Practicas-Algebra/master?urlpath=tree/u4p3.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -328,7 +328,7 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/matquim/Practicas-Algebra/blob/master/SEL_Pendiente.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/matquim/Practicas-Algebra/blob/master/u4p3.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -377,7 +377,7 @@
       
       
       
-      <li><a href="_sources/SEL_Pendiente.ipynb" target="_blank"
+      <li><a href="_sources/u4p3.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -461,7 +461,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>🧮 Taller de Python: Matrices y Sistemas de Ecuaciones Lineales</h1>
+    <h1>Sistemas de Ecuaciones Lineales</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -471,26 +471,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">🧮 Taller de Python: Matrices y Sistemas de Ecuaciones Lineales</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importaciones">📦 Importaciones</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-i-matrices">Parte I — Matrices</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definir-una-matriz-de-reales">1) Definir una matriz de reales</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#manipular-un-elemento-una-columna-y-un-renglon">2) Manipular un elemento, una columna y un renglón</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suma-multiplicacion-por-escalar-y-producto-de-matrices">3) Suma, multiplicación por escalar y producto de matrices</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcular-el-determinante">4) Calcular el determinante</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcular-la-matriz-inversa">5) Calcular la matriz inversa</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-ii-sistemas-de-ecuaciones-lineales-sel">Parte II — Sistemas de Ecuaciones Lineales (SEL)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resolucion-con-sympy">Resolución con SymPy</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio">Ejercicio</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-balanceo-de-reacciones-quimicas">Ejercicio: Balanceo de reacciones químicas</a></li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -501,14 +486,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="taller-de-python-matrices-y-sistemas-de-ecuaciones-lineales">
-<h1>🧮 Taller de Python: Matrices y Sistemas de Ecuaciones Lineales<a class="headerlink" href="#taller-de-python-matrices-y-sistemas-de-ecuaciones-lineales" title="Link to this heading">#</a></h1>
-<p><strong>Temas:</strong></p>
-<ul class="simple">
-<li><p>Parte I: Matrices (definición, manipulación, operaciones, determinante, inversa)</p></li>
-<li><p>Parte II: SEL — Cramer, Matriz inversa y Gauss-Jordan utilizando SymPy</p></li>
-</ul>
-<p><strong>Librería principal:</strong> <code class="docutils literal notranslate"><span class="pre">numpy</span></code> · <strong>Librería simbólica:</strong> <code class="docutils literal notranslate"><span class="pre">sympy</span></code></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="sistemas-de-ecuaciones-lineales">
+<h1>Sistemas de Ecuaciones Lineales<a class="headerlink" href="#sistemas-de-ecuaciones-lineales" title="Link to this heading">#</a></h1>
 <section id="importaciones">
 <h2>📦 Importaciones<a class="headerlink" href="#importaciones" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
@@ -519,473 +498,6 @@ document.write(`
 </div>
 </div>
 </div>
-</section>
-</section>
-<hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="parte-i-matrices">
-<h1>Parte I — Matrices<a class="headerlink" href="#parte-i-matrices" title="Link to this heading">#</a></h1>
-<section id="definir-una-matriz-de-reales">
-<h2>1) Definir una matriz de reales<a class="headerlink" href="#definir-una-matriz-de-reales" title="Link to this heading">#</a></h2>
-<p>Con <code class="docutils literal notranslate"><span class="pre">numpy</span></code> usamos <code class="docutils literal notranslate"><span class="pre">np.array()</span></code> pasando una <strong>lista de listas</strong>:<br />
-cada lista interior representa un <strong>renglón</strong> (fila).</p>
-<p>Para declarar una matriz podemos usar el comando:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-
-<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
-    <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">],</span>
-    <span class="p">[</span><span class="mf">4.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">],</span>
-    <span class="p">[</span><span class="mf">7.0</span><span class="p">,</span> <span class="mf">8.0</span><span class="p">,</span> <span class="mf">9.0</span><span class="p">]</span>
-<span class="p">])</span>
-</pre></div>
-</div>
-<p>Para imprimir la matriz podemos usar:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Para obtener las dimensiones de la matriz podemos usar:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>El resultado es un vector de dos datos <strong>(número de renglones, número de columnas)</strong>.</p>
-<p>Si queremos de manera independiente obtener el número de renglones o de columnas hacemos:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># número de renglones</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># número de columnas</span>
-</pre></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
-    <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">],</span>
-    <span class="p">[</span><span class="mf">4.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">],</span>
-    <span class="p">[</span><span class="mf">7.0</span><span class="p">,</span> <span class="mf">8.0</span><span class="p">,</span> <span class="mf">9.0</span><span class="p">]</span>
-<span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># número de renglones</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># número de columnas</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1. 2. 3.]
- [4. 5. 6.]
- [7. 8. 9.]]
-(3, 3)
-3
-3
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>Ejercicio</strong>:</p>
-<p>Declarar una matriz de tamaño <span class="math notranslate nohighlight">\(2 \times 4\)</span> con su fecha de nacimiento, poniendo el dia y mes en el primer renglón y el año en el segundo renglón.</p>
-<p>Obtener la dimensión, el número de renglones y el número de columnas</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span> <span class="p">,</span><span class="mi">0</span> <span class="p">,</span><span class="mi">0</span> <span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[0 1 1 1]
- [2 0 0 0]]
-(2, 4)
-</pre></div>
-</div>
-</div>
-</div>
-<p>También podemos crear matrices especiales con los siguientes comandos:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">np.zeros((4,</span> <span class="pre">3))</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">np.ones((4,</span> <span class="pre">3))</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">np.eye(4)</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">np.eye(5,</span> <span class="pre">6)</span></code></p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0., 0., 0.],
-       [0., 0., 0.],
-       [0., 0., 0.],
-       [0., 0., 0.]])
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[1., 1., 1.],
-       [1., 1., 1.],
-       [1., 1., 1.],
-       [1., 1., 1.]])
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[1., 0., 0., 0.],
-       [0., 1., 0., 0.],
-       [0., 0., 1., 0.],
-       [0., 0., 0., 1.]])
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[1., 0., 0., 0., 0., 0.],
-       [0., 1., 0., 0., 0., 0.],
-       [0., 0., 1., 0., 0., 0.],
-       [0., 0., 0., 1., 0., 0.],
-       [0., 0., 0., 0., 1., 0.]])
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="manipular-un-elemento-una-columna-y-un-renglon">
-<h2>2) Manipular un elemento, una columna y un renglón<a class="headerlink" href="#manipular-un-elemento-una-columna-y-un-renglon" title="Link to this heading">#</a></h2>
-<blockquote>
-<div><p>⚠️ Python usa <strong>índice base 0</strong>: el primer renglón es el renglón 0.</p>
-</div></blockquote>
-<p>Podemos imprimir, asignar o modificar un elemento específico de una matriz <code class="docutils literal notranslate"><span class="pre">A</span></code> con la notación <code class="docutils literal notranslate"><span class="pre">A[i,</span> <span class="pre">j]</span></code>.</p>
-<ul class="simple">
-<li><p>Podemos manipular un <strong>renglón</strong> completo usando <code class="docutils literal notranslate"><span class="pre">A[i,</span> <span class="pre">:]</span></code></p></li>
-<li><p>Podemos manipular una <strong>columna</strong> completa usando <code class="docutils literal notranslate"><span class="pre">A[:,</span> <span class="pre">j]</span></code></p></li>
-</ul>
-<p><strong>Ejercicio</strong></p>
-<ul class="simple">
-<li><p>Definir una matriz <code class="docutils literal notranslate"><span class="pre">A</span></code> de tamaño 4×5 con números reales cualesquiera</p></li>
-<li><p>Extraer el elemento del renglón 2 y columna 3</p></li>
-<li><p>Sustituir toda la columna 3 por 1</p></li>
-<li><p>Sumar 4 a todo el renglón 2</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
-<span class="n">A</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-<span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">,:]</span> <span class="o">+=</span><span class="mi">4</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1  2  3  4  5]
- [ 6  7  8  9 10]
- [ 5  4  3  2  1]
- [ 0  9  8  7  6]]
-8
-[[ 1  2  1  4  5]
- [ 6  7  1  9 10]
- [ 5  4  1  2  1]
- [ 0  9  1  7  6]]
-[[ 1  2  1  4  5]
- [10 11  5 13 14]
- [ 5  4  1  2  1]
- [ 0  9  1  7  6]]
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="suma-multiplicacion-por-escalar-y-producto-de-matrices">
-<h2>3) Suma, multiplicación por escalar y producto de matrices<a class="headerlink" href="#suma-multiplicacion-por-escalar-y-producto-de-matrices" title="Link to this heading">#</a></h2>
-<p>Vamos a definir dos matrices</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}A = \begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix} \qquad B = \begin{pmatrix} 5 &amp; 6 \\ 7 &amp; 8 \end{pmatrix}\end{split}\]</div>
-<p>y realizar las siguientes operaciones. Ejecuta la celda y observa cada resultado. ¿Qué hace cada operación?</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">+</span> <span class="pre">B</span></code> →</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">*</span> <span class="pre">A</span></code> →</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">*</span> <span class="pre">B</span></code> →</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&#64;</span> <span class="pre">B</span></code> →</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">np.dot(A,</span> <span class="pre">B)</span></code> →</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">np.matmul(A,</span> <span class="pre">B)</span></code> →</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">np.prod(A)</span></code> →</p></li>
-</ul>
-<blockquote>
-<div><p>📝 <strong>Nota:</strong> Para copiar una matriz <code class="docutils literal notranslate"><span class="pre">A</span></code> en una nueva matriz independiente, usaremos <code class="docutils literal notranslate"><span class="pre">A_copia</span> <span class="pre">=</span> <span class="pre">A.copy()</span></code>. Si hacemos simplemente <code class="docutils literal notranslate"><span class="pre">A_copia</span> <span class="pre">=</span> <span class="pre">A</span></code>, ambas variables apuntan a la <strong>misma matriz en memoria</strong>, por lo que modificar una afecta a la otra.</p>
-</div></blockquote>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span>
-<span class="n">B</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">B</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">A</span><span class="o">+</span><span class="n">B</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="mi">3</span><span class="o">*</span><span class="n">A</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">A</span><span class="o">*</span><span class="n">B</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">A</span><span class="nd">@B</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1 2]
- [3 4]] 
-
- [[5 6]
- [7 8]]
-
- [[ 6  8]
- [10 12]]
-
- [[ 3  6]
- [ 9 12]]
-
- [[ 5 12]
- [21 32]]
-
- [[19 22]
- [43 50]]
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>Ejercicio:</strong> Dadas las matrices</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}A = \begin{pmatrix} 1 &amp; 2 &amp; 3 \\ 4 &amp; 5 &amp; 6 \\ 7 &amp; 8 &amp; 9 \\ 10 &amp; 11 &amp; 12 \end{pmatrix} \qquad B = \begin{pmatrix} 2 &amp; 0 &amp; 1 \\ 3 &amp; 1 &amp; 0 \\ 1 &amp; 2 &amp; 3 \\ 0 &amp; 1 &amp; 2 \end{pmatrix} \qquad C = \begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ 6 &amp; 7 &amp; 8 &amp; 9 &amp; 10 \\ 11 &amp; 12 &amp; 13 &amp; 14 &amp; 15 \end{pmatrix}\end{split}\]</div>
-<p>Escribir un código que realice las siguientes operaciones sin usar las funciones integradas de NumPy:</p>
-<ul class="simple">
-<li><p>Suma de matrices: <span class="math notranslate nohighlight">\(A + B\)</span></p></li>
-<li><p>Multiplicación por escalar: <span class="math notranslate nohighlight">\(3 \cdot A\)</span></p></li>
-<li><p>Producto elemento a elemento: <span class="math notranslate nohighlight">\(A \ast B\)</span></p></li>
-<li><p>Producto matricial: <span class="math notranslate nohighlight">\(A \cdot C\)</span></p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">]])</span>
-<span class="n">B</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>
-<span class="n">C</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">],[</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span>
-
-<span class="n">SUMA</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">SUMA</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
-  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
-    <span class="n">SUMA</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="o">+</span><span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">SUMA</span><span class="p">)</span>
-
-<span class="n">MultEsc</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">MultEsc</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
-  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
-    <span class="n">MultEsc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="mi">3</span><span class="o">*</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">MultEsc</span><span class="p">)</span>
-
-<span class="n">ProdMat</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
-
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
-  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">C</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
-    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
-      <span class="n">ProdMat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">+=</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">k</span><span class="p">]</span><span class="o">*</span><span class="n">C</span><span class="p">[</span><span class="n">k</span><span class="p">,</span><span class="n">j</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">ProdMat</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">A</span> <span class="o">@</span> <span class="n">C</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1  2  3]
- [ 4  5  6]
- [ 7  8  9]
- [10 11 12]] 
-
- [[2 0 1]
- [3 1 0]
- [1 2 3]
- [0 1 2]] 
-
- [[ 1  2  3  4  5]
- [ 6  7  8  9 10]
- [11 12 13 14 15]]
-
- [[0. 0. 0.]
- [0. 0. 0.]
- [0. 0. 0.]
- [0. 0. 0.]]
-
- [[ 3.  2.  4.]
- [ 7.  6.  6.]
- [ 8. 10. 12.]
- [10. 12. 14.]]
-
- [[0. 0. 0.]
- [0. 0. 0.]
- [0. 0. 0.]
- [0. 0. 0.]]
-
- [[ 3.  6.  9.]
- [12. 15. 18.]
- [21. 24. 27.]
- [30. 33. 36.]]
-
- [[ 46.  52.  58.  64.  70.]
- [100. 115. 130. 145. 160.]
- [154. 178. 202. 226. 250.]
- [208. 241. 274. 307. 340.]]
-
- [[ 46  52  58  64  70]
- [100 115 130 145 160]
- [154 178 202 226 250]
- [208 241 274 307 340]]
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="calcular-el-determinante">
-<h2>4) Calcular el determinante<a class="headerlink" href="#calcular-el-determinante" title="Link to this heading">#</a></h2>
-<p>Usamos <code class="docutils literal notranslate"><span class="pre">np.linalg.det()</span></code>.<br />
-Si <strong>det(A) ≠ 0</strong>, la matriz es invertible.</p>
-<p><strong>Aplicación</strong>: Definir una matriz cuadrada y calcular su determinante.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">round</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">A</span><span class="p">),</span> <span class="mi">10</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1 2 3]
- [4 5 6]
- [5 7 9]] 
-</pre></div>
-</div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>np.float64(0.0)
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>Ejercicio</strong>: Utilizar el método de Cramer para obtener la solución del sistema de ecuaciones lineales <span class="math notranslate nohighlight">\(Ax = b\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{cases} 2x_1 + x_2 - x_3 + 3x_4 = 7 \\ x_1 + 3x_2 + 2x_3 - x_4 = 5 \\ 3x_1 - x_2 + x_3 + 2x_4 = 4 \\ x_1 + 2x_2 - 3x_3 + x_4 = 3 \end{cases}\end{split}\]</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="p">])</span>
-<span class="n">B</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">7</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">],[</span><span class="mi">4</span><span class="p">],[</span><span class="mi">3</span><span class="p">]])</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
-
-<span class="n">A_1</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">A_1</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="n">B</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">A_1</span><span class="p">)</span>
-<span class="n">Det</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-<span class="n">Det1</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">A_1</span><span class="p">)</span>
-<span class="n">x1</span><span class="o">=</span><span class="n">Det1</span><span class="o">/</span><span class="n">Det</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">Det</span><span class="p">,</span> <span class="n">Det1</span><span class="p">,</span> <span class="n">x1</span><span class="p">)</span>
-
-
-<span class="n">A_2</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">A_2</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="n">B</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">A_2</span><span class="p">)</span>
-<span class="n">Det2</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">A_2</span><span class="p">)</span>
-<span class="n">x2</span><span class="o">=</span><span class="n">Det2</span><span class="o">/</span><span class="n">Det</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 2  1 -1  3]
- [ 1  3  2 -1]
- [ 3 -1  1  2]
- [ 1  2 -3  1]] 
- [[7]
- [5]
- [4]
- [3]]
-
- [[ 7  1 -1  3]
- [ 5  3  2 -1]
- [ 4 -1  1  2]
- [ 3  2 -3  1]]
--75.00000000000004 -30.000000000000014 0.39999999999999997
-
- [[ 2  7 -1  3]
- [ 1  5  2 -1]
- [ 3  4  1  2]
- [ 1  3 -3  1]]
-1.6000000000000003
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="calcular-la-matriz-inversa">
-<h2>5) Calcular la matriz inversa<a class="headerlink" href="#calcular-la-matriz-inversa" title="Link to this heading">#</a></h2>
-<p>Usamos <code class="docutils literal notranslate"><span class="pre">np.linalg.inv()</span></code>.<br />
-Verificamos que <strong>A · A⁻¹ = I</strong>.</p>
-<p><strong>Aplicación</strong>: Definir una matriz cuadrada y calcular su inversa. Comprobar que A · A⁻¹ = I.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="p">])</span>
-<span class="n">B</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">7</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">],[</span><span class="mi">4</span><span class="p">],[</span><span class="mi">3</span><span class="p">]])</span>
-
-<span class="n">Ainv</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">Ainv</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">Ainv</span> <span class="o">@</span> <span class="n">A</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Solucion:&quot;</span><span class="p">,</span> <span class="n">Ainv</span> <span class="o">@</span> <span class="n">B</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[-0.4    0.067  0.467  0.333]
- [ 0.2    0.2   -0.2    0.   ]
- [ 0.2    0.133 -0.067 -0.333]
- [ 0.6   -0.067 -0.267 -0.333]]
-[[ 1. -0. -0. -0.]
- [ 0.  1.  0.  0.]
- [ 0.  0.  1.  0.]
- [ 0.  0.  0.  1.]]
-Solucion: [[0.4]
- [1.6]
- [0.8]
- [1.8]]
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>Ejercicio</strong>: Resolver el SEL anterior con el método de matriz inversa.</p>
-</section>
-</section>
-<hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="parte-ii-sistemas-de-ecuaciones-lineales-sel">
-<h1>Parte II — Sistemas de Ecuaciones Lineales (SEL)<a class="headerlink" href="#parte-ii-sistemas-de-ecuaciones-lineales-sel" title="Link to this heading">#</a></h1>
 <p>Un SEL se escribe en forma matricial como <strong>Ax = b</strong>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1003,6 +515,7 @@ Solucion: [[0.4]
 -2x + y + 2z = -3
 \end{cases}
 \end{split}\]</div>
+</section>
 <section id="resolucion-con-sympy">
 <h2>Resolución con SymPy<a class="headerlink" href="#resolucion-con-sympy" title="Link to this heading">#</a></h2>
 <p>SymPy trabaja con <strong>aritmética exacta</strong> (fracciones, radicales).<br />
@@ -1139,7 +652,7 @@ Solución (última columna de la RREF): Matrix([[62/15, 29/15, 5/3]])
 <span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
 
 <span class="ne">NonInvertibleMatrixError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">17</span><span class="p">],</span> <span class="n">line</span> <span class="mi">8</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="n">line</span> <span class="mi">8</span>
 <span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">b_sp</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
 <span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="c1"># --- Método 1: resolver con la inversa simbólica ---</span>
 <span class="ne">----&gt; </span><span class="mi">8</span> <span class="n">x_sympy</span> <span class="o">=</span> <span class="n">A_sp</span><span class="o">.</span><span class="n">inv</span><span class="p">()</span> <span class="o">*</span> <span class="n">b_sp</span>
@@ -1294,6 +807,24 @@ Columnas pivote: (0, 1, 2)
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="u4p2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">📦 Importaciones</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="u5p1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Definición de Espacios Vectoriales</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -1310,26 +841,11 @@ Columnas pivote: (0, 1, 2)
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">🧮 Taller de Python: Matrices y Sistemas de Ecuaciones Lineales</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importaciones">📦 Importaciones</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-i-matrices">Parte I — Matrices</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definir-una-matriz-de-reales">1) Definir una matriz de reales</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#manipular-un-elemento-una-columna-y-un-renglon">2) Manipular un elemento, una columna y un renglón</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suma-multiplicacion-por-escalar-y-producto-de-matrices">3) Suma, multiplicación por escalar y producto de matrices</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcular-el-determinante">4) Calcular el determinante</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calcular-la-matriz-inversa">5) Calcular la matriz inversa</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-ii-sistemas-de-ecuaciones-lineales-sel">Parte II — Sistemas de Ecuaciones Lineales (SEL)</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resolucion-con-sympy">Resolución con SymPy</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio">Ejercicio</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-balanceo-de-reacciones-quimicas">Ejercicio: Balanceo de reacciones químicas</a></li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
