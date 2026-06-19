@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Subconjuntos &#8212; Practicas Álgebra Superior</title>
+    <title>Tablas de Verdad &#8212; Practicas Álgebra Superior</title>
   
   
   
@@ -207,14 +207,10 @@
 <li class="toctree-l1"><a class="reference internal" href="u3p1.html">Definición de conjuntos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p2.html">Operaciones con conjuntos</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="u3p7.html">Relaciones y funciones</a></li>
-<li class="toctree-l1"><a class="reference internal" href="u3p8.html">Aplicaciones</a></li>
-<li class="toctree-l1"><a class="reference internal" href="u3p9.html">Proposiciones Lógicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u3p3.html">Subconjuntos</a></li>
 
-
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="u3p4.html">Aplicaciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u3p5.html">Proposiciones Lógicas</a></li>
 
 
 </ul>
@@ -444,7 +440,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Subconjuntos</h1>
+    <h1>Tablas de Verdad</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -454,14 +450,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Subconjuntos</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#relaciones-y-funciones">Relaciones y funciones</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ejemplo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Ejercicios</a></li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Tablas de Verdad</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#equivalencias-logicas">Equivalencias Lógicas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#leyes-validas-de-inferencia">Leyes Válidas de Inferencia</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conjuntos">Conjuntos</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#operaciones-con-conjuntos">Operaciones con Conjuntos</a></li>
 </ul>
 
             </nav>
@@ -474,53 +467,394 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="subconjuntos">
-<h1>Subconjuntos<a class="headerlink" href="#subconjuntos" title="Link to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="relaciones-y-funciones">
-<h1>Relaciones y funciones<a class="headerlink" href="#relaciones-y-funciones" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="tablas-de-verdad">
+<h1>Tablas de Verdad<a class="headerlink" href="#tablas-de-verdad" title="Link to this heading">#</a></h1>
 <div class="tip admonition">
 <p class="admonition-title">Concepto</p>
-<p>Una relación es un conjunto de pares ordenados.</p>
-<p>Es función si cada elemento del dominio tiene una única imagen.</p>
+<p>Usaremos estos conectivos para construir tablas de verdad.
+Cada renglón corresponde a un juego de valores de verdad
+de las proposiciones atómicas.</p>
+<p>Para dos proposiciones P y Q, hay 4 combinaciones posibles:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>P</p></th>
+<th class="head"><p>Q</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>True</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>True</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-even"><td><p>False</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-odd"><td><p>False</p></td>
+<td><p>False</p></td>
+</tr>
+</tbody>
+</table>
 </div>
-<section id="ejemplo">
-<h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Link to this heading">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">relacion</span> <span class="o">=</span> <span class="p">{(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">)}</span>
-
-<span class="n">dominio</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span> <span class="k">for</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="ow">in</span> <span class="n">relacion</span><span class="p">}</span>
-
-<span class="n">es_funcion</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">relacion</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">dominio</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">es_funcion</span><span class="p">)</span>
+</div>
+<p>Construyamos la tabla de verdad de la conjunción (and):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">P</span> <span class="o">=</span> <span class="kc">True</span><span class="p">;</span>  <span class="n">Q</span> <span class="o">=</span> <span class="kc">True</span><span class="p">;</span>  <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;→&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">)</span>
+<span class="n">P</span> <span class="o">=</span> <span class="kc">True</span><span class="p">;</span>  <span class="n">Q</span> <span class="o">=</span> <span class="kc">False</span><span class="p">;</span> <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;→&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">)</span>
+<span class="n">P</span> <span class="o">=</span> <span class="kc">False</span><span class="p">;</span> <span class="n">Q</span> <span class="o">=</span> <span class="kc">True</span><span class="p">;</span>  <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;→&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">)</span>
+<span class="n">P</span> <span class="o">=</span> <span class="kc">False</span><span class="p">;</span> <span class="n">Q</span> <span class="o">=</span> <span class="kc">False</span><span class="p">;</span> <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;→&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Nota: en este ejemplo construimos cada renglón “a mano”.
+¿Cómo podemos mejorar ese proceso?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P</span><span class="se">\t</span><span class="s2">Q</span><span class="se">\t</span><span class="s2">P y Q</span><span class="se">\t</span><span class="s2">P o Q</span><span class="se">\t</span><span class="s2"> P =&gt; Q</span><span class="se">\t</span><span class="s2"> P &lt;=&gt; Q &quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">P</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]:</span>
+  <span class="k">for</span> <span class="n">Q</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="ow">or</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">Implicacion</span><span class="p">(</span><span class="n">P</span><span class="p">,</span><span class="n">Q</span><span class="p">),</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="o">==</span> <span class="n">Q</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>P	Q	P y Q	P o Q	 P =&gt; Q	 P &lt;=&gt; Q 
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">5</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="k">for</span> <span class="n">P</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]:</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span>   <span class="k">for</span> <span class="n">Q</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]:</span>
+<span class="ne">----&gt; </span><span class="mi">5</span>     <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="ow">or</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">Implicacion</span><span class="p">(</span><span class="n">P</span><span class="p">,</span><span class="n">Q</span><span class="p">),</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="o">==</span> <span class="n">Q</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;Implicacion&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
 </section>
-<section id="ejercicios">
-<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Verificar si una relación es función.</p></li>
-<li><p>Analizar si es biyectiva.</p></li>
-</ul>
+<section class="tex2jax_ignore mathjax_ignore" id="equivalencias-logicas">
+<h1>Equivalencias Lógicas<a class="headerlink" href="#equivalencias-logicas" title="Link to this heading">#</a></h1>
 <div class="tip admonition">
 <p class="admonition-title">Concepto</p>
-<p>Un conjunto <span class="math notranslate nohighlight">\(A\)</span> es subconjunto de <span class="math notranslate nohighlight">\(B\)</span> si todos sus elementos están en <span class="math notranslate nohighlight">\(B\)</span>.</p>
+<p>Dos proposiciones son equivalentes si tienen el mismo valor de verdad para cualquier combinación de valores de verdad de las proposiciones que las componen.</p>
 </div>
-</section>
-<section id="id1">
-<h2>Ejemplo<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">}</span>
-<span class="n">B</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">}</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">issubset</span><span class="p">(</span><span class="n">B</span><span class="p">))</span>
+<p>Verificaremos las siguientes equivalencias:</p>
+<ol class="arabic simple">
+<li><p>Ley de De Morgan:
+<span class="math notranslate nohighlight">\(\neg(P \wedge Q) \equiv \neg P \vee \neg Q\)</span></p></li>
+<li><p>Distributividad:
+<span class="math notranslate nohighlight">\(P \wedge (Q \vee R) \equiv (P \wedge Q) \vee (P \wedge R)\)</span></p></li>
+<li><p>Negación de la implicación:
+<span class="math notranslate nohighlight">\(\neg(P \Rightarrow Q) \equiv P \wedge \neg Q\)</span></p></li>
+<li><p>Contrapuesta:
+<span class="math notranslate nohighlight">\(P \Rightarrow Q \equiv \neg Q \Rightarrow \neg P\)</span></p></li>
+<li><p>La implicación no es conmutativa:
+<span class="math notranslate nohighlight">\(P \Rightarrow Q \not\equiv Q \Rightarrow P\)</span></p></li>
+</ol>
+<p>Nota: la implicación (<span class="math notranslate nohighlight">\(\Rightarrow\)</span>) no existe como tal en Python.
+Usaremos la equivalencia que podemos definir como funcion:
+<span class="math notranslate nohighlight">\(P \Rightarrow Q \equiv \neg P \vee Q\)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P </span><span class="se">\t</span><span class="s2">Q </span><span class="se">\t</span><span class="s2">neg(P y Q) </span><span class="se">\t</span><span class="s2">neg P o neg Q&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">P</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]:</span>
+  <span class="k">for</span> <span class="n">Q</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">P</span> <span class="p">,</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span> <span class="p">,</span><span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="ow">not</span><span class="p">(</span><span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">),</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="ow">not</span> <span class="n">P</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">Q</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>P 	Q 	neg(P y Q) 	neg P o neg Q
+True 	 True 	 False 	 False
+True 	 False 	 True 	 True
+False 	 True 	 True 	 True
+False 	 False 	 True 	 True
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P</span><span class="se">\t</span><span class="s2">Q</span><span class="se">\t</span><span class="s2">R</span><span class="se">\t</span><span class="s2"> Py(QoR)</span><span class="se">\t\t</span><span class="s2">(PyQ) o (PyR)&quot;</span><span class="p">)</span>
+
+
+<span class="k">for</span> <span class="n">P</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]:</span>
+  <span class="k">for</span> <span class="n">Q</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]:</span>
+    <span class="k">for</span> <span class="n">R</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="p">(</span><span class="n">Q</span> <span class="ow">or</span> <span class="n">R</span><span class="p">),</span> <span class="s2">&quot;</span><span class="se">\t\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">P</span> <span class="ow">and</span> <span class="n">R</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>P	Q	R	 Py(QoR)		(PyQ) o (PyR)
+True 	 True 	 True 	 True 		 True
+True 	 True 	 False 	 True 		 True
+True 	 False 	 True 	 True 		 True
+True 	 False 	 False 	 False 		 False
+False 	 True 	 True 	 False 		 False
+False 	 True 	 False 	 False 		 False
+False 	 False 	 True 	 False 		 False
+False 	 False 	 False 	 False 		 False
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>EJERCICIO</strong></p>
+<p>Definir una función que permita generar la tabla de verdad de la equivalencia lógica de manera sencilla.</p>
 </section>
-<section id="id2">
-<h2>Ejercicios<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Verificar si un conjunto es subconjunto de otro.</p></li>
-</ul>
+<section class="tex2jax_ignore mathjax_ignore" id="leyes-validas-de-inferencia">
+<h1>Leyes Válidas de Inferencia<a class="headerlink" href="#leyes-validas-de-inferencia" title="Link to this heading">#</a></h1>
+<div class="tip admonition">
+<p class="admonition-title">Concepto</p>
+<p>Una ley de inferencia nos permite concluir una proposición a partir de otras proposiciones dadas. Estas reglas son siempre válidas, es decir, son tautologías: su valor de verdad es True para cualquier combinación de valores de verdad de las proposiciones que las componen.</p>
+</div>
+<p>Verificaremos las siguientes leyes:</p>
+<ol class="arabic simple">
+<li><p>Modus ponens:
+<span class="math notranslate nohighlight">\((P \land (P \Rightarrow Q)) \Rightarrow Q\)</span></p></li>
+<li><p>Modus tollendo ponens:
+<span class="math notranslate nohighlight">\(((\neg P) \land (P \vee Q)) \Rightarrow Q\)</span></p></li>
+<li><p>Modus tollendo tollens:
+<span class="math notranslate nohighlight">\(((\neg Q) \land (P \Rightarrow Q)) \Rightarrow (\neg P)\)</span></p></li>
+<li><p>Silogismo:
+<span class="math notranslate nohighlight">\(((P \Rightarrow Q) \land (Q \Rightarrow R))    \Rightarrow (P \Rightarrow R)\)</span></p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P</span><span class="se">\t</span><span class="s2">Q</span><span class="se">\t</span><span class="s2">R</span><span class="se">\t</span><span class="s2">Silogismo&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">P</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]:</span>
+  <span class="k">for</span> <span class="n">Q</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]:</span>
+    <span class="k">for</span> <span class="n">R</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]:</span>
+      <span class="n">A</span><span class="o">=</span><span class="n">Implicacion</span><span class="p">(</span><span class="n">P</span><span class="p">,</span><span class="n">Q</span><span class="p">)</span>
+      <span class="n">B</span><span class="o">=</span><span class="n">Implicacion</span><span class="p">(</span><span class="n">Q</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
+      <span class="n">C</span><span class="o">=</span><span class="n">Implicacion</span><span class="p">(</span><span class="n">P</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
+      <span class="n">Silogismo</span><span class="o">=</span><span class="n">Implicacion</span><span class="p">(</span><span class="n">A</span> <span class="ow">and</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">Silogismo</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>P	Q	R	Silogismo
+True 	 True 	 True 	 True
+True 	 True 	 False 	 True
+True 	 False 	 True 	 True
+True 	 False 	 False 	 True
+False 	 True 	 True 	 True
+False 	 True 	 False 	 True
+False 	 False 	 True 	 True
+False 	 False 	 False 	 True
+</pre></div>
+</div>
+</div>
+</div>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="conjuntos">
+<h1>Conjuntos<a class="headerlink" href="#conjuntos" title="Link to this heading">#</a></h1>
+<div class="tip admonition">
+<p class="admonition-title">Concepto</p>
+<p>Un conjunto es una colección de elementos
+sin orden y sin repetición.</p>
+</div>
+<p>Conjunto de letras
+<span class="math notranslate nohighlight">\(A = \{&quot;a&quot;, &quot;b&quot;, &quot;c&quot;\}\)</span></p>
+<p>Conjunto de números
+<span class="math notranslate nohighlight">\(B = \{1, 2, 3, 4\}\)</span></p>
+<p><strong>EJERCICIO</strong>
+Define los siguientes conjuntos:</p>
+<p><span class="math notranslate nohighlight">\(C\)</span> : los enteros pares entre 4 y 10
+<span class="math notranslate nohighlight">\(D\)</span> : las letras de tu nombre</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="o">=</span><span class="p">{</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">}</span>
+<span class="n">D</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;J&quot;</span><span class="p">,</span> <span class="s2">&quot;U&quot;</span><span class="p">,</span> <span class="s2">&quot;L&quot;</span><span class="p">,</span> <span class="s2">&quot;I&quot;</span><span class="p">,</span> <span class="s2">&quot;E&quot;</span><span class="p">,</span> <span class="s2">&quot;N&quot;</span><span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">D</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{8, 10, 4, 6}
+{&#39;E&#39;, &#39;U&#39;, &#39;N&#39;, &#39;J&#39;, &#39;I&#39;, &#39;L&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+<p>Nota: estas definiciones son dadas por extensión,
+es decir, indicando explícitamente todos los elementos
+que pertenecen al conjunto.</p>
+<p>¿Qué pasa si repetimos un elemento?
+Por ejemplo:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">C</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">C</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{1, 2, 3}
+</pre></div>
+</div>
+</div>
+</div>
+<p>¿De qué tipo son los conjuntos que hemos definido hasta ahora?</p>
+<p>Compruébalo con un comando de Python.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>set
+</pre></div>
+</div>
+</div>
+</div>
+<p>Para comprobar la pertenencia de un elemento a un conjunto, podemos usar los comandos in y not in.</p>
+<p>Dar un ejemplo de conjunto y comprobar el resultado de estos comandos.
+¿De qué tipo es el resultado de estos comandos?</p>
+<p>La definicion por extension no es la mas practica, en particular si</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+<span class="mf">10.0</span> <span class="ow">in</span> <span class="n">C</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{8, 10, 4, 6}
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>EJERCICIO</strong></p>
+<p>¿Qué conjunto describe cada una de las siguientes comprensiones?</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">{x</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">range(0,</span> <span class="pre">21)</span> <span class="pre">if</span> <span class="pre">x</span> <span class="pre">%</span> <span class="pre">2</span> <span class="pre">==</span> <span class="pre">0}</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">{x</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">range(1,</span> <span class="pre">21)</span> <span class="pre">if</span> <span class="pre">x</span> <span class="pre">%</span> <span class="pre">2</span> <span class="pre">!=</span> <span class="pre">0}</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">{x</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">range(1,</span> <span class="pre">51)</span> <span class="pre">if</span> <span class="pre">x</span> <span class="pre">%</span> <span class="pre">5</span> <span class="pre">==</span> <span class="pre">0}</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">{x</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">range(0,</span> <span class="pre">101)</span> <span class="pre">if</span> <span class="pre">x</span> <span class="pre">%</span> <span class="pre">10</span> <span class="pre">==</span> <span class="pre">0}</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">{x**2</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">range(1,</span> <span class="pre">11)}</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">{x</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">range(2,</span> <span class="pre">30)</span> <span class="pre">if</span> <span class="pre">x</span> <span class="pre">%</span> <span class="pre">2</span> <span class="pre">==</span> <span class="pre">0</span> <span class="pre">and</span> <span class="pre">x</span> <span class="pre">%</span> <span class="pre">3</span> <span class="pre">==</span> <span class="pre">0}</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">{x</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">range(1,</span> <span class="pre">20)</span> <span class="pre">if</span> <span class="pre">x</span> <span class="pre">%</span> <span class="pre">3</span> <span class="pre">!=</span> <span class="pre">0</span> <span class="pre">and</span> <span class="pre">x</span> <span class="pre">!=</span> <span class="pre">7}</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">{x**3</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">range(1,</span> <span class="pre">6)}</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">{x</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">range(10,</span> <span class="pre">50)</span> <span class="pre">if</span> <span class="pre">x</span> <span class="pre">%</span> <span class="pre">7</span> <span class="pre">==</span> <span class="pre">0}</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">{x</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">range(1,</span> <span class="pre">100)</span> <span class="pre">if</span> <span class="pre">x</span> <span class="pre">%</span> <span class="pre">2</span> <span class="pre">!=</span> <span class="pre">0</span> <span class="pre">and</span> <span class="pre">x</span> <span class="pre">%</span> <span class="pre">5</span> <span class="pre">==</span> <span class="pre">0}</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">{(x,</span> <span class="pre">2*x)</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">range(1,</span> <span class="pre">6)}</span></code></p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">({</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">}))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[5, 15, 25, 35, 45, 55, 65, 75, 85, 95]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Nota: podemos trabajar también con números reales, pero no
+podremos definir intervalos como tales, ya que los reales
+forman un conjunto infinito no numerable — no es posible
+listarlos ni iterarlos uno por uno.</p>
+<p>Sin embargo, podemos definir conjuntos finitos de reales:</p>
+<p>Conjunto de algunas raíces cuadradas
+<code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">=</span> <span class="pre">{1.5,</span> <span class="pre">2.7,</span> <span class="pre">3.14,</span> <span class="pre">9.81}</span></code></p>
+<p>Conjunto de potencias de 0.5
+<code class="docutils literal notranslate"><span class="pre">B</span> <span class="pre">=</span> <span class="pre">{0.5**x</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">range(6)}</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">print(B)</span></code></p>
+<p>Conjunto de valores de seno en algunos puntos
+<code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">math</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">C</span> <span class="pre">=</span> <span class="pre">{round(math.sin(x),</span> <span class="pre">4)</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">range(10)}</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">print(C)</span></code></p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="operaciones-con-conjuntos">
+<h1>Operaciones con Conjuntos<a class="headerlink" href="#operaciones-con-conjuntos" title="Link to this heading">#</a></h1>
+<p>Definimos 4 conjuntos de trabajo:</p>
+<p>A = {1, 2, 3, 4, 5}</p>
+<p>B = {4, 5, 6, 7, 8}</p>
+<p>C = {0, 1, 2, 3, 4, 5}</p>
+<p>D = A</p>
+<p>¿A qué operaciones de conjuntos corresponden
+los siguientes comandos de Python?</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">|</span> <span class="pre">B</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&amp;</span> <span class="pre">B</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">-</span> <span class="pre">B</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">^</span> <span class="pre">B</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">A.issubset(C)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&lt;</span> <span class="pre">C</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">A.issubset(D)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&lt;</span> <span class="pre">D</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">A==D</span></code></p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+
+<span class="n">B</span> <span class="o">=</span> <span class="p">{</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">}</span>
+
+<span class="n">C</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+
+<span class="n">D</span> <span class="o">=</span> <span class="n">A</span>
+
+<span class="n">A</span><span class="o">&lt;</span><span class="n">C</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>EJERCICIO</strong></p>
+<p>Dados los siguientes conjuntos <span class="math notranslate nohighlight">\( A = \{x \in \mathbb{Z} \mid 1 \leq x \leq 10\} \)</span>, <span class="math notranslate nohighlight">\( B = \{x \in \mathbb{Z} \mid 6 \leq x \leq 15\} \)</span> y el Universo <span class="math notranslate nohighlight">\(
+U = \{x \in \mathbb{Z} \mid -10 \leq x \leq 20\} \)</span></p>
+<p>Calcular las siguientes operaciones entre conjuntos:</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(
+A \cup B
+\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(
+A \cap B
+\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(
+A \setminus B
+\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(
+B \setminus A
+\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(
+A^c \)</span></p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="o">=</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span><span class="mi">5</span> <span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">56</span><span class="p">}</span>
+<span class="n">B</span><span class="o">=</span><span class="p">{</span><span class="mi">5</span> <span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">}</span>
+<span class="p">(</span><span class="n">A</span> <span class="o">&amp;</span> <span class="n">B</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{2, 3, 4, 5, 6, 7, 8, 9, 10, 34, 56}
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -569,14 +903,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Subconjuntos</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#relaciones-y-funciones">Relaciones y funciones</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ejemplo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Ejercicios</a></li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Tablas de Verdad</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#equivalencias-logicas">Equivalencias Lógicas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#leyes-validas-de-inferencia">Leyes Válidas de Inferencia</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conjuntos">Conjuntos</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#operaciones-con-conjuntos">Operaciones con Conjuntos</a></li>
 </ul>
 
   </nav></div>

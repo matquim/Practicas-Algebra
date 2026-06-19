@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Aplicaciones &#8212; Practicas Álgebra Superior</title>
+    <title>Subconjuntos &#8212; Practicas Álgebra Superior</title>
   
   
   
@@ -59,11 +59,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'u3p8';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'u3p3';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Proposiciones Lógicas" href="u3p9.html" />
-    <link rel="prev" title="Relaciones y funciones" href="u3p7.html" />
+    <link rel="next" title="Aplicaciones" href="u3p4.html" />
+    <link rel="prev" title="Operaciones con conjuntos" href="u3p2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -207,14 +207,10 @@
 <li class="toctree-l1"><a class="reference internal" href="u3p1.html">Definición de conjuntos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p2.html">Operaciones con conjuntos</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="u3p7.html">Relaciones y funciones</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Aplicaciones</a></li>
-<li class="toctree-l1"><a class="reference internal" href="u3p9.html">Proposiciones Lógicas</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Subconjuntos</a></li>
 
-
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="u3p4.html">Aplicaciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u3p5.html">Proposiciones Lógicas</a></li>
 
 
 </ul>
@@ -293,7 +289,7 @@
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/matquim/Practicas-Algebra/master?urlpath=tree/u3p8.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/matquim/Practicas-Algebra/master?urlpath=tree/u3p3.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -311,7 +307,7 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/matquim/Practicas-Algebra/blob/master/u3p8.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/matquim/Practicas-Algebra/blob/master/u3p3.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -360,7 +356,7 @@
       
       
       
-      <li><a href="_sources/u3p8.ipynb" target="_blank"
+      <li><a href="_sources/u3p3.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -444,7 +440,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Aplicaciones</h1>
+    <h1>Subconjuntos</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -454,9 +450,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Subconjuntos</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-opcional">Visualización (opcional)</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#relaciones-y-funciones">Relaciones y funciones</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ejemplo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Ejercicios</a></li>
+</ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -467,44 +472,51 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="aplicaciones">
-<h1>Aplicaciones<a class="headerlink" href="#aplicaciones" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="subconjuntos">
+<h1>Subconjuntos<a class="headerlink" href="#subconjuntos" title="Link to this heading">#</a></h1>
+<section id="ejemplo">
+<h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Link to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">}</span>
+<span class="n">B</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">issubset</span><span class="p">(</span><span class="n">B</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
 <section id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
-<ul>
-<li><p>Construir:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-16db578b-6bc4-4ebf-81ea-b81ffbf6920b">
-<span class="eqno">(10)<a class="headerlink" href="#equation-16db578b-6bc4-4ebf-81ea-b81ffbf6920b" title="Permalink to this equation">#</a></span>\[\begin{equation}
-X = \{x \in \mathbb{N} \mid 1 \le x \le 10\}
-\end{equation}\]</div>
-</li>
-<li><p>Definir:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1c7f7d4c-ec0d-442a-af60-44ad88f0cde3">
-<span class="eqno">(11)<a class="headerlink" href="#equation-1c7f7d4c-ec0d-442a-af60-44ad88f0cde3" title="Permalink to this equation">#</a></span>\[\begin{equation}
-Y = \{x^2 \mid x \in X\}
-\end{equation}\]</div>
-</li>
-<li><p>Definir el conjunto de números primos en <span class="math notranslate nohighlight">\(X\)</span>.</p></li>
-<li><p>Calcular:</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(X \cap Y\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(Y - Z\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\((X \cup Y) \cap Z\)</span></p></li>
-</ul>
-</li>
+<li><p>Verificar si un conjunto es subconjunto de otro.</p></li>
 </ul>
 </section>
-<section id="visualizacion-opcional">
-<h2>Visualización (opcional)<a class="headerlink" href="#visualizacion-opcional" title="Link to this heading">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib_venn</span><span class="w"> </span><span class="kn">import</span> <span class="n">venn2</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="relaciones-y-funciones">
+<h1>Relaciones y funciones<a class="headerlink" href="#relaciones-y-funciones" title="Link to this heading">#</a></h1>
+<div class="tip admonition">
+<p class="admonition-title">Concepto</p>
+<p>Una relación es un conjunto de pares ordenados.</p>
+<p>Es función si cada elemento del dominio tiene una única imagen.</p>
+</div>
+<section id="id1">
+<h2>Ejemplo<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">relacion</span> <span class="o">=</span> <span class="p">{(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">)}</span>
 
-<span class="n">A</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
-<span class="n">B</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span>
+<span class="n">dominio</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span> <span class="k">for</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="ow">in</span> <span class="n">relacion</span><span class="p">}</span>
 
-<span class="n">venn2</span><span class="p">([</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">es_funcion</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">relacion</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">dominio</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">es_funcion</span><span class="p">)</span>
 </pre></div>
+</div>
+</section>
+<section id="id2">
+<h2>Ejercicios<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Verificar si una relación es función.</p></li>
+<li><p>Analizar si es biyectiva.</p></li>
+</ul>
+<div class="tip admonition">
+<p class="admonition-title">Concepto</p>
+<p>Un conjunto <span class="math notranslate nohighlight">\(A\)</span> es subconjunto de <span class="math notranslate nohighlight">\(B\)</span> si todos sus elementos están en <span class="math notranslate nohighlight">\(B\)</span>.</p>
 </div>
 </section>
 </section>
@@ -540,20 +552,20 @@ Y = \{x^2 \mid x \in X\}
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="u3p7.html"
+       href="u3p2.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Relaciones y funciones</p>
+        <p class="prev-next-title">Operaciones con conjuntos</p>
       </div>
     </a>
     <a class="right-next"
-       href="u3p9.html"
+       href="u3p4.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Proposiciones Lógicas</p>
+        <p class="prev-next-title">Aplicaciones</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -573,9 +585,18 @@ Y = \{x^2 \mid x \in X\}
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Subconjuntos</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-opcional">Visualización (opcional)</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#relaciones-y-funciones">Relaciones y funciones</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ejemplo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Ejercicios</a></li>
+</ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
