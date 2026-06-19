@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Producto punto &#8212; Practicas Álgebra Superior</title>
+    <title>Números complejos &#8212; Practicas Álgebra Superior</title>
   
   
   
@@ -59,11 +59,9 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'u2p5';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'u6p2';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Producto cruz" href="u2p6.html" />
-    <link rel="prev" title="Norma de un vector" href="u2p4.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -125,6 +123,8 @@
     <div class="bd-container__inner bd-page-width">
       
       
+      
+        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -192,12 +192,12 @@
 <li class="toctree-l1"><a class="reference internal" href="u1p7.html">Sucesiones recursivas</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectores en ℝ² y ℝ³</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u2p1.html">Representación de vectores</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p2.html">Suma de vectores</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p3.html">Combinaciones lineales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p4.html">Norma de un vector</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Producto punto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u2p5.html">Producto punto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p6.html">Producto cruz</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p7.html">Ángulo entre vectores</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p8.html">Aplicaciones</a></li>
@@ -304,7 +304,7 @@
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/matquim/Practicas-Algebra/master?urlpath=tree/u2p5.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/matquim/Practicas-Algebra/master?urlpath=tree/u6p2.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -322,7 +322,7 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/matquim/Practicas-Algebra/blob/master/u2p5.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/matquim/Practicas-Algebra/blob/master/u6p2.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -371,7 +371,7 @@
       
       
       
-      <li><a href="_sources/u2p5.ipynb" target="_blank"
+      <li><a href="_sources/u6p2.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -455,7 +455,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Producto punto</h1>
+    <h1>Números complejos</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -465,8 +465,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conversion-de-flotantes-enteros-a-complejos">Conversión de flotantes/enteros a complejos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operaciones-con-complejos">Operaciones con complejos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suma">Suma</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#producto">Producto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complejo-conjugado">Complejo conjugado</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#division">División</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potencia">Potencia</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtenga-el-resultado-de-las-siguientes-operaciones">Obtenga el resultado de las siguientes operaciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modulo-y-argumento">Módulo y argumento</a></li>
 </ul>
             </nav>
         </div>
@@ -478,33 +486,72 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="producto-punto">
-<h1>Producto punto<a class="headerlink" href="#producto-punto" title="Link to this heading">#</a></h1>
-<div class="tip admonition">
-<p class="admonition-title">Concepto</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4d17871f-8ec3-4ca3-9702-9d124e5b7908">
-<span class="eqno">(6)<a class="headerlink" href="#equation-4d17871f-8ec3-4ca3-9702-9d124e5b7908" title="Permalink to this equation">#</a></span>\[\begin{equation}
-a \cdot b = \sum_i a_i b_i
-\end{equation}\]</div>
-</div>
-<section id="ejemplo">
-<h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Link to this heading">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">]</span>
-
-<span class="n">dot</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dot</span><span class="p">)</span>
-</pre></div>
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="numeros-complejos">
+<h1>Números complejos<a class="headerlink" href="#numeros-complejos" title="Link to this heading">#</a></h1>
+<p>Los números complejos en Python se pueden declarar usando la función complex() o directamente utilizando la notación <span class="math notranslate nohighlight">\(a + bj\)</span>.</p>
+<p>Importante: La unidad imaginaria en Python se denota con <span class="math notranslate nohighlight">\(j\)</span>, i.e. <span class="math notranslate nohighlight">\(j^2=-1\)</span></p>
+<p>Ejemplo</p>
+<section id="conversion-de-flotantes-enteros-a-complejos">
+<h2>Conversión de flotantes/enteros a complejos<a class="headerlink" href="#conversion-de-flotantes-enteros-a-complejos" title="Link to this heading">#</a></h2>
+<p>Para acceder a la parte real e imaginaria de un número complejo utilizando los atributos .real y .imag, respectivamente:</p>
+<p>Ejemplo</p>
+</section>
+<section id="operaciones-con-complejos">
+<h2>Operaciones con complejos<a class="headerlink" href="#operaciones-con-complejos" title="Link to this heading">#</a></h2>
+</section>
+<section id="suma">
+<h2>Suma<a class="headerlink" href="#suma" title="Link to this heading">#</a></h2>
+</section>
+<section id="producto">
+<h2>Producto<a class="headerlink" href="#producto" title="Link to this heading">#</a></h2>
+</section>
+<section id="complejo-conjugado">
+<h2>Complejo conjugado<a class="headerlink" href="#complejo-conjugado" title="Link to this heading">#</a></h2>
+</section>
+<section id="division">
+<h2>División<a class="headerlink" href="#division" title="Link to this heading">#</a></h2>
+</section>
+<section id="potencia">
+<h2>Potencia<a class="headerlink" href="#potencia" title="Link to this heading">#</a></h2>
 </section>
 <section id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
-<p>Sean <span class="math notranslate nohighlight">\(u=(1,2,3)\)</span>, <span class="math notranslate nohighlight">\(v=(2,4,6)\)</span>, <span class="math notranslate nohighlight">\(w=(-1,0,1)\)</span>:</p>
+</section>
+<section id="obtenga-el-resultado-de-las-siguientes-operaciones">
+<h2>Obtenga el resultado de las siguientes operaciones<a class="headerlink" href="#obtenga-el-resultado-de-las-siguientes-operaciones" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(u \cdot v\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(v \cdot w\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(w \cdot (u+v)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(
+z=(1-i)^4+(1+i)^4
+\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(z=(1+3i)^2+(2-i)^2\)</span></p></li>
 </ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Respuesta 1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Respuesta 2</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="modulo-y-argumento">
+<h2>Módulo y argumento<a class="headerlink" href="#modulo-y-argumento" title="Link to this heading">#</a></h2>
+<p>La función <code class="docutils literal notranslate"><span class="pre">np.angle()</span></code> devuelve el argumento principal del número complejo</p>
+<div class="math notranslate nohighlight">
+\[
+-\pi &lt; \arg(z) \leq \pi,
+\]</div>
+<p>o bien</p>
+<div class="math notranslate nohighlight">
+\[
+-180^\circ &lt; \arg(z) \leq 180^\circ
+\]</div>
 </section>
 </section>
 
@@ -538,24 +585,6 @@ a \cdot b = \sum_i a_i b_i
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="u2p4.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Norma de un vector</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="u2p6.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Producto cruz</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -572,8 +601,16 @@ a \cdot b = \sum_i a_i b_i
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conversion-de-flotantes-enteros-a-complejos">Conversión de flotantes/enteros a complejos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operaciones-con-complejos">Operaciones con complejos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suma">Suma</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#producto">Producto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complejo-conjugado">Complejo conjugado</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#division">División</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#potencia">Potencia</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtenga-el-resultado-de-las-siguientes-operaciones">Obtenga el resultado de las siguientes operaciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modulo-y-argumento">Módulo y argumento</a></li>
 </ul>
   </nav></div>
 

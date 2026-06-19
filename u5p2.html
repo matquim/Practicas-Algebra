@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Producto punto &#8212; Practicas Álgebra Superior</title>
+    <title>Base y dimensión &#8212; Practicas Álgebra Superior</title>
   
   
   
@@ -59,11 +59,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'u2p5';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'u5p2';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Producto cruz" href="u2p6.html" />
-    <link rel="prev" title="Norma de un vector" href="u2p4.html" />
+    <link rel="next" title="Definición de Polinomios" href="u7p1.html" />
+    <link rel="prev" title="Definición de Espacios Vectoriales" href="u5p1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -192,12 +192,12 @@
 <li class="toctree-l1"><a class="reference internal" href="u1p7.html">Sucesiones recursivas</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectores en ℝ² y ℝ³</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u2p1.html">Representación de vectores</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p2.html">Suma de vectores</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p3.html">Combinaciones lineales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p4.html">Norma de un vector</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Producto punto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u2p5.html">Producto punto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p6.html">Producto cruz</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p7.html">Ángulo entre vectores</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u2p8.html">Aplicaciones</a></li>
@@ -226,9 +226,9 @@
 <li class="toctree-l1"><a class="reference internal" href="u4p3.html">Sistemas de Ecuaciones Lineales</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Espacios Vectoriales</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u5p1.html">Definición de Espacios Vectoriales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="u5p2.html">Base y dimensión</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Base y dimensión</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Números Complejos</span></p>
 <ul class="nav bd-sidenav">
@@ -304,7 +304,7 @@
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/matquim/Practicas-Algebra/master?urlpath=tree/u2p5.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/matquim/Practicas-Algebra/master?urlpath=tree/u5p2.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -322,7 +322,7 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/matquim/Practicas-Algebra/blob/master/u2p5.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/matquim/Practicas-Algebra/blob/master/u5p2.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -371,7 +371,7 @@
       
       
       
-      <li><a href="_sources/u2p5.ipynb" target="_blank"
+      <li><a href="_sources/u5p2.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -455,7 +455,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Producto punto</h1>
+    <h1>Base y dimensión</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -465,8 +465,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-de-base-y-dimension-en-mathbb-r-3">Ejemplo de Base y dimensión en <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio">Ejercicio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-de-espacios-generados">Ejemplos de espacios generados</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ejercicio</a></li>
 </ul>
             </nav>
         </div>
@@ -478,33 +480,227 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="producto-punto">
-<h1>Producto punto<a class="headerlink" href="#producto-punto" title="Link to this heading">#</a></h1>
-<div class="tip admonition">
-<p class="admonition-title">Concepto</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4d17871f-8ec3-4ca3-9702-9d124e5b7908">
-<span class="eqno">(6)<a class="headerlink" href="#equation-4d17871f-8ec3-4ca3-9702-9d124e5b7908" title="Permalink to this equation">#</a></span>\[\begin{equation}
-a \cdot b = \sum_i a_i b_i
-\end{equation}\]</div>
-</div>
-<section id="ejemplo">
-<h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Link to this heading">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">]</span>
-
-<span class="n">dot</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dot</span><span class="p">)</span>
+  <section class="tex2jax_ignore mathjax_ignore" id="base-y-dimension">
+<h1>Base y dimensión<a class="headerlink" href="#base-y-dimension" title="Link to this heading">#</a></h1>
+<section id="ejemplo-de-base-y-dimension-en-mathbb-r-3">
+<h2>Ejemplo de Base y dimensión en <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span><a class="headerlink" href="#ejemplo-de-base-y-dimension-en-mathbb-r-3" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Verificar si los vectores <span class="math notranslate nohighlight">\(\mathbf{u}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> y <span class="math notranslate nohighlight">\(\mathbf{w}\)</span> forman una base de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span></p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{u}=
+\begin{pmatrix}
+1\\
+2\\
+0
+\end{pmatrix},
+\qquad
+\mathbf{v}=
+\begin{pmatrix}
+0\\
+1\\
+1
+\end{pmatrix},
+\qquad
+\mathbf{w}=
+\begin{pmatrix}
+2\\
+0\\
+1
+\end{pmatrix}
+\end{split}\]</div>
+<p>Usando Python podemos hacer los siguiente</p>
+<ul class="simple">
+<li><p>Construir una matriz <span class="math notranslate nohighlight">\(A\)</span> cuyas columnas sean los vectores <span class="math notranslate nohighlight">\(\mathbf{u}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> y <span class="math notranslate nohighlight">\(\mathbf{w}\)</span></p></li>
+<li><p>Usar Python para calcular el determinante de <span class="math notranslate nohighlight">\(A\)</span> y determinar si los vectores efectivamente forman una base del espacio <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(\mathbf{u}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> y <span class="math notranslate nohighlight">\(\mathbf{w}\)</span> son linealmente independientes y por lo tanto forman una base de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span></p>
+<ol class="arabic simple" start="2">
+<li><p>Sea <span class="math notranslate nohighlight">\(
+\mathbf{p}=
+\begin{pmatrix}
+3\\
+4\\
+2
+\end{pmatrix}
+\)</span></p></li>
+</ol>
+<p>Exprese el vector <span class="math notranslate nohighlight">\(\mathbf{p}\)</span> como una combinación lineal de los vectores <span class="math notranslate nohighlight">\(\mathbf{u}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> y <span class="math notranslate nohighlight">\(\mathbf{w}\)</span>, es decir</p>
+<p><span class="math notranslate nohighlight">\( \mathbf{p} = \alpha_1\mathbf{u} + \alpha_2\mathbf{v} + \alpha_3\mathbf{w}\)</span></p>
+</section>
+<section id="ejercicio">
+<h2>Ejercicio<a class="headerlink" href="#ejercicio" title="Link to this heading">#</a></h2>
+<p>Considere los vectores</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{u}=
+\begin{pmatrix}
+1\\
+2
+\end{pmatrix},
+\qquad
+\mathbf{v}=
+\begin{pmatrix}
+3\\
+1
+\end{pmatrix}
+\end{split}\]</div>
+<p>Determine si dichos vectores forman una base de <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span>. En caso afirmativo, exprese el vector <span class="math notranslate nohighlight">\(\mathbf{p}=\begin{pmatrix}
+7\\
+5
+\end{pmatrix}\)</span> como una combinación lineal de los vectores <span class="math notranslate nohighlight">\(\mathbf{u}\)</span> y <span class="math notranslate nohighlight">\(\mathbf{v}\)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Respuesta</span>
 </pre></div>
 </div>
+</div>
+</div>
+<hr class="docutils" />
 </section>
-<section id="ejercicios">
-<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
-<p>Sean <span class="math notranslate nohighlight">\(u=(1,2,3)\)</span>, <span class="math notranslate nohighlight">\(v=(2,4,6)\)</span>, <span class="math notranslate nohighlight">\(w=(-1,0,1)\)</span>:</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(u \cdot v\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(v \cdot w\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(w \cdot (u+v)\)</span></p></li>
-</ul>
+<section id="ejemplos-de-espacios-generados">
+<h2>Ejemplos de espacios generados<a class="headerlink" href="#ejemplos-de-espacios-generados" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Considere el vector</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{v_1}=
+\begin{pmatrix}
+2\\
+1
+\end{pmatrix}
+\end{split}\]</div>
+<p>El espacio generado por <span class="math notranslate nohighlight">\(\mathbf{v_1}\)</span> está dado por</p>
+<div class="math notranslate nohighlight">
+\[
+\operatorname{gen}\left\{\mathbf{v_1}
+\right\}
+=
+\left\{\mathbf{v}: \mathbf{v} = a\mathbf{v_1}, a\in\mathbb{R}
+\right\}
+\]</div>
+<ol class="arabic simple" start="2">
+<li><p>Considere los vectores</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{w_1}=
+\begin{pmatrix}
+1\\
+0
+\end{pmatrix},
+\qquad
+\mathbf{w_2}=
+\begin{pmatrix}
+0\\
+1
+\end{pmatrix}
+\end{split}\]</div>
+<p>El espacio generado por <span class="math notranslate nohighlight">\(\mathbf{w_1}\)</span> y <span class="math notranslate nohighlight">\(\mathbf{w_2}\)</span> está dado por</p>
+<div class="math notranslate nohighlight">
+\[
+\operatorname{gen}\left\{\mathbf{w_1},\mathbf{w_2}\right\}
+=
+\left\{
+\mathbf{w}: \mathbf{w}=a\mathbf{w_1}+b\mathbf{w_2},
+\;a,b\in\mathbb{R}
+\right\},
+\]</div>
+<p>en donde</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+a\mathbf{w_1}+b\mathbf{w_2}
+=
+a
+\begin{pmatrix}
+1\\
+0
+\end{pmatrix}
++
+b
+\begin{pmatrix}
+0\\
+1
+\end{pmatrix}
+=
+\begin{pmatrix}
+a\\
+b
+\end{pmatrix}
+\end{split}\]</div>
+<p>Considere los vectores</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{w_1}=
+\begin{pmatrix}
+1\\
+0\\
+0
+\end{pmatrix},
+\qquad
+\mathbf{w_2}=
+\begin{pmatrix}
+0\\
+1\\
+1
+\end{pmatrix}.
+\end{split}\]</div>
+<p>El espacio generado por <span class="math notranslate nohighlight">\(\mathbf{w_1}\)</span> y <span class="math notranslate nohighlight">\(\mathbf{w_2}\)</span> está dado por</p>
+<div class="math notranslate nohighlight">
+\[
+\operatorname{gen}\left\{\mathbf{w_1},\mathbf{w_2}\right\}
+=
+\left\{
+\mathbf{w}: \mathbf{w}=a\mathbf{w_1}+b\mathbf{w_2},
+\;a,b\in\mathbb{R}
+\right\}.
+\]</div>
+</section>
+<section id="id1">
+<h2>Ejercicio<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>Considere los vectores</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{u}=
+\begin{pmatrix}
+1\\
+0\\
+0
+\end{pmatrix},
+\qquad
+\mathbf{v}=
+\begin{pmatrix}
+0\\
+1\\
+0
+\end{pmatrix},
+\qquad
+\mathbf{w}=
+\begin{pmatrix}
+0\\
+0\\
+1
+\end{pmatrix}
+\end{split}\]</div>
+<p>Obtenga una gráfica del espacio generado por los vectores <span class="math notranslate nohighlight">\(\mathbf{u}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> y <span class="math notranslate nohighlight">\(\mathbf{w}\)</span>; es decir, grafique el conjunto</p>
+<div class="math notranslate nohighlight">
+\[
+\operatorname{gen}\left\{\mathbf{u},\mathbf{v},\mathbf{w}\right\}
+=
+\left\{
+\mathbf{p}: \mathbf{p}=c_1\mathbf{u}+c_2\mathbf{v}+c_3\mathbf{w},
+\;a,b,c\in\mathbb{R}
+\right\}
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># respuesta</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 
@@ -539,20 +735,20 @@ a \cdot b = \sum_i a_i b_i
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="u2p4.html"
+       href="u5p1.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Norma de un vector</p>
+        <p class="prev-next-title">Definición de Espacios Vectoriales</p>
       </div>
     </a>
     <a class="right-next"
-       href="u2p6.html"
+       href="u7p1.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Producto cruz</p>
+        <p class="prev-next-title">Definición de Polinomios</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -572,8 +768,10 @@ a \cdot b = \sum_i a_i b_i
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-de-base-y-dimension-en-mathbb-r-3">Ejemplo de Base y dimensión en <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio">Ejercicio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-de-espacios-generados">Ejemplos de espacios generados</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ejercicio</a></li>
 </ul>
   </nav></div>
 
