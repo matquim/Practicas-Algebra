@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Proposiciones Lógicas &#8212; Practicas Álgebra Superior</title>
+    <title>Declaración de un polinomio &#8212; Practicas Álgebra Superior</title>
   
   
   
@@ -59,11 +59,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'u3p5';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'u7p3';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Definición de matrices" href="u4p1.html" />
-    <link rel="prev" title="Aplicaciones" href="u3p4.html" />
+    <link rel="prev" title="Polinomios" href="u7p2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -203,14 +202,14 @@
 <li class="toctree-l1"><a class="reference internal" href="u2p8.html">Aplicaciones</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lógica y Conjuntos</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u3p1.html">Definición de conjuntos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p2.html">Operaciones con conjuntos</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="u3p3.html">Subconjuntos</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="u3p4.html">Aplicaciones</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Proposiciones Lógicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u3p5.html">Proposiciones Lógicas</a></li>
 
 
 </ul>
@@ -233,10 +232,10 @@
 <li class="toctree-l1"><a class="reference internal" href="u6p1.html">Definición de números complejos</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Polinomios</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u7p1.html">Definición de Polinomios</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u7p2.html">Polinomios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="u7p3.html">Declaración de un polinomio</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Declaración de un polinomio</a></li>
 
 
 
@@ -306,7 +305,7 @@
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/matquim/Practicas-Algebra/master?urlpath=tree/u3p5.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/matquim/Practicas-Algebra/master?urlpath=tree/u7p3.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -324,7 +323,7 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/matquim/Practicas-Algebra/blob/master/u3p5.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/matquim/Practicas-Algebra/blob/master/u7p3.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -373,7 +372,7 @@
       
       
       
-      <li><a href="_sources/u3p5.ipynb" target="_blank"
+      <li><a href="_sources/u7p3.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -457,7 +456,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Proposiciones Lógicas</h1>
+    <h1>Declaración de un polinomio</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -467,9 +466,22 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Proposiciones Lógicas</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones-proposicionales">Funciones Proposicionales</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conectivos-logicos">Conectivos Lógicos</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Declaración de un polinomio</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluacion-de-un-polinomio-en-x-a">Evaluación de un polinomio en <span class="math notranslate nohighlight">\(x = a\)</span></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio">Ejercicio</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#operaciones-con-polinomios">Operaciones con polinomios</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#suma">Suma</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplicacion">Multiplicación</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#division">División</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ejercicio</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#division-sintetica">División sintética</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Ejercicio</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#raices-de-un-polinomio">Raíces de un polinomio</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Ejercicio</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#regla-de-los-signos-de-descartes">Regla de los signos de Descartes</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Ejercicio</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#polinomios-y-sus-graficas">Polinomios y sus gráficas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Ejercicio</a></li>
 </ul>
 
             </nav>
@@ -482,260 +494,128 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="proposiciones-logicas">
-<h1>Proposiciones Lógicas<a class="headerlink" href="#proposiciones-logicas" title="Link to this heading">#</a></h1>
-<div class="tip admonition">
-<p class="admonition-title">Concepto</p>
-<p>Una proposición lógica es un enunciado que es, sin ambigüedad, verdadero o falso.</p>
-<p>En Python se notaránan True o False</p>
-</div>
-<p>Escribe un código que muestre el valor de verdad de las siguientes proposiciones:</p>
+  <section id="declaracion-de-un-polinomio">
+<h1>Declaración de un polinomio<a class="headerlink" href="#declaracion-de-un-polinomio" title="Link to this heading">#</a></h1>
+<p>Un polinomio en la variable <span class="math notranslate nohighlight">\(x\)</span> es una expresión de la forma</p>
 <div class="math notranslate nohighlight">
 \[
-6 &gt; 3
+p(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots+a_1x+a_0,
 \]</div>
+<p>Para trabajar con polinomios en Python podemos usar np.poly1d() o SymPy.</p>
+<p>Ejemplo:</p>
+<p>Tomemos los polinomios</p>
 <div class="math notranslate nohighlight">
 \[
-4 \leq 8
+p(x)=x^3+2x+1
 \]</div>
+<p>y</p>
 <div class="math notranslate nohighlight">
 \[
-5 \neq 10\]</div>
-<div class="math notranslate nohighlight">
-\[
-3 = 7
+q(x)=x^2+x-3.
 \]</div>
-<div class="math notranslate nohighlight">
-\[
-0.1 + 0.2 = 0.3
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-9 \text{ es un entero}
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-9 \text{ es un número real}
-\]</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">6</span><span class="o">&gt;</span><span class="mi">3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">4</span><span class="o">&lt;=</span><span class="mi">8</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">!=</span> <span class="mi">10</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="mf">0.1</span> <span class="o">+</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="o">==</span> <span class="mf">0.3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span><span class="o">==</span><span class="nb">int</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span><span class="o">==</span><span class="nb">float</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
-True
-True
-True
-True
-False
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mf">0.1</span><span class="o">+</span><span class="mf">0.2</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.30000000000000004
-</pre></div>
-</div>
-</div>
-</div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="funciones-proposicionales">
-<h1>Funciones Proposicionales<a class="headerlink" href="#funciones-proposicionales" title="Link to this heading">#</a></h1>
-<div class="tip admonition">
-<p class="admonition-title">Concepto</p>
-<p>Una función proposicional es verdadera o falsa dependiendo del valor de su parámetro.</p>
-</div>
-<ul class="simple">
-<li><p>Escribe una función que indique si un número es estrictamente mayor que <span class="math notranslate nohighlight">\(\pi\)</span></p></li>
-<li><p>Escribe una función que reciba dos números <span class="math notranslate nohighlight">\(a\)</span> y <span class="math notranslate nohighlight">\(b\)</span> e indique si <span class="math notranslate nohighlight">\(a\)</span> es estrictamente mayor que <span class="math notranslate nohighlight">\(b\)</span>.</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">Mayor_que_pi</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-  <span class="k">return</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">Comparar_numeros</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
-  <span class="k">return</span> <span class="n">a</span><span class="o">&gt;</span><span class="n">b</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">Mayor_que_pi</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">Comparar_numeros</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
-False
-</pre></div>
-</div>
-</div>
-</div>
-<p>Vamos a usar una nueva biblioteca.</p>
-<p>Escribir en una celda de código:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
-<span class="n">hoy</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">hoy</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">hoy</span><span class="o">.</span><span class="n">weekday</span><span class="p">())</span>
-</pre></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
-<span class="n">hoy</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">hoy</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">hoy</span><span class="o">.</span><span class="n">weekday</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2026-06-15 17:18:58.135194
-0
-</pre></div>
-</div>
-</div>
-</div>
-<p>Ahora usamos una nueva biblioteca para obtener la fecha y hora local de una zona horaria específica.</p>
-<p>En este caso utilizamos la zona horaria de Ciudad de México:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">zoneinfo</span><span class="w"> </span><span class="kn">import</span> <span class="n">ZoneInfo</span>
-
-<span class="n">hoy</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(</span><span class="n">ZoneInfo</span><span class="p">(</span><span class="s2">&quot;America/Mexico_City&quot;</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">hoy</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">hoy</span><span class="o">.</span><span class="n">weekday</span><span class="p">())</span>
-</pre></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">zoneinfo</span><span class="w"> </span><span class="kn">import</span> <span class="n">ZoneInfo</span>
-
-<span class="n">hoy</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(</span><span class="n">ZoneInfo</span><span class="p">(</span><span class="s2">&quot;America/Mexico_City&quot;</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">hoy</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">hoy</span><span class="o">.</span><span class="n">weekday</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2026-06-15 11:20:59.047400-06:00
-0
-</pre></div>
-</div>
-</div>
-</div>
-<p>Utilizar estas bibliotecas para escribir un código que indique si ya pasamos el día miércoles o no.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">zoneinfo</span><span class="w"> </span><span class="kn">import</span> <span class="n">ZoneInfo</span>
-
-<span class="n">hoy</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(</span><span class="n">ZoneInfo</span><span class="p">(</span><span class="s2">&quot;America/Mexico_City&quot;</span><span class="p">))</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">Compara_con_miercoles</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-  <span class="k">return</span> <span class="n">n</span><span class="o">&gt;</span><span class="mi">2</span>
-
-<span class="n">Compara_con_miercoles</span><span class="p">(</span><span class="n">hoy</span><span class="o">.</span><span class="n">weekday</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
-</pre></div>
-</div>
-</div>
-</div>
+<section id="evaluacion-de-un-polinomio-en-x-a">
+<h1>Evaluación de un polinomio en <span class="math notranslate nohighlight">\(x = a\)</span><a class="headerlink" href="#evaluacion-de-un-polinomio-en-x-a" title="Link to this heading">#</a></h1>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="conectivos-logicos">
-<h1>Conectivos Lógicos<a class="headerlink" href="#conectivos-logicos" title="Link to this heading">#</a></h1>
-<div class="tip admonition">
-<p class="admonition-title">Concepto</p>
-<p>Para unir dos proposiciones atómicas y formar una
-proposición molecular, podemos usar conectivos lógicos.
-En Python disponemos de tres principales:</p>
-<ul class="simple">
-<li><p>not   →  negación</p></li>
-<li><p>and   →  conjunción</p></li>
-<li><p>or    →  disyunción</p></li>
-</ul>
-</div>
-<p>A continuación podemos escribir algunas proposiciones moleculares utilizando estos conectivos.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ow">not</span> <span class="p">(</span><span class="mi">3</span><span class="o">&gt;</span><span class="mi">6</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="o">=</span><span class="mi">19</span>
-<span class="p">(</span><span class="n">x</span><span class="o">&lt;=</span><span class="mi">20</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">x</span><span class="o">&gt;</span><span class="mi">16</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
-</pre></div>
-</div>
-</div>
-</div>
-<p><span class="math notranslate nohighlight">\(P \Rightarrow Q \equiv \neg P \lor Q\)</span></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">Implicacion</span><span class="p">(</span><span class="n">P</span><span class="p">,</span><span class="n">Q</span><span class="p">):</span>
-  <span class="k">return</span> <span class="p">(</span><span class="ow">not</span> <span class="n">P</span><span class="p">)</span> <span class="ow">or</span> <span class="n">Q</span>
-
-<span class="n">P</span><span class="o">=</span><span class="kc">False</span>
-<span class="n">Q</span><span class="o">=</span><span class="kc">True</span>
-
-<span class="n">Implicacion</span><span class="p">(</span><span class="n">P</span><span class="p">,</span><span class="n">Q</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
-</pre></div>
-</div>
-</div>
-</div>
-<p>En Python, los conectivos lógicos tienen un orden de prioridad:</p>
+<section id="ejercicio">
+<h1>Ejercicio<a class="headerlink" href="#ejercicio" title="Link to this heading">#</a></h1>
+<p>Represente el polinomio <span class="math notranslate nohighlight">\(q(x)\)</span> en Python y evalúelo en <span class="math notranslate nohighlight">\(x=-1\)</span> usando np.poly1d() y SymPy.</p>
+<div class="math notranslate nohighlight">
+\[
+q(x)=x^4-3x^3+2x^2+x-5.
+\]</div>
+</section>
+<section id="operaciones-con-polinomios">
+<h1>Operaciones con polinomios<a class="headerlink" href="#operaciones-con-polinomios" title="Link to this heading">#</a></h1>
+</section>
+<section id="suma">
+<h1>Suma<a class="headerlink" href="#suma" title="Link to this heading">#</a></h1>
+</section>
+<section id="multiplicacion">
+<h1>Multiplicación<a class="headerlink" href="#multiplicacion" title="Link to this heading">#</a></h1>
+</section>
+<section id="division">
+<h1>División<a class="headerlink" href="#division" title="Link to this heading">#</a></h1>
+</section>
+<section id="id1">
+<h1>Ejercicio<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p>Considere los polinomios</p>
+<div class="math notranslate nohighlight">
+\[
+p(x)=x^3+2x+1
+\]</div>
+<p>y</p>
+<div class="math notranslate nohighlight">
+\[
+q(x)=x^2+x-3.
+\]</div>
+<p>Realice las operaciones:</p>
 <ol class="arabic simple">
-<li><p>not   (mayor prioridad)</p></li>
-<li><p>and</p></li>
-<li><p>or    (menor prioridad)</p></li>
+<li><p><span class="math notranslate nohighlight">\(p(x)+q(x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(p(x)-q(x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(p(x)q(x)\)</span></p></li>
 </ol>
-<p>Así, la expresión:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ow">not</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>se evalúa como:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="ow">not</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="mi">3</span><span class="p">))</span> <span class="ow">and</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Es decir, primero se niega (x == 3), y luego
-se verifica la conjunción con (x &lt; 4).
-Para evitar ambigüedades, siempre es recomendable
-usar paréntesis de forma explícita.</p>
+</section>
+<section id="division-sintetica">
+<h1>División sintética<a class="headerlink" href="#division-sintetica" title="Link to this heading">#</a></h1>
+</section>
+<section id="id2">
+<h1>Ejercicio<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
+<p>Considere el polinomio</p>
+<div class="math notranslate nohighlight">
+\[
+f(x)=3x^5-4x^4-5x^3-8x+25.
+\]</div>
+<p>Halle el cociente y el residuo al dividir <span class="math notranslate nohighlight">\(f(x)\)</span> entre <span class="math notranslate nohighlight">\(x-2\)</span>. Finalmente, exprese el polinomio en la forma</p>
+<div class="math notranslate nohighlight">
+\[
+f(x)=(x-a)Q(x)+R(x).
+\]</div>
+</section>
+<section id="raices-de-un-polinomio">
+<h1>Raíces de un polinomio<a class="headerlink" href="#raices-de-un-polinomio" title="Link to this heading">#</a></h1>
+<p>Con SymPy:</p>
+</section>
+<section id="id3">
+<h1>Ejercicio<a class="headerlink" href="#id3" title="Link to this heading">#</a></h1>
+<p>Considere el polinomio</p>
+<div class="math notranslate nohighlight">
+\[
+p(x)=x^4-10x^2+9.
+\]</div>
+<p>Obtenga todas sus raíces utilizando SymPy.</p>
+</section>
+<section id="regla-de-los-signos-de-descartes">
+<h1>Regla de los signos de Descartes<a class="headerlink" href="#regla-de-los-signos-de-descartes" title="Link to this heading">#</a></h1>
+<p>Cómo obtener los coeficientes y el grado con SymPy.</p>
+</section>
+<section id="id4">
+<h1>Ejercicio<a class="headerlink" href="#id4" title="Link to this heading">#</a></h1>
+<p>Considere el polinomio</p>
+<div class="math notranslate nohighlight">
+\[
+p(x)=x^5-4x^4+3x^3+2x^2-8.
+\]</div>
+<p>Aplique la regla de los signos de Descartes para determinar las posibles raíces positivas, negativas y complejas.</p>
+</section>
+<section id="polinomios-y-sus-graficas">
+<h1>Polinomios y sus gráficas<a class="headerlink" href="#polinomios-y-sus-graficas" title="Link to this heading">#</a></h1>
+<p>Máximos y mínimos de un polinomio</p>
+<p>Ejemplo:</p>
+<p>Para el polinomio <span class="math notranslate nohighlight">\(p(x)=x^4-5x^2+4\)</span>, podemos calcular sus puntos críticos y aplicar el criterio de la segunda derivada</p>
+</section>
+<section id="id5">
+<h1>Ejercicio<a class="headerlink" href="#id5" title="Link to this heading">#</a></h1>
+<p>Considere el polinomio</p>
+<div class="math notranslate nohighlight">
+\[
+p(x)=x^3-6x^2+9x+1.
+\]</div>
+<ol class="arabic simple">
+<li><p>Obtenga sus puntos críticos.</p></li>
+<li><p>Clasifique cada punto como máximo o mínimo.</p></li>
+<li><p>Represente gráficamente el polinomio.</p></li>
+</ol>
 </section>
 
     <script type="text/x-thebe-config">
@@ -769,22 +649,13 @@ usar paréntesis de forma explícita.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="u3p4.html"
+       href="u7p2.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Aplicaciones</p>
+        <p class="prev-next-title">Polinomios</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="u4p1.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Definición de matrices</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -802,9 +673,22 @@ usar paréntesis de forma explícita.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Proposiciones Lógicas</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones-proposicionales">Funciones Proposicionales</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conectivos-logicos">Conectivos Lógicos</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Declaración de un polinomio</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluacion-de-un-polinomio-en-x-a">Evaluación de un polinomio en <span class="math notranslate nohighlight">\(x = a\)</span></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio">Ejercicio</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#operaciones-con-polinomios">Operaciones con polinomios</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#suma">Suma</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplicacion">Multiplicación</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#division">División</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ejercicio</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#division-sintetica">División sintética</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Ejercicio</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#raices-de-un-polinomio">Raíces de un polinomio</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Ejercicio</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#regla-de-los-signos-de-descartes">Regla de los signos de Descartes</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Ejercicio</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#polinomios-y-sus-graficas">Polinomios y sus gráficas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Ejercicio</a></li>
 </ul>
 
   </nav></div>
