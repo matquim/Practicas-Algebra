@@ -11,7 +11,6 @@ parts:
     - file: u1p5
     - file: u1p6
     - file: u1p7
-
   - caption: Vectores en ℝ² y ℝ³
     chapters:
     - file: u2p1
@@ -22,7 +21,6 @@ parts:
     - file: u2p6
     - file: u2p7
     - file: u2p8
-
   - caption: Lógica y Conjuntos
     chapters:
     - file: u3p1
@@ -32,13 +30,10 @@ parts:
     - file: u3p7
     - file: u3p8
     - file: u3p9
-    - file: Logica_Conjuntos_Pendiente
-
   - caption: Matrices y Sistemas de Ecuaciones
     chapters:
     - file: u4p1
     - file: SEL_Pendiente.ipynb
-
   - caption: Espacios Vectoriales
     chapters:
     - file: u5p1
@@ -46,7 +41,6 @@ parts:
   - caption: Números Complejos
     chapters:
     - file: u6p1
-
   - caption: Polinomios
     chapters:
     - file: u7p1
