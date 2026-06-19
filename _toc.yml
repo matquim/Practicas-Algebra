@@ -36,11 +36,12 @@ parts:
   - caption: Espacios Vectoriales
     chapters:
     - file: u5p1
-    - file: Espacios_Vectoriales
+    - file: u5p2
   - caption: Números Complejos
     chapters:
     - file: u6p1
-  - caption: Polinomios
+    - file: u6p2
+    - file: u6p3
     chapters:
     - file: u7p1
     - file: u7p2
