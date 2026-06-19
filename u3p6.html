@@ -62,8 +62,6 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'u3p6';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Relaciones y funciones" href="u3p7.html" />
-    <link rel="prev" title="Producto cartesiano" href="u3p5.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -125,6 +123,8 @@
     <div class="bd-container__inner bd-page-width">
       
       
+      
+        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -203,11 +203,10 @@
 <li class="toctree-l1"><a class="reference internal" href="u2p8.html">Aplicaciones</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lógica y Conjuntos</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u3p1.html">Definición de conjuntos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p2.html">Operaciones con conjuntos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="u3p5.html">Producto cartesiano</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Subconjuntos</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="u3p7.html">Relaciones y funciones</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p8.html">Aplicaciones</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u3p9.html">Proposiciones Lógicas</a></li>
@@ -455,9 +454,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Subconjuntos</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#relaciones-y-funciones">Relaciones y funciones</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ejemplo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Ejercicios</a></li>
 </ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -470,12 +476,38 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="subconjuntos">
 <h1>Subconjuntos<a class="headerlink" href="#subconjuntos" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="relaciones-y-funciones">
+<h1>Relaciones y funciones<a class="headerlink" href="#relaciones-y-funciones" title="Link to this heading">#</a></h1>
+<div class="tip admonition">
+<p class="admonition-title">Concepto</p>
+<p>Una relación es un conjunto de pares ordenados.</p>
+<p>Es función si cada elemento del dominio tiene una única imagen.</p>
+</div>
+<section id="ejemplo">
+<h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Link to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">relacion</span> <span class="o">=</span> <span class="p">{(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">)}</span>
+
+<span class="n">dominio</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span> <span class="k">for</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="ow">in</span> <span class="n">relacion</span><span class="p">}</span>
+
+<span class="n">es_funcion</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">relacion</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">dominio</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">es_funcion</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="ejercicios">
+<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Verificar si una relación es función.</p></li>
+<li><p>Analizar si es biyectiva.</p></li>
+</ul>
 <div class="tip admonition">
 <p class="admonition-title">Concepto</p>
 <p>Un conjunto <span class="math notranslate nohighlight">\(A\)</span> es subconjunto de <span class="math notranslate nohighlight">\(B\)</span> si todos sus elementos están en <span class="math notranslate nohighlight">\(B\)</span>.</p>
 </div>
-<section id="ejemplo">
-<h2>Ejemplo<a class="headerlink" href="#ejemplo" title="Link to this heading">#</a></h2>
+</section>
+<section id="id1">
+<h2>Ejemplo<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">}</span>
 <span class="n">B</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">}</span>
 
@@ -483,8 +515,8 @@ document.write(`
 </pre></div>
 </div>
 </section>
-<section id="ejercicios">
-<h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
+<section id="id2">
+<h2>Ejercicios<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Verificar si un conjunto es subconjunto de otro.</p></li>
 </ul>
@@ -521,24 +553,6 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="u3p5.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Producto cartesiano</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="u3p7.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Relaciones y funciones</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -555,9 +569,16 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Subconjuntos</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#relaciones-y-funciones">Relaciones y funciones</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo">Ejemplo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios">Ejercicios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ejemplo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Ejercicios</a></li>
 </ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
