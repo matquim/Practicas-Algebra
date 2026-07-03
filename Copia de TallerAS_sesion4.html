@@ -1,0 +1,1011 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Vectores en \(\mathbb{R}^2\) y \(\mathbb{R}^3\) &#8212; Practicas Álgebra Superior</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Copia de TallerAS_sesion4';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Practicas Álgebra Superior - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Practicas Álgebra Superior - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Prácticas Álgebra Superior
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Sistemas Numéricos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="u1p1.html">Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u1p2.html">El bucle <span class="math notranslate nohighlight">\(\texttt{for}\)</span>, lo básico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u1p3.html">Aplicación al cálculo de sumas y series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u1p4.html">Factorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u1p5.html">Combinaciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u1p6.html">Números primos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u1p7.html">Sucesiones recursivas</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectores en ℝ² y ℝ³</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="u2p1.html">Representación de vectores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u2p2.html">Suma de vectores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u2p3.html">Combinaciones lineales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u2p4.html">Norma de un vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u2p5.html">Producto punto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u2p6.html">Producto cruz</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u2p7.html">Ángulo entre vectores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u2p8.html">Aplicaciones</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lógica y Conjuntos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="u3p1.html">Definición de conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u3p2.html">Operaciones con conjuntos</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="u3p3.html">Subconjuntos</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="u3p4.html">Aplicaciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u3p5.html">Proposiciones Lógicas</a></li>
+
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Matrices y Sistemas de Ecuaciones</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="u4p1.html">Definición de matrices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u4p2.html">Matrices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u4p3.html">Sistemas de Ecuaciones Lineales</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Espacios Vectoriales</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="u5p1.html">Definición de Espacios Vectoriales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u5p2.html">Base y dimensión</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Números Complejos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="u7p1.html">Definición de Polinomios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u7p2.html">Polinomios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="u7p3.html">Declaración de un polinomio</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/matquim/Practicas-Algebra/master?urlpath=tree/Copia de TallerAS_sesion4.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/matquim/Practicas-Algebra/blob/master/Copia de TallerAS_sesion4.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Colab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Colab logo" src="_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Copia de TallerAS_sesion4.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Vectores en \mathbb{R}^2 y \mathbb{R}^3</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#producto-punto-producto-cruz-y-angulo-entre-vectores">Producto punto, producto cruz y ángulo entre vectores</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reutilizacion-de-codigo">4.1 Reutilización de código</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-1-1">Ejercicio 4.1.1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#producto-punto">4.2 Producto punto</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-2-1">Ejercicio 4.2.1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#producto-cruz">4.3 Producto cruz</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-3-1">Ejercicio 4.3.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-3-2">Ejercicio 4.3.2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#angulo-entre-vectores">4.4 Ángulo entre vectores</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-4-1">Ejercicio 4.4.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-4-2">Ejercicio 4.4.2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complemento-1-reutilizacion-del-codigo">Complemento 1: Reutilización del código</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complemento-2-operaciones-vectoriales-con-numpy">Complemento 2: Operaciones vectoriales con NumPy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tarea-sesion-4">Tarea - Sesión 4</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="vectores-en-mathbb-r-2-y-mathbb-r-3">
+<h1>Vectores en <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span> y <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span><a class="headerlink" href="#vectores-en-mathbb-r-2-y-mathbb-r-3" title="Link to this heading">#</a></h1>
+<section id="producto-punto-producto-cruz-y-angulo-entre-vectores">
+<h2>Producto punto, producto cruz y ángulo entre vectores<a class="headerlink" href="#producto-punto-producto-cruz-y-angulo-entre-vectores" title="Link to this heading">#</a></h2>
+<p><strong>Objetivo:</strong> Entender como se efectuan las operaciones de producto punto, producto cruz, el cálculo del ángulo entre dos vectores y sus aplicaciones.</p>
+<blockquote>
+<div><p><strong>Nota:</strong> En esta sesión escribiremos todo “desde cero” para entender las fórmulas. Al final veremos cómo NumPy hace lo mismo, pero primero tienes que saber qué está calculando por debajo.</p>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="reutilizacion-de-codigo">
+<h2>4.1 Reutilización de código<a class="headerlink" href="#reutilizacion-de-codigo" title="Link to this heading">#</a></h2>
+<p>En la práctica anterior se elaboró el código para realizar algunas operaciones con vectores en <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span>. Para reutilizar esas funciones en cualquier notebook se siguen los siguientes pasos.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Se importan las siguientes librerías</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">drive</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="c1">#Se monta el drive</span>
+<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+<span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s1">&#39;/content/drive/MyDrive/misfunciones&#39;</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># Crea el directorio si no existe</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Se importan las siguientes librerías</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">drive</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1">#Se monta el drive</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;google&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>Nota: Al ejecutar la celda anterior Colab tratará de vincularse con Drive de la misma cuenta con la que accedimos a Colab, solicitará permisos, es necesario darselos.</p>
+<p>Después creamos el archivo .py en el que vamos a guardar las funciones que queremos tener disponibles.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%writefile</span> /content/drive/MyDrive/misfunciones/funvec.py
+<span class="c1"># Importantes la línea anterior debe ser la primera de la celda, no puedes poner nada antes.</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">sumar_vectores</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+    <span class="c1"># Verificamos que tengan el mismo numero de componentes</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">):</span>   <span class="c1"># len(v) te dice cuantas coordenadas tiene v</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error: los vectores deben tener el mismo numero de componentes&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="n">resultado</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">)):</span>
+        <span class="n">resultado</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">w</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">resultado</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">escalar_por_vector</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+    <span class="n">resultado</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">)):</span>
+        <span class="n">resultado</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">alpha</span> <span class="o">*</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">resultado</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mt</span> <span class="c1">#se deben importar las librerías que usen nuestras funciones</span>
+<span class="c1">#no importa si esta biblioteca se use o no en el notebook destino</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">norma</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+    <span class="n">suma_cuadrados</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">componente</span> <span class="ow">in</span> <span class="n">v</span><span class="p">:</span>    <span class="c1"># Este ciclo for itera sobre las coordenadas de v</span>
+        <span class="n">suma_cuadrados</span> <span class="o">=</span> <span class="n">suma_cuadrados</span> <span class="o">+</span> <span class="n">componente</span><span class="o">**</span><span class="mi">2</span>
+        <span class="n">magnitud</span> <span class="o">=</span> <span class="n">mt</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">suma_cuadrados</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">magnitud</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Overwriting /content/drive/MyDrive/misfunciones/funvec.py
+</pre></div>
+</div>
+</div>
+</div>
+<p>El código creará el archivo .py en el directorio que establecimos en la primera linea y con el nombre asignado en esa misma línea.</p>
+<p>De forma opcional: se puede crear el archivo en alguna IDLE, o en el mismo Colab, que funcione con lenguaje en Python y guardarla de forma manual en el directorio de drive donde queramos guardar nuestras funciones.</p>
+<p>Una vez que tengamos nuestro archivo, ejecutamos el siguiente código:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">drive</span>
+<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">importlib</span>
+
+<span class="n">ruta</span> <span class="o">=</span> <span class="s1">&#39;/content/drive/MyDrive/misfunciones&#39;</span>
+
+<span class="k">if</span> <span class="n">ruta</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">ruta</span><span class="p">)</span>
+
+<span class="n">importlib</span><span class="o">.</span><span class="n">invalidate_caches</span><span class="p">()</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">funvec</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">fv</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount(&quot;/content/drive&quot;, force_remount=True).
+</pre></div>
+</div>
+</div>
+</div>
+<section id="ejercicio-4-1-1">
+<h3>Ejercicio 4.1.1<a class="headerlink" href="#ejercicio-4-1-1" title="Link to this heading">#</a></h3>
+<p>En un nuevo notebook pega el código de la celda anterior y verifica que se pueden usar las funciones de suma de vectores, multplicación de un vector por un escalar y norma de un vector.</p>
+</section>
+</section>
+<section id="producto-punto">
+<h2>4.2 Producto punto<a class="headerlink" href="#producto-punto" title="Link to this heading">#</a></h2>
+<p>Esta operación de define como:</p>
+<p><span class="math notranslate nohighlight">\(\mathbf{u} \cdot \mathbf{v} = \displaystyle{\sum\limits_{k=1}^{n}} u_k v_k\)</span></p>
+<p><strong>Ejemplo</strong>: <span class="math notranslate nohighlight">\((2,-3)\cdot (5,3) = 1\)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">u</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">v</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="n">dot</span> <span class="o">=</span> <span class="n">u</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">u</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">dot2</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">u</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">u</span><span class="p">)))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">dot</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dot2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+1
+</pre></div>
+</div>
+</div>
+</div>
+<p>También podemos hacerlo definiendo una función:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">producto_punto</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+    <span class="c1"># Verificamos que los vectores tengan el mismo número de componentes</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error: los vectores deben tener el mismo número de componentes&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="n">resultado</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">)):</span>
+        <span class="n">resultado</span> <span class="o">=</span> <span class="n">resultado</span> <span class="o">+</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">w</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">resultado</span>
+
+<span class="n">producto_punto</span><span class="p">(</span><span class="n">u</span><span class="p">,</span><span class="n">v</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+</pre></div>
+</div>
+</div>
+</div>
+<section id="ejercicio-4-2-1">
+<h3>Ejercicio 4.2.1<a class="headerlink" href="#ejercicio-4-2-1" title="Link to this heading">#</a></h3>
+<p>Una partícula se mueve en el espacio debido a una fuerza constante <span class="math notranslate nohighlight">\(\vec{F} = (12,−5,8)\)</span> en newtons. Durante el movimiento, su desplazamiento es <span class="math notranslate nohighlight">\(d = (3,4,−2)\)</span> en metros. Calcula el trabajo realizado por la fuerza. Recuerde que <span class="math notranslate nohighlight">\(W = \vec{F}\cdot\vec{d}\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tu respuesta</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="producto-cruz">
+<h2>4.3 Producto cruz<a class="headerlink" href="#producto-cruz" title="Link to this heading">#</a></h2>
+<p>Se define como:
+$<span class="math notranslate nohighlight">\(\mathbf{u} \times \mathbf{v}=\left(u_2v_3-u_3v_2,\;u_3v_1-u_1v_3,\;u_1v_2-u_2v_1\right)\)</span>$</p>
+<p>sí y sólo sí <span class="math notranslate nohighlight">\(\mathbf{u}\)</span> y <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> pertenecen a <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span></p>
+<p><strong>Ejemplo</strong> Calcule <span class="math notranslate nohighlight">\((-1,2,2)\times (3,1,-4)\)</span></p>
+<p>El código más simple es:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">u</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="n">v</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">]</span>
+
+<span class="n">cruz</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">u</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">v</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">u</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+    <span class="n">u</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">u</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">v</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+    <span class="n">u</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">u</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="p">]</span>
+
+<span class="n">cruz</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[-10, 2, -7]
+</pre></div>
+</div>
+</div>
+</div>
+<section id="ejercicio-4-3-1">
+<h3>Ejercicio 4.3.1<a class="headerlink" href="#ejercicio-4-3-1" title="Link to this heading">#</a></h3>
+<p>Con lo aprendido hasta el momento, defina una función que calcule el producto cruz y luego úsala para calcular el producto cruz del ejemplo anterior.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tu respuesta</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ejercicio-4-3-2">
+<h3>Ejercicio 4.3.2<a class="headerlink" href="#ejercicio-4-3-2" title="Link to this heading">#</a></h3>
+<p>Calcula el área de un triángulo cuyos vértices se encuentran en los puntos <span class="math notranslate nohighlight">\(P_1=(0,1,3)\)</span> , <span class="math notranslate nohighlight">\(P_2=(-1,2,0)\)</span> y <span class="math notranslate nohighlight">\(P_3=(0,4,1)\)</span>. Recuerda que el área de un triángulo con dos de sus lados en los vectores <span class="math notranslate nohighlight">\(\mathbf{a}\)</span> y <span class="math notranslate nohighlight">\(\mathbf{b}\)</span> está dada por:</p>
+<div class="math notranslate nohighlight">
+\[A=\dfrac{||\mathbf{a}\times\mathbf{b}||}{2}\]</div>
+<p>Procura reutilizar las funciones pertinentes que has generado hasta el momento.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tu respuesta</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="angulo-entre-vectores">
+<h2>4.4 Ángulo entre vectores<a class="headerlink" href="#angulo-entre-vectores" title="Link to this heading">#</a></h2>
+<p>El coseno del angulo entre dos vectores se define como:</p>
+<div class="math notranslate nohighlight">
+\[\cos{\theta}=\dfrac{\mathbf{u}\cdot\mathbf{v}}{||\mathbf{u}||\; ||\mathbf{v}||}\]</div>
+<p>por lo que:</p>
+<div class="math notranslate nohighlight">
+\[\theta=\text{arccos}\left(\dfrac{\mathbf{u}\cdot\mathbf{v}}{||\mathbf{u}||\; ||\mathbf{v}||}\right)\]</div>
+<p><strong>Ejemplo</strong> Calcule el ángulo entre los vectores <span class="math notranslate nohighlight">\(\mathbf{a}\)</span> y <span class="math notranslate nohighlight">\(\mathbf{b}\)</span> que definió en el ejercicio 4.3.2 para calcular el área del triángulo.</p>
+<p>Suponiendo que <span class="math notranslate nohighlight">\(\mathbf{a}=\overline{P_1P_2}\)</span> y que <span class="math notranslate nohighlight">\(\mathbf{b}=\overline{P_1P_3}\)</span> , entonces:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mt</span>
+<span class="n">p1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">p2</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">p3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">fv</span><span class="o">.</span><span class="n">sumar_vectores</span><span class="p">(</span><span class="n">p2</span><span class="p">,</span><span class="n">fv</span><span class="o">.</span><span class="n">escalar_por_vector</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">p1</span><span class="p">))</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">fv</span><span class="o">.</span><span class="n">sumar_vectores</span><span class="p">(</span><span class="n">p3</span><span class="p">,</span><span class="n">fv</span><span class="o">.</span><span class="n">escalar_por_vector</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">p1</span><span class="p">))</span>
+
+<span class="n">theta</span> <span class="o">=</span> <span class="n">mt</span><span class="o">.</span><span class="n">acos</span><span class="p">(</span><span class="n">producto_punto</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">fv</span><span class="o">.</span><span class="n">norma</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">*</span><span class="n">fv</span><span class="o">.</span><span class="n">norma</span><span class="p">(</span><span class="n">b</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="c1"># resultado en radianes</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mt</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">theta</span><span class="p">))</span> <span class="c1"># resultado en grados</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.7187675615369021
+41.18234772697417
+</pre></div>
+</div>
+</div>
+</div>
+<section id="ejercicio-4-4-1">
+<h3>Ejercicio 4.4.1<a class="headerlink" href="#ejercicio-4-4-1" title="Link to this heading">#</a></h3>
+<p>Cree una función para calcular el ángulo entre dos vectores.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tu respuesta</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ejercicio-4-4-2">
+<h3>Ejercicio 4.4.2<a class="headerlink" href="#ejercicio-4-4-2" title="Link to this heading">#</a></h3>
+<p>Usa la función que creaste para calcular los otros dos ángulos del triángulo en el ejercicio 4.3.2.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tu respuesta</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="complemento-1-reutilizacion-del-codigo">
+<h2>Complemento 1: Reutilización del código<a class="headerlink" href="#complemento-1-reutilizacion-del-codigo" title="Link to this heading">#</a></h2>
+<p>Agrega las nuevas funciones creadas en esta sesión a tu archivo <a class="reference external" href="http://funvec.py">funvec.py</a> (o el nombre que hayas usado para el archivo donde guardaste las funciones de la sesión anterior) y verica que las puedes usar en un nuevo notebook.</p>
+<p>Para realizarlo emplea:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">writefile</span> <span class="o">-</span><span class="n">a</span> <span class="o">/</span><span class="n">content</span><span class="o">/</span><span class="n">drive</span><span class="o">/</span><span class="n">MyDrive</span><span class="o">/</span><span class="n">misfunciones</span><span class="o">/</span><span class="n">funvec</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%writefile</span> -a /content/drive/MyDrive/misfunciones/funvec.py
+
+<span class="k">def</span><span class="w"> </span><span class="nf">producto_punto</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+    <span class="c1"># Verificamos que los vectores tengan el mismo número de componentes</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error: los vectores deben tener el mismo número de componentes&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="n">resultado</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">)):</span>
+        <span class="n">resultado</span> <span class="o">=</span> <span class="n">resultado</span> <span class="o">+</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">w</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">resultado</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Appending to /content/drive/MyDrive/misfunciones/funvec.py
+</pre></div>
+</div>
+</div>
+</div>
+<p>Nota: si por algún motivo modificas el archivo <a class="reference external" href="http://funvec.py">funvec.py</a> cuando lo estás usando en otro notebook, los cambios no se verán reflejados, para esto es necesario recargar el archivo usando:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">importlib</span> <span class="c1"># En caso que no hayas importado esta librería previamente</span>
+<span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">funvec</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="complemento-2-operaciones-vectoriales-con-numpy">
+<h2>Complemento 2: Operaciones vectoriales con NumPy<a class="headerlink" href="#complemento-2-operaciones-vectoriales-con-numpy" title="Link to this heading">#</a></h2>
+<p>La gran mayoría de operaciones que realizamos en esta sesión y la anterior se pueden llevar a cabo usando la biblioteca NumPy.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="n">u</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Suma:&quot;</span><span class="p">,</span> <span class="n">u</span> <span class="o">+</span> <span class="n">v</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Resta:&quot;</span><span class="p">,</span> <span class="n">u</span> <span class="o">-</span> <span class="n">v</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Escalar por vector:&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="o">*</span><span class="n">u</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Producto punto:&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Producto cruz:&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">cross</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Norma de u:&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">u</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Distancia entre u y v:&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">u</span> <span class="o">-</span> <span class="n">v</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Producto componente a componente:&quot;</span><span class="p">,</span> <span class="n">u</span> <span class="o">*</span> <span class="n">v</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;División componente a componente:&quot;</span><span class="p">,</span> <span class="n">u</span> <span class="o">/</span> <span class="n">v</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Suma: [ 6  2 -1]
+Resta: [-2 -8  3]
+Escalar por vector: [ 6 -9  3]
+Producto punto: -9
+Producto cruz: [ 1  8 22]
+Norma de u: 3.7416573867739413
+Distancia entre u y v: 8.774964387392123
+Producto componente a componente: [  8 -15  -2]
+División componente a componente: [ 0.5 -0.6 -0.5]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Es importante notar que no existen funciones en NumPy para todas las operaciones que realizamos, como ejemplos están: el cálculo de el ángulo entre vectores o el cálculo del área de un paralelogramo. Sin embargo se pueden crear códigos simples a partir de las funciones de NumPy para calcularlas, por ejemplo, el cálculo del ángulo entre vectores con numpy se puede hacer mediante:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arccos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">u</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="p">))))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.9375303858871702
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="tarea-sesion-4">
+<h2>Tarea - Sesión 4<a class="headerlink" href="#tarea-sesion-4" title="Link to this heading">#</a></h2>
+<p>Ejercicios propuestos:</p>
+<ul class="simple">
+<li><p>El volumen de un paralelepípedo dados 4 puntos.</p></li>
+<li><p>La proyección de un vector sobre otro vector.</p></li>
+<li><p>La ecuación normal de un plano, ya sea dando 3 puntos sobre el plano o dando los vectores directores del plano y un punto.</p></li>
+<li><p>El ángulo entre dos planos.</p></li>
+<li><p>Distancia entre un punto y un plano.</p></li>
+</ul>
+<p>Realice los ejercicios aplicando la reutilación del código sin emplear la biblioteca Numpy y después usando NumPy.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tu respuesta</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "matquim/Practicas-Algebra",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#producto-punto-producto-cruz-y-angulo-entre-vectores">Producto punto, producto cruz y ángulo entre vectores</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reutilizacion-de-codigo">4.1 Reutilización de código</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-1-1">Ejercicio 4.1.1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#producto-punto">4.2 Producto punto</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-2-1">Ejercicio 4.2.1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#producto-cruz">4.3 Producto cruz</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-3-1">Ejercicio 4.3.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-3-2">Ejercicio 4.3.2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#angulo-entre-vectores">4.4 Ángulo entre vectores</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-4-1">Ejercicio 4.4.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-4-2">Ejercicio 4.4.2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complemento-1-reutilizacion-del-codigo">Complemento 1: Reutilización del código</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complemento-2-operaciones-vectoriales-con-numpy">Complemento 2: Operaciones vectoriales con NumPy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tarea-sesion-4">Tarea - Sesión 4</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Oscar Enrique Pérez González, Juan Felipe Huan Lew Yee, César Iván León Pimentel, Laura Michelle Jiménez Díaz, Julien Michel Joseph Lombard, Departamento de Matemáticas, Facultad de Química, Universidad Nacional Autónoma de México
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <div>
+<img src="https://raw.githubusercontent.com/matquim/Practicas-Algebra/refs/heads/main/logo_unam.png" alt="logo_UNAM", style="width: 5%">
+<img src="https://raw.githubusercontent.com/matquim/Practicas-Algebra/refs/heads/main/logoFacultadQuimica.jpg" alt="logo_FQ", style="width: 5%">
+    <br>© D.R. UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO 2026<br>Universidad Nacional Autónoma de México<br>Facultad de Química<br>Prohibida la reproducción total o parcial por cualquier medio, sin la autorización escrita del titular de los derechos patrimoniales.<br>Hecho en México<br>
+</div>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
