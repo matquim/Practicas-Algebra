@@ -42,6 +42,7 @@ parts:
     - file: u6p1
     - file: u6p2
     - file: u6p3
+  - caption: Polinomios
     chapters:
     - file: u7p1
     - file: u7p2
