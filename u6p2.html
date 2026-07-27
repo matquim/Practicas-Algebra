@@ -492,28 +492,162 @@ document.write(`
 <p>Los números complejos en Python se pueden declarar usando la función complex() o directamente utilizando la notación <span class="math notranslate nohighlight">\(a + bj\)</span>.</p>
 <p>Importante: La unidad imaginaria en Python se denota con <span class="math notranslate nohighlight">\(j\)</span>, i.e. <span class="math notranslate nohighlight">\(j^2=-1\)</span></p>
 <p>Ejemplo</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">z</span> <span class="o">=</span>  <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="n">j</span>
+
+<span class="n">w</span> <span class="o">=</span> <span class="nb">complex</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">z</span> <span class="o">==</span> <span class="n">w</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1+2j)
+(1+2j)
+True
+</pre></div>
+</div>
+</div>
+</div>
 <section id="conversion-de-flotantes-enteros-a-complejos">
 <h2>Conversión de flotantes/enteros a complejos<a class="headerlink" href="#conversion-de-flotantes-enteros-a-complejos" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">var1</span> <span class="o">=</span>  <span class="mi">1</span>
+<span class="n">var2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+
+<span class="n">complejo1</span> <span class="o">=</span> <span class="nb">complex</span><span class="p">(</span><span class="n">var1</span><span class="p">)</span>
+<span class="n">complejo2</span> <span class="o">=</span> <span class="nb">complex</span><span class="p">(</span><span class="n">var2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">complejo1</span><span class="p">,</span> <span class="n">complejo2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1+0j) (3.141592653589793+0j)
+</pre></div>
+</div>
+</div>
+</div>
 <p>Para acceder a la parte real e imaginaria de un número complejo utilizando los atributos .real y .imag, respectivamente:</p>
 <p>Ejemplo</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">z_parte_real</span> <span class="o">=</span> <span class="n">z</span><span class="o">.</span><span class="n">real</span>
+<span class="n">z_parte_imag</span> <span class="o">=</span> <span class="n">z</span><span class="o">.</span><span class="n">imag</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;La parte real de z es: </span><span class="si">{</span><span class="n">z_parte_real</span><span class="si">}</span><span class="s2"> y la parte imaginaria es: </span><span class="si">{</span><span class="n">z_parte_imag</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>La parte real de z es: 1.0 y la parte imaginaria es: 2.0
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="operaciones-con-complejos">
 <h2>Operaciones con complejos<a class="headerlink" href="#operaciones-con-complejos" title="Link to this heading">#</a></h2>
 </section>
 <section id="suma">
 <h2>Suma<a class="headerlink" href="#suma" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">z1</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span><span class="n">j</span>
+<span class="n">z2</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="mi">2</span><span class="n">j</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">z1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">z2</span><span class="p">)</span>
+
+<span class="n">z3</span> <span class="o">=</span> <span class="n">z1</span> <span class="o">+</span> <span class="n">z2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">z3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(3+4j)
+(1-2j)
+(4+2j)
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="producto">
 <h2>Producto<a class="headerlink" href="#producto" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">z4</span> <span class="o">=</span>  <span class="n">z1</span><span class="o">*</span><span class="n">z2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">z4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(11-2j)
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="complejo-conjugado">
 <h2>Complejo conjugado<a class="headerlink" href="#complejo-conjugado" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">z1</span><span class="o">.</span><span class="n">conjugate</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">z2</span><span class="o">.</span><span class="n">conjugate</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(3-4j)
+(1+2j)
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="division">
 <h2>División<a class="headerlink" href="#division" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">z5</span> <span class="o">=</span> <span class="n">z1</span><span class="o">/</span><span class="n">z2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">z5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(-1+2j)
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="potencia">
 <h2>Potencia<a class="headerlink" href="#potencia" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">z2</span><span class="o">**</span><span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(-11+2j)
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="ejercicios">
 <h2>Ejercicios<a class="headerlink" href="#ejercicios" title="Link to this heading">#</a></h2>
@@ -528,14 +662,34 @@ z=(1-i)^4+(1+i)^4
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Respuesta 1</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">z1</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="mi">1</span><span class="n">j</span>
+<span class="n">z2</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span>
+
+<span class="n">z</span> <span class="o">=</span> <span class="n">z1</span><span class="o">**</span><span class="mi">4</span> <span class="o">+</span> <span class="n">z2</span><span class="o">**</span><span class="mi">4</span>
+
+<span class="n">z</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(-8+0j)
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Respuesta 2</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">z1</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">3</span><span class="n">j</span>
+<span class="n">z2</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span><span class="n">j</span>
+
+<span class="n">z</span> <span class="o">=</span> <span class="n">z1</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">z2</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="n">z</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(-5+2j)
 </pre></div>
 </div>
 </div>
@@ -543,6 +697,31 @@ z=(1-i)^4+(1+i)^4
 </section>
 <section id="modulo-y-argumento">
 <h2>Módulo y argumento<a class="headerlink" href="#modulo-y-argumento" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">z1</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span><span class="n">j</span>
+<span class="n">z2</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="mi">2</span><span class="n">j</span>
+
+<span class="n">z1_abs</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">z1</span><span class="p">)</span>
+<span class="n">z2_abs</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">z2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;|z1| = &quot;</span><span class="p">,</span> <span class="n">z1_abs</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;|z2| = &quot;</span><span class="p">,</span> <span class="n">z2_abs</span><span class="p">)</span>
+
+<span class="n">z1_mod</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">z1</span><span class="o">.</span><span class="n">real</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">z1</span><span class="o">.</span><span class="n">imag</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;|z1| = &quot;</span><span class="p">,</span> <span class="n">z1_abs</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>|z1| =  5.0
+|z2| =  2.23606797749979
+|z1| =  5.0
+</pre></div>
+</div>
+</div>
+</div>
 <p>La función <code class="docutils literal notranslate"><span class="pre">np.angle()</span></code> devuelve el argumento principal del número complejo</p>
 <div class="math notranslate nohighlight">
 \[
@@ -553,6 +732,35 @@ z=(1-i)^4+(1+i)^4
 \[
 -180^\circ &lt; \arg(z) \leq 180^\circ
 \]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">z1_angle_rad</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">angle</span><span class="p">(</span><span class="n">z1</span><span class="p">)</span>
+<span class="n">z2_angle_rad</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">angle</span><span class="p">(</span><span class="n">z2</span><span class="p">)</span>
+
+<span class="n">z1_angle_deg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">z1_angle_rad</span><span class="p">)</span>
+<span class="n">z2_angle_deg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">z2_angle_rad</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Argumento en radianes&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;arg(z1) = </span><span class="si">{</span><span class="n">z1_angle_rad</span><span class="si">:</span><span class="s2">8.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;arg(z2) = </span><span class="si">{</span><span class="n">z2_angle_rad</span><span class="si">:</span><span class="s2">8.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Argumento en grados&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;arg(z1) = </span><span class="si">{</span><span class="n">z1_angle_deg</span><span class="si">:</span><span class="s2">8.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;arg(z2) = </span><span class="si">{</span><span class="n">z2_angle_deg</span><span class="si">:</span><span class="s2">8.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Argumento en radianes
+arg(z1) =   0.9273
+arg(z2) =  -1.1071
+Argumento en grados
+arg(z1) =  53.1301
+arg(z2) = -63.4349
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 
