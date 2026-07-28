@@ -502,6 +502,13 @@ r=|z|
 <p>En Python, podemos usar las funciones abs() y np.angle() para obtener la forma polar de un complejo a partir de su forma rectangular</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">z1</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span><span class="n">j</span>
 <span class="n">r</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">z1</span><span class="p">)</span>
 <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">angle</span><span class="p">(</span><span class="n">z1</span><span class="p">)</span>
@@ -510,15 +517,7 @@ r=|z|
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">z1</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span><span class="n">j</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">r</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">z1</span><span class="p">)</span>
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">angle</span><span class="p">(</span><span class="n">z1</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;z1 = </span><span class="si">{</span><span class="n">r</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">(cos(</span><span class="si">{</span><span class="n">theta</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> + i sin(</span><span class="si">{</span><span class="n">theta</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">))&quot;</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;np&#39; is not defined
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>z1 = 5.000(cos(0.927 + i sin(0.927))
 </pre></div>
 </div>
 </div>
@@ -529,6 +528,11 @@ r=|z|
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">z1_rec</span> <span class="o">=</span> <span class="n">r</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">z1_rec</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(3.0000000000000004+3.9999999999999996j)
 </pre></div>
 </div>
 </div>
@@ -565,11 +569,21 @@ r=|z|
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(2.5980762113533156+0.5000000000000003j)
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">z</span> <span class="o">=</span> <span class="mi">1</span><span class="n">j</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="mi">1</span><span class="n">j</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1j
 </pre></div>
 </div>
 </div>
@@ -647,6 +661,9 @@ r=|z|
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="_images/e3196cefd2a882e85beaad575f4929a50155076255cca932abe75a0d7da8fa27.png" src="_images/e3196cefd2a882e85beaad575f4929a50155076255cca932abe75a0d7da8fa27.png" />
+</div>
 </div>
 </section>
 <section id="raices-de-un-numero-complejo">
@@ -702,6 +719,19 @@ w^3=1
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Raíz </span><span class="si">{</span><span class="n">k</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">:&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Forma rectangular:&quot;</span><span class="p">,</span> <span class="n">z_k</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Forma polar: </span><span class="si">{</span><span class="n">rho</span><span class="si">}</span><span class="s2">(Cos(</span><span class="si">{</span><span class="n">phi</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> + i Sin(</span><span class="si">{</span><span class="n">phi</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">)))&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Raíz 1:
+Forma rectangular: (1+0j)
+Forma polar: 1.0(Cos(0.000 + i Sin(0.000)))
+Raíz 2:
+Forma rectangular: (-0.4999999999999998+0.8660254037844387j)
+Forma polar: 1.0(Cos(2.094 + i Sin(2.094)))
+Raíz 3:
+Forma rectangular: (-0.5000000000000004-0.8660254037844384j)
+Forma polar: 1.0(Cos(4.189 + i Sin(4.189)))
 </pre></div>
 </div>
 </div>
