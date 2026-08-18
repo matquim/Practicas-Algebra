@@ -472,6 +472,14 @@ document.write(`
 <p>Para el polinomio <span class="math notranslate nohighlight">\(p(x)=x^4-5x^2+4\)</span>, podemos calcular sus puntos críticos y aplicar el criterio de la segunda derivada</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
 
 <span class="c1"># Calculo de la derivada</span>
@@ -483,14 +491,8 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># Calculo de la derivada</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">dp</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">deriv</span><span class="p">()</span>
-
-<span class="ne">NameError</span>: name 'np' is not defined
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   3
+4 x - 10 x
 </pre></div>
 </div>
 </div>
@@ -501,6 +503,11 @@ document.write(`
 <span class="n">criticos</span> <span class="o">=</span> <span class="n">dp</span><span class="o">.</span><span class="n">r</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">criticos</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[-1.58113883  1.58113883  0.        ]
 </pre></div>
 </div>
 </div>
@@ -519,6 +526,13 @@ document.write(`
         <span class="k">pass</span>
         
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"x=</span><span class="si">{</span><span class="n">x</span><span class="si">:</span><span class="s2">8.4f</span><span class="si">}</span><span class="s2">, p(x)=</span><span class="si">{</span><span class="n">p</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="si">:</span><span class="s2">8.4f</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">tipo</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>x= -1.5811, p(x)= -2.2500, mínimo
+x=  1.5811, p(x)= -2.2500, mínimo
+x=  0.0000, p(x)=  4.0000, máximo
 </pre></div>
 </div>
 </div>
@@ -564,6 +578,9 @@ document.write(`
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/ce2b652da3a52c2815be7f8018dca875c3dc1437bec2c9badf9b6ca23196aafd.png" src="_images/ce2b652da3a52c2815be7f8018dca875c3dc1437bec2c9badf9b6ca23196aafd.png" />
 </div>
 </div>
 </section>
