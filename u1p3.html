@@ -493,8 +493,8 @@ document.write(`
 <p class="admonition-title">Concepto</p>
 <h2 class="rubric" id="concepto-teorico">Concepto Teórico</h2>
 <p>Se sabe que el resultado de la suma de los primeros <span class="math notranslate nohighlight">\(n\)</span> números naturales es:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1b18c5b5-19d0-4bbf-bcee-74e3d88b2809">
-<span class="eqno">(1)<a class="headerlink" href="#equation-1b18c5b5-19d0-4bbf-bcee-74e3d88b2809" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-e45613dd-da28-412a-ae38-6fb7bd74b34f">
+<span class="eqno">(1)<a class="headerlink" href="#equation-e45613dd-da28-412a-ae38-6fb7bd74b34f" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
 \end{equation}\]</div>
 </div>
@@ -526,10 +526,10 @@ document.write(`
 
     <span class="n">suma_analitica</span> <span class="o">=</span> <span class="n">n</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;n =&quot;</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Suma numerica:&quot;</span><span class="p">,</span> <span class="n">suma</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Suma analitica:&quot;</span><span class="p">,</span> <span class="n">suma_analitica</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Diferencia:&quot;</span><span class="p">,</span> <span class="n">suma</span> <span class="o">-</span> <span class="n">suma_analitica</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"n ="</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Suma numerica:"</span><span class="p">,</span> <span class="n">suma</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Suma analitica:"</span><span class="p">,</span> <span class="n">suma_analitica</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Diferencia:"</span><span class="p">,</span> <span class="n">suma</span> <span class="o">-</span> <span class="n">suma_analitica</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -586,10 +586,10 @@ Diferencia: 0
 
 <span class="c1"># Comparacion</span>
 <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">10000</span><span class="p">]:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;n =&quot;</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Suma numerica:&quot;</span><span class="p">,</span> <span class="n">suma_numerica</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Suma analitica:&quot;</span><span class="p">,</span> <span class="n">suma_analitica</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Diferencia:&quot;</span><span class="p">,</span> <span class="n">suma_numerica</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">-</span> <span class="n">suma_analitica</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"n ="</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Suma numerica:"</span><span class="p">,</span> <span class="n">suma_numerica</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Suma analitica:"</span><span class="p">,</span> <span class="n">suma_analitica</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Diferencia:"</span><span class="p">,</span> <span class="n">suma_numerica</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">-</span> <span class="n">suma_analitica</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
     <span class="nb">print</span><span class="p">()</span>
 </pre></div>
 </div>

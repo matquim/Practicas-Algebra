@@ -512,7 +512,7 @@ r=|z|
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">z1</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span><span class="n">j</span>
 <span class="n">r</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">z1</span><span class="p">)</span>
 <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">angle</span><span class="p">(</span><span class="n">z1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;z1 = </span><span class="si">{</span><span class="n">r</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">(cos(</span><span class="si">{</span><span class="n">theta</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> + i sin(</span><span class="si">{</span><span class="n">theta</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">))&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"z1 = </span><span class="si">{</span><span class="n">r</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">(cos(</span><span class="si">{</span><span class="n">theta</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> + i sin(</span><span class="si">{</span><span class="n">theta</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">))"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -610,49 +610,49 @@ r=|z|
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
 
 <span class="c1"># Graficamos el punto correspondiente a z1</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'blue'</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 
 <span class="c1"># Usamos quiver para repsentar z1 en el plano complejo</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">quiver</span><span class="p">(</span>
     <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span>
-    <span class="n">angles</span><span class="o">=</span><span class="s1">&#39;xy&#39;</span><span class="p">,</span>
-    <span class="n">scale_units</span><span class="o">=</span><span class="s1">&#39;xy&#39;</span><span class="p">,</span>
+    <span class="n">angles</span><span class="o">=</span><span class="s1">'xy'</span><span class="p">,</span>
+    <span class="n">scale_units</span><span class="o">=</span><span class="s1">'xy'</span><span class="p">,</span>
     <span class="n">scale</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-    <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s1">'blue'</span><span class="p">,</span>
     <span class="n">headwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
     <span class="n">headlength</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
     <span class="n">headaxislength</span><span class="o">=</span><span class="mi">1</span>
 <span class="p">)</span>
 
 <span class="c1"># Etiqueta de z1</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">x1</span> <span class="o">+</span> <span class="mf">0.2</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$2+3i$&#39;</span><span class="p">,</span>
-         <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">x1</span> <span class="o">+</span> <span class="mf">0.2</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="sa">r</span><span class="s1">'$2+3i$'</span><span class="p">,</span>
+         <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'blue'</span><span class="p">)</span>
 
 <span class="c1"># Graficamos el punto correspondiente a z2</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'green'</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 
 <span class="c1"># Usamos quiver para repsentar z2 en el plano complejo</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">quiver</span><span class="p">(</span>
     <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span>
-    <span class="n">angles</span><span class="o">=</span><span class="s1">&#39;xy&#39;</span><span class="p">,</span>
-    <span class="n">scale_units</span><span class="o">=</span><span class="s1">&#39;xy&#39;</span><span class="p">,</span>
+    <span class="n">angles</span><span class="o">=</span><span class="s1">'xy'</span><span class="p">,</span>
+    <span class="n">scale_units</span><span class="o">=</span><span class="s1">'xy'</span><span class="p">,</span>
     <span class="n">scale</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-    <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s1">'green'</span><span class="p">,</span>
     <span class="n">headwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
     <span class="n">headlength</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
     <span class="n">headaxislength</span><span class="o">=</span><span class="mi">1</span>
 <span class="p">)</span>
 
 <span class="c1"># Etiqueta de z2</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">x2</span> <span class="o">+</span> <span class="mf">0.2</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$1-4i$&#39;</span><span class="p">,</span>
-         <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">x2</span> <span class="o">+</span> <span class="mf">0.2</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="sa">r</span><span class="s1">'$1-4i$'</span><span class="p">,</span>
+         <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'green'</span><span class="p">)</span>
 
 <span class="c1"># Ejes</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Re(z)&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Im(z)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'Re(z)'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Im(z)'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
 
@@ -716,9 +716,9 @@ w^3=1
 
     <span class="n">z_k</span> <span class="o">=</span> <span class="n">rho</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">phi</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">phi</span><span class="p">))</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Raíz </span><span class="si">{</span><span class="n">k</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">:&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Forma rectangular:&quot;</span><span class="p">,</span> <span class="n">z_k</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Forma polar: </span><span class="si">{</span><span class="n">rho</span><span class="si">}</span><span class="s2">(Cos(</span><span class="si">{</span><span class="n">phi</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> + i Sin(</span><span class="si">{</span><span class="n">phi</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">)))&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Raíz </span><span class="si">{</span><span class="n">k</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">:"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Forma rectangular:"</span><span class="p">,</span> <span class="n">z_k</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Forma polar: </span><span class="si">{</span><span class="n">rho</span><span class="si">}</span><span class="s2">(Cos(</span><span class="si">{</span><span class="n">phi</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> + i Sin(</span><span class="si">{</span><span class="n">phi</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">)))"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>

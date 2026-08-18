@@ -660,18 +660,18 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mf">7.3</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mf">9.0</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s2">&quot;Python&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s2">"Python"</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="kc">False</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;int&#39;&gt;
-&lt;class &#39;int&#39;&gt;
-&lt;class &#39;float&#39;&gt;
-&lt;class &#39;float&#39;&gt;
-&lt;class &#39;str&#39;&gt;
-&lt;class &#39;bool&#39;&gt;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class 'int'&gt;
+&lt;class 'int'&gt;
+&lt;class 'float'&gt;
+&lt;class 'float'&gt;
+&lt;class 'str'&gt;
+&lt;class 'bool'&gt;
 </pre></div>
 </div>
 </div>
@@ -855,7 +855,7 @@ False
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2026-07-28 03:12:14.104553
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2026-08-18 18:20:37.110469
 1
 </pre></div>
 </div>
@@ -866,7 +866,7 @@ False
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">zoneinfo</span><span class="w"> </span><span class="kn">import</span> <span class="n">ZoneInfo</span>
 
-<span class="n">hoy</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(</span><span class="n">ZoneInfo</span><span class="p">(</span><span class="s2">&quot;America/Mexico_City&quot;</span><span class="p">))</span>
+<span class="n">hoy</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(</span><span class="n">ZoneInfo</span><span class="p">(</span><span class="s2">"America/Mexico_City"</span><span class="p">))</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">hoy</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">hoy</span><span class="o">.</span><span class="n">weekday</span><span class="p">())</span>
@@ -877,7 +877,7 @@ False
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">zoneinfo</span><span class="w"> </span><span class="kn">import</span> <span class="n">ZoneInfo</span>
 
-<span class="n">hoy</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(</span><span class="n">ZoneInfo</span><span class="p">(</span><span class="s2">&quot;America/Mexico_City&quot;</span><span class="p">))</span>
+<span class="n">hoy</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(</span><span class="n">ZoneInfo</span><span class="p">(</span><span class="s2">"America/Mexico_City"</span><span class="p">))</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">hoy</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">hoy</span><span class="o">.</span><span class="n">weekday</span><span class="p">())</span>
@@ -885,8 +885,8 @@ False
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2026-07-27 21:12:14.118634-06:00
-0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2026-08-18 12:20:37.129154-06:00
+1
 </pre></div>
 </div>
 </div>
@@ -897,7 +897,7 @@ False
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">zoneinfo</span><span class="w"> </span><span class="kn">import</span> <span class="n">ZoneInfo</span>
 
-<span class="n">hoy</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(</span><span class="n">ZoneInfo</span><span class="p">(</span><span class="s2">&quot;America/Mexico_City&quot;</span><span class="p">))</span>
+<span class="n">hoy</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(</span><span class="n">ZoneInfo</span><span class="p">(</span><span class="s2">"America/Mexico_City"</span><span class="p">))</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">Compara_con_miercoles</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
   <span class="k">return</span> <span class="n">n</span><span class="o">&gt;</span><span class="mi">2</span>
@@ -1092,10 +1092,10 @@ False
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="id19">
 <h1>———————————————————–<a class="headerlink" href="#id19" title="Link to this heading">#</a></h1>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">P</span> <span class="o">=</span> <span class="kc">True</span><span class="p">;</span>  <span class="n">Q</span> <span class="o">=</span> <span class="kc">True</span><span class="p">;</span>  <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;→&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">)</span>
-<span class="n">P</span> <span class="o">=</span> <span class="kc">True</span><span class="p">;</span>  <span class="n">Q</span> <span class="o">=</span> <span class="kc">False</span><span class="p">;</span> <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;→&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">)</span>
-<span class="n">P</span> <span class="o">=</span> <span class="kc">False</span><span class="p">;</span> <span class="n">Q</span> <span class="o">=</span> <span class="kc">True</span><span class="p">;</span>  <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;→&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">)</span>
-<span class="n">P</span> <span class="o">=</span> <span class="kc">False</span><span class="p">;</span> <span class="n">Q</span> <span class="o">=</span> <span class="kc">False</span><span class="p">;</span> <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;→&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">P</span> <span class="o">=</span> <span class="kc">True</span><span class="p">;</span>  <span class="n">Q</span> <span class="o">=</span> <span class="kc">True</span><span class="p">;</span>  <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">"→"</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">)</span>
+<span class="n">P</span> <span class="o">=</span> <span class="kc">True</span><span class="p">;</span>  <span class="n">Q</span> <span class="o">=</span> <span class="kc">False</span><span class="p">;</span> <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">"→"</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">)</span>
+<span class="n">P</span> <span class="o">=</span> <span class="kc">False</span><span class="p">;</span> <span class="n">Q</span> <span class="o">=</span> <span class="kc">True</span><span class="p">;</span>  <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">"→"</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">)</span>
+<span class="n">P</span> <span class="o">=</span> <span class="kc">False</span><span class="p">;</span> <span class="n">Q</span> <span class="o">=</span> <span class="kc">False</span><span class="p">;</span> <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">"→"</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -1106,11 +1106,11 @@ False
 <h1>¿Cómo podemos mejorar ese proceso?<a class="headerlink" href="#como-podemos-mejorar-ese-proceso" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P</span><span class="se">\t</span><span class="s2">Q</span><span class="se">\t</span><span class="s2">P y Q</span><span class="se">\t</span><span class="s2">P o Q</span><span class="se">\t</span><span class="s2"> P =&gt; Q</span><span class="se">\t</span><span class="s2"> P &lt;=&gt; Q &quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"P</span><span class="se">\t</span><span class="s2">Q</span><span class="se">\t</span><span class="s2">P y Q</span><span class="se">\t</span><span class="s2">P o Q</span><span class="se">\t</span><span class="s2"> P =&gt; Q</span><span class="se">\t</span><span class="s2"> P &lt;=&gt; Q "</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">P</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]:</span>
   <span class="k">for</span> <span class="n">Q</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="ow">or</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">Implicacion</span><span class="p">(</span><span class="n">P</span><span class="p">,</span><span class="n">Q</span><span class="p">),</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="o">==</span> <span class="n">Q</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="n">P</span> <span class="ow">or</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="n">Implicacion</span><span class="p">(</span><span class="n">P</span><span class="p">,</span><span class="n">Q</span><span class="p">),</span> <span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="n">P</span> <span class="o">==</span> <span class="n">Q</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1200,10 +1200,10 @@ False 	 False 	 False 	 False 	 True 	 True
 <h2>———————————————————–<a class="headerlink" href="#id28" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P </span><span class="se">\t</span><span class="s2">Q </span><span class="se">\t</span><span class="s2">neg(P y Q) </span><span class="se">\t</span><span class="s2">neg P o neg Q&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"P </span><span class="se">\t</span><span class="s2">Q </span><span class="se">\t</span><span class="s2">neg(P y Q) </span><span class="se">\t</span><span class="s2">neg P o neg Q"</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">P</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]:</span>
   <span class="k">for</span> <span class="n">Q</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">P</span> <span class="p">,</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span> <span class="p">,</span><span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="ow">not</span><span class="p">(</span><span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">),</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="ow">not</span> <span class="n">P</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">Q</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">P</span> <span class="p">,</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span> <span class="p">,</span><span class="n">Q</span><span class="p">,</span> <span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="ow">not</span><span class="p">(</span><span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">),</span> <span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="ow">not</span> <span class="n">P</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">Q</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1219,13 +1219,13 @@ False 	 False 	 True 	 True
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P</span><span class="se">\t</span><span class="s2">Q</span><span class="se">\t</span><span class="s2">R</span><span class="se">\t</span><span class="s2"> Py(QoR)</span><span class="se">\t\t</span><span class="s2">(PyQ) o (PyR)&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"P</span><span class="se">\t</span><span class="s2">Q</span><span class="se">\t</span><span class="s2">R</span><span class="se">\t</span><span class="s2"> Py(QoR)</span><span class="se">\t\t</span><span class="s2">(PyQ) o (PyR)"</span><span class="p">)</span>
 
 
 <span class="k">for</span> <span class="n">P</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]:</span>
   <span class="k">for</span> <span class="n">Q</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]:</span>
     <span class="k">for</span> <span class="n">R</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]:</span>
-      <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="p">(</span><span class="n">Q</span> <span class="ow">or</span> <span class="n">R</span><span class="p">),</span> <span class="s2">&quot;</span><span class="se">\t\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">P</span> <span class="ow">and</span> <span class="n">R</span><span class="p">))</span>
+      <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="n">P</span> <span class="ow">and</span> <span class="p">(</span><span class="n">Q</span> <span class="ow">or</span> <span class="n">R</span><span class="p">),</span> <span class="s2">"</span><span class="se">\t\t</span><span class="s2">"</span><span class="p">,</span> <span class="p">(</span><span class="n">P</span> <span class="ow">and</span> <span class="n">Q</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">P</span> <span class="ow">and</span> <span class="n">R</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -1300,7 +1300,7 @@ False 	 False 	 False 	 False 		 False
 <h1><span class="math notranslate nohighlight">\(((P \Rightarrow Q) \land (Q \Rightarrow R))    \Rightarrow (P \Rightarrow R)\)</span><a class="headerlink" href="#p-rightarrow-q-land-q-rightarrow-r-rightarrow-p-rightarrow-r" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P</span><span class="se">\t</span><span class="s2">Q</span><span class="se">\t</span><span class="s2">R</span><span class="se">\t</span><span class="s2">Silogismo&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"P</span><span class="se">\t</span><span class="s2">Q</span><span class="se">\t</span><span class="s2">R</span><span class="se">\t</span><span class="s2">Silogismo"</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">P</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]:</span>
   <span class="k">for</span> <span class="n">Q</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]:</span>
@@ -1309,7 +1309,7 @@ False 	 False 	 False 	 False 		 False
       <span class="n">B</span><span class="o">=</span><span class="n">Implicacion</span><span class="p">(</span><span class="n">Q</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
       <span class="n">C</span><span class="o">=</span><span class="n">Implicacion</span><span class="p">(</span><span class="n">P</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
       <span class="n">Silogismo</span><span class="o">=</span><span class="n">Implicacion</span><span class="p">(</span><span class="n">A</span> <span class="ow">and</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span>
-      <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">Silogismo</span> <span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="n">Silogismo</span> <span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1378,7 +1378,7 @@ False 	 False 	 False 	 True
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="o">=</span><span class="p">{</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">}</span>
-<span class="n">D</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;J&quot;</span><span class="p">,</span> <span class="s2">&quot;U&quot;</span><span class="p">,</span> <span class="s2">&quot;L&quot;</span><span class="p">,</span> <span class="s2">&quot;I&quot;</span><span class="p">,</span> <span class="s2">&quot;E&quot;</span><span class="p">,</span> <span class="s2">&quot;N&quot;</span><span class="p">}</span>
+<span class="n">D</span><span class="o">=</span><span class="p">{</span><span class="s2">"J"</span><span class="p">,</span> <span class="s2">"U"</span><span class="p">,</span> <span class="s2">"L"</span><span class="p">,</span> <span class="s2">"I"</span><span class="p">,</span> <span class="s2">"E"</span><span class="p">,</span> <span class="s2">"N"</span><span class="p">}</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">D</span><span class="p">)</span>
@@ -1387,7 +1387,7 @@ False 	 False 	 False 	 True
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{8, 10, 4, 6}
-{&#39;E&#39;, &#39;I&#39;, &#39;U&#39;, &#39;J&#39;, &#39;L&#39;, &#39;N&#39;}
+{'U', 'E', 'L', 'J', 'N', 'I'}
 </pre></div>
 </div>
 </div>

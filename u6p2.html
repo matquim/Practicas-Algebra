@@ -547,7 +547,7 @@ True
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">z_parte_real</span> <span class="o">=</span> <span class="n">z</span><span class="o">.</span><span class="n">real</span>
 <span class="n">z_parte_imag</span> <span class="o">=</span> <span class="n">z</span><span class="o">.</span><span class="n">imag</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;La parte real de z es: </span><span class="si">{</span><span class="n">z_parte_real</span><span class="si">}</span><span class="s2"> y la parte imaginaria es: </span><span class="si">{</span><span class="n">z_parte_imag</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"La parte real de z es: </span><span class="si">{</span><span class="n">z_parte_real</span><span class="si">}</span><span class="s2"> y la parte imaginaria es: </span><span class="si">{</span><span class="n">z_parte_imag</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -705,12 +705,12 @@ z=(1-i)^4+(1+i)^4
 <span class="n">z1_abs</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">z1</span><span class="p">)</span>
 <span class="n">z2_abs</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">z2</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;|z1| = &quot;</span><span class="p">,</span> <span class="n">z1_abs</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;|z2| = &quot;</span><span class="p">,</span> <span class="n">z2_abs</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"|z1| = "</span><span class="p">,</span> <span class="n">z1_abs</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"|z2| = "</span><span class="p">,</span> <span class="n">z2_abs</span><span class="p">)</span>
 
 <span class="n">z1_mod</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">z1</span><span class="o">.</span><span class="n">real</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">z1</span><span class="o">.</span><span class="n">imag</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;|z1| = &quot;</span><span class="p">,</span> <span class="n">z1_abs</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"|z1| = "</span><span class="p">,</span> <span class="n">z1_abs</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -740,13 +740,13 @@ z=(1-i)^4+(1+i)^4
 <span class="n">z1_angle_deg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">z1_angle_rad</span><span class="p">)</span>
 <span class="n">z2_angle_deg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">z2_angle_rad</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Argumento en radianes&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;arg(z1) = </span><span class="si">{</span><span class="n">z1_angle_rad</span><span class="si">:</span><span class="s2">8.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;arg(z2) = </span><span class="si">{</span><span class="n">z2_angle_rad</span><span class="si">:</span><span class="s2">8.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Argumento en radianes"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"arg(z1) = </span><span class="si">{</span><span class="n">z1_angle_rad</span><span class="si">:</span><span class="s2">8.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"arg(z2) = </span><span class="si">{</span><span class="n">z2_angle_rad</span><span class="si">:</span><span class="s2">8.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Argumento en grados&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;arg(z1) = </span><span class="si">{</span><span class="n">z1_angle_deg</span><span class="si">:</span><span class="s2">8.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;arg(z2) = </span><span class="si">{</span><span class="n">z2_angle_deg</span><span class="si">:</span><span class="s2">8.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Argumento en grados"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"arg(z1) = </span><span class="si">{</span><span class="n">z1_angle_deg</span><span class="si">:</span><span class="s2">8.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"arg(z2) = </span><span class="si">{</span><span class="n">z2_angle_deg</span><span class="si">:</span><span class="s2">8.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>

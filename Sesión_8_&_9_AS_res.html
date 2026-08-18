@@ -549,7 +549,7 @@ q(x)=x^2+x-3.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;numpy.poly1d&#39;&gt;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class 'numpy.poly1d'&gt;
    3
 1 x + 2 x + 1
    2
@@ -562,7 +562,7 @@ q(x)=x^2+x-3.
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Usando SymPy</span>
 
-<span class="n">x</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="s1">'x'</span><span class="p">)</span>
 
 <span class="n">p_sp</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
 <span class="n">q_sp</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">x</span> <span class="o">-</span> <span class="mi">3</span>
@@ -623,7 +623,7 @@ q(x)=x^4-3x^3+2x^2+x-5.
 <span class="nb">print</span><span class="p">(</span><span class="n">r_np</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">r_np</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
 
-<span class="n">x</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="s1">'x'</span><span class="p">)</span>
 <span class="n">r_sp</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">4</span> <span class="o">-</span> <span class="mi">3</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">x</span> <span class="o">-</span> <span class="mi">5</span>
 <span class="n">display</span><span class="p">(</span><span class="n">r_sp</span><span class="p">)</span>
 
@@ -715,10 +715,10 @@ q(x)=x^4-3x^3+2x^2+x-5.
 
 <span class="n">cociente_np</span><span class="p">,</span> <span class="n">residuo_np</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polydiv</span><span class="p">(</span><span class="n">p_np</span><span class="p">,</span> <span class="n">q_np</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cociente:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Cociente:"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">cociente_np</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Residuo:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Residuo:"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">residuo_np</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -740,10 +740,10 @@ Residuo:
 
 <span class="n">cociente_sp</span><span class="p">,</span> <span class="n">residuo_sp</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">div</span><span class="p">(</span><span class="n">p_sp</span><span class="p">,</span> <span class="n">q_sp</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cociente:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Cociente:"</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">cociente_sp</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Residuo:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Residuo:"</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">residuo_sp</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -789,8 +789,8 @@ q(x)=x^2+x-3.
 <span class="n">display</span><span class="p">(</span><span class="n">p_x</span><span class="o">-</span><span class="n">q_x</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">sp</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">p_x</span><span class="o">*</span><span class="n">q_x</span><span class="p">))</span>
 <span class="p">(</span><span class="n">cociente_x</span><span class="p">,</span> <span class="n">residuo_x</span><span class="p">)</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">div</span><span class="p">(</span><span class="n">p_x</span> <span class="p">,</span> <span class="n">q_x</span><span class="p">)</span>
-<span class="n">display</span><span class="p">(</span><span class="s2">&quot;Cociente:&quot;</span><span class="p">,</span><span class="n">cociente_x</span><span class="p">)</span>
-<span class="n">display</span><span class="p">(</span><span class="s2">&quot;Residuo:&quot;</span><span class="p">,</span><span class="n">residuo_x</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="s2">"Cociente:"</span><span class="p">,</span><span class="n">cociente_x</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="s2">"Residuo:"</span><span class="p">,</span><span class="n">residuo_x</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -801,12 +801,12 @@ q(x)=x^2+x-3.
 \[\displaystyle x^{3} - x^{2} + x + 4\]</div>
 <div class="output text_latex math notranslate nohighlight">
 \[\displaystyle x^{5} + x^{4} - x^{3} + 3 x^{2} - 5 x - 3\]</div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Cociente:&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>'Cociente:'
 </pre></div>
 </div>
 <div class="output text_latex math notranslate nohighlight">
 \[\displaystyle x - 1\]</div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Residuo:&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>'Residuo:'
 </pre></div>
 </div>
 <div class="output text_latex math notranslate nohighlight">
@@ -867,8 +867,8 @@ q(x)=x^2+x-3.
 
 <span class="n">r_cociente</span><span class="p">,</span> <span class="n">r_residuo</span> <span class="o">=</span> <span class="n">div_sint</span><span class="p">(</span><span class="n">pcoeficientes</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Coeficientes del cociente:&quot;</span><span class="p">,</span> <span class="n">r_cociente</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Residuo:&quot;</span><span class="p">,</span> <span class="n">r_residuo</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Coeficientes del cociente:"</span><span class="p">,</span> <span class="n">r_cociente</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Residuo:"</span><span class="p">,</span> <span class="n">r_residuo</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">(</span><span class="n">r_cociente</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -915,15 +915,15 @@ f(x)=(x-a)Q(x)+R(x).
 
 <span class="n">r_cociente</span><span class="p">,</span> <span class="n">r_residuo</span> <span class="o">=</span> <span class="n">div_sint</span><span class="p">(</span><span class="n">pcoeficientes</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 
-<span class="n">x</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="s2">"x"</span><span class="p">)</span>
 
 <span class="n">Q_sp</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Poly</span><span class="p">(</span><span class="n">r_cociente</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">as_expr</span><span class="p">()</span>
 <span class="n">Q_sp</span>
 
-<span class="n">sp</span><span class="o">.</span><span class="n">Eq</span><span class="p">(</span><span class="n">sp</span><span class="o">.</span><span class="n">Function</span><span class="p">(</span><span class="s2">&quot;f&quot;</span><span class="p">)(</span><span class="n">x</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span><span class="o">*</span><span class="n">Q_sp</span> <span class="o">+</span> <span class="n">r_residuo</span><span class="p">)</span>
+<span class="n">sp</span><span class="o">.</span><span class="n">Eq</span><span class="p">(</span><span class="n">sp</span><span class="o">.</span><span class="n">Function</span><span class="p">(</span><span class="s2">"f"</span><span class="p">)(</span><span class="n">x</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span><span class="o">*</span><span class="n">Q_sp</span> <span class="o">+</span> <span class="n">r_residuo</span><span class="p">)</span>
 
-<span class="c1"># print(&quot;Coeficientes del cociente:&quot;, r_cociente)</span>
-<span class="c1"># print(&quot;Residuo:&quot;, r_residuo)</span>
+<span class="c1"># print("Coeficientes del cociente:", r_cociente)</span>
+<span class="c1"># print("Residuo:", r_residuo)</span>
 <span class="c1"># print(np.poly1d(r_cociente))</span>
 </pre></div>
 </div>
@@ -968,13 +968,13 @@ q=1.
 
     <span class="n">r_cociente</span><span class="p">,</span> <span class="n">r_residuo</span> <span class="o">=</span> <span class="n">div_sint</span><span class="p">(</span><span class="n">pcoeficientes</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
 
-    <span class="c1"># print(f&quot;r = {r}&quot;)</span>
-    <span class="c1"># print(&quot;Residuo:&quot;, r_residuo)</span>
+    <span class="c1"># print(f"r = {r}")</span>
+    <span class="c1"># print("Residuo:", r_residuo)</span>
 
     <span class="k">if</span> <span class="n">r_residuo</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
     <span class="c1">#if np.isclose(r_residuo, 0):</span>
 
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">r</span><span class="si">:</span><span class="s2">&lt;2</span><span class="si">}</span><span class="s2"> es una raíz de p(x)&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">r</span><span class="si">:</span><span class="s2">&lt;2</span><span class="si">}</span><span class="s2"> es una raíz de p(x)"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1058,7 +1058,7 @@ p(x)=x^4-5x^2+4.
 <p>Con SymPy:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s2">"x"</span><span class="p">)</span>
 
 <span class="n">p</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">4</span> <span class="o">-</span> <span class="mi">5</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">4</span>
 
@@ -1096,7 +1096,7 @@ p(x)=x^4-10x^2+9.
 <p>Obtenga todas sus raíces utilizando SymPy.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s2">"x"</span><span class="p">)</span>
 
 <span class="n">p</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">4</span> <span class="o">-</span> <span class="mi">10</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">9</span>
 
@@ -1173,24 +1173,24 @@ p(x)=x^4-10x^2+9.
 <span class="n">positivas</span> <span class="o">=</span>  <span class="n">cambios_de_signo</span><span class="p">(</span><span class="n">sp</span><span class="o">.</span><span class="n">Poly</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">all_coeffs</span><span class="p">())</span>
 <span class="n">negativas</span> <span class="o">=</span>  <span class="n">cambios_de_signo</span><span class="p">(</span><span class="n">sp</span><span class="o">.</span><span class="n">Poly</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">-</span><span class="n">x</span><span class="p">),</span> <span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">all_coeffs</span><span class="p">())</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Posibles raíces positivas:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Posibles raíces positivas:"</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">n_pos</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">positivas</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">):</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n_pos</span><span class="si">}</span><span class="s2"> positivas&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">n_pos</span><span class="si">}</span><span class="s2"> positivas"</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Posibles raíces negativas:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Posibles raíces negativas:"</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">n_neg</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">negativas</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">):</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n_neg</span><span class="si">}</span><span class="s2"> negativas&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">n_neg</span><span class="si">}</span><span class="s2"> negativas"</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Combinaciones posibles:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Combinaciones posibles:"</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">n_pos</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">positivas</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">n_neg</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">negativas</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">):</span>
 
         <span class="n">n_comp</span> <span class="o">=</span> <span class="n">grado</span> <span class="o">-</span> <span class="n">n_pos</span> <span class="o">-</span> <span class="n">n_neg</span>
 
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n_pos</span><span class="si">}</span><span class="s2"> positivas, </span><span class="si">{</span><span class="n">n_neg</span><span class="si">}</span><span class="s2"> negativas y </span><span class="si">{</span><span class="n">n_comp</span><span class="si">}</span><span class="s2"> complejas&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">n_pos</span><span class="si">}</span><span class="s2"> positivas, </span><span class="si">{</span><span class="n">n_neg</span><span class="si">}</span><span class="s2"> negativas y </span><span class="si">{</span><span class="n">n_comp</span><span class="si">}</span><span class="s2"> complejas"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1221,7 +1221,7 @@ p(x)=x^5-4x^4+3x^3+2x^2-8.
 <p>Aplique la regla de los signos de Descartes para determinar las posibles raíces positivas, negativas y complejas.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">'x'</span><span class="p">)</span>
 
 <span class="n">p</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">5</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">4</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">8</span>
 
@@ -1230,19 +1230,19 @@ p(x)=x^5-4x^4+3x^3+2x^2-8.
 <span class="n">positivas</span> <span class="o">=</span> <span class="n">cambios_de_signo</span><span class="p">(</span><span class="n">sp</span><span class="o">.</span><span class="n">Poly</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">all_coeffs</span><span class="p">())</span>
 <span class="n">negativas</span> <span class="o">=</span> <span class="n">cambios_de_signo</span><span class="p">(</span><span class="n">sp</span><span class="o">.</span><span class="n">Poly</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">-</span><span class="n">x</span><span class="p">),</span> <span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">all_coeffs</span><span class="p">())</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Posibles raíces positivas:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Posibles raíces positivas:"</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">n_pos</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">positivas</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n_pos</span><span class="si">}</span><span class="s2"> positivas&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">n_pos</span><span class="si">}</span><span class="s2"> positivas"</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Posibles raíces negativas:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Posibles raíces negativas:"</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">n_neg</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">negativas</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n_neg</span><span class="si">}</span><span class="s2"> negativas&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">n_neg</span><span class="si">}</span><span class="s2"> negativas"</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Combinaciones posibles:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Combinaciones posibles:"</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">n_pos</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">positivas</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">n_neg</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">negativas</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">):</span>
         <span class="n">n_comp</span> <span class="o">=</span> <span class="n">grado</span> <span class="o">-</span> <span class="n">n_pos</span> <span class="o">-</span> <span class="n">n_neg</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n_pos</span><span class="si">}</span><span class="s2"> positivas, </span><span class="si">{</span><span class="n">n_neg</span><span class="si">}</span><span class="s2"> negativas y </span><span class="si">{</span><span class="n">n_comp</span><span class="si">}</span><span class="s2"> complejas&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">n_pos</span><span class="si">}</span><span class="s2"> positivas, </span><span class="si">{</span><span class="n">n_neg</span><span class="si">}</span><span class="s2"> negativas y </span><span class="si">{</span><span class="n">n_comp</span><span class="si">}</span><span class="s2"> complejas"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1311,13 +1311,13 @@ Combinaciones posibles:
 
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">criticos</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">d2p</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">tipo</span> <span class="o">=</span> <span class="s2">&quot;mínimo&quot;</span>
+        <span class="n">tipo</span> <span class="o">=</span> <span class="s2">"mínimo"</span>
     <span class="k">elif</span> <span class="n">d2p</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">tipo</span> <span class="o">=</span> <span class="s2">&quot;máximo&quot;</span>
+        <span class="n">tipo</span> <span class="o">=</span> <span class="s2">"máximo"</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">tipo</span> <span class="o">=</span> <span class="s2">&quot;indeterminado&quot;</span>
+        <span class="n">tipo</span> <span class="o">=</span> <span class="s2">"indeterminado"</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;x=</span><span class="si">{</span><span class="n">x</span><span class="si">:</span><span class="s2">8.4f</span><span class="si">}</span><span class="s2">, p(x)=</span><span class="si">{</span><span class="n">p</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="si">:</span><span class="s2">8.4f</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">tipo</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"x=</span><span class="si">{</span><span class="n">x</span><span class="si">:</span><span class="s2">8.4f</span><span class="si">}</span><span class="s2">, p(x)=</span><span class="si">{</span><span class="n">p</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="si">:</span><span class="s2">8.4f</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">tipo</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1343,12 +1343,12 @@ x=  0.0000, p(x)=  4.0000, máximo
 <span class="n">y_crit</span> <span class="o">=</span> <span class="n">p</span><span class="p">(</span><span class="n">criticos</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">)</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x_crit</span><span class="p">,</span> <span class="n">y_crit</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x_crit</span><span class="p">,</span> <span class="n">y_crit</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"red"</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">xc</span><span class="p">,</span> <span class="n">yc</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">x_crit</span><span class="p">,</span> <span class="n">y_crit</span><span class="p">):</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">xc</span> <span class="o">+</span> <span class="mf">0.1</span><span class="p">,</span> <span class="n">yc</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;(</span><span class="si">{</span><span class="n">xc</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">yc</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">xc</span> <span class="o">+</span> <span class="mf">0.1</span><span class="p">,</span> <span class="n">yc</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">xc</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">yc</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
 
 <span class="c1"># Para graficar las raíces</span>
 
@@ -1356,16 +1356,16 @@ x=  0.0000, p(x)=  4.0000, máximo
 <span class="n">raices</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">r</span>
 
 <span class="c1"># usamos raices vs un arreglo de ceros</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">raices</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">raices</span><span class="p">)),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">raices</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">raices</span><span class="p">)),</span> <span class="n">color</span><span class="o">=</span><span class="s2">"green"</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
 
 <span class="c1"># Etiqueta las raíces</span>
 <span class="k">for</span> <span class="n">xr</span> <span class="ow">in</span> <span class="n">raices</span><span class="p">:</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">xr</span> <span class="o">+</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;(</span><span class="si">{</span><span class="n">xr</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2">, 0)&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">xr</span> <span class="o">+</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">xr</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2">, 0)"</span><span class="p">)</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;p(x)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'x'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'p(x)'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>

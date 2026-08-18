@@ -731,12 +731,12 @@ cada lista interior representa un <strong>renglón</strong> (fila).</p>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span>
 <span class="n">B</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">B</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="s2">"</span><span class="se">\n\n</span><span class="s2">"</span><span class="p">,</span><span class="n">B</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">A</span><span class="o">+</span><span class="n">B</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="mi">3</span><span class="o">*</span><span class="n">A</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">A</span><span class="o">*</span><span class="n">B</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">A</span><span class="nd">@B</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="n">A</span><span class="o">+</span><span class="n">B</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="mi">3</span><span class="o">*</span><span class="n">A</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="n">A</span><span class="o">*</span><span class="n">B</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="n">A</span><span class="nd">@B</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -777,25 +777,25 @@ cada lista interior representa un <strong>renglón</strong> (fila).</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">]])</span>
 <span class="n">B</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>
 <span class="n">C</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">],[</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span>
 
 <span class="n">SUMA</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">SUMA</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="n">SUMA</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
   <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
     <span class="n">SUMA</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="o">+</span><span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">SUMA</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="n">SUMA</span><span class="p">)</span>
 
 <span class="n">MultEsc</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">MultEsc</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="n">MultEsc</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
   <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
     <span class="n">MultEsc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="mi">3</span><span class="o">*</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">MultEsc</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="n">MultEsc</span><span class="p">)</span>
 
 <span class="n">ProdMat</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 
@@ -804,8 +804,8 @@ cada lista interior representa un <strong>renglón</strong> (fila).</p>
     <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
       <span class="n">ProdMat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">+=</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">k</span><span class="p">]</span><span class="o">*</span><span class="n">C</span><span class="p">[</span><span class="n">k</span><span class="p">,</span><span class="n">j</span><span class="p">]</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">ProdMat</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">A</span> <span class="o">@</span> <span class="n">C</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="n">ProdMat</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="n">A</span> <span class="o">@</span> <span class="n">C</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -866,7 +866,7 @@ Si <strong>det(A) ≠ 0</strong>, la matriz es invertible.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">round</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">A</span><span class="p">),</span> <span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -890,11 +890,11 @@ Si <strong>det(A) ≠ 0</strong>, la matriz es invertible.</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="p">])</span>
 <span class="n">B</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">7</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">],[</span><span class="mi">4</span><span class="p">],[</span><span class="mi">3</span><span class="p">]])</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
 
 <span class="n">A_1</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">A_1</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="n">B</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">A_1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">A_1</span><span class="p">)</span>
 <span class="n">Det</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 <span class="n">Det1</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">A_1</span><span class="p">)</span>
 <span class="n">x1</span><span class="o">=</span><span class="n">Det1</span><span class="o">/</span><span class="n">Det</span>
@@ -904,7 +904,7 @@ Si <strong>det(A) ≠ 0</strong>, la matriz es invertible.</p>
 
 <span class="n">A_2</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">A_2</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="n">B</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">A_2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">A_2</span><span class="p">)</span>
 <span class="n">Det2</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">A_2</span><span class="p">)</span>
 <span class="n">x2</span><span class="o">=</span><span class="n">Det2</span><span class="o">/</span><span class="n">Det</span>
 
@@ -954,7 +954,7 @@ Verificamos que <strong>A · A⁻¹ = I</strong>.</p>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">Ainv</span> <span class="o">@</span> <span class="n">A</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Solucion:&quot;</span><span class="p">,</span> <span class="n">Ainv</span> <span class="o">@</span> <span class="n">B</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Solucion:"</span><span class="p">,</span> <span class="n">Ainv</span> <span class="o">@</span> <span class="n">B</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1014,7 +1014,7 @@ o directamente <code class="docutils literal notranslate"><span class="pre">sp.l
 
 <span class="c1"># --- Método 1: resolver con la inversa simbólica ---</span>
 <span class="n">x_sympy</span> <span class="o">=</span> <span class="n">A_sp</span><span class="o">.</span><span class="n">inv</span><span class="p">()</span> <span class="o">*</span> <span class="n">b_sp</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Solución con A⁻¹ · b (SymPy):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Solución con A⁻¹ · b (SymPy):"</span><span class="p">)</span>
 <span class="n">sp</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">x_sympy</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1037,10 +1037,10 @@ o directamente <code class="docutils literal notranslate"><span class="pre">sp.l
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># --- Método 2: linsolve (más general, acepta sistemas sub/sobre-determinados) ---</span>
-<span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;x1 x2 x3&#39;</span><span class="p">)</span>
+<span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">'x1 x2 x3'</span><span class="p">)</span>
 
 <span class="n">sol</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">linsolve</span><span class="p">((</span><span class="n">A_sp</span><span class="p">,</span> <span class="n">b_sp</span><span class="p">),</span> <span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Solución con sp.linsolve:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Solución con sp.linsolve:"</span><span class="p">)</span>
 <span class="n">sp</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">sol</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1060,10 +1060,10 @@ o directamente <code class="docutils literal notranslate"><span class="pre">sp.l
 <span class="n">M_aug</span> <span class="o">=</span> <span class="n">A_sp</span><span class="o">.</span><span class="n">row_join</span><span class="p">(</span><span class="n">b_sp</span><span class="p">)</span>   <span class="c1"># matriz aumentada simbólica</span>
 <span class="n">rref</span><span class="p">,</span> <span class="n">pivots</span> <span class="o">=</span> <span class="n">M_aug</span><span class="o">.</span><span class="n">rref</span><span class="p">()</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Forma escalonada reducida (RREF) de [A|b]:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Forma escalonada reducida (RREF) de [A|b]:"</span><span class="p">)</span>
 <span class="n">sp</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">rref</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Columnas pivote:&quot;</span><span class="p">,</span> <span class="n">pivots</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Solución (última columna de la RREF):&quot;</span><span class="p">,</span> <span class="n">rref</span><span class="p">[:,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Columnas pivote:"</span><span class="p">,</span> <span class="n">pivots</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Solución (última columna de la RREF):"</span><span class="p">,</span> <span class="n">rref</span><span class="p">[:,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1102,7 +1102,7 @@ Solución (última columna de la RREF): Matrix([[62/15, 29/15, 5/3]])
 
 <span class="c1"># --- Método 1: resolver con la inversa simbólica ---</span>
 <span class="n">x_sympy</span> <span class="o">=</span> <span class="n">A_sp</span><span class="o">.</span><span class="n">inv</span><span class="p">()</span> <span class="o">*</span> <span class="n">b_sp</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Solución con A⁻¹ · b (SymPy):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Solución con A⁻¹ · b (SymPy):"</span><span class="p">)</span>
 <span class="n">sp</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">x_sympy</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1120,13 +1120,13 @@ Solución (última columna de la RREF): Matrix([[62/15, 29/15, 5/3]])
 <span class="ne">-&gt; </span><span class="mi">2743</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">solve_den</span><span class="p">(</span><span class="n">I</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="n">method</span><span class="p">)</span>
 
 <span class="nn">File /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/sympy/polys/matrices/domainmatrix.py:2883,</span> in <span class="ni">DomainMatrix.solve_den</span><span class="nt">(self, b, method)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2882</span> <span class="k">elif</span> <span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;rref&#39;</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">2882</span> <span class="k">elif</span> <span class="n">method</span> <span class="o">==</span> <span class="s1">'rref'</span><span class="p">:</span>
 <span class="ne">-&gt; </span><span class="mi">2883</span>     <span class="n">xnum</span><span class="p">,</span> <span class="n">xden</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">solve_den_rref</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 <span class="g g-Whitespace">   </span><span class="mi">2884</span> <span class="k">else</span><span class="p">:</span>
 
 <span class="nn">File /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/sympy/polys/matrices/domainmatrix.py:2935,</span> in <span class="ni">DomainMatrix.solve_den_rref</span><span class="nt">(self, b)</span>
 <span class="g g-Whitespace">   </span><span class="mi">2934</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">pivots</span><span class="p">)</span> <span class="o">!=</span> <span class="n">n</span> <span class="ow">or</span> <span class="n">pivots</span> <span class="ow">and</span> <span class="n">pivots</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">n</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">2935</span>     <span class="k">raise</span> <span class="n">DMNonInvertibleMatrixError</span><span class="p">(</span><span class="s2">&quot;Non-unique solution.&quot;</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">2935</span>     <span class="k">raise</span> <span class="n">DMNonInvertibleMatrixError</span><span class="p">(</span><span class="s2">"Non-unique solution."</span><span class="p">)</span>
 <span class="g g-Whitespace">   </span><span class="mi">2937</span> <span class="n">xnum</span> <span class="o">=</span> <span class="n">Aaug_rref</span><span class="p">[:</span><span class="n">n</span><span class="p">,</span> <span class="n">n</span><span class="p">:]</span>
 
 <span class="ne">DMNonInvertibleMatrixError</span>: Non-unique solution.
@@ -1138,7 +1138,7 @@ Solución (última columna de la RREF): Matrix([[62/15, 29/15, 5/3]])
 <span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">b_sp</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
 <span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="c1"># --- Método 1: resolver con la inversa simbólica ---</span>
 <span class="ne">----&gt; </span><span class="mi">8</span> <span class="n">x_sympy</span> <span class="o">=</span> <span class="n">A_sp</span><span class="o">.</span><span class="n">inv</span><span class="p">()</span> <span class="o">*</span> <span class="n">b_sp</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Solución con A⁻¹ · b (SymPy):&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"Solución con A⁻¹ · b (SymPy):"</span><span class="p">)</span>
 <span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="n">sp</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">x_sympy</span><span class="p">)</span>
 
 <span class="nn">File /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/sympy/matrices/matrixbase.py:5223,</span> in <span class="ni">MatrixBase.inv</span><span class="nt">(self, method, iszerofunc, try_block_diag)</span>
@@ -1147,16 +1147,16 @@ Solución (última columna de la RREF): Matrix([[62/15, 29/15, 5/3]])
 <span class="g g-Whitespace">   </span><span class="mi">5224</span>             <span class="n">try_block_diag</span><span class="o">=</span><span class="n">try_block_diag</span><span class="p">)</span>
 
 <span class="nn">File /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/sympy/matrices/inverse.py:504,</span> in <span class="ni">_inv</span><span class="nt">(M, method, iszerofunc, try_block_diag)</span>
-<span class="g g-Whitespace">    </span><span class="mi">501</span>         <span class="n">method</span> <span class="o">=</span> <span class="s1">&#39;GE&#39;</span>
-<span class="g g-Whitespace">    </span><span class="mi">503</span> <span class="k">if</span> <span class="n">method</span> <span class="o">==</span> <span class="s2">&quot;DM&quot;</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">501</span>         <span class="n">method</span> <span class="o">=</span> <span class="s1">'GE'</span>
+<span class="g g-Whitespace">    </span><span class="mi">503</span> <span class="k">if</span> <span class="n">method</span> <span class="o">==</span> <span class="s2">"DM"</span><span class="p">:</span>
 <span class="ne">--&gt; </span><span class="mi">504</span>     <span class="n">rv</span> <span class="o">=</span> <span class="n">_inv_DM</span><span class="p">(</span><span class="n">dM</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">505</span> <span class="k">elif</span> <span class="n">method</span> <span class="o">==</span> <span class="s2">&quot;DMNC&quot;</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">505</span> <span class="k">elif</span> <span class="n">method</span> <span class="o">==</span> <span class="s2">"DMNC"</span><span class="p">:</span>
 <span class="g g-Whitespace">    </span><span class="mi">506</span>     <span class="n">rv</span> <span class="o">=</span> <span class="n">_inv_DM</span><span class="p">(</span><span class="n">dM</span><span class="p">,</span> <span class="n">cancel</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="nn">File /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/sympy/matrices/inverse.py:328,</span> in <span class="ni">_inv_DM</span><span class="nt">(dM, cancel)</span>
 <span class="g g-Whitespace">    </span><span class="mi">326</span>     <span class="n">dMi</span><span class="p">,</span> <span class="n">den</span> <span class="o">=</span> <span class="n">dM</span><span class="o">.</span><span class="n">inv_den</span><span class="p">()</span>
 <span class="g g-Whitespace">    </span><span class="mi">327</span> <span class="k">except</span> <span class="n">DMNonInvertibleMatrixError</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">328</span>     <span class="k">raise</span> <span class="n">NonInvertibleMatrixError</span><span class="p">(</span><span class="s2">&quot;Matrix det == 0; not invertible.&quot;</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">328</span>     <span class="k">raise</span> <span class="n">NonInvertibleMatrixError</span><span class="p">(</span><span class="s2">"Matrix det == 0; not invertible."</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">330</span> <span class="k">if</span> <span class="n">use_exact</span><span class="p">:</span>
 <span class="g g-Whitespace">    </span><span class="mi">331</span>     <span class="n">dMi</span> <span class="o">=</span> <span class="n">dMi</span><span class="o">.</span><span class="n">convert_to</span><span class="p">(</span><span class="n">dom</span><span class="p">)</span>
 
@@ -1167,10 +1167,10 @@ Solución (última columna de la RREF): Matrix([[62/15, 29/15, 5/3]])
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;x1 x2 x3&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">'x1 x2 x3'</span><span class="p">)</span>
 
 <span class="n">sol</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">linsolve</span><span class="p">((</span><span class="n">A_sp</span><span class="p">,</span> <span class="n">b_sp</span><span class="p">),</span> <span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Solución con sp.linsolve:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Solución con sp.linsolve:"</span><span class="p">)</span>
 <span class="n">sp</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">sol</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1189,9 +1189,9 @@ Solución (última columna de la RREF): Matrix([[62/15, 29/15, 5/3]])
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">M_aug</span> <span class="o">=</span> <span class="n">A_sp</span><span class="o">.</span><span class="n">row_join</span><span class="p">(</span><span class="n">b_sp</span><span class="p">)</span>   <span class="c1"># matriz aumentada simbólica</span>
 <span class="n">rref</span><span class="p">,</span> <span class="n">pivots</span> <span class="o">=</span> <span class="n">M_aug</span><span class="o">.</span><span class="n">rref</span><span class="p">()</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Forma escalonada reducida (RREF) de [A|b]:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Forma escalonada reducida (RREF) de [A|b]:"</span><span class="p">)</span>
 <span class="n">sp</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">rref</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Columnas pivote:&quot;</span><span class="p">,</span> <span class="n">pivots</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Columnas pivote:"</span><span class="p">,</span> <span class="n">pivots</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1237,9 +1237,9 @@ Nos da x1=-2 ; x2=-1 ; x3=2</p>
 <span class="n">M_aug</span> <span class="o">=</span> <span class="n">A_sp</span><span class="o">.</span><span class="n">row_join</span><span class="p">(</span><span class="n">b_sp</span><span class="p">)</span>   <span class="c1"># matriz aumentada simbólica</span>
 <span class="n">rref</span><span class="p">,</span> <span class="n">pivots</span> <span class="o">=</span> <span class="n">M_aug</span><span class="o">.</span><span class="n">rref</span><span class="p">()</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Forma escalonada reducida (RREF) de [A|b]:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Forma escalonada reducida (RREF) de [A|b]:"</span><span class="p">)</span>
 <span class="n">sp</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">rref</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Columnas pivote:&quot;</span><span class="p">,</span> <span class="n">pivots</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Columnas pivote:"</span><span class="p">,</span> <span class="n">pivots</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>

@@ -502,7 +502,7 @@ document.write(`
 \[
 p(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots+a_1x+a_0,
 \]</div>
-<p>Para trabajar con polinomios en Python podemos usar np.poly1d() o SymPy.</p>
+<p>Para trabajar con polinomios en Python podemos usar Poly1D o SymPy.</p>
 <p>Ejemplo:</p>
 <p>Tomemos los polinomios</p>
 <div class="math notranslate nohighlight">
@@ -514,6 +514,47 @@ p(x)=x^3+2x+1
 \[
 q(x)=x^2+x-3.
 \]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sp</span>
+
+<span class="c1"># Usando poly1d</span>
+
+<span class="n">p_np</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<span class="n">q_np</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">p_np</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p_np</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">q_np</span><span class="p">)</span>
+
+<span class="c1"># Usando SymPy</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="s1">'x'</span><span class="p">)</span>
+
+<span class="n">p_sp</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="n">q_sp</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">x</span> <span class="o">-</span> <span class="mi">3</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">p_sp</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">q_sp</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class 'numpy.poly1d'&gt;
+   3
+1 x + 2 x + 1
+   2
+1 x + 1 x - 3
+</pre></div>
+</div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle x^{3} + 2 x + 1\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle x^{2} + x - 3\]</div>
+</div>
+</div>
 </section>
 <section id="evaluacion-de-un-polinomio-en-x-a">
 <h2>Evaluación de un polinomio en <span class="math notranslate nohighlight">\(x = a\)</span><a class="headerlink" href="#evaluacion-de-un-polinomio-en-x-a" title="Link to this heading">#</a></h2>
