@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Declaración de un polinomio &#8212; Practicas Álgebra Superior</title>
+    <title>Polinomios y sus gráficas &#8212; Practicas Álgebra Superior</title>
   
   
   
@@ -234,21 +234,7 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="u7p1.html">Definición de Polinomios</a></li>
 <li class="toctree-l1"><a class="reference internal" href="u7p2.html">Polinomios</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Declaración de un polinomio</a></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Polinomios y sus gráficas</a></li>
 
 </ul>
 
@@ -455,7 +441,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Declaración de un polinomio</h1>
+    <h1>Polinomios y sus gráficas</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -465,22 +451,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Declaración de un polinomio</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluacion-de-un-polinomio-en-x-a">Evaluación de un polinomio en <span class="math notranslate nohighlight">\(x = a\)</span></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Polinomios y sus gráficas</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio">Ejercicio</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#operaciones-con-polinomios">Operaciones con polinomios</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#suma">Suma</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplicacion">Multiplicación</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#division">División</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ejercicio</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#division-sintetica">División sintética</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Ejercicio</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#raices-de-un-polinomio">Raíces de un polinomio</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Ejercicio</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#regla-de-los-signos-de-descartes">Regla de los signos de Descartes</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Ejercicio</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#polinomios-y-sus-graficas">Polinomios y sus gráficas</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Ejercicio</a></li>
 </ul>
 
             </nav>
@@ -493,118 +465,110 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="declaracion-de-un-polinomio">
-<h1>Declaración de un polinomio<a class="headerlink" href="#declaracion-de-un-polinomio" title="Link to this heading">#</a></h1>
-<p>Un polinomio en la variable <span class="math notranslate nohighlight">\(x\)</span> es una expresión de la forma</p>
-<div class="math notranslate nohighlight">
-\[
-p(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots+a_1x+a_0,
-\]</div>
-<p>Para trabajar con polinomios en Python podemos usar np.poly1d() o SymPy.</p>
-<p>Ejemplo:</p>
-<p>Tomemos los polinomios</p>
-<div class="math notranslate nohighlight">
-\[
-p(x)=x^3+2x+1
-\]</div>
-<p>y</p>
-<div class="math notranslate nohighlight">
-\[
-q(x)=x^2+x-3.
-\]</div>
-</section>
-<section id="evaluacion-de-un-polinomio-en-x-a">
-<h1>Evaluación de un polinomio en <span class="math notranslate nohighlight">\(x = a\)</span><a class="headerlink" href="#evaluacion-de-un-polinomio-en-x-a" title="Link to this heading">#</a></h1>
-</section>
-<section id="ejercicio">
-<h1>Ejercicio<a class="headerlink" href="#ejercicio" title="Link to this heading">#</a></h1>
-<p>Represente el polinomio <span class="math notranslate nohighlight">\(q(x)\)</span> en Python y evalúelo en <span class="math notranslate nohighlight">\(x=-1\)</span> usando np.poly1d() y SymPy.</p>
-<div class="math notranslate nohighlight">
-\[
-q(x)=x^4-3x^3+2x^2+x-5.
-\]</div>
-</section>
-<section id="operaciones-con-polinomios">
-<h1>Operaciones con polinomios<a class="headerlink" href="#operaciones-con-polinomios" title="Link to this heading">#</a></h1>
-</section>
-<section id="suma">
-<h1>Suma<a class="headerlink" href="#suma" title="Link to this heading">#</a></h1>
-</section>
-<section id="multiplicacion">
-<h1>Multiplicación<a class="headerlink" href="#multiplicacion" title="Link to this heading">#</a></h1>
-</section>
-<section id="division">
-<h1>División<a class="headerlink" href="#division" title="Link to this heading">#</a></h1>
-</section>
-<section id="id1">
-<h1>Ejercicio<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>Considere los polinomios</p>
-<div class="math notranslate nohighlight">
-\[
-p(x)=x^3+2x+1
-\]</div>
-<p>y</p>
-<div class="math notranslate nohighlight">
-\[
-q(x)=x^2+x-3.
-\]</div>
-<p>Realice las operaciones:</p>
-<ol class="arabic simple">
-<li><p><span class="math notranslate nohighlight">\(p(x)+q(x)\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(p(x)-q(x)\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(p(x)q(x)\)</span></p></li>
-</ol>
-</section>
-<section id="division-sintetica">
-<h1>División sintética<a class="headerlink" href="#division-sintetica" title="Link to this heading">#</a></h1>
-</section>
-<section id="id2">
-<h1>Ejercicio<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
-<p>Considere el polinomio</p>
-<div class="math notranslate nohighlight">
-\[
-f(x)=3x^5-4x^4-5x^3-8x+25.
-\]</div>
-<p>Halle el cociente y el residuo al dividir <span class="math notranslate nohighlight">\(f(x)\)</span> entre <span class="math notranslate nohighlight">\(x-2\)</span>. Finalmente, exprese el polinomio en la forma</p>
-<div class="math notranslate nohighlight">
-\[
-f(x)=(x-a)Q(x)+R(x).
-\]</div>
-</section>
-<section id="raices-de-un-polinomio">
-<h1>Raíces de un polinomio<a class="headerlink" href="#raices-de-un-polinomio" title="Link to this heading">#</a></h1>
-<p>Con SymPy:</p>
-</section>
-<section id="id3">
-<h1>Ejercicio<a class="headerlink" href="#id3" title="Link to this heading">#</a></h1>
-<p>Considere el polinomio</p>
-<div class="math notranslate nohighlight">
-\[
-p(x)=x^4-10x^2+9.
-\]</div>
-<p>Obtenga todas sus raíces utilizando SymPy.</p>
-</section>
-<section id="regla-de-los-signos-de-descartes">
-<h1>Regla de los signos de Descartes<a class="headerlink" href="#regla-de-los-signos-de-descartes" title="Link to this heading">#</a></h1>
-<p>Cómo obtener los coeficientes y el grado con SymPy.</p>
-</section>
-<section id="id4">
-<h1>Ejercicio<a class="headerlink" href="#id4" title="Link to this heading">#</a></h1>
-<p>Considere el polinomio</p>
-<div class="math notranslate nohighlight">
-\[
-p(x)=x^5-4x^4+3x^3+2x^2-8.
-\]</div>
-<p>Aplique la regla de los signos de Descartes para determinar las posibles raíces positivas, negativas y complejas.</p>
-</section>
-<section id="polinomios-y-sus-graficas">
+  <section id="polinomios-y-sus-graficas">
 <h1>Polinomios y sus gráficas<a class="headerlink" href="#polinomios-y-sus-graficas" title="Link to this heading">#</a></h1>
 <p>Máximos y mínimos de un polinomio</p>
 <p>Ejemplo:</p>
 <p>Para el polinomio <span class="math notranslate nohighlight">\(p(x)=x^4-5x^2+4\)</span>, podemos calcular sus puntos críticos y aplicar el criterio de la segunda derivada</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+
+<span class="c1"># Calculo de la derivada</span>
+
+<span class="n">dp</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">deriv</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">dp</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># Calculo de la derivada</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">dp</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">deriv</span><span class="p">()</span>
+
+<span class="ne">NameError</span>: name 'np' is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ubicamos los puntos críticos (raíces de la derivada)</span>
+<span class="n">criticos</span> <span class="o">=</span> <span class="n">dp</span><span class="o">.</span><span class="n">r</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">criticos</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Clasificamos de acuerdo al criterio de la segunda derivada</span>
+<span class="n">d2p</span> <span class="o">=</span> <span class="n">dp</span><span class="o">.</span><span class="n">deriv</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">criticos</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">d2p</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">tipo</span> <span class="o">=</span> <span class="s2">"mínimo"</span>
+    <span class="k">elif</span> <span class="n">d2p</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">tipo</span> <span class="o">=</span> <span class="s2">"máximo"</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span>
+        
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"x=</span><span class="si">{</span><span class="n">x</span><span class="si">:</span><span class="s2">8.4f</span><span class="si">}</span><span class="s2">, p(x)=</span><span class="si">{</span><span class="n">p</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="si">:</span><span class="s2">8.4f</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">tipo</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">p</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">dp</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">deriv</span><span class="p">()</span>
+<span class="n">d2p</span> <span class="o">=</span> <span class="n">dp</span><span class="o">.</span><span class="n">deriv</span><span class="p">()</span>
+
+<span class="n">x_crit</span> <span class="o">=</span> <span class="n">dp</span><span class="o">.</span><span class="n">r</span>
+<span class="n">y_crit</span> <span class="o">=</span> <span class="n">p</span><span class="p">(</span><span class="n">criticos</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x_crit</span><span class="p">,</span> <span class="n">y_crit</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"red"</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">xc</span><span class="p">,</span> <span class="n">yc</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">x_crit</span><span class="p">,</span> <span class="n">y_crit</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">xc</span> <span class="o">+</span> <span class="mf">0.1</span><span class="p">,</span> <span class="n">yc</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">xc</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">yc</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+
+<span class="c1"># Para graficar las raíces</span>
+
+<span class="c1"># Obtiene las raíces del polinomio</span>
+<span class="n">raices</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">r</span>
+
+<span class="c1"># usamos raices vs un arreglo de ceros</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">raices</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">raices</span><span class="p">)),</span> <span class="n">color</span><span class="o">=</span><span class="s2">"green"</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
+
+<span class="c1"># Etiqueta las raíces</span>
+<span class="k">for</span> <span class="n">xr</span> <span class="ow">in</span> <span class="n">raices</span><span class="p">:</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">xr</span> <span class="o">+</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">xr</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2">, 0)"</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'x'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'p(x)'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
-<section id="id5">
-<h1>Ejercicio<a class="headerlink" href="#id5" title="Link to this heading">#</a></h1>
+<section id="ejercicio">
+<h1>Ejercicio<a class="headerlink" href="#ejercicio" title="Link to this heading">#</a></h1>
 <p>Considere el polinomio</p>
 <div class="math notranslate nohighlight">
 \[
@@ -672,22 +636,8 @@ p(x)=x^3-6x^2+9x+1.
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Declaración de un polinomio</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluacion-de-un-polinomio-en-x-a">Evaluación de un polinomio en <span class="math notranslate nohighlight">\(x = a\)</span></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Polinomios y sus gráficas</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio">Ejercicio</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#operaciones-con-polinomios">Operaciones con polinomios</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#suma">Suma</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplicacion">Multiplicación</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#division">División</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ejercicio</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#division-sintetica">División sintética</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Ejercicio</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#raices-de-un-polinomio">Raíces de un polinomio</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Ejercicio</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#regla-de-los-signos-de-descartes">Regla de los signos de Descartes</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Ejercicio</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#polinomios-y-sus-graficas">Polinomios y sus gráficas</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Ejercicio</a></li>
 </ul>
 
   </nav></div>
