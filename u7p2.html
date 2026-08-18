@@ -859,10 +859,92 @@ f(x)=3x^5-4x^4-5x^3-8x+25.
 \[
 f(x)=(x-a)Q(x)+R(x).
 \]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pcoeficientes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">8</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="n">r_cociente</span><span class="p">,</span> <span class="n">r_residuo</span> <span class="o">=</span> <span class="n">div_sint</span><span class="p">(</span><span class="n">pcoeficientes</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="s2">"x"</span><span class="p">)</span>
+
+<span class="n">Q_sp</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Poly</span><span class="p">(</span><span class="n">r_cociente</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">as_expr</span><span class="p">()</span>
+<span class="n">Q_sp</span>
+
+<span class="n">sp</span><span class="o">.</span><span class="n">Eq</span><span class="p">(</span><span class="n">sp</span><span class="o">.</span><span class="n">Function</span><span class="p">(</span><span class="s2">"f"</span><span class="p">)(</span><span class="n">x</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span><span class="o">*</span><span class="n">Q_sp</span> <span class="o">+</span> <span class="n">r_residuo</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle f{\left(x \right)} = \left(x - 2\right) \left(3 x^{4} + 2 x^{3} - x^{2} - 2 x - 12\right) + 1\]</div>
+</div>
+</div>
 </section>
 <section id="raices-de-un-polinomio">
 <h2>Raíces de un polinomio<a class="headerlink" href="#raices-de-un-polinomio" title="Link to this heading">#</a></h2>
+<p>Con Poly1D:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p_np</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+
+<span class="n">raices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">roots</span><span class="p">(</span><span class="n">p_np</span><span class="p">)</span>
+
+<span class="n">raices</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([-2.,  2., -1.,  1.])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p_np</span><span class="o">.</span><span class="n">r</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([-2.,  2., -1.,  1.])
+</pre></div>
+</div>
+</div>
+</div>
 <p>Con SymPy:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s2">"x"</span><span class="p">)</span>
+
+<span class="n">p</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">4</span> <span class="o">-</span> <span class="mi">5</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">4</span>
+
+<span class="n">p_sp</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Poly</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+
+<span class="n">p_s</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">19</span><span class="p">],</span> <span class="n">line</span> <span class="mi">7</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">p</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">4</span> <span class="o">-</span> <span class="mi">5</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">4</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">p_sp</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Poly</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">7</span> <span class="n">p_s</span>
+
+<span class="ne">NameError</span>: name 'p_s' is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p_sp</span><span class="o">.</span><span class="n">all_roots</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="id3">
 <h2>Ejercicio<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
@@ -872,10 +954,43 @@ f(x)=(x-a)Q(x)+R(x).
 p(x)=x^4-10x^2+9.
 \]</div>
 <p>Obtenga todas sus raíces utilizando SymPy.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s2">"x"</span><span class="p">)</span>
+
+<span class="n">p</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">4</span> <span class="o">-</span> <span class="mi">10</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">9</span>
+
+<span class="n">p_sp</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Poly</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+
+<span class="n">p_sp</span><span class="o">.</span><span class="n">all_roots</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="regla-de-los-signos-de-descartes">
 <h2>Regla de los signos de Descartes<a class="headerlink" href="#regla-de-los-signos-de-descartes" title="Link to this heading">#</a></h2>
 <p>Cómo obtener los coeficientes y el grado con SymPy.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">5</span> <span class="o">-</span> <span class="mi">1</span>
+
+<span class="n">grado</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">degree</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+
+<span class="n">grado</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">coeficientes</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Poly</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">all_coeffs</span><span class="p">()</span>
+
+<span class="n">coeficientes</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="id4">
 <h2>Ejercicio<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
@@ -885,6 +1000,51 @@ p(x)=x^4-10x^2+9.
 p(x)=x^5-4x^4+3x^3+2x^2-8.
 \]</div>
 <p>Aplique la regla de los signos de Descartes para determinar las posibles raíces positivas, negativas y complejas.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">4</span> <span class="o">-</span> <span class="mi">3</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span> <span class="o">-</span> <span class="mi">7</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">27</span><span class="o">*</span><span class="n">x</span> <span class="o">-</span> <span class="mi">18</span>
+
+<span class="n">grado</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">degree</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">cambios_de_signo</span><span class="p">(</span><span class="n">pcoeficientes</span><span class="p">):</span>
+
+    <span class="n">coeficientes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">pcoeficientes</span> <span class="k">if</span> <span class="n">c</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">]</span>
+
+    <span class="n">cambios</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">coeficientes</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+
+        <span class="k">if</span> <span class="n">coeficientes</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">coeficientes</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+
+            <span class="n">cambios</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">cambios</span>
+
+<span class="n">positivas</span> <span class="o">=</span>  <span class="n">cambios_de_signo</span><span class="p">(</span><span class="n">sp</span><span class="o">.</span><span class="n">Poly</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">all_coeffs</span><span class="p">())</span>
+<span class="n">negativas</span> <span class="o">=</span>  <span class="n">cambios_de_signo</span><span class="p">(</span><span class="n">sp</span><span class="o">.</span><span class="n">Poly</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">-</span><span class="n">x</span><span class="p">),</span> <span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">all_coeffs</span><span class="p">())</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Posibles raíces positivas:"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">n_pos</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">positivas</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">):</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">n_pos</span><span class="si">}</span><span class="s2"> positivas"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Posibles raíces negativas:"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">n_neg</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">negativas</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">):</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">n_neg</span><span class="si">}</span><span class="s2"> negativas"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Combinaciones posibles:"</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">n_pos</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">positivas</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">n_neg</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">negativas</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">):</span>
+
+        <span class="n">n_comp</span> <span class="o">=</span> <span class="n">grado</span> <span class="o">-</span> <span class="n">n_pos</span> <span class="o">-</span> <span class="n">n_neg</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">n_pos</span><span class="si">}</span><span class="s2"> positivas, </span><span class="si">{</span><span class="n">n_neg</span><span class="si">}</span><span class="s2"> negativas y </span><span class="si">{</span><span class="n">n_comp</span><span class="si">}</span><span class="s2"> complejas"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="polinomios-y-sus-graficas">
 <h2>Polinomios y sus gráficas<a class="headerlink" href="#polinomios-y-sus-graficas" title="Link to this heading">#</a></h2>
